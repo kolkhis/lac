@@ -2,9 +2,7 @@
 
 - [Intro](./intro.md)
 - [Contributors](./contributors.md)
-- [Resources](./Resources.md)
-- [License](./License.md)
-- [Support](./Support.md)
+- [Resources](./resources.md)
 - [About ProLUG](./prolug.md)
 - [Unit 1](./u1intro.md)
     - [Work Sheet](./u1ws.md)
@@ -54,4 +52,4 @@
 - [Unit 16](./u16intro.md)
     - [Work Sheet](./u16ws.md)
     - [Lab](./u16lab.md)
-- [Outro](./Outro.md)
+- [Outro](./outro.md)
