@@ -1,6 +1,7 @@
 # Summary
 
 - [Intro](./intro.md)
+- [Contributing](./contributing.md)
 - [Contributors](./contributors.md)
 - [Resources](./resources.md)
 - [About ProLUG](./prolug.md)
