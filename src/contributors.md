@@ -1,3 +1,4 @@
+# Contibuting to the ProLUG Linux Sysadmin Course Book
 
 ## Signing your Git Commits with SSH
 * Generate an SSH key pair if you don't have one:
