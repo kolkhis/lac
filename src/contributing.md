@@ -25,7 +25,18 @@
       git log --show-signature -1
       ```
 
+## Syncing your Fork with the Original 
+You'll need to keep your local fork of the repository up to date with the original repository.  
+You can do this from the GitHub web UI easily with the `Sync Fork` button.  
+If you want to do this from the terminal, you can add a new `git remote` called `upstream`.  
+```bash
+git remote add upstream https://github.com/ProfessionalLinuxUsersGroup/lac.git
+```
+Then, to sync your local fork with the original repo, do a `git pull` from the `upstream` remote.  
+```bash
+git pull upstream main
+```
 
-
+unit1ws
 
 Treasure 🦆
