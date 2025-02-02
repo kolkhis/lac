@@ -1,4 +1,4 @@
-<img class="center" src="images/proluglogo.svg" alt="ProLUG Logo">
+<img class="center" src="assets/images/logo.png" alt="ProLUG Logo">
 
 # Title
 --- 
@@ -11,17 +11,16 @@
 - [This is an external link to genome.gov](https://www.genome.gov/)
 --- 
 ### Video (Embdedded YT Video)
-
-<iframe
-  allowfullscreen
-  name="youtube"
-  loading="lazy"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-  style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background:
-black"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-
-share"
-></iframe>
+<iframe 
+    width="1250" 
+    height="703" 
+    src="https://www.youtube.com/embed/eHB8WKWz2eQ" 
+    title="Unit 1 Recording - ProLUG Linux Systems Administration Course - Free in Discord" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
 
 ---
 

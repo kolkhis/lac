@@ -1,4 +1,4 @@
-# ![ProLUG Logo](/assets/images/logo.png)
+<img src="/assets/images/logo.png" align="left" height="50%" width="50%">
 The Professional Linux Users Group (ProLUG) Systems Administration Course Book
 
 ## Goals
@@ -9,6 +9,9 @@ predicated on the work produced by Scott Champine, an experienced and skilled Se
 Scott has over 10 years administering and engineering Linux systems across a broad variety of
 fields and teams. He has built and maintains systems like High Performance Compute (HPC) clusters
 for [NOAA (The National Oceanic and Atmospheric Administration)](https://www.noaa.gov/) and more.
+
+ProLUG looks forward to working with contributors who want to give back to the community and produce
+skilled Systems Administrators and Systems enthusiasts.
 
 ## Objectives
 

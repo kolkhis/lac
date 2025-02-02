@@ -1,4 +1,4 @@
-![ProLUG logo](/assets/images/logo.png "ProLUG")
+<img src="/assets/images/logo.png">
 
 # Contributing to the ProLUG Linux Sysadmin Course Book
 
@@ -20,6 +20,10 @@ We also ask all contributors to observe GitHub decorum and refrain from offensiv
     * [Create a Pull Request](#create-a-pull-request)
 
 ## Signing your Git Commits with SSH
+Signing GitHub commits helps ProLUG validate incoming commits from trusted, and serious contributors.
+It can be quite trivial to impersonate users on GitHub and it is in the best interest of those involved
+to observe this security practice.
+
 * Generate an SSH key pair if you don't have one:
   ```bash
   ssh-keygen -t ed25519
