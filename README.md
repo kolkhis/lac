@@ -22,18 +22,18 @@ Outlined below are a set of objectives this repository attempts to provide.
 - Provide a centralized set of worksheets and labs for prospective learners to begin understanding Systems Administration.
 - Deliver templated versions of course work per unit along with supplementary material and video.
 - Provide learners with foundational knowledge in computer systems to include:
-    - Linux fundamentals:
-        - Basic command line skills, ie. scripting, tools, syntax
-        - Networking
-        - Security practices
-    - Basic Systems engineering
-        - Server build processes
-        - System hardening
-        - Construction of build testing, ie. conditional testing, system tasks
-        - Introductions to technologies like:
-            - Docker, Kubernetes, Ansible
-        - Automation and implementation
-        - Troubleshooting and system benchmarking
+  - Linux fundamentals:
+    - Basic command line skills, ie. scripting, tools, syntax
+    - Networking
+    - Security practices
+  - Basic Systems engineering
+    - Server build processes
+    - System hardening
+    - Construction of build testing, ie. conditional testing, system tasks
+    - Introductions to technologies like:
+      - Docker, Kubernetes, Ansible
+    - Automation and implementation
+    - Troubleshooting and system benchmarking
 
 ## To Begin Contributing
 
@@ -45,6 +45,7 @@ Contributors will be provided with supplementary material to begin building out 
 and templates within the project managed issues board.
 
 To start contributing:
+
 - Read the [contributing.md](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/CONTRIBUTING.md) markdown
 - Understand the repository objectives
 - Request to be assigned a task within the repo [Issues](https://github.com/ProfessionalLinuxUsersGroup/lac/issues) tab

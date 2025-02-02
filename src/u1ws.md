@@ -1,26 +1,22 @@
 <img class="center" src="./assets/images/logo.png" alt="ProLUG Logo">
 
-# Title
+# ProLUG
 
----
+## Unit 1 Worksheet
 
-## Intro
-
-## 1 paragraph or less intro to topic
+<hr>
 
 ### Resources / Important Links
 
-- [This is an external link to genome.gov](https://www.genome.gov/)
-- [This is an external link to genome.gov](https://www.genome.gov/)
-- [This is an external link to genome.gov](https://www.genome.gov/)
-
----
+- [What is Vim?](https://github.com/vim/vim)
+- [The Linux Foundation](https://www.linux.org/pages/download/)
+- [Linux CLI Cheatsheets](https://developers.redhat.com/cheat-sheets/linux-commands-cheat-sheet?extIdCarryOver=true&sc_cid=701f2000001OH7EAAW)
 
 ### Unit 1 Recording
 
 <iframe 
     width="100%" 
-    height="720" 
+    height="480" 
     src="https://www.youtube.com/embed/eHB8WKWz2eQ" 
     title="Unit 1 Recording - ProLUG Linux Systems Administration Course - Free in Discord" 
     frameborder="0" 
@@ -29,7 +25,7 @@
     allowfullscreen>
 </iframe>
 
----
+<hr>
 
 ### Instructions
 
@@ -52,8 +48,6 @@ Submit your input by following the link below:
 
 - [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1320140773412438091)
 
----
-
 #### Discussion Post #2
 
 Sys Admin Book Style Guide Handout 2 Page 2 of 8
@@ -68,30 +62,30 @@ Submit your input by following the link below:
 
 - [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1320140773412438091)
 
----
+<hr>
 
 ## Definitions
 
-- Definition
-- Definition
-- Definition
-- Definition
-- Definition
+- Kernel:
+- OS Version:
+- Modules:
+- Mount Points:
+- Text Editor:
 
----
+<hr>
 
 ## Digging Deeper
 
-1. If uptime is so important to us, why is it so important to us to also understand how our systems can
-   fail? Why would we focus on the thing that does not drive uptime?
+1. Use vimtutor and see how far you get. What did you learn that you did not know about vi/vim?
 
-2. Start reading about SLOs: <https://sre.google/workbook/implementing-slos/>
-   How does this help you operationally? Does it make sense that keeping systems within defined parameters
-   will help keep them operating longer?
+2. Go to <https://vim-adventures.com/> and see how far you get. What did you learn that you did not already know about vi/vim?
 
----
+3. Go to <https://www.youtube.com/watch?v=d8XtNXutVto> and see how far you get with vim. What did you learn that you did not already know about vi/vim?
+
+<hr>
 
 ## Reflection Questions
 
 1. What questions do you still have about this week?
+
 2. How are you going to use what you’ve learned in your current role?
