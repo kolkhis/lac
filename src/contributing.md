@@ -31,8 +31,9 @@ to observe this security practice.
 - Add SSH public key ('.pub' suffix) to github as "Signing Key".
   <img src="./assets/images/addkey.png"></img> \* Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
 * Configure git locally to use the SSH key to sign your commits.
-    * Here's a script that will do that.  
-      Run these commands one by one or run the block as a script.  
+    * Here's a script that will do that.
+
+      Run these commands one by one or run the block as a script.
       ```bash
       #!/bin/bash
       GH_USERNAME="YourUsername"
@@ -47,7 +48,7 @@ to observe this security practice.
       # Make a commit to verify
       git log --show-signature -1
       ```
-    * Make a commit after running those commands and then use `git log --show-signature -1`.  
+    * Make a commit after running those commands and then use `git log --show-signature -1`.
     * You should see something like `Good "git" signature for <yourname> with ED25519 key SHA256:abcdef...` if it worked.
 
 <img src="./assets/images/verified.png"></img>
