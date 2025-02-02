@@ -1,3 +1,10 @@
+<style>
+        .flex-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
 <div class="grid-layout">
         <img src="./assets/images/logo.png" width="64" height="64">
     <p>
