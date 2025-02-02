@@ -1,4 +1,5 @@
 <img class="center" src="images/proluglogo.svg" alt="ProLUG Logo">
+
 # Title
 --- 
 ## Intro
@@ -21,6 +22,7 @@ black"
 share"
 ></iframe>
 ---
+
 ### Instructions
 A major aspect of this course is to intake, comprehend, and discuss the assigned topics. Take the time
 to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction
@@ -36,8 +38,11 @@ what important concepts do you learn about how we behave during an operational r
 <div class="warning">
 Submit your input by following the link below:
 </div>
+
 - [Link to Disccusion Post 1](https://discord.com/channels/611027490848374811/1320140773412438091)
+
 --- 
+
 #### Discussion Post #2
 Sys Admin Book Style Guide Handout 2 Page 2 of 8
 Ask google, find a blog, or ask an AI about high availability. (Here’s one if you need it: https://docs.
@@ -48,8 +53,11 @@ Why do you think understanding HA will help you better in the context of triagin
 <div class="warning">
 Submit your input by following the link below:
 </div>
+
 - [Link to Disccusion Post 2](https://discord.com/channels/611027490848374811/1320140773412438091)
+
 --- 
+
 ## Definitions
 - Definition
 - Definition
@@ -57,6 +65,7 @@ Submit your input by following the link below:
 - Definition
 - Definition
 ---
+
 ## Digging Deeper
 1. If uptime is so important to us, why is it so important to us to also understand how our systems can
 fail? Why would we focus on the thing that does not drive uptime?
