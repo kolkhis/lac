@@ -31,7 +31,7 @@ to fully absorb each topic and contribute to the discussion thread by sharing yo
 with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of
 knowledge.
 #### Discussion Post #1
-Scan the chapter here <https://google.github.io/building-secure-and-reliable-systems/raw/ch17html>
+Scan the chapter here <https://google.github.io/building-secure-and-reliable-systems/raw/ch17.html>
 for keywords and pull out what you think will help you to better understand how to triage an incident.
 
 Read the section called “Operation Security” in this same chapter: <https://google.github.io/building-secure-and-reliable-systems/raw/ch17.html>
@@ -47,9 +47,8 @@ Submit your input by following the link below:
 
 #### Discussion Post #2
 Sys Admin Book Style Guide Handout 2 Page 2 of 8
-Ask google, find a blog, or ask an AI about high availability. (Here’s one if you need it: https://docs.
-aws.amazon.com/pdfs/whitepapers/latest/real-time-communication-on-aws/real-time-communication-on-aws.
-pdf#high-availability-and-scalability-on-aws)
+Ask google, find a blog, or ask an AI about high availability. (Here’s one if you need it: <https://docs.aws.amazon.com/pdfs/whitepapers/latest/real-time-communication-on-aws/real-time-communication-on-aws.pdf#high-availability-and-scalability-on-aws>)
+
 What are some important terms you read about?
 Why do you think understanding HA will help you better in the context of triaging incidents?
 <div class="warning">

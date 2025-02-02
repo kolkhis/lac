@@ -1,4 +1,4 @@
-[ProLUG logo](/assets/images/logo.png "ProLUG")
+![ProLUG logo](/assets/images/logo.png "ProLUG")
 
 # Contributing to the ProLUG Linux Sysadmin Course Book
 
@@ -19,14 +19,13 @@ We also ask all contributors to observe GitHub decorum and refrain from offensiv
     * [Comment your Changes](#comment-your-changes)
     * [Create a Pull Request](#create-a-pull-request)
 
-
 ## Signing your Git Commits with SSH
 * Generate an SSH key pair if you don't have one:
   ```bash
   ssh-keygen -t ed25519
   ```
 * Add SSH public key to github as "Signing Key".
-[AddKey](/assets/images/addkey.png "Signing Keys")
+![AddKey](/assets/images/addkey.png "Signing Keys")
     * Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
 * Configure git locally to use the SSH key to sign your commits.
     * Here's a script that will do that, edit accordingly.
@@ -46,7 +45,7 @@ We also ask all contributors to observe GitHub decorum and refrain from offensiv
       git log --show-signature -1
       ```
 
-[Verified](/assets/images/verified.png "Verification")
+![Verified](/assets/images/verified.png "Verification")
 
 Your commits should now be verified from your account. This helps us ensure that valid users are
 contributing to this project. Unverified commits will be scrutinized and likely discarded.
@@ -54,7 +53,7 @@ contributing to this project. Unverified commits will be scrutinized and likely 
 
 ## Syncing your Fork with the Upstream ProLUG Repo 
 
-[Sync Fork](/assets/images/syncfork.png "Sync Fork")
+![Sync Fork](/assets/images/syncfork.png "Sync Fork")
 
 In an effort to minimize merge conflicts we strongly suggest forks remain up to date with 
 the original repository before committing changes. This will help us reduce pull request management overhead.
@@ -76,8 +75,6 @@ Then your fork is up to date with the original upstream repo.
 You'll create your own fork of the repository using the GitHub web UI, create a
 branch, make changes, push to your fork, then open a pull request.
 
-
-
 ### Create a Fork
 - Go to the [original repository link](https://github.com/ProfessionalLinuxUsersGroup/lac).
 - Click on "Fork" on the top right.
@@ -88,14 +85,11 @@ branch, make changes, push to your fork, then open a pull request.
   # Or, with https:
   git clone https://github.com/YOUR_USERNAME/lac.git
   ```
-
-
 ### Clone the Fork to your Local Machine
 Then you'll need to clone your fork down to your local machine in order to work on it.
 ```bash
 git clone git@github.com:yourname/lac.git
 ```
-
 
 ### Create a New Branch
 Whenever making changes contributors are highly encouraged to create a branch with an
@@ -128,3 +122,9 @@ We're doing this since the GitHub organization feature is paid and we are doing 
 ### Create a Pull Request
 Now you'll be able to go to the [original repository link](https://github.com/ProfessionalLinuxUsersGroup/lac) and go to the "Pull Requests" tab and create a new pull request.
 Select your branch `unit1-worksheet`, and create a description and mention an issue by number (e.g., `#5`).
+
+## Supporting Material
+
+Below are links to the necessary materials to build out the course templates:
+- Ancillary unit videos provided by Scott: <https://www.youtube.com/watch?v=eHB8WKWz2eQ&list=PLyuZ_vuAWmprPIqsG11yoUG49Z5dE5TDu>
+- PDF and docs directly related to each Unit of the course: {Placeholder}
