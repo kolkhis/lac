@@ -1,4 +1,18 @@
-# <img class="center" src="./assets/images/logo.png" width="48" height="48" alt="ProLUG Logo"> ProLUG 101
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<div class="flex-container">
+        <img src="./assets/images/logo.png" width="64" height="64">
+    <p>
+        <h1>ProLUG 101</h1>
+    </p>
+</div>
 
 ## Unit 1 Worksheet
 
