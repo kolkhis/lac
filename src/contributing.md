@@ -1,4 +1,4 @@
-# <img src="./assets/images/logo.png" width="96" height="96"></img> Contributing to the ProLUG Linux Sysadmin Course Book
+# <img src="./assets/images/logo.png" width="48" height="48"></img> Contributing to the ProLUG Linux Sysadmin Course Book
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
 contribute to this project. Below are a set of steps to ensure contributors are adhering

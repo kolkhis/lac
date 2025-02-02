@@ -1,8 +1,6 @@
-# <img class="center" src="./assets/images/logo.png" width="96" height="96" alt="ProLUG Logo"> ProLUG 101
+# <img class="center" src="./assets/images/logo.png" width="48" height="48" alt="ProLUG Logo"> ProLUG 101
 
 ## Unit 1 Worksheet
-
-<hr>
 
 ### Resources / Important Links
 
