@@ -1,10 +1,12 @@
 ![196572350](https://github.com/user-attachments/assets/6e1b8001-a88d-45cb-b551-c9359b70e1e7)
 
-# Contibuting to the ProLUG Linux Sysadmin Course Book
+# Contributing to the ProLUG Linux Sysadmin Course Book
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
 contribute to this project. Below are a set of steps to ensure contributors are adhering 
-to those guidelines and fostering a productive version control environment.
+to those guidelines and fostering a productive version control environment. 
+
+We also ask all contributors to observe GitHub decorum and refrain from offensive language and content.
 
 ## Table of Contents
 * [Signing your Git Commits with SSH](#signing-your-git-commits-with-ssh) 
@@ -24,7 +26,6 @@ to those guidelines and fostering a productive version control environment.
   ssh-keygen -t ed25519
   ```
 * Add SSH public key to github as "Signing Key".
-  ![image](https://github.com/user-attachments/assets/01ce50dc-3ad2-4c53-a211-1b06e5d11c21)
 
     * Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
 * Configure git locally to use the SSH key to sign your commits.
@@ -47,11 +48,8 @@ to those guidelines and fostering a productive version control environment.
 Your commits should now be verified from your account. This helps us ensure that valid users are
 contributing to this project. Unverified commits will be scrutinized and likely discarded.
 
-![image](https://github.com/user-attachments/assets/9d6adb35-9b0e-49fa-9918-a0c5d0387188)
 
 ## Syncing your Fork with the Upstream ProLUG Repo 
-![image](https://github.com/user-attachments/assets/a0eda533-446a-4674-a1a3-d299a7c2bfea)
-
 In an effort to minimize merge conflicts we strongly suggest forks remain up to date with 
 the original repository before committing changes. This will help us reduce pull request management overhead.
 Note: Pull requests with substantial merge conflicts may be rejected.
@@ -79,7 +77,7 @@ branch, make changes, push to your fork, then open a pull request.
   
   ```bash
   git clone git@github.com:YOUR_USERNAME/lac.git
-  # or, with https:
+  # Or, with https:
   git clone https://github.com/YOUR_USERNAME/lac.git
   ```
 
