@@ -29,6 +29,7 @@ A major aspect of this course is to intake, comprehend, and discuss the assigned
 to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction
 with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of
 knowledge.
+
 #### Discussion Post #1
 Scan the chapter here <https://google.github.io/building-secure-and-reliable-systems/raw/ch17.html>
 for keywords and pull out what you think will help you to better understand how to triage an incident.
@@ -67,7 +68,8 @@ Submit your input by following the link below:
 ## Digging Deeper
 1. If uptime is so important to us, why is it so important to us to also understand how our systems can
 fail? Why would we focus on the thing that does not drive uptime?
-2. Start reading about SLOs: https://sre.google/workbook/implementing-slos/
+
+2. Start reading about SLOs: <https://sre.google/workbook/implementing-slos/>
 How does this help you operationally? Does it make sense that keeping systems within defined parameters
 will help keep them operating longer?
 --- 

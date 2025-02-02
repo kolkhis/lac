@@ -1,4 +1,4 @@
-<img src="/assets/images/logo.png">
+<img src="/assets/images/logo.png"></img>
 
 # Contributing to the ProLUG Linux Sysadmin Course Book
 
@@ -29,7 +29,7 @@ to observe this security practice.
   ssh-keygen -t ed25519
   ```
 * Add SSH public key to github as "Signing Key".
-![AddKey](/assets/images/addkey.png "Signing Keys")
+<img src="/assets/images/addkey.png"></img>
     * Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
 * Configure git locally to use the SSH key to sign your commits.
     * Here's a script that will do that, edit accordingly.
@@ -49,7 +49,7 @@ to observe this security practice.
       git log --show-signature -1
       ```
 
-![Verified](/assets/images/verified.png "Verification")
+<img src="/assets/images/verified.png"></img>
 
 Your commits should now be verified from your account. This helps us ensure that valid users are
 contributing to this project. Unverified commits will be scrutinized and likely discarded.
@@ -57,13 +57,14 @@ contributing to this project. Unverified commits will be scrutinized and likely 
 
 ## Syncing your Fork with the Upstream ProLUG Repo 
 
-![Sync Fork](/assets/images/syncfork.png "Sync Fork")
+<img src="/assets/images/syncfork.png"></img>
 
 In an effort to minimize merge conflicts we strongly suggest forks remain up to date with 
 the original repository before committing changes. This will help us reduce pull request management overhead.
 
-#### Note
+<div class = warning
 Pull requests with substantial merge conflicts may be rejected.
+>
 
 You can do this from the GitHub web UI easily with the `Sync Fork` button. If you want to do this from the terminal, you can add a new `git remote` called `upstream`.
 ```bash

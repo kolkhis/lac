@@ -1,4 +1,5 @@
-<img src="/assets/images/logo.png" align="left" height="50%" width="50%">
+<img src="/assets/images/logo.png" height="96" width="96"></img>
+
 The Professional Linux Users Group (ProLUG) Systems Administration Course Book
 
 ## Goals
