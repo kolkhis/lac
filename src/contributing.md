@@ -1,21 +1,23 @@
+[ProLUG logo](/assets/images/logo.png "ProLUG")
+
 # Contributing to the ProLUG Linux Sysadmin Course Book
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
-contribute to this project. Below are a set of steps to ensure contributors are adhering 
-to those guidelines and fostering a productive version control environment. 
+contribute to this project. Below are a set of steps to ensure contributors are adhering
+to those guidelines and fostering a productive version control environment.
 
 We also ask all contributors to observe GitHub decorum and refrain from offensive language and content.
 
 ## Table of Contents
-* [Signing your Git Commits with SSH](#signing-your-git-commits-with-ssh) 
-* [Syncing your Fork with the Upstream ProLUG Repo](#syncing-your-fork-with-the-upstream-prolug-repo) 
-* [Basic Contribution Workflow](#basic-contribution-workflow) 
-    * [Create a Fork](#create-a-fork) 
-    * [Clone the Fork to your Local Machine](#clone-the-fork-to-your-local-machine) 
-    * [Create a New Branch](#create-a-new-branch) 
-    * [Commit and Push your Changes](#commit-and-push-your-changes) 
-    * [Comment your Changes](#comment-your-changes) 
-    * [Create a Pull Request](#create-a-pull-request) 
+* [Signing your Git Commits with SSH](#signing-your-git-commits-with-ssh)
+* [Syncing your Fork with the Upstream ProLUG Repo](#syncing-your-fork-with-the-upstream-prolug-repo)
+* [Basic Contribution Workflow](#basic-contribution-workflow)
+    * [Create a Fork](#create-a-fork)
+    * [Clone the Fork to your Local Machine](#clone-the-fork-to-your-local-machine)
+    * [Create a New Branch](#create-a-new-branch)
+    * [Commit and Push your Changes](#commit-and-push-your-changes)
+    * [Comment your Changes](#comment-your-changes)
+    * [Create a Pull Request](#create-a-pull-request)
 
 
 ## Signing your Git Commits with SSH
@@ -24,10 +26,10 @@ We also ask all contributors to observe GitHub decorum and refrain from offensiv
   ssh-keygen -t ed25519
   ```
 * Add SSH public key to github as "Signing Key".
-
+[AddKey](/assets/images/addkey.png "Signing Keys")
     * Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
 * Configure git locally to use the SSH key to sign your commits.
-    * Here's a script that will do that, edit accordingly.  
+    * Here's a script that will do that, edit accordingly.
       ```bash
       #!/bin/bash
       GH_USERNAME="YourUsername"
@@ -43,22 +45,28 @@ We also ask all contributors to observe GitHub decorum and refrain from offensiv
       # Make a commit to verify
       git log --show-signature -1
       ```
+
+[Verified](/assets/images/verified.png "Verification")
+
 Your commits should now be verified from your account. This helps us ensure that valid users are
 contributing to this project. Unverified commits will be scrutinized and likely discarded.
 
 
 ## Syncing your Fork with the Upstream ProLUG Repo 
+
+[Sync Fork](/assets/images/syncfork.png "Sync Fork")
+
 In an effort to minimize merge conflicts we strongly suggest forks remain up to date with 
 the original repository before committing changes. This will help us reduce pull request management overhead.
 
-[!WARNING]
+#### Note
 Pull requests with substantial merge conflicts may be rejected.
 
-You can do this from the GitHub web UI easily with the `Sync Fork` button. If you want to do this from the terminal, you can add a new `git remote` called `upstream`.  
+You can do this from the GitHub web UI easily with the `Sync Fork` button. If you want to do this from the terminal, you can add a new `git remote` called `upstream`.
 ```bash
 git remote add upstream https://github.com/ProfessionalLinuxUsersGroup/lac.git
 ```
-Then, to sync your local fork with the original repo, do a `git pull` from the `upstream` remote.  
+Then, to sync your local fork with the original repo, do a `git pull` from the `upstream` remote.
 ```bash
 git pull upstream main
 ```
@@ -66,13 +74,13 @@ Then your fork is up to date with the original upstream repo.
 
 ## Basic Contribution Workflow
 You'll create your own fork of the repository using the GitHub web UI, create a
-branch, make changes, push to your fork, then open a pull request.  
+branch, make changes, push to your fork, then open a pull request.
 
 
 
 ### Create a Fork
-- Go to the [original repository link](https://github.com/ProfessionalLinuxUsersGroup/lac).  
-- Click on "Fork" on the top right.  
+- Go to the [original repository link](https://github.com/ProfessionalLinuxUsersGroup/lac).
+- Click on "Fork" on the top right.
 - Now you'll have your own version of the repository that you can clone.
   
   ```bash
@@ -83,15 +91,16 @@ branch, make changes, push to your fork, then open a pull request.
 
 
 ### Clone the Fork to your Local Machine
-Then you'll need to clone your fork down to your local machine in order to work on it.  
+Then you'll need to clone your fork down to your local machine in order to work on it.
 ```bash
 git clone git@github.com:yourname/lac.git
 ```
 
 
 ### Create a New Branch
-Whenever making changes, it is common to create a branch with an appropriate name, switch to
-that branch, then make changes there.  
+Whenever making changes contributors are highly encouraged to create a branch with an
+appropriate name. Switch to that branch, then make changes there.
+
 For example, if you're working on the Unit 1 Worksheet:
 ```bash
 git branch unit1-worksheet
@@ -99,13 +108,13 @@ git switch unit1-worksheet
 # Or, simply:
 git switch -c unit1-worksheet
 ```
-Make changes to the `u1ws.md`.  
+Make changes to the `u1ws.md`.
 
 
 ### Commit and Push your Changes
 First make sure your forked repo is [up-to-date with the original](#syncing-your-fork-with-the-original).
-Create your commit (make sure it's [signed](#signing-your-git-commits-with-ssh)!), then push changes to **your own fork** on the new branch.  
-  
+Create your commit (make sure it's [signed](#signing-your-git-commits-with-ssh)!), then push changes to **your own fork** on the new branch.
+
 ```bash
 git commit -m "descriptive commit message"
 git push origin unit1-worksheet
@@ -113,10 +122,9 @@ git push origin unit1-worksheet
 
 ### Comment your Changes
 Before creating a pull request, make a comment on the issue containing your changes.  
-We're doing this since the GitHub organization feature is paid and we are doing this for free, so there is only one person who is able to merge pull requests at the moment. 
+We're doing this since the GitHub organization feature is paid and we are doing this for free, so there is only one person who is able to merge pull requests at the moment.
 
 
 ### Create a Pull Request
-Now you'll be able to go to the [original repository link](https://github.com/ProfessionalLinuxUsersGroup/lac) and go to the "Pull Requests" tab, and create a new pull request.  
-Select your branch `unit1-worksheet`, and create a description and mention an issue by number (e.g., `#5`).  
-
+Now you'll be able to go to the [original repository link](https://github.com/ProfessionalLinuxUsersGroup/lac) and go to the "Pull Requests" tab and create a new pull request.
+Select your branch `unit1-worksheet`, and create a description and mention an issue by number (e.g., `#5`).

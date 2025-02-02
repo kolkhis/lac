@@ -31,22 +31,17 @@ to fully absorb each topic and contribute to the discussion thread by sharing yo
 with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of
 knowledge.
 #### Discussion Post #1
-Scan the chapter here 
+Scan the chapter here <https://google.github.io/building-secure-and-reliable-systems/raw/ch17html>
+for keywords and pull out what you think will help you to better understand how to triage an incident.
 
-(TODO)
-#link("https://google.github.io/building-secure-and-reliable-systems/raw/ch17.
-html")* \
-
-for keywords and pull out what you think will help you to better understand how to triage an
-incident.
-Read the section called “Operation Security” in this same chapter: *#link("https://google.github.io/
-building-secure-and-reliable-systems/raw/ch17.html")* \
+Read the section called “Operation Security” in this same chapter: <https://google.github.io/building-secure-and-reliable-systems/raw/ch17.html>
 what important concepts do you learn about how we behave during an operational response to an incident?
+
 <div class="warning">
 Submit your input by following the link below:
 </div>
 
-- [Link to Disccusion Post 1](https://discord.com/channels/611027490848374811/1320140773412438091)
+- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1320140773412438091)
 
 --- 
 
@@ -61,10 +56,9 @@ Why do you think understanding HA will help you better in the context of triagin
 Submit your input by following the link below:
 </div>
 
-- [Link to Disccusion Post 2](https://discord.com/channels/611027490848374811/1320140773412438091)
+- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1320140773412438091)
 
 --- 
-
 ## Definitions
 - Definition
 - Definition
@@ -72,7 +66,6 @@ Submit your input by following the link below:
 - Definition
 - Definition
 ---
-
 ## Digging Deeper
 1. If uptime is so important to us, why is it so important to us to also understand how our systems can
 fail? Why would we focus on the thing that does not drive uptime?
