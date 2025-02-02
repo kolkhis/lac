@@ -1,4 +1,4 @@
-# <img class="center" src="./assets/images/logo.png" alt="ProLUG Logo"> ProLUG
+# <img class="center" src="./assets/images/logo.png" width="96" height="96" alt="ProLUG Logo"> ProLUG 101
 
 ## Unit 1 Worksheet
 
@@ -64,11 +64,15 @@ Submit your input by following the link below:
 
 ## Definitions
 
-- Kernel:
-- OS Version:
-- Modules:
-- Mount Points:
-- Text Editor:
+ Kernel:
+
+ OS Version:
+
+ Modules:
+
+ Mount Points:
+
+ Text Editor:
 
 <hr>
 
