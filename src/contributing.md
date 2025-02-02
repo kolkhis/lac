@@ -28,25 +28,27 @@ to observe this security practice.
   ```bash
   ssh-keygen -t ed25519
   ```
-- Add SSH public key to github as "Signing Key".
+- Add SSH public key ('.pub' suffix) to github as "Signing Key".
   <img src="./assets/images/addkey.png"></img> \* Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
-- Configure git locally to use the SSH key to sign your commits.
-  - Here's a script that will do that, edit accordingly.
-    ```bash
-    #!/bin/bash
-    GH_USERNAME="YourUsername"
-    git config --global user.signingkey "/home/${GH_USERNAME}/.ssh/id_ed25519"
-    git config --global gpg.format ssh
-    git config --global tag.gpgsign true
-    git config --global user.signingkey ~/.ssh/id_ed25519.pub
-    git config --global commit.gpgSign true
-    mkdir -p ~/.config/git
-    touch ~/.config/git/allowed_signers
-    echo "${GH_USERNAME} $(cat ~/.ssh/id_ed25519.pub)" > ~/.config/git/allowed_signers
-    git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
-    # Make a commit to verify
-    git log --show-signature -1
-    ```
+* Configure git locally to use the SSH key to sign your commits.
+    * Here's a script that will do that.  
+      Run these commands one by one or run the block as a script.  
+      ```bash
+      #!/bin/bash
+      GH_USERNAME="YourUsername"
+      git config --global gpg.format ssh
+      git config --global user.signingkey ~/.ssh/id_ed25519.pub
+      git config --global tag.gpgSign true
+      git config --global commit.gpgSign true
+      mkdir -p ~/.config/git
+      touch ~/.config/git/allowed_signers
+      echo "${GH_USERNAME} $(cat ~/.ssh/id_ed25519.pub)" > ~/.config/git/allowed_signers
+      git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
+      # Make a commit to verify
+      git log --show-signature -1
+      ```
+    * Make a commit after running those commands and then use `git log --show-signature -1`.  
+    * You should see something like `Good "git" signature for <yourname> with ED25519 key SHA256:abcdef...` if it worked.
 
 <img src="./assets/images/verified.png"></img>
 
