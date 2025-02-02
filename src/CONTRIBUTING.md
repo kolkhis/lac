@@ -1,5 +1,3 @@
-![196572350](https://github.com/user-attachments/assets/6e1b8001-a88d-45cb-b551-c9359b70e1e7)
-
 # Contributing to the ProLUG Linux Sysadmin Course Book
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
