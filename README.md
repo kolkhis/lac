@@ -1,4 +1,4 @@
-# <img src="./src/assets/images/logo.png" height="64" width="64"></img> The Professional Linux Users Group (ProLUG) Systems Administration Course Book
+# The Professional Linux Users Group (ProLUG) Systems Administration Course Book
 
 ## Goals
 
