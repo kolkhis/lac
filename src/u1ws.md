@@ -11,6 +11,7 @@
 - [This is an external link to genome.gov](https://www.genome.gov/)
 --- 
 ### Video (Embdedded YT Video)
+
 <iframe
   allowfullscreen
   name="youtube"
@@ -21,6 +22,7 @@ black"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-
 share"
 ></iframe>
+
 ---
 
 ### Instructions
@@ -29,8 +31,10 @@ to fully absorb each topic and contribute to the discussion thread by sharing yo
 with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of
 knowledge.
 #### Discussion Post #1
-Scan the chapter here *#link("https://google.github.io/building-secure-and-reliable-systems/raw/ch17.
-html")* \ for keywords and pull out what you think will help you to better understand how to triage an
+Scan the chapter here 
+*#link("https://google.github.io/building-secure-and-reliable-systems/raw/ch17.
+html")* \
+for keywords and pull out what you think will help you to better understand how to triage an
 incident.
 Read the section called “Operation Security” in this same chapter: *#link("https://google.github.io/
 building-secure-and-reliable-systems/raw/ch17.html")* \
