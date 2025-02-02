@@ -1,6 +1,4 @@
-<img src="./assets/images/logo.png"></img>
-
-# Contributing to the ProLUG Linux Sysadmin Course Book
+# <img src="./assets/images/logo.png"></img> Contributing to the ProLUG Linux Sysadmin Course Book
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
 contribute to this project. Below are a set of steps to ensure contributors are adhering
@@ -31,7 +29,7 @@ to observe this security practice.
   ssh-keygen -t ed25519
   ```
 - Add SSH public key to github as "Signing Key".
-  <img src="/assets/images/addkey.png"></img> \* Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
+  <img src="./assets/images/addkey.png"></img> \* Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
 - Configure git locally to use the SSH key to sign your commits.
   - Here's a script that will do that, edit accordingly.
     ```bash
@@ -50,14 +48,14 @@ to observe this security practice.
     git log --show-signature -1
     ```
 
-<img src="/assets/images/verified.png"></img>
+<img src="./assets/images/verified.png"></img>
 
 Your commits should now be verified from your account. This helps us ensure that valid users are
 contributing to this project. Unverified commits will be scrutinized and likely discarded.
 
 ## Syncing your Fork with the Upstream ProLUG Repo
 
-<img src="/assets/images/syncfork.png"></img>
+<img src="./assets/images/syncfork.png"></img>
 
 In an effort to minimize merge conflicts we strongly suggest forks remain up to date with
 the original repository before committing changes. This will help us reduce pull request management overhead.

@@ -1,6 +1,4 @@
-<img class="center" src="./assets/images/logo.png" alt="ProLUG Logo">
-
-# ProLUG
+# <img class="center" src="./assets/images/logo.png" alt="ProLUG Logo"> ProLUG
 
 ## Unit 1 Worksheet
 
