@@ -1,20 +1,4 @@
-<head>
-    <style>
-        .flex-container {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        }
-    </style>
-</head>
-<div class="flex-container">
-        <img src="./assets/images/logo.png" width="64" height="64">
-    <p>
-        <h1>The Professional Linux Users Group (ProLUG) Systems Administration Course Book</h1>
-    </p>
-</div>
-
-The Professional Linux Users Group (ProLUG) Systems Administration Course Book
+# <img src="./src/assets/images/logo.png" height="64" width="64"></img> The Professional Linux Users Group (ProLUG) Systems Administration Course Book
 
 ## Goals
 

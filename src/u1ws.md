@@ -22,7 +22,7 @@
 
 - [What is Vim?](https://github.com/vim/vim)
 - [The Linux Foundation](https://www.linux.org/pages/download/)
-- [Linux CLI Cheatsheets](https://developers.redhat.com/cheat-sheets/linux-commands-cheat-sheet?extIdCarryOver=true&sc_cid=701f2000001OH7EAAW)
+- [Linux CLI Cheatsheets](https://www.digitalocean.com/community/tutorials/linux-commands)
 
 ### Unit 1 Recording
 

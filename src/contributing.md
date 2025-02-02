@@ -1,18 +1,4 @@
-<head>
-    <style>
-        .flex-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-    </style>
-</head>
-<div class="flex-container">
-        <img src="./assets/images/logo.png" width="64" height="64">
-    <p>
-        <h1>Contributing to the ProLUG Linux Sysadmin Course Book</h1>
-    </p>
-</div>
+# Contributing to the ProLUG Linux Sysadmin Course Book
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
 contribute to this project. Below are a set of steps to ensure contributors are adhering
