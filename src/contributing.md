@@ -1,4 +1,4 @@
-<img src="/assets/images/logo.png"></img>
+<img src="./assets/images/logo.png"></img>
 
 # Contributing to the ProLUG Linux Sysadmin Course Book
 

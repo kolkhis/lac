@@ -1,4 +1,4 @@
-<img class="center" src="assets/images/logo.png" alt="ProLUG Logo">
+<img class="center" src="./assets/images/logo.png" alt="ProLUG Logo">
 
 # Title
 
@@ -16,11 +16,11 @@
 
 ---
 
-### Video (Embdedded YT Video)
+### Unit 1 Recording
 
 <iframe 
     width="100%" 
-    height="100%" 
+    height="720" 
     src="https://www.youtube.com/embed/eHB8WKWz2eQ" 
     title="Unit 1 Recording - ProLUG Linux Systems Administration Course - Free in Discord" 
     frameborder="0" 
