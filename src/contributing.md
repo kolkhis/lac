@@ -1,4 +1,9 @@
-# <img src="./assets/images/logo.png" width="48" height="48"></img> Contributing to the ProLUG Linux Sysadmin Course Book
+<div class="grid-layout">
+        <img src="./assets/images/logo.png" width="64" height="64">
+    <p>
+        <h1>Contributing to the ProLUG Linux Sysadmin Course Book</h1>
+    </p>
+</div>
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
 contribute to this project. Below are a set of steps to ensure contributors are adhering
@@ -60,9 +65,9 @@ contributing to this project. Unverified commits will be scrutinized and likely 
 In an effort to minimize merge conflicts we strongly suggest forks remain up to date with
 the original repository before committing changes. This will help us reduce pull request management overhead.
 
-<div class = warning
+<div class = warning>
 Pull requests with substantial merge conflicts may be rejected.
-></div>
+</div>
 
 You can do this from the GitHub web UI easily with the `Sync Fork` button. If you want to do this from the terminal, you can add a new `git remote` called `upstream`.
 
