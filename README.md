@@ -1,7 +1,6 @@
-# ![ProLUG Logo](/assets/images/logo.png) lac
-Linux System Administration for the Enterprise CourseWare
+# ![ProLUG Logo](/assets/images/logo.png)
+The Professional Linux Users Group (ProLUG) Systems Administration Course Book
 
----
 ## Goals
 
 The overarching goal of this project is to provide a free, open source Systems Administration course
