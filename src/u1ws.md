@@ -32,8 +32,11 @@ with peers is also expected; the goal is to compare and contrast ideas to build 
 knowledge.
 #### Discussion Post #1
 Scan the chapter here 
-*#link("https://google.github.io/building-secure-and-reliable-systems/raw/ch17.
+
+(TODO)
+#link("https://google.github.io/building-secure-and-reliable-systems/raw/ch17.
 html")* \
+
 for keywords and pull out what you think will help you to better understand how to triage an
 incident.
 Read the section called “Operation Security” in this same chapter: *#link("https://google.github.io/

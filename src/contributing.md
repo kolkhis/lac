@@ -50,7 +50,9 @@ contributing to this project. Unverified commits will be scrutinized and likely 
 ## Syncing your Fork with the Upstream ProLUG Repo 
 In an effort to minimize merge conflicts we strongly suggest forks remain up to date with 
 the original repository before committing changes. This will help us reduce pull request management overhead.
-Note: Pull requests with substantial merge conflicts may be rejected.
+
+[!WARNING]
+Pull requests with substantial merge conflicts may be rejected.
 
 You can do this from the GitHub web UI easily with the `Sync Fork` button. If you want to do this from the terminal, you can add a new `git remote` called `upstream`.  
 ```bash
