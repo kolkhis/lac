@@ -5,7 +5,7 @@
             gap: 20px;
         }
     </style>
-<div class="grid-layout">
+<div class="flex-container">
         <img src="./assets/images/logo.png" width="64" height="64">
     <p>
         <h1>Contributing to the ProLUG Linux Sysadmin Course Book</h1>

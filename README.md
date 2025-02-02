@@ -1,4 +1,4 @@
-<img src="./assets/images/logo.png" height="96" width="96"></img>
+<img src="./src/assets/images/logo.png" height="96" width="96"></img>
 
 The Professional Linux Users Group (ProLUG) Systems Administration Course Book
 
