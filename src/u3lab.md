@@ -47,14 +47,14 @@ After this, you may want to check the current state of the disks, as they retain
   This is an aside, before the lab. This is a way to test different read or writes into or out of your filesystems as you create them. Different types of raid and different disk setups will give different speed of read and write. This is a simple way to test them. Use these throughout the lab in each mount for fun and understanding.  
 ### Write tests (saving off write data – rename `/tmp/file` each time):
 
-- 1. Check `/dev/xvda` for a filesystem
+1. Check `/dev/xvda` for a filesystem
 	  
-```sh
+```bash
 blkid /dev/xvda
 ```
 
-- 2.  If it does not have one, make one
-	```sh
+2. If it does not have one, make one
+```bash
 mkfs.ext4 /dev/xvda
 ```
 
@@ -67,17 +67,18 @@ mkfs.ext4 /dev/xvda
 	  for i in `seq 1 10`; do time dd if=/dev/zero of=/space/testfile$i bs=1024k count=1000 | tee -a /tmp/speedtest1.basiclvm; done
 ```
 - Read tests:
-	- 6. 
-	  ```bash
-	  for i in `seq 1 10`; do time dd if=/space/testfile$i of=/dev/null; done
-	  ```
+6. 
+```bash
+for i in `seq 1 10`; do time dd if=/space/testfile$i of=/dev/null; done
+```
 - Cleanup:
-	- 7. 
-	  ```bash
-	  for i in `seq 1 10`; do rm -rf /space/testfile$i; done
-	  ```
+7. 
+```bash
+for i in `seq 1 10`; do rm -rf /space/testfile$i; done
+```
 
 > *IF you are re-creating a test without blowing away the filesystem, change the name or counting numbers of testfile* because that’s the only way to be sure there is not some type of filesystem caching going on to optimize. This is especially true in SAN write tests.*
+
 # LAB
 – start in root (`#`); `cd /root`
 #### LVM explanation and use within the system
