@@ -36,7 +36,7 @@ Outlined below are a set of objectives this repository attempts to provide.
 ## To Begin Contributing
 
 ProLUG asks all contributors to understand and adhere to the principles and guidelines detailed
-in the [contributing.md](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/CONTRIBUTING.md) markdown file.
+in the [contributing.md](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/contributing.md) markdown file.
 Contributors found significantly deviating from these policies will have their work discarded appropriately.
 
 Contributors will be provided with supplementary material to begin building out unit worksheet labs
@@ -44,7 +44,7 @@ and templates within the project managed issues board.
 
 To start contributing:
 
-- Read the [contributing.md](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/CONTRIBUTING.md) markdown
+- Read the [contributing.md](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/contributing.md) markdown
 - Understand the repository objectives
 - Request to be assigned a task within the repo [Issues](https://github.com/ProfessionalLinuxUsersGroup/lac/issues) tab
 - Fork this repository and create a development branch for eventual pull requests
