@@ -21,7 +21,7 @@ Do take your own notes as you go through the lab.. actually, do take you own not
 	- 2. `mkdir lvm_lab`
 	- 3. `cd lvm_lab`
 	- 4. `touch somefile`
-	- 5.`echo “this is a string of text” %3E somefile`
+	- 5.`echo “this is a string of text” > somefile`
 	- 6. `cat somefile`
 	- 7. `echo “this is a string of text” > somefile`
 	  Repeat 3 times  
@@ -72,21 +72,18 @@ blkid /dev/xvda
 mkfs.ext4 /dev/xvda
 ```
 
-- 3. `mkdir /space`      (If you don’t have it. Lab will tell you to later as well)
-- 4. `mount /dev/xvda /space`
+3. `mkdir /space`      (If you don’t have it. Lab will tell you to later as well)
+4. `mount /dev/xvda /space`
+5. Write tests
 
-#### Write Test:
-	- 5. 
 ```bash
-	  for i in `seq 1 10`; do time dd if=/dev/zero of=/space/testfile$i bs=1024k count=1000 | tee -a /tmp/speedtest1.basiclvm; done
+ for i in `seq 1 10`; do time dd if=/dev/zero of=/space/testfile$i bs=1024k count=1000 | tee -a /tmp/speedtest1.basiclvm; done
 ```
-- Read tests:
-6. 
+6. Read tests:
 ```bash
 for i in `seq 1 10`; do time dd if=/space/testfile$i of=/dev/null; done
 ```
-- Cleanup:
-7. 
+7. Cleanup:
 ```bash
 for i in `seq 1 10`; do rm -rf /space/testfile$i; done
 ```
