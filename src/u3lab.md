@@ -1,8 +1,22 @@
-## Required Materials
+# Unit 3 Lab
+---
+## Intro
+---
+Unit 3 Lab follows material covered in Unit 3 and it mostly deals with storage. Storage is a very general term and can be dissected into many subcategories but here we shall deal with LVM (Logical Volume Management), RAID (Redundant Array of Independent Disks) technology and even mention MDADM (short for "md" for Multiple Disks Administrator) in 2 different environment so let that not confuse you. We can use online VMs provoded by ProLUG or local homelab. Last one (MDADM) will have to be practiced in homelab only. Good pratice is to test both so you do not get confused and, naturally to practice as much as possible. 
 
-Rocky Linux 9.x
-`root` or `sudo` command access
-####  EXERCISES (Warmup to quickly run through your system and familiarize yourself)  
+Do take your own notes as you go through the lab.. actually, do take you own notes always. 
+### Resources
+---
+[The Complete Beginner's Guide to LVM in Linux](https://linuxhandbook.com/lvm-guide/)
+[Configuring and managing logical volumes](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/epub/configuring_and_managing_logical_volumes/creating-a-raid0-striped-logical-volume_configuring-raid-logical-volumes)
+[RAID 5 Setup with LVM: Data Recovery Tips Included](https://hetmanrecovery.com/recovery_news/how-to-create-software-raid-5-with-lvm.htm)
+
+## Required Materials
+---
+- Rocky Linux 9.x
+- `root` or `sudo` command access
+####  EXERCISES (Warmup to quickly run through your system and familiarize yourself)
+---
 	- 1. `cd ~`
 	- 2. `mkdir lvm_lab`
 	- 3. `cd lvm_lab`
@@ -27,7 +41,7 @@ Rocky Linux 9.x
 	- 14. `cat somefile | grep test | nl`
 	  If you want to preserve positional lines in file (know how much you’ve cut out when you grep something, or generally be able to find it in the unfiltered file for context, always `| nl` | before your `grep`  
 ## Pre Lab – Disk Speed tests
-
+---
 When using the ProLUG lab environment, you should always check that there are no other users on the system `w` or `who`.
   
 After this, you may want to check the current state of the disks, as they retain their information even after a reboot resets the rest of the machine.  
@@ -46,7 +60,7 @@ After this, you may want to check the current state of the disks, as they retain
   
   This is an aside, before the lab. This is a way to test different read or writes into or out of your filesystems as you create them. Different types of raid and different disk setups will give different speed of read and write. This is a simple way to test them. Use these throughout the lab in each mount for fun and understanding.  
 ### Write tests (saving off write data – rename `/tmp/file` each time):
-
+---
 1. Check `/dev/xvda` for a filesystem
 	  
 ```bash
@@ -80,9 +94,11 @@ for i in `seq 1 10`; do rm -rf /space/testfile$i; done
 > *IF you are re-creating a test without blowing away the filesystem, change the name or counting numbers of testfile* because that’s the only way to be sure there is not some type of filesystem caching going on to optimize. This is especially true in SAN write tests.*
 
 # LAB
+---
 – start in root (`#`); `cd /root`
-#### LVM explanation and use within the system
 
+#### LVM explanation and use within the system
+---
 1.  Check physical volumes on your server (my output may vary) - WARNING I replaced # (root) in following cli lines with $ (user) only because MarkDown uses # as comment and messes up my beautiful colors :) ... YOU have been warn - this is just a reproduction of reality, not reality itself - just like my personal Matrix.
   
   ```bash
@@ -232,6 +248,7 @@ for i in `seq 1 10`; do rm -rf /space/testfile$i; done
     lv_app   VolGroup01 -wi-ao----   19.90g
   ```
   ## More complex types of LVM
+  ---
   1. Create a `RAID 5` filesystem and mount it to the OS (For brevity’s sake we will be limiting show commands from here on out, please use `pvs`,`vgs`,`lvs` often for your own understanding)
   
   ```bash
@@ -288,6 +305,7 @@ for i in `seq 1 10`; do rm -rf /space/testfile$i; done
     Labels on physical volume "/dev/sdf" successfully wiped.
   ```
 ## Working with `MDADM` as another `RAID` option
+---
 - There could be a reason to use `MDADM` on the system. Read more about [[MDADM]].  For example you want raid handled outside of your `LVM` so that you can bring in sets of new disks already raided and treat them as their own Physical Volumes. Think, “I want to add another layer of abstraction so that even my `LVM` is unaware of the `RAID` levels.” This has special use case, but is still useful to understand.
 - May have to install mdadm yum:  `yum install mdadm`
 1. Create a raid5 with MDADM
