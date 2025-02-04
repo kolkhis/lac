@@ -7,9 +7,9 @@ Unit 3 Lab follows material covered in Unit 3 and it mostly deals with storage. 
 Do take your own notes as you go through the lab.. actually, do take you own notes always. 
 ### Resources
 ---
-[The Complete Beginner's Guide to LVM in Linux](https://linuxhandbook.com/lvm-guide/)
-[Configuring and managing logical volumes](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/epub/configuring_and_managing_logical_volumes/creating-a-raid0-striped-logical-volume_configuring-raid-logical-volumes)
-[RAID 5 Setup with LVM: Data Recovery Tips Included](https://hetmanrecovery.com/recovery_news/how-to-create-software-raid-5-with-lvm.htm)
+- [The Complete Beginner's Guide to LVM in Linux](https://linuxhandbook.com/lvm-guide/)
+- [Configuring and managing logical volumes](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/epub/configuring_and_managing_logical_volumes/creating-a-raid0-striped-logical-volume_configuring-raid-logical-volumes)
+- [RAID 5 Setup with LVM: Data Recovery Tips Included](https://hetmanrecovery.com/recovery_news/how-to-create-software-raid-5-with-lvm.htm)
 
 ## Required Materials
 ---
