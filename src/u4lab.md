@@ -287,7 +287,18 @@ We'll make a quick crontab entry and I'll point you [here](https://en.wikipedia.
 interested in learning more.
 
 Crontab format looks like this picture so let's do these steps
-<!-- TODO: Add visual representation of crontabs. -->
+<!-- TODO: Add visual representation of crontabs. (sub TODO: Add actual picture) -->
+```bash
+# .--------------- Minute (0 - 59)
+# | .------------- Hour (0 - 23)
+# | |  .---------- Day of month (1 - 31)
+# | | | .--------- Month (1 - 12) OR jan,feb,mar,apr, etc.
+# | | | | .------- Day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# | | | | | 
+# | | | | |    
+  * * * * *  user    command to be executed
+```
+
 
 1. `crontab –e`
 2. Add this line (using vi commands – Revisit vimtutor if you need help with them)
