@@ -46,8 +46,8 @@ We also talk about the incident response lifecycle -- the methods in which incid
 2. Let's find what provides iostat by looking in the YUM (we'll explore more in later lab)
    ```bash
    dnf whatprovides iostat
-   #should tell you that sysstat provides iostat
    ```
+   - This should tell you that `sysstat` provides `iostat`.  
 
 3. Let's check to see if we have it
    ```bash
@@ -63,9 +63,12 @@ We also talk about the incident response lifecycle -- the methods in which incid
    ```bash
    rpm –qa | grep –I sysstat
    rpm –qi sysstat<version>
-   iostat #we'll look at this more in a bit
-   # Might be good to ensure you have vim on your system now too. This is the same procedure as above.
-   rpm –qa | grep –i vim
+   iostat # We'll look at this more in a bit
+   ```
+   While we're working with packages, make sure that Vim is on your system.  
+   This is the same procedure as above.  
+   ```bash
+   rpm –qa | grep –i vim  # Check if vim is installed
    # If it's there, good.
    dnf install vim
    # If it's not, install it so you can use vimtutor later (if you need help with vi commands)
@@ -117,11 +120,12 @@ pvs # What system are we running if we have physical volumes?
 
 3. Check the amount of RAM
    ```bash
-   a. cat /proc/meminfo
-   b. free
-   c. free –m
+   cat /proc/meminfo
+   free
+   free –m
    ```
-   What do each of these commands show you? How are they useful?
+    - What do each of these commands show you? How are they useful?
+
 
 4. Check the number of processors and processor info
    ```bash
@@ -137,7 +141,7 @@ pvs # What system are we running if we have physical volumes?
     - Check some quick processor statistics
   ```bash
   iostat –c
-  iostat –c 2 # Wait for a while, then use crtl + c to break. What did this do? Try changing this to a different number.
+  iostat –c 2 # Wait for a while, then use Ctrl+C to break. What did this do? Try changing this to a different number.
   iostat –c 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
   ```
   Does this look familiar to what we did earlier with `iostat`?
@@ -186,8 +190,6 @@ pvs # What system are we running if we have physical volumes?
       sar –r | more
       ```
 
-
-
 Sar is a tool that shows the 10 minute weighted average of the system for the last day.
 
 Sar is tremendously useful for showing long periods of activity and system load.  
@@ -199,15 +201,16 @@ Sar can also be run interactively. Run the command `yum whatprovides sar` and yo
 see that it is the `sysstat` package.  
 You may have guessed that sar runs almost exactly like `iostat`.  
 
-* Try the same commands from earlier, but with their interactive information:
+- Try the same commands from earlier, but with their interactive information:
   ```bash
-  sar 2  # ctrl + c to break
+  sar 2  # Ctrl+C to break
   sar 2 5
-  or
+  # or
   sar –r 2
   sar –r 2 5
   ```
-* Check sar logs for previous daily usage
+
+- Check sar logs for previous daily usage
   ```bash
   cd /var/log/sa/
   ls
@@ -219,9 +222,8 @@ You may have guessed that sar runs almost exactly like `iostat`.
   Read `man sar` for more info.
 
 
-- Sar logs are not kept in a readable format, they are binary.
-  So if you needed to dump all the sar logs from a server, you'd have to output it to a file that is readable.
-
+Sar logs are not kept in a readable format, they are binary.
+So if you needed to dump all the sar logs from a server, you'd have to output it to a file that is readable.
 You could do something like this:
 - Gather information and move to the right location
   ```bash
