@@ -274,7 +274,7 @@ any tasks it needs to run.
 It checks in a few places in the system for these tasks.  
 It can either read from a crontab or it can execute tasks from files found in the following locations.
 
-`/var/spool/cron` is one location you can ls to check if there are any crontabs on your system
+`/var/spool/cron` is one location you can `ls` to check if there are any crontabs on your system.  
 
 The other locations are directories found under:
 ```bash
@@ -287,21 +287,20 @@ We'll make a quick crontab entry and I'll point you [here](https://en.wikipedia.
 interested in learning more.
 
 Crontab format looks like this picture so let's do these steps
-<!-- TODO: Add visual representation of crontabs. (sub TODO: Add actual picture) -->
 ```bash
-# .--------------- Minute (0 - 59)
-# | .------------- Hour (0 - 23)
-# | |  .---------- Day of month (1 - 31)
-# | | | .--------- Month (1 - 12) OR jan,feb,mar,apr, etc.
-# | | | | .------- Day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
-# | | | | | 
+# .------- Minute (0 - 59)
+# | .------- Hour (0 - 23)
+# | | .------- Day of month (1 - 31)
+# | | | .------- Month (1 - 12) 
+# | | | | .------- Day of week (0 - 6) (Sunday to Saturday - Sunday is also 7 on some systems)
+# | | | | |                               
 # | | | | |    
-  * * * * *  user    command to be executed
+  * * * * *  command to be executed
 ```
 
 
 1. `crontab –e`
-2. Add this line (using vi commands – Revisit vimtutor if you need help with them)
+2. Add this line (using vi commands – Revisit `vimtutor` if you need help with them)
 ```bash
 * * * * * echo 'this is my cronjob running at' `date` | wall
 ```
@@ -311,7 +310,7 @@ Crontab format looks like this picture so let's do these steps
 6. This will quickly become very annoying, so I recommend removing that line, or commenting it
    out (`#`) from that file.
 
-I can change all kinds of things about this to execute at different times.
+We can change all kinds of things about this to execute at different times.
 The one above, we executed every minute through all hours, of every day, of every month.
 We could also have done some other things:
 
