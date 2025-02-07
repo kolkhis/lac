@@ -1,7 +1,11 @@
-# Title
+# Unit 4 Lab - Operate Running Systems
 --- 
+
 ## Intro
-1 paragraph or less intro to topic
+Unit 4 is all about analyzing systems that are running to detect and mitigate potential problems.  
+We dive into how to use logging tools like `sar`, `dmesg`, and `journald`, monitoring system resource usage in real-time, and how to work with running services/processes.  
+We also talk about the incident response lifecycle -- the methods in which incidents are handled.  
+
 ---
 ### Resources / Important Links
 - [Cron Wiki page](https://en.wikipedia.org/wiki/Cron)
