@@ -2,8 +2,6 @@
 
 # Unit 2 Worksheet
 
----
-
 ## Intro
 Unit 2 is all about essential tools.  
 Working with files, redirecting output, and managing permissions are all fundamental
@@ -24,11 +22,11 @@ share"
 ---
 
 
-## Instructions  
+### Instructions  
 A major aspect of this course is to intake, comprehend, and discuss the assigned topics. Take the time to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of knowledge.
 
 
-### Unit 2 Discussion Post 1
+#### Unit 2 Discussion Post 1
 Think about how week 1 went for you.  
 1.	Do you get everything you needed to done?  
 
@@ -37,7 +35,7 @@ Think about how week 1 went for you.
 3.	How well did you take notes during the lecture? Do you need to improve this?  
  
 
-### Unit 2 Discussion Post 2 
+#### Unit 2 Discussion Post 2 
 Read a blog, check a search engine, or ask an AI about SELINUX.  
 What is the significance of contexts? What are the significance of labels?  
 
