@@ -7,6 +7,13 @@ Unit 2 is all about essential tools.
 Working with files, redirecting output, and managing permissions are all fundamental
 skills that any Linux sysadmin will need.  
 
+In this unit, we cover:  
+* How to use ACLs to manage file permissions, and introduces SELinux as an additional layer of security that adds labels and contexts to files and processes.
+* The importance of note-taking for systems administrators and engineers
+* Difference between troubleshooting in systems administration versus systems engineering.
+* Security and the importance of availability as a primary goal for systems administrators.
+* Key networking concepts such as IP addresses, routing, and DNS are introduced, along with tools for troubleshooting network issues
+
 
 ### Video (Embdedded YT Video)
 <iframe
