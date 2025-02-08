@@ -58,6 +58,11 @@ Think about how week 1 went for you.
 
 3.	How well did you take notes during the lecture? Do you need to improve this?  
  
+<div class="warning">
+Submit your input by following the link below:
+</div>
+
+- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1098309490681598072/1287087938806743121)
 
 #### Unit 2 Discussion Post 2 
 Read a blog, check a search engine, or ask an AI about SELINUX.  
@@ -80,6 +85,13 @@ You may use any online resources to help you answer this.
 This is not a trick and it is not a “one answer solution”.  
 This is for you to think through.  
 </div>
+
+<div class="warning">
+Submit your input by following the link below:
+</div>
+
+- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1098309490681598072/1287088271096025239)
+
 
 ---
 
