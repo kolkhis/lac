@@ -1,5 +1,7 @@
-<img class="center" src="images/proluglogo.svg" alt="ProLUG Logo">
+<img class="center" src="images/proluglogo.svg" alt="ProLUG Logo">  
+
 # Unit 2 Worksheet
+
 ---
 
 ## Intro
@@ -23,8 +25,7 @@ share"
 
 
 ## Instructions  
-Fill out this worksheet as you progress through the lab and discussions.  
-
+A major aspect of this course is to intake, comprehend, and discuss the assigned topics. Take the time to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of knowledge.
 
 
 ### Unit 2 Discussion Post 1
