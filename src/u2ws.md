@@ -72,9 +72,14 @@ They cannot access just one (1) of the servers.
 When you review the differences in the servers you see that the server they cannot access is running SELINUX.  
 On checking other users have no problem getting into the system.  
 You find nothing in the documentation (typical) about this different system or how these users are accessing it.  
-What do you do?  
-Where do you check? (you may use any online resources to help you answer this. This is not a trick and it is not a “one answer solution”.  This is for you to think through.)  
 
+What do you do?  
+Where do you check? 
+<div class="warning">
+You may use any online resources to help you answer this.  
+This is not a trick and it is not a “one answer solution”.  
+This is for you to think through.  
+</div>
 
 ---
 
