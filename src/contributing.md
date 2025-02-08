@@ -11,6 +11,7 @@ We also ask all contributors to observe GitHub decorum and refrain from offensiv
 - [Signing your Git Commits with SSH](#signing-your-git-commits-with-ssh)
 - [Syncing your Fork with the Upstream ProLUG Repo](#syncing-your-fork-with-the-upstream-prolug-repo)
 - [Basic Contribution Workflow](#basic-contribution-workflow)
+  - [Comment First](#comment-first)
   - [Create a Fork](#create-a-fork)
   - [Clone the Fork to your Local Machine](#clone-the-fork-to-your-local-machine)
   - [Create a New Branch](#create-a-new-branch)
@@ -85,6 +86,16 @@ Then your fork is up to date with the original upstream repo.
 
 You'll create your own fork of the repository using the GitHub web UI, create a
 branch, make changes, push to your fork, then open a pull request.
+
+
+### Comment First
+
+If you'd like to work on a specific worksheet or lab, please let us know first by 
+commenting on the issue so you can be assigned to it.  
+This way, other contributors can see that someone is already working on it.  
+
+We're doing this to prevent multiple people working on the same thing without knowing.  
+
 
 ### Create a Fork
 
