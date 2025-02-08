@@ -11,6 +11,7 @@ We also ask all contributors to observe GitHub decorum and refrain from offensiv
 - [Signing your Git Commits with SSH](#signing-your-git-commits-with-ssh)
 - [Syncing your Fork with the Upstream ProLUG Repo](#syncing-your-fork-with-the-upstream-prolug-repo)
 - [Basic Contribution Workflow](#basic-contribution-workflow)
+  - [Comment First](#comment-first)
   - [Create a Fork](#create-a-fork)
   - [Clone the Fork to your Local Machine](#clone-the-fork-to-your-local-machine)
   - [Create a New Branch](#create-a-new-branch)
