@@ -8,6 +8,7 @@
 - [Unit 1](./u1intro.md)
     - [Work Sheet](./u1ws.md)
     - [Lab](./u1lab.md)
+    - [Unit 1 Bonus](./u1b.md)
 - [Unit 2](./u2intro.md)
     - [Work Sheet](./u2ws.md)
     - [Lab](./u2lab.md)
