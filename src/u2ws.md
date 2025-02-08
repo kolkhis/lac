@@ -1,8 +1,24 @@
-<img class="center" src="images/proluglogo.svg" alt="ProLUG Logo">  
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<div class="flex-container">
+        <img src="./assets/images/logo.png" width="64" height="64">
+    <p>
+        <h1>ProLUG 101</h1>
+    </p>
+</div>
 
-# Unit 2 Worksheet
+## Unit 2 Worksheet  
 
-## Intro
+---
+
+## Intro  
 Unit 2 is all about essential tools.  
 Working with files, redirecting output, and managing permissions are all fundamental
 skills that any Linux sysadmin will need.  
