@@ -86,6 +86,16 @@ Then your fork is up to date with the original upstream repo.
 You'll create your own fork of the repository using the GitHub web UI, create a
 branch, make changes, push to your fork, then open a pull request.
 
+
+### Comment First
+
+If you'd like to work on a specific worksheet or lab, please let us know first by 
+commenting on the issue so you can be assigned to it.  
+This way, other contributors can see that someone is already working on it.  
+
+We're doing this to prevent multiple people working on the same thing without knowing.  
+
+
 ### Create a Fork
 
 - Go to the [original repository link](https://github.com/ProfessionalLinuxUsersGroup/lac).
