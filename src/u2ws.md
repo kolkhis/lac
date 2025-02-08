@@ -31,7 +31,7 @@ In this unit, we cover:
 * Key networking concepts such as IP addresses, routing, and DNS are introduced, along with tools for troubleshooting network issues
 
 
-### Video (Embdedded YT Video)
+### Unit 2 Recording
 
 <iframe 
     style="width: 100%; height: 100%; border: none;
