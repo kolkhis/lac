@@ -14,6 +14,7 @@
 - [Unit 3](./u3intro.md)
     - [Work Sheet](./u3ws.md)
     - [Lab](./u3lab.md)
+    - [Unit 3 Bonus](./u3b.md)
 - [Unit 4](./u4intro.md)
     - [Work Sheet](./u4ws.md)
     - [Lab](./u4lab.md)
