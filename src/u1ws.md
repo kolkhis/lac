@@ -1,11 +1,5 @@
 <head>
-    <style>
-        .flex-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-    </style>
+    <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
 </head>
 <div class="flex-container">
         <img src="./assets/images/logo.png" width="64" height="64">
@@ -16,7 +10,7 @@
 
 ## Unit 1 Worksheet
 
-<hr>
+---
 
 ### Resources / Important Links
 
@@ -37,9 +31,10 @@
     allowfullscreen>
 </iframe>
 
-<hr>
 
-### Instructions
+## Instructions
+
+---
 
 A major aspect of this course is to intake, comprehend, and discuss the assigned topics. Take the time
 to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction
@@ -48,37 +43,63 @@ knowledge.
 
 #### Discussion Post #1
 
-Scan the chapter here <https://google.github.io/building-secure-and-reliable-systems/raw/ch17.html>
-for keywords and pull out what you think will help you to better understand how to triage an incident.
+Using a 0-10 system, rate yourself on how well you think you know each topic in the table below. (You do not have to post this rating).
 
-Read the section called “Operation Security” in this same chapter: <https://google.github.io/building-secure-and-reliable-systems/raw/ch17.html>
-what important concepts do you learn about how we behave during an operational response to an incident?
+<div style="display: flex; justify-content: left;">
+
+| Skill | High (8-10) | Mid (4-7) | Low (0-3) | Total |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+| Linux | | | | |
+| Storage | | | | |
+| Security | | | | |
+| Networking | | | | |
+| Git | | | | |
+| Automation | | | | |
+| Monitoring | | | | |
+| Database | | | | |
+| Cloud | | | | |
+| Kubernetes | | | | |
+| Total | | | | |
+
+</div>
+
+Next, answer these questions here:
+
+1. What do you hope to learn in this course?
+
+2. What type of career path are you shooting for?
+
 
 <div class="warning">
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1320140773412438091)
+- [Link to Discussion Post 1](Placeholder)
 
 #### Discussion Post #2
 
-Sys Admin Book Style Guide Handout 2 Page 2 of 8
-Ask google, find a blog, or ask an AI about high availability. (Here’s one if you need it: <https://docs.aws.amazon.com/pdfs/whitepapers/latest/real-time-communication-on-aws/real-time-communication-on-aws.pdf#high-availability-and-scalability-on-aws>)
+1. Post a job that you are interested in from a local job website. (link or image)
 
-What are some important terms you read about?
-Why do you think understanding HA will help you better in the context of triaging incidents?
+2. What do you know how to do in the posting?
+
+3. What don't you know how to do in the posting?
+
+4. What are you doing to close the gap? What can you do to remedy the difference?
+
 
 <div class="warning">
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1320140773412438091)
+- [Link to Discussion Post 2](Placeholder)
 
-<hr>
 
 ## Definitions
+---
 
 Kernel:
+
+Kernel Args:
 
 OS Version:
 
@@ -88,9 +109,9 @@ Mount Points:
 
 Text Editor:
 
-<hr>
 
 ## Digging Deeper
+---
 
 1. Use vimtutor and see how far you get. What did you learn that you did not know about vi/vim?
 
@@ -98,9 +119,9 @@ Text Editor:
 
 3. Go to <https://www.youtube.com/watch?v=d8XtNXutVto> and see how far you get with vim. What did you learn that you did not already know about vi/vim?
 
-<hr>
 
 ## Reflection Questions
+---
 
 1. What questions do you still have about this week?
 
