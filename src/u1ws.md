@@ -12,6 +12,18 @@
 
 ---
 
+## Introduction
+
+Welcome to Unit 1 of the Professional Linux Users Group (ProLUG) Systems Administration Course.
+With this worksheet students will explore the foundations of Linux and its many constituent parts.
+
+Specifically, this unit and worksheet aim to cover concepts such as the command line interface (CLI), 
+commands and syntax, command line tools, Vim (visual editor improved), the Linux Kernel, and much more.
+
+Students are strongly encouraged to learn from these units and apply what they learn. Applying what you 
+learn offers no better teach. Again welcome, and good luck in your studies.
+
+
 ### Resources / Important Links
 
 - [What is Vim?](https://github.com/vim/vim)
@@ -20,7 +32,7 @@
 
 ### Unit 1 Recording
 
-<iframe 
+<iframe
     style="width: 100%; height: 100%; border: none;
     aspect-ratio: 16/9; border-radius: 1rem; background:black"
     src="https://www.youtube.com/embed/eHB8WKWz2eQ"
