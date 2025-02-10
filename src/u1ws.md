@@ -4,7 +4,7 @@
 <div class="flex-container">
         <img src="./assets/images/logo.png" width="64" height="64">
     <p>
-        <h1>ProLUG 101</h1>
+        <h1>Linux Fundamentals and Systems Editing Tools</h1>
     </p>
 </div>
 
