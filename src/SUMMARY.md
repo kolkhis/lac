@@ -2,6 +2,7 @@
 
 - [Intro](./intro.md)
 - [Contributing](./contributing.md)
+    - [Local Testing](./development.md)
 - [Contributors](./contributors.md)
 - [Resources](./resources.md)
 - [About ProLUG](./prolug.md)
