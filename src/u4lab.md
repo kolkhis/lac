@@ -307,7 +307,6 @@ Crontab format looks like this picture so let's do these steps
   * * * * *  command to be executed
 ```
 
-
 1. `crontab –e`
 2. Add this line (using vi commands – Revisit `vimtutor` if you need help with them)
 ```bash
@@ -336,6 +335,14 @@ We could also have done some other things:
 * The first minute of every 4th hour:
   ```bash
   1 */4 * * *
+  ```
+
+---
+
+- NOTE: If you're adding cron jobs to the crontab as the root user, you can also
+  specify the user to run the command as.  
+  ```bash
+  * * * * * <user> <command>
   ```
 
 There's a lot there to explore, I recommend looking into [the Cron wiki](https://en.wikipedia.org/wiki/Cron) or [tldp.org's cron guide](http://www.tldp.org/LDP/lame/LAME/linux-admin-made-easy/using-cron.html) for more information.
