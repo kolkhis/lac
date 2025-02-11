@@ -1,5 +1,14 @@
-# Unit 4 Lab - Operate Running Systems
---- 
+<head>
+    <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
+</head>
+<div class="flex-container">
+        <img src="./assets/images/logo.png" width="64" height="64">
+    <p>
+        <h1>Unit 4 Lab - Operating Running Systems</h1>
+    </p>
+</div>
+
+
 
 ## Intro
 Unit 4 is all about analyzing systems that are running to detect and mitigate potential problems.  
