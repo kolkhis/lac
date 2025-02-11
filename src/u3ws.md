@@ -47,8 +47,8 @@ Scan the chapter [here](https://google.github.io/building-secure-and-reliable-sy
 
 Read the section called "Operation Security" in this same chapter: [Building Secure and Reliable Systems](https://google.github.io/building-secure-and-reliable-systems/raw/ch17.html)
 
-1. What important concepts do you learn about how we behave during an 
-operational response to an incident?
+1. What important concepts do you learn about how we behave during an
+   operational response to an incident?
 
 <div class="warning">
 Submit your input by following the link below:
@@ -60,8 +60,8 @@ Submit your input by following the link below:
 
 Ask Google, find a blog, or ask an AI about high availability. (Here's one if you need it: [AWS Real-Time Communication Whitepaper](https://docs.aws.amazon.com/pdfs/whitepapers/latest/real-time-communication-on-aws/real-time-communication-on-aws.pdf#high-availability-and-scalability-on-aws)
 
-1. What are some important terms you read about? Why do you think understanding 
-HA will help you better in the context of triaging incidents?
+1. What are some important terms you read about? Why do you think understanding
+   HA will help you better in the context of triaging incidents?
 
 <div class="warning">
 Submit your input by following the link below:
@@ -95,7 +95,6 @@ Mean Time to Recover/Restore (MTTR):
 
 Mean Time Between Failures (MTBF):
 
-
 ## Digging Deeper
 
 ---
@@ -103,10 +102,9 @@ Mean Time Between Failures (MTBF):
 1. If uptime is so important to us, why is it so important to us to also understand how our systems can fail? Why would we focus on the thing that does not drive uptime?
 
 2. Start reading about SLOs: [Implementing SLOs](https://sre.google/workbook/implementing-slos/)
-How does this help you operationally?
-Does it make sense that keeping systems within defined parameters will help keep 
-them operating longer?
-
+   How does this help you operationally?
+   Does it make sense that keeping systems within defined parameters will help keep
+   them operating longer?
 
 ## Reflection Questions
 
@@ -115,4 +113,3 @@ them operating longer?
 1. What questions do you still have about this week?
 
 2. How are you going to use what you've learned in your current role?
-
