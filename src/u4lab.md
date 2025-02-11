@@ -47,7 +47,7 @@ We also talk about the incident response lifecycle -- the methods in which incid
    ```bash
    dnf whatprovides iostat
    ```
-   - This should tell you that `sysstat` provides `iostat`.  
+    - This should tell you that `sysstat` provides `iostat`.  
 
 3. Let's check to see if we have it
    ```bash
@@ -83,21 +83,30 @@ We also talk about the incident response lifecycle -- the methods in which incid
    uname
    uname -a
    uname –r
-   # `man uname` to see what those options mean if you don't recognize the values
-   rpm -qa | grep -i kernel # What is your kernel number? Highlight it (copy in putty)
-   rpm –qi <kernel from earlier> # What does this tell you about your kernel? 
-                                   # When was the kernel last updated? 
-                                   # What license is your kernel released under?
    ```
+   Run `man uname` to see what those options mean if you don't recognize the values
+   ```bash
+   rpm -qa | grep -i kernel 
+   ```
+   What is your kernel number? Highlight it (copy in putty)
+   ```bash
+   rpm –qi <kernel from earlier>  
+   ```
+   What does this tell you about your kernel? 
+   When was the kernel last updated? 
+   What license is your kernel released under?
+
+
 
 2. Check the number of disks
    ```bash
    fdisk -l
    ls /dev/sd*
    ```
-   When might this command be useful? What are we assuming about the disks for this to
-   work? How many disks are there on this system? How do you know if it's a partition or a
-   disk?
+    * When might this command be useful?  
+    * What are we assuming about the disks for this to work?  
+    * How many disks are there on this system?  
+    * How do you know if it's a partition or a disk?
 
 ---
 
@@ -105,8 +114,8 @@ We also talk about the incident response lifecycle -- the methods in which incid
 pvs # What system are we running if we have physical volumes?
     # What other things can we tell with vgs and lvs?
 ```
-- Use `pvdisply`, `vgdisplay`, and `lvdisplay` to look at your carved up volumes.
-  Thinking back to last week's lab, what might be interesting from each of those?
+- Use `pvdisply`, `vgdisplay`, and `lvdisplay` to look at your carved up volumes.  
+  Thinking back to last week's lab, what might be interesting from each of those?  
 - Try a command like `lvdisplay | egrep "Path|Size"` and see what it shows.
     - Does that output look useful?
     - Try to `egrep` on some other values. Separate with `|` between search items.
@@ -114,8 +123,8 @@ pvs # What system are we running if we have physical volumes?
 - Check some quick disk statistics
   ```bash
   iostat –d
-  iostat –d 2 #Wait for a while, then use crtl + c to break. What did this do? Try changing this to a different number.
-  iostat –d 2 5 #Don't break this, just wait. What did this do differently? Why might this be useful?
+  iostat –d 2   # Wait for a while, then use crtl + c to break. What did this do? Try changing this to a different number.
+  iostat –d 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
   ```
 
 3. Check the amount of RAM
@@ -151,8 +160,8 @@ pvs # What system are we running if we have physical volumes?
    uptime
    man uptime
    ```
-   Read the man for uptime and figure out what those 3 numbers represent. Referencing
-   this server, do you think it is under high load? Why or why not?
+   Read `man uptime` and figure out what those 3 numbers represent.  
+   Referencing this server, do you think it is under high load? Why or why not?
 
 6. Check who has recently logged into the server and who is currently in
    ```bash
