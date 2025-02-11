@@ -2,13 +2,15 @@
     <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
 </head>
 <div class="flex-container">
-        <img src="./assets/images/logo.png" width="64" height="64">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Unit 4 Lab - Operating Running Systems</h1>
+        <h1>Operating Running Systems and Handling Incidents</h1>
     </p>
 </div>
 
+## Unit 4 Lab
 
+---
 
 ## Intro
 Unit 4 is all about analyzing systems that are running to detect and mitigate potential problems.  
