@@ -300,11 +300,10 @@ ls -ld /etc/cron*
 ```
 These should be self-explanatory in their use.
 If you want to see if the user you are running has a crontab, use the command `crontab –l`.
-If you want to edit (using your default editor, probably `vi`), use `crontab –e `
-We'll make a quick crontab entry and I'll point you [here](https://en.wikipedia.org/wiki/Cron) if you're
-interested in learning more.
+If you want to edit (using your default editor, probably `vi`), use `crontab –e`.  
+We'll make a quick crontab entry and I'll point you [here](https://en.wikipedia.org/wiki/Cron) if you're interested in learning more.
 
-Crontab format looks like this picture so let's do these steps
+Crontab format looks like this picture:  
 ```bash
 # .------- Minute (0 - 59)
 # | .------- Hour (0 - 23)
@@ -315,6 +314,7 @@ Crontab format looks like this picture so let's do these steps
 # | | | | |    
   * * * * *  command to be executed
 ```
+Let's do these steps.  
 
 1. `crontab –e`
 2. Add this line (using vi commands – Revisit `vimtutor` if you need help with them)
