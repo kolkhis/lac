@@ -17,12 +17,11 @@
 Welcome to Unit 1 of the Professional Linux Users Group (ProLUG) Systems Administration Course.
 With this worksheet students will explore the foundations of Linux and its many constituent parts.
 
-Specifically, this unit and worksheet aim to cover concepts such as the command line interface (CLI), 
+Specifically, this unit and worksheet aim to cover concepts such as the command line interface (CLI),
 commands and syntax, command line tools, Vim (visual editor improved), the Linux Kernel, and much more.
 
-Students are strongly encouraged to learn from these units and apply what they learn. Applying what you 
+Students are strongly encouraged to learn from these units and apply what they learn. Applying what you
 learn offers no better teach. Again welcome, and good luck in your studies.
-
 
 ### Resources / Important Links
 
@@ -43,7 +42,6 @@ learn offers no better teach. Again welcome, and good luck in your studies.
     allowfullscreen>
 </iframe>
 
-
 ## Instructions
 
 ---
@@ -59,19 +57,19 @@ Using a 0-10 system, rate yourself on how well you think you know each topic in 
 
 <div style="display: flex; justify-content: left;">
 
-| Skill | High (8-10) | Mid (4-7) | Low (0-3) | Total |
-| :-----: | :-----: | :-----: | :-----: | :-----: |
-| Linux | | | | |
-| Storage | | | | |
-| Security | | | | |
-| Networking | | | | |
-| Git | | | | |
-| Automation | | | | |
-| Monitoring | | | | |
-| Database | | | | |
-| Cloud | | | | |
-| Kubernetes | | | | |
-| Total | | | | |
+|   Skill    | High (8-10) | Mid (4-7) | Low (0-3) | Total |
+| :--------: | :---------: | :-------: | :-------: | :---: |
+|   Linux    |             |           |           |       |
+|  Storage   |             |           |           |       |
+|  Security  |             |           |           |       |
+| Networking |             |           |           |       |
+|    Git     |             |           |           |       |
+| Automation |             |           |           |       |
+| Monitoring |             |           |           |       |
+|  Database  |             |           |           |       |
+|   Cloud    |             |           |           |       |
+| Kubernetes |             |           |           |       |
+|   Total    |             |           |           |       |
 
 </div>
 
@@ -80,7 +78,6 @@ Next, answer these questions here:
 1. What do you hope to learn in this course?
 
 2. What type of career path are you shooting for?
-
 
 <div class="warning">
 Submit your input by following the link below:
@@ -98,15 +95,14 @@ Submit your input by following the link below:
 
 4. What are you doing to close the gap? What can you do to remedy the difference?
 
-
 <div class="warning">
 Submit your input by following the link below:
 </div>
 
 - [Link to Discussion Post 2](Placeholder)
 
-
 ## Definitions
+
 ---
 
 Kernel:
@@ -121,8 +117,8 @@ Mount Points:
 
 Text Editor:
 
-
 ## Digging Deeper
+
 ---
 
 1. Use vimtutor and see how far you get. What did you learn that you did not know about vi/vim?
@@ -131,8 +127,8 @@ Text Editor:
 
 3. Go to <https://www.youtube.com/watch?v=d8XtNXutVto> and see how far you get with vim. What did you learn that you did not already know about vi/vim?
 
-
 ## Reflection Questions
+
 ---
 
 1. What questions do you still have about this week?
