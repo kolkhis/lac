@@ -49,7 +49,7 @@ A major aspect of this course is to intake, comprehend, and discuss the assigned
 
 Think about how week 1 went for you.  
 
-1. Do you get everything you needed to done?  
+1. Did you get everything you needed to done?  
 
 2. Do you need to allocate more time to the course, and if so, how do you plan to do it?  
 
