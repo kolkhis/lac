@@ -350,8 +350,8 @@ We could also have done some other things:
 
 ---
 
-- NOTE: If you're adding cron jobs to the crontab as the root user, you can also
-  specify the user to run the command as.  
+- NOTE: If you're adding system-wide cron jobs (`/etc/crontab`), you can also specify 
+  the user to run the command as.  
   ```bash
   * * * * * <user> <command>
   ```
