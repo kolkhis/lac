@@ -1,40 +1,37 @@
 <head>
-    <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
+  <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
 </head>
 <div class="flex-container">
-        <img src="./assets/images/logo.png" width="64" height="64">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Developing the Systems Administration Course Locally</h1>
+        <h1>Contributing to the ProLUG Linux Sysadmin Course Book</h1>
     </p>
 </div>
 
-It is strongly encouraged for contributors to test their changes before making 
-commits. To help facilitate this process a set of instructions and guidelines 
-are provided below. These guidelines are by no means a requirement or the only 
+It is strongly encouraged for contributors to test their changes before making
+commits. To help facilitate this process a set of instructions and guidelines
+are provided below. These guidelines are by no means a requirement or the only
 set of procedures to locally develop on this project.
 
-The examples, code, and commands provided below were developed using such 
+The examples, code, and commands provided below were developed using such
 technologies as Ansible, containers, bash scripts, and more.
 
 ## Build Dependencies
 
 ---
 
-The ProLUG Linux Administration Course (LAC) utilizes [mdBook](https://github.com/rust-lang/mdBook) 
-(markdown Book), a friendly and popular markdown utility that quickly exports 
+The ProLUG Linux Administration Course (LAC) utilizes [mdBook](https://github.com/rust-lang/mdBook)
+(markdown Book), a friendly and popular markdown utility that quickly exports
 files and web structures for documentation or general website use cases.
 
-
-Utilizing mdBook, this course then deploys the exported web structure to a 
+Utilizing mdBook, this course then deploys the exported web structure to a
 [Git Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) and runner that then produces an easily navigable website.
-
 
 Below is the current workflow that deploys the Git Page for the course:
 
 <img src="./assets/images/flow.png"></img>
 
-
-To achieve this workflow locally the following environment and dependencies are 
+To achieve this workflow locally the following environment and dependencies are
 required:
 
 <dl>
@@ -52,22 +49,21 @@ required:
 
 ---
 
-Below is a set of scripts and Ansible-Playbooks that can quickly achieve this 
-environment in an automated fashion. They are only designed to "standup" these 
-machines, they are otherwise unintelligent and will not manage or cleanup 
-environments if things go awry.  
+Below is a set of scripts and Ansible-Playbooks that can quickly achieve this
+environment in an automated fashion. They are only designed to "standup" these
+machines, they are otherwise unintelligent and will not manage or cleanup
+environments if things go awry.
 
 ### Ansible-Playbook
 
-<https://github.com/ProfessionalLinuxUsersGroup/lac/src/assets/ansible-playbook.yml>
+<https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/assets/deploy/ansible-playbook.yml>
 
-To use this playbook, your machine(s) must be configured correctly for Ansible. 
-If you don't know the requirements to administer and Ansible machine, documentation 
+To use this playbook, your machine(s) must be configured correctly for Ansible.
+If you don't know the requirements to administer and Ansible machine, documentation
 has been provided below.
 
 Getting started with Ansible:  
 <https://docs.ansible.com/ansible/latest/getting_started/index.html>
-
 
 ### Bash Script
 
@@ -77,7 +73,7 @@ Export and execute this script to your Rocky Linux machine/container.
 {Placeholder}
 ```
 
-#### From here you can use such commands from your localhost to implement changes:  
+#### From here you can use such commands from your localhost to implement changes:
 
 ```bash
 cd {working lac directory}
@@ -85,13 +81,13 @@ cd {working lac directory}
 systemctl restart {httpd or apache}
 ```
 
-These commands will switch your shell into the appropriate directory, execute 
-the necessary cargo binaries located in its installed PATH, build the mdBook 
+These commands will switch your shell into the appropriate directory, execute
+the necessary cargo binaries located in its installed PATH, build the mdBook
 from any files that were changed, and then finally restart the web server.
 
-From there you should be able to see any changes you have made are reflected.  
+From there you should be able to see any changes you have made are reflected.
 
-#### Or send commands over to a networked container or machine:  
+#### Or send commands over to a networked container or machine:
 
 ```bash
 scp {working directory}/{targeted document} {TARGET_IP}:/root/lac/src/{targeted document}
