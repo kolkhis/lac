@@ -1,4 +1,12 @@
-# Contributing to the ProLUG Linux Sysadmin Course Book
+<head>
+  <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
+</head>
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
+    <p>
+        <h1>Contributing to the ProLUG Linux Sysadmin Course Book</h1>
+    </p>
+</div>
 
 The Professional Linux Users Group (ProLUG) has a set of requirements and guidelines to
 contribute to this project. Below are a set of steps to ensure contributors are adhering
@@ -31,26 +39,30 @@ to observe this security practice.
   ```
 - Add SSH public key ('.pub' suffix) to github as "Signing Key".
   <img src="./assets/images/addkey.png"></img> \* Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
-* Configure git locally to use the SSH key to sign your commits.
-    * Here's a script that will do that.
 
-      Run these commands one by one or run the block as a script.
-      ```bash
-      #!/bin/bash
-      GH_USERNAME="YourUsername"
-      git config --global gpg.format ssh
-      git config --global user.signingkey ~/.ssh/id_ed25519.pub
-      git config --global tag.gpgSign true
-      git config --global commit.gpgSign true
-      mkdir -p ~/.config/git
-      touch ~/.config/git/allowed_signers
-      echo "${GH_USERNAME} $(cat ~/.ssh/id_ed25519.pub)" > ~/.config/git/allowed_signers
-      git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
-      # Make a commit to verify
-      git log --show-signature -1
-      ```
-    * Make a commit after running those commands and then use `git log --show-signature -1`.
-    * You should see something like `Good "git" signature for <yourname> with ED25519 key SHA256:abcdef...` if it worked.
+* Configure git locally to use the SSH key to sign your commits.
+
+  - Here's a script that will do that.
+
+    Run these commands one by one or run the block as a script.
+
+    ```bash
+    #!/bin/bash
+    GH_USERNAME="YourUsername"
+    git config --global gpg.format ssh
+    git config --global user.signingkey ~/.ssh/id_ed25519.pub
+    git config --global tag.gpgSign true
+    git config --global commit.gpgSign true
+    mkdir -p ~/.config/git
+    touch ~/.config/git/allowed_signers
+    echo "${GH_USERNAME} $(cat ~/.ssh/id_ed25519.pub)" > ~/.config/git/allowed_signers
+    git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
+    # Make a commit to verify
+    git log --show-signature -1
+    ```
+
+  - Make a commit after running those commands and then use `git log --show-signature -1`.
+  - You should see something like `Good "git" signature for <yourname> with ED25519 key SHA256:abcdef...` if it worked.
 
 <img src="./assets/images/verified.png"></img>
 
@@ -87,15 +99,13 @@ Then your fork is up to date with the original upstream repo.
 You'll create your own fork of the repository using the GitHub web UI, create a
 branch, make changes, push to your fork, then open a pull request.
 
-
 ### Comment First
 
-If you'd like to work on a specific worksheet or lab, please let us know first by 
+If you'd like to work on a specific worksheet or lab, please let us know first by
 commenting on the issue so you can be assigned to it.  
-This way, other contributors can see that someone is already working on it.  
+This way, other contributors can see that someone is already working on it.
 
-We're doing this to prevent multiple people working on the same thing without knowing.  
-
+We're doing this to prevent multiple people working on the same thing without knowing.
 
 ### Create a Fork
 
@@ -157,5 +167,6 @@ Select your branch `unit1-worksheet`, and create a description and mention an is
 
 Below are links to the necessary materials to build out the course templates:
 
-- Ancillary unit videos provided by Scott: <https://www.youtube.com/watch?v=eHB8WKWz2eQ&list=PLyuZ_vuAWmprPIqsG11yoUG49Z5dE5TDu>
-- PDF and docs directly related to each Unit of the course: {Placeholder}
+Ancillary unit videos provided by Scott: <https://www.youtube.com/watch?v=eHB8WKWz2eQ&list=PLyuZ_vuAWmprPIqsG11yoUG49Z5dE5TDu>
+
+PDF and docs directly related to each Unit of the course: <https://discord.com/channels/611027490848374811/1098309490681598072>
