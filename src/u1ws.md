@@ -21,7 +21,7 @@ Specifically, this unit and worksheet aim to cover concepts such as the command 
 commands and syntax, command line tools, Vim (visual editor improved), the Linux Kernel, and much more.
 
 Students are strongly encouraged to learn from these units and apply what they learn. Applying what you
-learn offers no better teach. Again welcome, and good luck in your studies.
+learn offers no better teacher. Again welcome, and good luck in your studies.
 
 ### Resources / Important Links
 
