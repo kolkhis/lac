@@ -8,8 +8,8 @@
     </p>
 </div>
 
-The Professional Linux Users Group (ProLUG) has a set of requirements and
-guidelines to contribute to this project. Below are a set of steps to ensure
+The Professional Linux Users Group (ProLUG) provides a set of requirements
+and guidelines to contribute to this project. Below are steps to ensure
 contributors are adhering to those guidelines and fostering a productive
 version control environment.
 
@@ -32,20 +32,23 @@ version control environment.
 
 ---
 
-To be an effective contributor, understanding Git, whether through the command
-line or an external tool, will be an important part of contributing. To this
-effect, it is important that any individual who contributes to this project have
-a proficient and working understanding of committing, merging, and other
-fundamental Git workflows.
+To be an effective contributor, understanding [Git](https://git-scm.com/), whether
+through the command line or an external tool, will be an important part of contributing.
+To this effect it is important that any individual who contributes to this project have
+a working understanding of committing, merging, and other fundamental Git workflows.
+
+For clarity this project utilizes GitHub for remote repositories and CI/CD testing
+pipeline workflows. Git and GitHub are two separate entities where GitHub provides
+the hosting services and Git provides the version control.
 
 Prospective contributors are directed to several resources should they feel their
-competency with Git falls short:
+competency with Git or GitHub falls short:
 
 Git documentation:
 
 - <https://git-scm.com/doc>
 
-Git video tutorials:
+Git and GitHub video tutorials:
 
 - [The Primeagen's Boot.dev Full Git Course (4hr)](https://www.youtube.com/watch?v=rH3zE7VlIMs)
 - [Fireship's How to use Git and Github (12m)](https://youtu.be/HkdAHXoRtos)
@@ -57,15 +60,22 @@ Git video tutorials:
 
 Contributors who elect to contribute through the command line will need
 to verify their identities before their commits can be accepted. **This step
-is not required if contributors will be making changes via GitHub.com itself**
-as by logging in and contributing to workflows GitHub will inherently verify
-actions made by such accounts as they reside within the GitHub ecosystem.
+is not required if contributors will be submitting changes via GitHub.com itself**
+since users will have verified their identities with GitHub's own verification
+process.
 
-**Individuals contributing via command line will need to sign their commits through
-SSH**. Signing GitHub commits helps ProLUG validate incoming commits from trusted
-contributors that reside outside the GitHub ecosystem. It can be quite trivial
-to impersonate users on GitHub and it is in the best interest of those involved
-to observe this security practice.
+**To reiterate, individuals contributing via command line will need to sign their
+commits through SSH**. Signing GitHub commits helps ProLUG validate incoming commits
+from trusted contributors that reside outside the GitHub ecosystem. It can be quite
+trivial to impersonate users on GitHub and it is in the best interest of the project
+and contributors to observe this security practice.
+
+It should also be noted that GitHub supplies tools like [GitHub CLI](https://cli.github.com/)
+that abstract away the process of signing and verifying commits from the command line.
+GitHub provides a `gh auth login` function to facilitate the procedure which contributors
+can employ without the necessary changes suggested below.
+
+To Sign your Git Commits with SSH:
 
 Generate an SSH key pair if you don't have one:
 
@@ -73,10 +83,10 @@ Generate an SSH key pair if you don't have one:
 ssh-keygen -t ed25519
 ```
 
-Add SSH public key ('.pub' suffix) to github as "Signing Key".
+Add SSH public key ('.pub' suffix) to GitHub as "Signing Key".
 <img src="./assets/images/addkey.png"></img>
 
-\* GitHub.com -> Profile -> Settings -> GPG and SSH Keys -> Add SSH Key -> Dropdown -> Signing Key
+\* GitHub.com -> Profile -> Settings -> GPG and SSH Keys -> Add SSH Key -> Drop down -> Signing Key
 
 Below is a bash script that will attempt to configure signing
 Git commits on a localhost:
@@ -190,14 +200,14 @@ Make changes to the `u1ws.md`.
 ### Git Rebasing
 
 <div class="warning">
-  <strong>FIRST AND FOREMOST, ONLY REBASE IN LOCAL RESPOSITORIES, NEVER REBASE
+  <strong>FIRST AND FOREMOST, ONLY REBASE IN LOCAL REPOSITORIES, NEVER REBASE
   A PUBLIC BRANCH OR REPOSITORY UNLESS YOU FULLY UNDERSTAND THE CONSEQUENCES.
   YOU HAVE BEEN WARNED.</strong>
 </div>
 
 Proper implementation of rebasing can leave a clean, and easily readable
-commit history for all concerned parties. The Git documentation does a succinct
-job in explaining its utility and how it **could potentially ruin a project**.
+commit history for all concerned parties. The Git documentation provides a
+succinct explanation of its utility and how it **could potentially ruin a project**.
 
 Rebasing also plays a role in facilitating any commit reverts that may need
 to be made in the future. More on that will follow.
@@ -221,12 +231,13 @@ remotely:
 
 <img src="./assets/images/squashing.png"></img>
 
-Squashing commits (a form of rebasing) can improve readability, but its primary
-utility, especially for larger projects, may be in addressing an event where
+Squashing commits can improve readability, but its primary utility,
+especially for larger projects, may be in addressing an event where
 rolling back several commits due to a bug or test can be done with a single
 commit revert.
 
-freeCodeCamp has a [great write-up on this procedure](https://www.freecodecamp.org/news/git-squash-commits/). When done appropriately this can greatly facilitate the development process.
+freeCodeCamp has a [great write-up on this procedure](https://www.freecodecamp.org/news/git-squash-commits/).
+When done appropriately this can greatly facilitate the development process.
 Contributors are strongly encouraged to begin exploring these types of workflows
 if they never have.
 
@@ -239,7 +250,7 @@ if they never have.
 Another useful practice is to employ "stashing" uncommitted files in
 a local repository. This is useful in many contexts including stashing
 local changes to resolve recently introduced remote vs. local repo conflicts,
-or quickly switching workingspaces.
+or quickly switching working spaces.
 
 Stashing effectively unstages any changes made in the local repo and
 saves them to be applied later. This can further help facilitate a rebase
@@ -265,8 +276,9 @@ git push origin unit1-worksheet
 
 ### Comment your Changes
 
-Before creating a pull request, make a comment on the issue containing your changes.  
-We're doing this since the GitHub organization feature is paid and we are doing this for free, so there is only one person who is able to merge pull requests at the moment.
+Before creating a pull request, make a comment on the issue containing your changes.
+We're doing this since the GitHub organization feature is paid and we are doing this
+for free, so there is only one person who is able to merge pull requests at the moment.
 
 ### Create a Pull Request
 

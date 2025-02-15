@@ -67,10 +67,49 @@ Getting started with Ansible:
 
 ### Bash Script
 
-Export and execute this script to your Rocky Linux machine/container.
+Many of these commands assume a root user.
+
+Export and execute this script to your machine/container.
+
+<div class=warning>
+
+Dependencies can total over ~500MB compressed and 2GB unpackaged or more.
+
+Debian containers/machines will require building many of these packages from
+source as Debian has a far slower package version adoption rate for stability
+thus not recommended for deploying mdBook.
+
+</div>
+
+These scripts will take up to 10 minutes to download the necessary dependencies
+and compile mdBook depending on the machine/container's capabilities.
+
+Tested with Rocky 9 and Ubuntu 24.04 Containers.
+
+APT frontends:
 
 ```bash
-{Placeholder}
+#!/bin/bash env
+apt update
+apt install apache2 git gcc rustc-1.80 cargo-1.80
+cargo-1.80 install mdbook
+systemctl enable apache2 && systemctl start apache2
+cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
+cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html
+systemctl restart apache2
+```
+
+DNF frontends:
+
+```bash
+#!/bin/bash env
+dnf update
+dnf install -y httpd git gcc rust
+/usr/bin/cargo install mdbook
+systemctl enable httpd && systemctl start httpd
+cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
+cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html
+systemctl restart httpd
 ```
 
 #### From here you can use such commands from your localhost to implement changes:
@@ -93,3 +132,7 @@ From there you should be able to see any changes you have made are reflected.
 scp {working directory}/{targeted document} {TARGET_IP}:/root/lac/src/{targeted document}
 ssh {TARGET_IP} "cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html && systemctl restart httpd"
 ```
+
+An example of the workflow after making changes:
+
+<img src="./assets/images/workflow.png"></img>
