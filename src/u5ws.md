@@ -24,15 +24,16 @@ Our role is an integral part of the security pipeline.
 --- 
 ### Video (Embdedded YT Video)
 <iframe
-  allowfullscreen
-  name="youtube"
-  loading="lazy"
-  src="https://www.youtube.com/watch?v=xLv7CIJD6UI&list=PLyuZ_vuAWmprPIqsG11yoUG49Z5dE5TDu&index=5"
-  style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background:
-black"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-
-share"
-></iframe>
+    style="width: 100%; height: 100%; border: none;
+    aspect-ratio: 16/9; border-radius: 1rem; background:black"
+    src="https://www.youtube.com/watch?v=xLv7CIJD6UI&list=PLyuZ_vuAWmprPIqsG11yoUG49Z5dE5TDu&index=5"
+    title="Unit 4: Linux System Administrator Course"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
+
 ---
 
 ### Instructions
