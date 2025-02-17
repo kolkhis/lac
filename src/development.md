@@ -104,7 +104,7 @@ DNF frontends:
 ```bash
 #!/bin/bash env
 dnf update
-dnf install -y httpd git gcc rust
+dnf install -y httpd git gcc rust cargo
 /usr/bin/cargo install mdbook
 systemctl enable httpd && systemctl start httpd
 cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
