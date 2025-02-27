@@ -4,6 +4,10 @@
   This is aimed at people that want to dig much deeper into using Bash for scripting.  
 
 ## Intro
+This bonus section covers various topics related to scripting and programming using
+Bash, including programing concepts, Bash implementations of those concepts, as well
+as general tips and tricks for shell scripting.  
+
 ### What is Bash?
 Bash (Bourne Again SHell) is a shell that we use on Linux, but it's also a programming language.  
 Every command you execute in the terminal is a line of Bash code.  
@@ -88,68 +92,6 @@ Hello, admin.
 Hello, admin.
 ```
 
-
-## Compound Commands (Command Grouping)
-Compound commands are groups of commands to be run together, and then share the same output.  
-Since they share the same output, if one fails they all fail.  
-
-Compound commands can be done with parentheses `( ... )` or braces `{ ... }`.  
-
-Using paretheses will spawn a subshell, which may not always be what you want.  
-
-Putting commands inside of braces `{ ... }` will not spawn a subshell. Any commands
-inside this command group will be executed in the current shell context.  
-
-Any changes made inside a `{ ... }` grouping will persist even after the command group is done executing.  
-```bash
-declare MY_VAR
-{ MY_VAR="Hello"; printf "%s\n" "$MY_VAR"; }
-# output: Hello
-printf "%s\n" "$MY_VAR"
-# output: Hello
-```
-* Note: You need to either end lines with a semicolon when using braces or put the ending brace on a new line.  
-
----
-
-Command grouping executes all of the commands as a single unit. That makes it possible to direct the output of multiple commands at one time.  
-```bash
-{ date; printf "Systems acting normal!\n"; } > report.txt
-```
-This will output to `report.txt`:
-```plaintext
-Sat Jan 31 16:16:09 EST 2025  
-Systems acting normal!
-```
-
-Command grouping is also very useful for conditionals with [short-circuit logic](#short-circuit-logic).  
-
-
-### Example: Short Circuit Logic with Command Grouping
-This example is using [command grouping](#compound-commands-command-grouping) with [short
-circuit logic](#short-circuit-logic) to define the `OS_FAMILY` variable.  
-```bash
-{
-    which apt && printf "OS_FAMILY: %s\n" "${OS_FAMILY:=debian}"; 
-} || {
-    which dnf && printf "OS_FAMILY: %s\n" "${OS_FAMILY:=rhel}"; 
-}
-```
-This checks for the package managers `dnf` and `apt`.  
-If the package manager is `apt`, it sets the `OS_FAMILY` variable to `debian` if it's not already set (it won't overwrite the variable).  
-If that check does not succeed (remember, the output of that command group will be the output of all commands), then it will move on to the next.  
-If the package manager is `dnf`, it sets the `OS_FAMILY` variable to `rhel` if it's not already set.  
-
-This is functionally equivalent to:
-```bash
-if which apt; then
-    printf "OS_FAMILY: %s\n" "${OS_FAMILY:=debian}"
-elif which dnf; then
-    printf "OS_FAMILY: %s\n" "${OS_FAMILY:=rhel}"
-fi
-```
-
-
 ## Subshells
 
 A subshell is another instance of bash that spawns as the child of the current shell.  
@@ -230,6 +172,8 @@ There are a few ways you can reload your `.bashrc` file.
     * `exec` replaces the current shell with another process.
     * In this case, it's a `bash -l`ogin shell.
 3. Restart the shell. By far the most inconvenient way to reload bash, but it works.  
+
+
 
 
 ## Variables
@@ -380,12 +324,20 @@ if [[ -n $MY_VAR ]]; then printf "MY_VAR is not empty!\n"; fi
 ```
 This is generally how you will do an if-statement from the command line.  
 
+
 Alternatively, you can omit the `if` and use a type of "short-circuit logic" using
 the `&&` operator:
 ```bash
 [[ -n $MY_VAR ]] && printf "MY_VAR is not empty!\n"
 ```
-This checks the first condition `-n $MY_VAR` and only executes the `printf` if true.  
+This checks the first command (`[[ -n $MY_VAR ]]`), and only executes the `printf` if the first succeeds.  
+
+You can also do the inverse using the `||` operator:
+```bash
+[[ -n $MY_VAR ]] || printf "MY_VAR is empty!\n"
+```
+This checks the first command (`[[ -n $MY_VAR ]]`), and only executes the `printf` if the first fails.  
+
 If you want to test multiple conditions with this method, you need to use [**command grouping**](#compound-commands-command-grouping).  
 
 ---
@@ -561,6 +513,66 @@ Now the variable is set in the current shell.
 This is why `.bashrc` and other shell runtime config files are sourced, not executed.  
 
 ---
+
+## Compound Commands (Command Grouping)
+Compound commands are groups of commands to be run together, and then share the same output.  
+Since they share the same output, if one fails they all fail.  
+
+Compound commands can technically be done with either parentheses `( ... )` or braces `{ ... }`.  
+Using paretheses will spawn a subshell, which may not always be what you want.  
+
+Putting commands inside of braces `{ ... }` will not spawn a subshell. Any commands
+inside this command group will be executed in the current shell context.  
+
+Any changes made inside a `{ ... }` grouping will persist even after the command group is done executing.  
+```bash
+declare MY_VAR
+{ MY_VAR="Hello"; printf "%s\n" "$MY_VAR"; }
+# output: Hello
+printf "%s\n" "$MY_VAR"
+# output: Hello
+```
+* Note: You need to either end lines with a semicolon when using braces or put the ending brace on a new line.  
+
+---
+
+Command grouping executes all of the commands as a single unit. That makes it possible to direct the output of multiple commands at one time.  
+```bash
+{ date; printf "Systems acting normal!\n"; } > report.txt
+```
+This will output to `report.txt`:
+```plaintext
+Sat Jan 31 16:16:09 EST 2025  
+Systems acting normal!
+```
+
+Command grouping is also very useful for conditionals with [short-circuit logic](#short-circuit-logic).  
+
+
+### Example: Short Circuit Logic with Command Grouping
+This example is using [command grouping](#compound-commands-command-grouping) with [short
+circuit logic](#short-circuit-logic) to define the `OS_FAMILY` variable.  
+```bash
+{
+    which apt && printf "OS_FAMILY: %s\n" "${OS_FAMILY:=debian}"; 
+} || {
+    which dnf && printf "OS_FAMILY: %s\n" "${OS_FAMILY:=rhel}"; 
+}
+```
+This checks for the package managers `dnf` and `apt`.  
+If the package manager is `apt`, it sets the `OS_FAMILY` variable to `debian` if it's not already set (it won't overwrite the variable).  
+If that check does not succeed (remember, the output of that command group will be the output of all commands), then it will move on to the next.  
+If the package manager is `dnf`, it sets the `OS_FAMILY` variable to `rhel` if it's not already set.  
+
+This is functionally equivalent to:
+```bash
+if which apt; then
+    printf "OS_FAMILY: %s\n" "${OS_FAMILY:=debian}"
+elif which dnf; then
+    printf "OS_FAMILY: %s\n" "${OS_FAMILY:=rhel}"
+fi
+```
+
 
 ## Error Handling in Bash
 Error handling in bash can be done with simple `if` statements.  
