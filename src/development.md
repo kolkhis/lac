@@ -8,7 +8,7 @@
     </p>
 </div>
 
-It is strongly encouraged for contributors to test their changes before making
+It is strongly encouraged that contributors test their changes before making
 commits. To help facilitate this process a set of instructions and guidelines
 are provided below. These guidelines are by no means a requirement or the only
 set of procedures to locally develop on this project.
@@ -58,9 +58,14 @@ environments if things go awry.
 
 <https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/assets/deploy/ansible-playbook.yml>
 
-To use this playbook, your machine(s) must be configured correctly for Ansible.
+To use this playbook, your machine(s)/containers must be configured correctly for Ansible.
 If you don't know the requirements to administer and Ansible machine, documentation
 has been provided below.
+
+<div class = warning>
+This playbook will need to be modified based on which distribution or package management
+tool is configured.
+</div>
 
 Getting started with Ansible:  
 <https://docs.ansible.com/ansible/latest/getting_started/index.html>
@@ -89,10 +94,10 @@ Tested with Rocky 9 and Ubuntu 24.04 Containers.
 APT frontends:
 
 ```bash
-#!/bin/bash env
+#!/bin/bash
 apt update
 apt install apache2 git gcc rustc-1.80 cargo-1.80
-cargo-1.80 install mdbook
+cargo-1.80 install --locked mdbook
 systemctl enable apache2 && systemctl start apache2
 cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
 cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html
@@ -102,10 +107,10 @@ systemctl restart apache2
 DNF frontends:
 
 ```bash
-#!/bin/bash env
+#!/bin/bash
 dnf update
 dnf install -y httpd git gcc rust cargo
-/usr/bin/cargo install mdbook
+/usr/bin/cargo install --locked mdbook
 systemctl enable httpd && systemctl start httpd
 cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
 cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html
@@ -115,7 +120,7 @@ systemctl restart httpd
 #### From here you can use such commands from your localhost to implement changes:
 
 ```bash
-cd {working lac directory}
+cd {working lac directory} #for example: /root/lac or ~/lac
 ~/.cargo/bin/mdbook build -d /var/www/html
 systemctl restart {httpd or apache}
 ```

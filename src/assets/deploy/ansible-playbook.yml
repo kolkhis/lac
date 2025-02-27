@@ -1,6 +1,6 @@
 ---
 - name: Deploy local ProLUG mdBook dev page to rocky container
-  hosts: { rocky host }
+  hosts: { host }
   gather_facts: false
   become: true
 
@@ -9,21 +9,22 @@
       ansible.builtin.package:
         update_cache: true
         name:
-          - httpd
+          - { httpd or apache2 }
           - git
           - gcc
           - rust
           - cargo
         state: present
 
-    - name: Enable httpd
+    - name: Enable httpd or apache2
       ansible.builtin.service:
-        name: httpd
+        name: { httpd or apache2 }
         enabled: true
 
     - name: Installing mdbook
       community.general.cargo:
         name: mdbook
+        locked: true
         state: present
 
     - name: Verifying presence of ProLUG repo
@@ -33,7 +34,7 @@
 
     - name: Clone down ProLUG repo if absent
       ansible.builtin.git:
-        repo: 'https://github.com/ProfessionalLinuxUsersGroup/lac'
+        repo: "https://github.com/ProfessionalLinuxUsersGroup/lac"
         dest: /root/lac/
         clone: true
       when: contents_git.stdout == ""
@@ -56,10 +57,10 @@
           - --dest-dir
           - /var/www/html
       when: contents_httpd.stdout == ""
-      notify: Restart httpd
+      notify: Restart httpd or apache2
 
   handlers:
-    - name: Restart httpd
+    - name: Restart httpd or apache2
       ansible.builtin.service:
-        name: httpd
+        name: { httpd or apache2 }
         state: restarted
