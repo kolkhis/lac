@@ -30,18 +30,9 @@ Students are strongly encouraged to learn from these units and apply what they l
 - [Official UFW Documentation](https://help.ubuntu.com/community/UFW)
 - [Wikipedia entry for Next-Gen Firewalls](https://en.wikipedia.org/wiki/Next-generation_firewall)
 
-### Unit 1 Recording
+### Unit 6 Recording
 
-<iframe
-    style="width: 100%; height: 100%; border: none;
-    aspect-ratio: 16/9; border-radius: 1rem; background:black"
-    src="https://www.youtube.com/watch?v=wCVj3qeLTMg&list=PLyuZ_vuAWmprPIqsG11yoUG49Z5dE5TDu&index=6"
-    title="Unit 1 Recording - ProLUG Linux Systems Administration Course - Free in Discord"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-</iframe>
+ <iframe style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background:black" src="https://www.youtube.com/embed/wCVj3qeLTMg?si=ozEReY_17DOyjUAv" title="Unit 6 Recording - ProLUG Linux Systems Administration Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe> 
 
 ## Instructions
 
