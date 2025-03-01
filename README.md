@@ -5,7 +5,7 @@
 The overarching goal of this project is to provide a free, open source Systems Administration course
 predicated on the work produced by Scott Champine, an experienced and skilled Senior Systems Engineer.
 
-Scott has over 10 years administering and engineering Linux systems across a broad variety of
+Scott has over 20+ years administering and engineering Linux systems across a broad variety of
 fields and teams. He has built and maintains systems like High Performance Compute (HPC) clusters
 for [NOAA (The National Oceanic and Atmospheric Administration)](https://www.noaa.gov/) and more.
 
@@ -29,7 +29,7 @@ Outlined below are a set of objectives this repository attempts to provide.
     - System hardening
     - Construction of build testing, ie. conditional testing, system tasks
     - Introductions to technologies like:
-      - Docker, Kubernetes, Ansible
+      - Podman, Kubernetes, Ansible
     - Automation and implementation
     - Troubleshooting and system benchmarking
 
