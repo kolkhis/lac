@@ -102,7 +102,7 @@ systemctl restart apache2
 DNF frontends:
 
 ```bash
-#!/bin/bash env
+#!/usr/bin/env bash
 dnf update
 dnf install -y httpd git gcc rust cargo
 /usr/bin/cargo install mdbook
