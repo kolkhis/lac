@@ -58,32 +58,22 @@ Before engaging with this unit, readers should have a foundational understanding
 
 ## Key terms and Definitions
 
-1. **SELinux (Security-Enhanced Linux):**
-   A security module integrated into the Linux kernel that enforces mandatory access controls. Key aspects include security contexts, labels, and operating modes that help confine processes and protect system resources.
+1. **SELinux (Security-Enhanced Linux)**
 
-2. **Access Control Lists (ACLs):**
-   Mechanisms that extend traditional Unix file permission models to provide granular control over who can access files and directories, allowing specific permissions for individual users or groups.
+2. **Access Control Lists (ACLs)**
 
-3. **Security Contexts:**
-   Attributes assigned to files and processes in SELinux that determine their security properties. These contexts help define what actions are allowed or denied, based on predefined policies.
+3. **Security Contexts**
 
-4. **Mandatory Access Control (MAC):**
-   A security approach where access policies are enforced by the system rather than by the discretion of individual users. SELinux is an example of MAC, contrasting with Discretionary Access Control (DAC).
+4. **Mandatory Access Control (MAC)**
 
-5. **Discretionary Access Control (DAC):**
-   A traditional security model where users have the freedom to set permissions for the resources they own. This is the basis of Unix file permission systems but is limited compared to MAC.
+5. **Discretionary Access Control (DAC)**
 
-6. **Uptime:**
-   A measure of system reliability and availability, crucial for maintaining service continuity in enterprise environments.
+6. **Uptime**
 
-7. **Standard Streams (stdin, stdout, stderr):**
-   The fundamental data streams in Unix/Linux systems used for input, output, and error messages, which are important when troubleshooting and scripting.
+7. **Standard Streams (stdin, stdout, stderr)**
 
-8. **High Availability (HA):** 
-   The design and implementation of systems to ensure continuous operation and minimal downtime. Understanding HA is essential when troubleshooting incidents that affect system performance and uptime.
+8. **High Availability (HA)** 
 
-9. **Service Level Objectives (SLOs):**
-   Specific targets for system performance and availability, used as benchmarks to ensure that operational parameters are maintained, contributing to overall system reliability.
-
-10. **Troubleshooting Methodologies:**
-    Systematic approaches and techniques used to diagnose, isolate, and resolve issues within a Linux environment, with an emphasis on security and access control issues in this unit.
+9. **Service Level Objectives (SLOs)**
+   
+10. **Troubleshooting Methodologies**
