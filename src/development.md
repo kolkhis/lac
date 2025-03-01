@@ -89,7 +89,7 @@ Tested with Rocky 9 and Ubuntu 24.04 Containers.
 APT frontends:
 
 ```bash
-#!/bin/bash env
+#!/usr/bin/env bash
 apt update
 apt install apache2 git gcc rustc-1.80 cargo-1.80
 cargo-1.80 install mdbook
