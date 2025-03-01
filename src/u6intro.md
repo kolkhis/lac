@@ -31,20 +31,20 @@ This unit focuses on Nohup environments and firewalls.
 
 ## Key Terms and Definitions
 
-1. **Firewall**:  
+1. **Firewall**  
 
-2. **Zone**:  
+2. **Zone**  
 
-3. **Service**: 
+3. **Service** 
 
-4. **DMZ (Demilitarized Zone)**:  
+4. **DMZ (Demilitarized Zone)**
 
-5. **Proxy**:  
+5. **Proxy**  
 
-6. **Stateful Packet Filtering**:   
+6. **Stateful Packet Filtering**   
 
-7. **Stateless Packet Filtering**:   
+7. **Stateless Packet Filtering**   
 
-8. **WAF (Web Application Firewall)**:  
+8. **WAF (Web Application Firewall)**  
 
 9. **NGFW (Next-Generation Firewall)**:   
