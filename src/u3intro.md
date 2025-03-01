@@ -70,46 +70,32 @@ Before engaging with this unit, readers should have a foundational understanding
 ## Key terms and Definitions
 
 1. **Resilience Engineering**
-   *Focuses on designing systems that can adapt and recover from unexpected disruptions.*
 
 2. **Fault Tolerance**
-   *The system’s ability to continue operating properly even when one or more components fail.*
 
 3. **Proactive Monitoring**
-   *Continuous observation of system performance to detect and address issues before they escalate.*
 
 4. **Observability**
-   *Measures how well the internal state of a system can be understood from its external outputs, which is essential for effective troubleshooting.*
 
 5. **Incident Response**
-   *A coordinated approach to identifying, categorizing, and resolving system issues rapidly to minimize downtime.*
-
+  
 6. **Root Cause Analysis (RCA)**
-   *The process of investigating failures to uncover their underlying causes, ensuring long-term solutions rather than quick fixes.*
 
 7. **Disaster Recovery (DR)**
-   *Strategies and procedures designed to restore systems and operations after catastrophic events.*
 
 8. **Error Budgeting**
-   *Allocating a permissible margin of error (or downtime) that balances innovation with the need for reliability, often linked to service level agreements.*
 
 9. **Capacity Planning**
-   *Predicting future system demands to ensure resources are in place for maintaining performance under load.*
 
-10. **Load Balancing**
-    *Distributing workloads across multiple systems or resources to ensure stability and optimal performance.*
+10. **Load Balancing**   
     
 11. **Service Continuity**
-    *Ensuring that critical services remain available during and after incidents or system failures.*
-
+   
 12. **Infrastructure as Code (IaC)**
-    *Managing and provisioning infrastructure through code, which enhances consistency, repeatability, and rapid recovery.*
 
 13. **Configuration Management**
-    *Maintaining consistent system configurations to prevent drift, reduce errors, and streamline troubleshooting.*
 
 14. **Preventive Maintenance**
-    *Scheduled activities aimed at identifying and mitigating potential issues before they result in system failures.*
 
 15. **DevOps Culture**
-    *An approach that emphasizes collaboration between development and operations, along with automation and continuous improvement, to improve overall system reliability.*
+   
