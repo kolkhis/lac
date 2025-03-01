@@ -1,6 +1,3 @@
-<head>
-    <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
-</head>
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
@@ -8,28 +5,36 @@
     </p>
 </div>
 
---- 
+---
+
 ## Intro
-The Unit 6 lab covers the administration of Firewall Daemon, a powerful dynamically managed firewall with support for network/firewall “zones”.  
+
+The Unit 6 lab covers the administration of Firewall Daemon, a powerful dynamically managed firewall with support for network/firewall “zones”.
 
 This lab will take you through the basics of:
+
 - Activating Firewalld
 - Configuring Zones
 - Changing Modes
 
 ---
+
 ### Resources / Important Links
+
 - [Firewalld Official Documentation](https://firewalld.org/documentation/)
 - [RedHat Firewalld Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld_firewall-packet-filters)
---- 
+
+---
 
 ## Required Materials
+
 - Rocky 9.3 – ProLUG Lab
 - root or sudo command access
 
 ---
 
-## Begin 
+## Begin
+
 ### Pre-Lab Warm-Up
 
 Exercises (Warmup to quickly run through your system and practice commands)
@@ -49,15 +54,15 @@ Exercises (Warmup to quickly run through your system and practice commands)
 13. `seq 10`
 14. `seq 1 10`
 15. `seq 1 2 10`
-    * man seq and see what each of those values mean. It’s important to know the behavior if you intend to ever use the command, as we often do with counting (for) loops.
+    - man seq and see what each of those values mean. It’s important to know the behavior if you intend to ever use the command, as we often do with counting (for) loops.
 
 No worries, there are two ways to fix the mess you've made.
 Nothing you've done is permanent, so logging out and reloading a shell (logging back in) would fix this.  
-We just put the aliases back.  
+We just put the aliases back.
 
 16. `for i in `seq 1 10`; do touch file$i; done;`
 17. `ls`
-    * Think about some of those commands and when you might use them. Try to change command #15 to remove all of those files (rm -rf file$i)
+    - Think about some of those commands and when you might use them. Try to change command #15 to remove all of those files (rm -rf file$i)
 
 ---
 
@@ -65,22 +70,22 @@ We just put the aliases back.
 
 This lab is designed to help you get familiar with the basics of the systems you will be working on.
 
-Some of you will find that you know the basic material but the techniques here allow 
+Some of you will find that you know the basic material but the techniques here allow
 you to put it together in a more complex fashion.
 
 It is recommended that you type these commands and do not copy and paste them.
 Browsers sometimes like to format characters in a way that doesn't always play nice with Linux.
 
-
 #### Check Firewall Status and settings
 
-   A very important thing to note before starting this lab. You’re connected into that server on ssh via port 22. If you do anything to lockout **port 22** in this lab, you will be blocked from that connection and we’ll have to reset it.
+A very important thing to note before starting this lab. You’re connected into that server on ssh via port 22. If you do anything to lockout **port 22** in this lab, you will be blocked from that connection and we’ll have to reset it.
 
 1. Check firewall status
+
    ```bash
    [root@schampine ~]# systemctl status firewalld
    ```
-   
+
    Example Output:
 
    ```bash
@@ -100,24 +105,29 @@ Browsers sometimes like to format characters in a way that doesn't always play n
    Jan 21 19:27:08 schampine systemd[1]: Stopping firewalld - dynamic firewall.....
    Jan 21 19:27:10 schampine systemd[1]: Stopped firewalld - dynamic firewall ...n.
    ```
+
    **Hint:** Some lines were ellipsized, use -l to show in full.
-   
+
 2. If necessary start the firewalld daemon
    ```bash
    systemctl start firewalld
    ```
 3. Set the firewalld daemon to be persistent through reboots
+
    ```bash
    systemctl enable firewalld
    ```
-   *verify with   systemctl status firewalld again from **step 1**
+
+   \*verify with systemctl status firewalld again from **step 1**
 
 4. Check which zones exist
+
    ```bash
    firewall-cmd --get-zones
    ```
 
 5. Checking the values within each zone
+
    ```bash
    firewall-cmd --list-all --zone=public
    ```
@@ -127,28 +137,31 @@ Browsers sometimes like to format characters in a way that doesn't always play n
    ```bash
    public (default, active)
    interfaces: wlp4s0
-   sources: 
+   sources:
    services: dhcpv6-client ssh
-   ports: 
+   ports:
    masquerade: no
-   forward-ports: 
-   icmp-blocks: 
+   forward-ports:
+   icmp-blocks:
    rich rules:
    ```
 
 6. Checking the active and default zones
+
    ```bash
    firewall-cmd --get-default
    ```
+
    Example Output:
 
    ```bash
    public
    ```
+
    Next Command
 
    ```bash
-   firewall-cmd --get-active 
+   firewall-cmd --get-active
    ```
 
    Example Output:
@@ -157,7 +170,7 @@ Browsers sometimes like to format characters in a way that doesn't always play n
    public
    interfaces: wlp4s0
    ```
-   
+
    **Note:** this also shows which interface the zone is applied to. Multiple interfaces and zones can be applied
 
    So now you know how to see the values in your firewall. Use steps 4 and 5 to check all the values of the different zones to see how they differ.
@@ -206,17 +219,16 @@ Browsers sometimes like to format characters in a way that doesn't always play n
        interfaces: wlp4s0
    ```
 
-   Attempt to set it back to the original public zone and verify. 
-Set it to one other zone, verify, then set it back to public.
+   Attempt to set it back to the original public zone and verify.
+   Set it to one other zone, verify, then set it back to public.
 
-2. Changing interfaces and assigning different zones (use another interface from your earlier `ifconfig -a`
+7. Changing interfaces and assigning different zones (use another interface from your earlier `ifconfig -a`
 
    ```bash
    firewall-cmd --change-interface=virbr0 --zone dmz
    ```
 
    Example Output:
-
 
    ```bash
    success
@@ -253,7 +265,7 @@ Set it to one other zone, verify, then set it back to public.
 
 #### Working with ports and services
 
-   We can be even more granular with our ports and services. We can block or allow services by port number, or we can assign port numbers to a service name and then block or allow those service names.
+We can be even more granular with our ports and services. We can block or allow services by port number, or we can assign port numbers to a service name and then block or allow those service names.
 
 1. List all services assigned in firewalld
 
@@ -318,7 +330,7 @@ Set it to one other zone, verify, then set it back to public.
 2. Adding a service or port to a zone
 
    Ensuring we are working on a public zone
-   
+
    ```bash
    firewall-cmd --set-default-zone=public
    ```
@@ -338,7 +350,7 @@ Set it to one other zone, verify, then set it back to public.
    Example Ouput:
 
    ```bash
-   dhcpv6-client ssh 
+   dhcpv6-client ssh
    ```
 
    **Note:** We have 2 services
@@ -355,12 +367,12 @@ Set it to one other zone, verify, then set it back to public.
    success
    ```
 
-   Reloading 
+   Reloading
 
    ```bash
    firewall-cmd --reload
    ```
-   
+
    Example Output:
 
    ```bash
@@ -392,7 +404,6 @@ Set it to one other zone, verify, then set it back to public.
    ```
 
    Alternatively, we can do almost the same thing but not use a defined service name. If I just want to allow port 1147 through for TCP traffic, it is very simple as well.
-
 
    ```bash
    firewall-cmd --permanent --add-port=1147/tcp
@@ -486,25 +497,12 @@ Set it to one other zone, verify, then set it back to public.
    firewall-cmd --list-ports
    ```
 
-   Example Output: 
+   Example Output:
 
    `Nothing`
 
-    Before making any more changes I recommend running the `list` commands above with `>> /tmp/firewall.orig` on them so you have all your original values saved somewhere in case you need them.
+   Before making any more changes I recommend running the `list` commands above with `>> /tmp/firewall.orig` on them so you have all your original values saved somewhere in case you need them.
 
 So now take this and set up some firewalls on the interfaces of your system.
 Change the default ports and services assigned to your different zones (at least 3 zones)
 Read the `man firewall-cmd` command or `firewall-cmd –help` to see if there are any other userful things you should know.
-
-   
-  
-   
-
-
-
-
-
-
-
-
-   
