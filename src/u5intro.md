@@ -31,18 +31,18 @@ This unit focuses on managing user's environments and scanning and enumerating S
 
 ## Key Terms and Definitions
 
-**Footprinting** – The process of gathering information about a target system, network, or organization to understand its security posture.
+**Footprinting** 
 
-**Scanning** – The action to investigate the system to identify open ports, services, vulnerabilities, and system details.
+**Scanning** 
 
-**Enumeration** – The process of extracting information from a target system, such as user accounts, network shares, and system configurations.
+**Enumeration** 
 
-**System Hacking** – Exploiting vulnerabilities to gain unauthorized access to a system.
+**System Hacking** 
 
-**Escalation of Privilege** – Gaining higher-level access than originally granted by exploiting system vulnerabilities or misconfigurations.
+**Escalation of Privilege** 
 
-**Rule of Least Privilege** – A security principle that focuses on users, applications, and systems that should only have the minimum level of access necessary to perform their tasks.
+**Rule of Least Privilege** 
 
-**Covering Tracks** – The process of erasing evidence of an attack to avoid detection.  Which includes clearing logs, modifying timestamps, using rootkits, or disabling security monitoring tools.
+**Covering Tracks** 
 
-**Planting Backdoors** – Installing hidden access mechanisms that allow you to re-enter a compromised system without detection. 
+**Planting Backdoors** 
