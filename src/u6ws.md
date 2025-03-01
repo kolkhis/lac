@@ -1,6 +1,3 @@
-<head>
-    <style> .flex-container { display: flex; align-items: center; gap: 20px; } </style>
-</head>
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
@@ -32,7 +29,7 @@ Students are strongly encouraged to learn from these units and apply what they l
 
 ### Unit 6 Recording
 
- <iframe style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background:black" src="https://www.youtube.com/embed/wCVj3qeLTMg?si=ozEReY_17DOyjUAv" title="Unit 6 Recording - ProLUG Linux Systems Administration Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe> 
+ <iframe style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background:black" src="https://www.youtube.com/embed/wCVj3qeLTMg?si=ozEReY_17DOyjUAv" title="Unit 6 Recording - ProLUG Linux Systems Administration Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
 
 ## Instructions
 
@@ -101,14 +98,13 @@ WAF:
 
 NGFW:
 
-
 ## Digging Deeper
 
 ---
 
 1. Read https://docs.rockylinux.org/zh/guides/security/firewalld-beginners/
-What new things did you learn that you didn’t learn in the lab?
-What functionality of firewalld are you likely to use in your professional work?
+   What new things did you learn that you didn’t learn in the lab?
+   What functionality of firewalld are you likely to use in your professional work?
 
 ## Reflection Questions
 
