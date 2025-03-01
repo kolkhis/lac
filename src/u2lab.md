@@ -1,4 +1,4 @@
-# PART 1: Basic File System Operations
+# PART 1 - Basic File System Operations
 
 ## Exercise 1: Directory Navigation
 ```bash
@@ -104,7 +104,7 @@ ls -la
    - Not verifying file creation with ls
   
 
-# PART 2: System Information Gathering
+# PART 2 - System Information Gathering
 
 ## Exercise 1: Basic System Information
 ```bash
@@ -211,7 +211,7 @@ df -h .
    # - Buffer/cache usage
    ```
 
- # PART 3: System Monitoring
+# PART 3 - System Monitoring
 
 ## Exercise 1: System Uptime and Load
 ```bash
