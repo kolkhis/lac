@@ -50,7 +50,7 @@ Git documentation:
 
 Git and GitHub video tutorials:
 
-- [The Primeagen's Boot.dev Full Git Course (4hr)](https://www.youtube.com/watch?v=rH3zE7VlIMs)
+- [ByteByteGo's Git Explained in 4 Minutes (4m)](https://www.youtube.com/watch?v=e9lnsKot_SQ)
 - [Fireship's How to use Git and Github (12m)](https://youtu.be/HkdAHXoRtos)
 - [freeCodeCamp's Git and GitHub Crash Course (1hr)](https://youtu.be/RGOj5yH7evk)
 
