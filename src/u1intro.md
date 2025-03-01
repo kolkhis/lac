@@ -67,41 +67,28 @@ The unit assumes a basic level of computer literacy, meaning the learner is comf
 
 ## Key terms and Definitions
 
-- **Linux Kernel:**  
-  The core of the Linux operating system. It manages system resources (like memory and CPU), handles hardware interactions, and serves as the bridge between software and the computer's hardware.
+**Linux Kernel**  
 
-- **Command-Line Interface (CLI):**  
-  A text-based interface used to interact with the system. It lets you run commands, navigate directories, and perform tasks without a graphical user interface. Mastering the CLI is essential for efficient Linux administration.
+**Command-Line Interface (CLI)**  
 
-- **Shell:**  
-  A program (commonly Bash in Linux) that interprets the commands you type into the CLI. The shell enables scripting and automation, which are critical skills for managing systems.
+**Shell**  
 
-- **Terminal:**  
-  The application or window that provides you with a command-line interface. Think of it as the digital workspace where you enter and execute your commands.
+**Terminal**  
 
-- **Filesystem Hierarchy:**  
-  The standardized directory structure in Linux (for example, `/etc`, `/var`, `/usr`) that organizes files and folders. Understanding this layout is crucial for locating configuration files and system resources.
+**Filesystem Hierarchy**  
 
-- **Package Manager (e.g., YUM/DNF):**  
-  A tool that automates the process of installing, updating, and removing software. In Red Hat environments, YUM or DNF is used to manage system packages and dependencies efficiently.
+**Package Manager (e.g., YUM/DNF)**  
 
-- **Text Editors (VI/Vim):**  
-  Powerful command-line text editors used to create and edit configuration files and scripts. While there’s a learning curve, mastering VI/Vim is invaluable because they’re ubiquitous in Linux environments.
+**Text Editors (VI/Vim)**  
 
-- **Sudo:**  
-  A command that grants you temporary administrative privileges to execute tasks that require higher permissions. It’s a security measure that helps protect your system from unintended changes.
+ **Sudo**  
+ 
+ **File Permissions and Ownership**  
 
-- **File Permissions and Ownership:**  
-  The system that controls who can read, write, or execute files. Understanding permissions is key to maintaining system security and ensuring that only authorized users can modify critical files.
+**Processes and Daemons**  
 
-- **Processes and Daemons:**  
-  Active programs on your system. Processes are tasks currently running, and daemons are background services that perform essential functions (like managing network connections or scheduled tasks).
+**System Logs**  
 
-- **System Logs:**  
-  Files that record system events, errors, and security messages. Logs are your primary resource for troubleshooting and understanding system behavior during issues.
+**Networking Basics**  
 
-- **Networking Basics:**  
-  Fundamental concepts such as IP addressing, DNS, and routing. A good grasp of networking is vital because Linux administrators frequently manage network configurations and troubleshoot connectivity issues.
-
-- **Bash Scripting:**  
-  The practice of writing scripts using the Bash shell to automate repetitive tasks. Scripting skills enhance efficiency and are highly valued in any Linux administration role.
+**Bash Scripting**  
