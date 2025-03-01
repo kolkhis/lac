@@ -102,7 +102,10 @@ Common ways to create subshells:
 
 The `$` is not *necessarily* needed in order to spawn a subshell.  
 Whenever commands are wrapped in parentheses, a subshell is spawned to execute those commands.  
-Simply doing `( ... )` will run any commands in a subshell.  
+
+Simply doing `( ... )` will run any commands in a subshell, unless you're defining a
+variable.  
+When using `( ... )` in a variable definition, Bash thinks you're trying to define an array.  
 
 However, if you need to **use or capture the output** of the commands (for example, to
 store in a variable), use `$( ... )`.  
@@ -115,7 +118,7 @@ FILES=$(ls ~) # Will store the output of the command.
 FILES=(ls ~)  # Bash thinks you're trying to define an array.
               # Won't store the output of the command.  
 ```
-      
+
 Subshells can be used as [compound commands](#compound-commands-command-grouping).  
 
 
@@ -127,7 +130,7 @@ Because scripts run in subshells, using commands like `cd` don't work the same w
 if it were run from the command line. It only affects the subshell.  
  
 If you want to use `cd` inside a script, put it in a function.  
- 
+
 A function won't spawn an additional subshell when it's run.  
 
 
