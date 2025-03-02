@@ -1,6 +1,14 @@
-# PART 1 - Basic File System Operations
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Unit 2 Lab - Basic File System Operations</h1>
+    </p>
+</div>
 
 ## Exercise 1: Directory Navigation
+
+---
+
 ```bash
 # Move to your home directory
 cd ~
@@ -26,6 +34,9 @@ pwd
 ```
 
 ## Exercise 2: File Creation and Basic Listing
+
+---
+
 ```bash
 # Create first test file
 touch testfile1
@@ -55,6 +66,7 @@ ls -la
 ### Practical Challenges
 
 1. **Basic Operations:**
+
    ```bash
    # Task: Recreate this sequence
    cd ~
@@ -65,12 +77,13 @@ ls -la
    ```
 
 2. **Directory Creation:**
+
    ```bash
    # Task: Create this structure in one command
    # ~/lab/
    #   └── test/
    #       └── files/
-   
+
    # Hint: Use mkdir -p
    ```
 
@@ -85,6 +98,7 @@ ls -la
 ### Understanding the Output
 
 1. When using `ls -l`, understand each column:
+
    - Permissions (first column)
    - Number of links
    - Owner
@@ -94,6 +108,7 @@ ls -la
    - Filename
 
 2. Hidden files:
+
    - Start with a dot (.)
    - Not shown in regular ls
    - Shown with ls -a
@@ -102,11 +117,13 @@ ls -la
    - Not checking your current directory before operations
    - Forgetting to use -p for nested directories
    - Not verifying file creation with ls
-  
 
 # PART 2 - System Information Gathering
 
 ## Exercise 1: Basic System Information
+
+---
+
 ```bash
 # Get hostname information
 hostname
@@ -127,6 +144,9 @@ uname -r
 ```
 
 ## Exercise 2: Memory Information
+
+---
+
 ```bash
 # View memory information
 cat /proc/meminfo
@@ -143,6 +163,9 @@ free -h    # Human readable
 ```
 
 ## Exercise 3: Processor Information
+
+---
+
 ```bash
 # View CPU details
 cat /proc/cpuinfo
@@ -157,6 +180,9 @@ cat /proc/cpuinfo | grep processor | wc -l
 ```
 
 ## Exercise 4: Storage Information
+
+---
+
 ```bash
 # Check disk space
 df
@@ -183,7 +209,10 @@ df -h .
 
 ## Practical Challenges
 
+---
+
 1. **System Overview Report**
+
    ```bash
    # Create a simple report showing:
    # - RHEL version
@@ -194,6 +223,7 @@ df -h .
    ```
 
 2. **Storage Analysis**
+
    ```bash
    # For each mounted filesystem:
    # - Show total size
@@ -214,6 +244,9 @@ df -h .
 # PART 3 - System Monitoring
 
 ## Exercise 1: System Uptime and Load
+
+---
+
 ```bash
 # Check system uptime and load averages
 uptime
@@ -231,6 +264,9 @@ uptime
 ```
 
 ## Exercise 2: Load Average Analysis
+
+---
+
 ```bash
 # Monitor load over time
 uptime
@@ -247,6 +283,9 @@ uptime
 ```
 
 ## Exercise 3: Understanding Load Numbers
+
+---
+
 ```bash
 # On a single CPU system:
 # Load of 1.0 = 100% CPU usage
@@ -266,7 +305,10 @@ nproc
 
 ## Practical Challenges
 
+---
+
 1. **Basic Load Monitoring**
+
 ```bash
 # Create a simple monitoring loop
 while true; do
@@ -281,6 +323,7 @@ done
 ```
 
 2. **System Load Analysis**
+
 ```bash
 # Create a monitoring record:
 # 1. Check load every 5 minutes for 30 minutes
@@ -290,10 +333,10 @@ done
 ```
 
 3. **Load Pattern Recognition**
+
 ```bash
 # Monitor and record load during:
 # - System idle time
 # - Running a basic command (ls -R /)
 # - Compare the differences
 ```
-  

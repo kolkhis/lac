@@ -7,8 +7,6 @@
 
 ## Introduction
 
----
-
 The Unit 7 Lab has students exploring and practicing the lessons they learned
 from the unit recording and worksheet. This lab explores managing packages through the Red Hat
 Enterprise Linux (RHEL) package manager front end [DNF (Dandified YUM)](<https://en.wikipedia.org/wiki/DNF_(software)>).
@@ -19,9 +17,7 @@ Enterprise Linux (RHEL) package manager front end [DNF (Dandified YUM)](<https:/
 - [Rocky DNF Guidance](https://docs.rockylinux.org/guides/package_management/dnf_package_manager/)
 - [Rocky Repository Guidance](https://wiki.rockylinux.org/rocky/repo/)
 
-## Required Materials
-
----
+### Required Materials
 
 Rocky 9.3 – ProLUG Lab
 

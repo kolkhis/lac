@@ -1,28 +1,22 @@
-# Containerization with Podman
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Unit 9 Lab - Containerization with Podman</h1>
+    </p>
+</div>
 
-### **Intro**
-
-Unit 9 LAB covers free and Open-Source "next generation" containerization solution Podman. 
+Unit 9 LAB covers free and Open-Source "next generation" containerization solution Podman.
 
 Enhanced security, a daemon-less architecture, and better support for running containers as non-root users some Admins will choose this solution over Docker and easily integrate it into your Enterprise or HomeLab environment.
 
 We shall cover few basics:
+
 - Inspect if and when it was installed (comes pre-installed with RedHat)
 - How to build and run Podman containers
 - How to build an application with Podman
 - Follow deployment flow (logs, processes, etc..)
 
----
-
-### **Required Materials**
-
-Rocky 9 or equivalent
-
-Root or sudo command access
-
----
-
-### **Resources / Important Links**
+### Resources / Important Links
 
 - [https://podman.io/docs](https://podman.io/docs)
 
@@ -30,47 +24,52 @@ Root or sudo command access
 
 - [https://docs.podman.io/en/latest/markdown/podman-exec.1.html](https://docs.podman.io/en/latest/markdown/podman-exec.1.html)
 
----
+### Required Materials
 
-### **EXERCISES (Warmup and quick review)**
+Rocky 9 or equivalent
+
+Root or sudo command access
+
+### EXERCISES (Warmup and quick review)
 
 1. `which podman`
 
 2. `dnf whatprovides podman`
 
-3. `rpm -qi podman`   
-	When was this installed?   
-	What version is it?   
-	Why might this be important to know?
+3. `rpm -qi podman`  
+   When was this installed?  
+   What version is it?  
+   Why might this be important to know?
 
 4. `podman images`
 
-5. `podman ps`   
-	What do you learn from those two commands?   
-	Why might it be important to know on a system?
+5. `podman ps`  
+   What do you learn from those two commands?  
+   Why might it be important to know on a system?
 
----
+### Building and running containers
 
-### **Building and running containers**
-
-Your tasks in this lab are designed to get you thinking about how container 
-deployments interact with our Linux systems that we support.   
+Your tasks in this lab are designed to get you thinking about how container
+deployments interact with our Linux systems that we support.
 
 1. Pull and run a container
+
 ```bash
 podman run -dt -p 8080:80/tcp docker.io/library/httpd
 ```
 
 What do you see on your screen as this happens?
 
-2. Check your images again (from your earlier exercises)   
+2. Check your images again (from your earlier exercises)
+
 ```bash
 podman images
 ```
 
 Is there a new image, and if so, what do you notice about it?
 
-3. Check your podman running containers   
+3. Check your podman running containers
+
 ```bash
 podman ps
 ```
@@ -78,120 +77,124 @@ podman ps
 What appears to be happening? Can you validate this with your Linux knowledge?
 
 ```bash
-ss -ntulp   
+ss -ntulp
 curl 127.0.0.1:8080
-```  
+```
 
-4. Inspect the running pod   
+4. Inspect the running pod
+
 ```bash
 podman inspect -l
 ```
-What format is the output in?   
+
+What format is the output in?  
 What important information might you want from this in the future?
 
 ```bash
 podman logs -l
 ```
-What info do you see in the logs?   
-Do you see your connection attempt from earlier? What is the return code and 
+
+What info do you see in the logs?  
+Do you see your connection attempt from earlier? What is the return code and
 why is that important for troubleshooting?
 
 ```bash
 podman top -l
 ```
 
-What processes is the pod running?   
-What other useful information might you find here?   
+What processes is the pod running?  
+What other useful information might you find here?  
 Why might it be good to know the user being run within the pod?
 
-5. Stop the pod by its name   
+5. Stop the pod by its name
+
 ```bash
 podman stop <podname>
 ```
 
 Can you verify it is stopped from your previous commands?
+
 ```bash
 podman ps
-ss -ntulp   
-curl 127.0.0.1:8080  
+ss -ntulp
+curl 127.0.0.1:8080
 ```
 
 Does the container still exist? Why might you want to know this?
+
 ```bash
 podman image
 ```
 
----
+### Build an application in a container
 
-### **Build an application in a container**
-
-The ProLUG lab will already have a version of this setup for you to copy and run. 
+The ProLUG lab will already have a version of this setup for you to copy and run.
 If you are in a different environment, follow https://docs.docker.com/build/concepts/dockerfile/
 for the general same steps.
 
 1. Setup your lab environment
+
 ```bash
-[root@rocky11 stream]# cd /lab_work/   
-[root@rocky11 lab_work]# ls   
-[root@rocky11 lab_work]# mkdir scott_lab9   
-[root@rocky11 lab_work]# cd scott_lab9/   
-[root@rocky11 scott_lab9]# ls   
-[root@rocky11 scott_lab9]# cp /labs/lab9.tar.gz .   
-[root@rocky11 scott_lab9]# tar -xzvf lab9.tar.gz  
-lab9/   
-lab9/Dockerfile   
-lab9/hello.py   
-[root@rocky11 scott_lab9]# ls   
-lab9 lab9.tar.gz   
-[root@rocky11 scott_lab9]# cd lab9   
-[root@rocky11 lab9]# pwd   
-/lab_work/scott_lab9/lab9   
-[root@rocky11 lab9]# ls   
+[root@rocky11 stream]# cd /lab_work/
+[root@rocky11 lab_work]# ls
+[root@rocky11 lab_work]# mkdir scott_lab9
+[root@rocky11 lab_work]# cd scott_lab9/
+[root@rocky11 scott_lab9]# ls
+[root@rocky11 scott_lab9]# cp /labs/lab9.tar.gz .
+[root@rocky11 scott_lab9]# tar -xzvf lab9.tar.gz
+lab9/
+lab9/Dockerfile
+lab9/hello.py
+[root@rocky11 scott_lab9]# ls
+lab9 lab9.tar.gz
+[root@rocky11 scott_lab9]# cd lab9
+[root@rocky11 lab9]# pwd
+/lab_work/scott_lab9/lab9
+[root@rocky11 lab9]# ls
 Dockerfile hello.py
 ```
 
 2. Create a docker image from the docker file:
+
 ```bash
-time podman build -t scott_hello .   
-#Use your name   
+time podman build -t scott_hello .
+#Use your name
 ```
 
-What output to your screen do you see as you build this?   
-Approximately how long did it take?   
+What output to your screen do you see as you build this?  
+Approximately how long did it take?
 
 If this breaks in the lab, how might you fix it? What do you suspect?
 
 3. Verify that you have built the container
+
 ```bash
 podman images
 ```
 
 4. Run the container as a daemon
+
 ```bash
 podman run -dt localhost/scott_example
 ```
 
 5. Verify the name and that it is running
+
 ```bash
 podman ps
 ```
 
 6. Exec into the pod and see that you are on the Ubuntu container
+
 ```bash
-podman exec -it festive_pascal sh   
-cat /etc/\*release   
+podman exec -it festive_pascal sh
+cat /etc/\*release
 exit
 ```
 
-### **Conclusion**
+### Conclusion
 
-There are a lot of ways to use these tools. There are a lot of ways you will support them. At the end of
-
-the day you're a Linux System Administrator, you're expected to understand everything that goes on in
-
-your system. To this end, we want to know the build process and run processes so we can help the   
-engineers we support keep working in a Linux environment.   
-
-Notes and resources used:  
-Always keep your own notes while doing the LAB
-
+There are a lot of ways to use these tools. There are a lot of ways you will support them.
+At the end of the day you're a Linux System Administrator, you're expected to understand
+everything that goes on in your system. To this end, we want to know the build process and
+run processes so we can help the engineers we support keep working in a Linux environment.

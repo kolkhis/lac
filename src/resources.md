@@ -1,3 +1,10 @@
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Resources</h1>
+    </p>
+</div>
+
 - [What is Vim?](https://github.com/vim/vim)
 - [The Linux Foundation](https://www.linux.org/pages/download/)
 - [Linux CLI Cheatsheets](https://www.digitalocean.com/community/tutorials/linux-commands)
@@ -44,10 +51,9 @@
 - [Wikipedia entry for Next-Gen Firewalls](https://en.wikipedia.org/wiki/Next-generation_firewall)
 - [Firewalld Official Documentation](https://firewalld.org/documentation/)
 - [RedHat Firewalld Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld_firewall-packet-filters)
-- [DNF package manager](https://en.wikipedia.org/wiki/DNF_(software)).
+- [DNF package manager](<https://en.wikipedia.org/wiki/DNF_(software)>).
 - [RedHat Docs: DNF](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/managing_software_with_the_dnf_tool/index)
 - [RedHat Docs: Repositories/RHEL 8](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/considerations_in_adopting_rhel_8/repositories_considerations-in-adopting-rhel-8)
 - [Yellow Dog Linux Wiki](https://en.wikipedia.org/wiki/Yellow_Dog_Linux)
 - [Git Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) and runner that then produces an easily navigable website.
 - [Getting Started with Ansible](https://docs.ansible.com/ansible/latest/getting_started/index.html)
-

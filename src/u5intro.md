@@ -1,28 +1,38 @@
-# Unit 5
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Unit 5</h1>
+    </p>
+</div>
 
-## Overview 
+## Overview
 
-### What is the concept we are dealing with?  
+---
 
+### What is the concept we are dealing with?
 
-This unit focuses on managing user's environments and scanning and enumerating Systems. 
+This unit focuses on managing user's environments and scanning and enumerating Systems.
 
 - Become familiar with networking scanning tools
 - Understand the functionality systems files and customized .(dot) files.
 
 ## Learning Objectives
 
+---
+
 1.  **Become familiar with Networking mapping:**
-   
-   * Learn how to find your network inventory by using nmap.
-   * Grasp the basics of targeted scans by scanning virtual boxes and creating a report.
-  
+
+- Learn how to find your network inventory by using nmap.
+- Grasp the basics of targeted scans by scanning virtual boxes and creating a report.
+
 2. **Explore the system files:**
 
-* Understand the structure of the /etc/passwd file by using the cat command.
-* Customize the /etc/skel file to create a default shell environment for the users. 
+- Understand the structure of the /etc/passwd file by using the cat command.
+- Customize the /etc/skel file to create a default shell environment for the users.
 
 ## Prerequisites
+
+---
 
 - Basic understanding of networking.
 - Familiarity with nmap.
@@ -31,18 +41,20 @@ This unit focuses on managing user's environments and scanning and enumerating S
 
 ## Key Terms and Definitions
 
-**Footprinting** 
+---
 
-**Scanning** 
+**Footprinting**
 
-**Enumeration** 
+**Scanning**
 
-**System Hacking** 
+**Enumeration**
 
-**Escalation of Privilege** 
+**System Hacking**
 
-**Rule of Least Privilege** 
+**Escalation of Privilege**
 
-**Covering Tracks** 
+**Rule of Least Privilege**
 
-**Planting Backdoors** 
+**Covering Tracks**
+
+**Planting Backdoors**

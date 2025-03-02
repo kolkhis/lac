@@ -1,8 +1,16 @@
-# Unit 1
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Unit 1</h1>
+    </p>
+</div>
 
 ## Overview
 
+---
+
 ### What is the skill/tech/concept we are dealing with?
+
 This unit introduces the foundational skills needed for effective Linux system administration with an emphasis on Red Hat Enterprise Linux (RHEL). It covers:
 
 - **Command-Line Proficiency:** Mastery of the shell environment is essential for routine tasks such as navigating the file system, managing processes, and automating scripts.
@@ -15,27 +23,36 @@ This unit introduces the foundational skills needed for effective Linux system a
 
 ## Learning Objectives
 
-1. **Master Command-Line Fundamentals:**  
-  - Develop proficiency in navigating the Linux command-line interface (CLI) for everyday system management tasks.  
-  - Learn how to execute commands to manipulate files, directories, and system processes efficiently. 
+---
 
-2. **Understand the Linux File System:**  
-  - Grasp the structure and organization of the Linux file hierarchy.  
-  - Comprehend how the file system affects system configuration, security, and troubleshooting on Red Hat platforms. 
+1. **Master Command-Line Fundamentals:**
 
-3. **Gain Proficiency in Text Editing with VI/Vim:**  
-  - Acquire hands-on experience with vi/vim through guided exercises (e.g., vimtutor, VIM Adventures).  
-  - Learn to edit configuration files and scripts accurately, which is critical for system administration. 
+- Develop proficiency in navigating the Linux command-line interface (CLI) for everyday system management tasks.
+- Learn how to execute commands to manipulate files, directories, and system processes efficiently.
 
-4. **Engage with Practical System Administration Tasks:**  
-  - Explore foundational utilities and commands essential for managing a Linux system.  
-  - Apply theoretical knowledge through real-world examples, discussion posts, and interactive resources to reinforce learning. 
+2. **Understand the Linux File System:**
+
+- Grasp the structure and organization of the Linux file hierarchy.
+- Comprehend how the file system affects system configuration, security, and troubleshooting on Red Hat platforms.
+
+3. **Gain Proficiency in Text Editing with VI/Vim:**
+
+- Acquire hands-on experience with vi/vim through guided exercises (e.g., vimtutor, VIM Adventures).
+- Learn to edit configuration files and scripts accurately, which is critical for system administration.
+
+4. **Engage with Practical System Administration Tasks:**
+
+- Explore foundational utilities and commands essential for managing a Linux system.
+- Apply theoretical knowledge through real-world examples, discussion posts, and interactive resources to reinforce learning.
 
 These objectives are designed to ensure that learners not only acquire technical competencies but also understand how these skills integrate into broader system administration practices in a Red Hat environment.
 
 ## Relevance & Context
 
+---
+
 ### Why is it important to Linux Administrators/Engineers?
+
 The skills taught in this unit are indispensable for several reasons:
 
 - **Efficient System Management:**  
@@ -52,6 +69,8 @@ The skills taught in this unit are indispensable for several reasons:
 
 ## Prerequisites
 
+---
+
 ### Briefly mention concepts or skills the reader should already understand before starting the chapter.
 
 The unit assumes a basic level of computer literacy, meaning the learner is comfortable with fundamental computer operations. However, before achieving that level, one must have **digital literacy**. This involves:
@@ -67,28 +86,30 @@ The unit assumes a basic level of computer literacy, meaning the learner is comf
 
 ## Key terms and Definitions
 
-**Linux Kernel**  
+---
 
-**Command-Line Interface (CLI)**  
+**Linux Kernel**
 
-**Shell**  
+**Command-Line Interface (CLI)**
 
-**Terminal**  
+**Shell**
 
-**Filesystem Hierarchy**  
+**Terminal**
 
-**Package Manager (e.g., YUM/DNF)**  
+**Filesystem Hierarchy**
 
-**Text Editors (VI/Vim)**  
+**Package Manager (e.g., YUM/DNF)**
 
- **Sudo**  
- 
- **File Permissions and Ownership**  
+**Text Editors (VI/Vim)**
 
-**Processes and Daemons**  
+**Sudo**
 
-**System Logs**  
+**File Permissions and Ownership**
 
-**Networking Basics**  
+**Processes and Daemons**
 
-**Bash Scripting**  
+**System Logs**
+
+**Networking Basics**
+
+**Bash Scripting**
