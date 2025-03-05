@@ -4,15 +4,9 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Containerization with Podman on Linux</h1>
+        <h1>Unit 9 Worksheet - Containerization with Podman on Linux</h1>
     </p>
 </div>
-
-## Unit 9 Worksheet
-
----
-
-## Introduction
 
 Welcome to Unit 9.  
 This unit is all about containerization using Docker/Podman.  
@@ -20,7 +14,6 @@ We'll cover what a container is, how to utilize and administer containers as Lin
 sysadmins, and how to both download and build new container images.  
 We also touch on different types of environments (dev/prod) and the concept of CI/CD
 pipelines.
-
 
 ### Resources / Important Links
 
@@ -43,13 +36,13 @@ pipelines.
 
 ## Instructions
 
+---
+
 A major aspect of this course is to intake, comprehend, and discuss the assigned
 topics. Take the time to fully absorb each topic and contribute to the
 discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
-
----
 
 #### Discussion Post #1
 
@@ -61,7 +54,6 @@ It’s a slow day in the NOC and you have heard that a new system of container d
 3.  What seems to be the major benefit of containers?
 
 4.  What seems to be some obstacles to container deployment?
-
 
 <div class="warning">
 Submit your input by following the link below:
@@ -101,8 +93,8 @@ tcp     LISTEN   0        4096                    *:8080                   *:*  
 1. What do you think the problem might be?  
     - How will you test this?
 
-2. The developer tells you that he’s pulling a local image, do you find this to be
-   true, or is something else happening in their run command?  
+2. The developer tells you that he’s pulling a local image. Do you find this to be
+   true, or is something else happening in their `run` command?  
 
 <div class="warning">
 Submit your input by following the link below:
@@ -110,28 +102,29 @@ Submit your input by following the link below:
 
 - [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1304889728281084017)
 
-
 ## Definitions
 
-- Container:
+---
 
-- Docker:
+Container:  
 
-- Podman:
+Docker:  
 
-- CI/CD:
+Podman:  
 
-- Dev/Prod Environments (Development/Production Environments):
+CI/CD:  
 
-- Dockerfile:
+Dev/Prod Environments (Development/Production Environments):  
 
-- Docker/Podman images:
+Dockerfile:  
 
-- Repository:
+Docker/Podman images:  
 
-
+Repository:  
 
 ## Digging Deeper
+
+---
 
 1. Find a blog on deployment of some service or application in a container that interests you.  
    See if you can get the deployment working in the lab.
@@ -139,18 +132,15 @@ Submit your input by following the link below:
     - What did you have to troubleshoot?
     - What documentation can you make to be able to do this faster next time?
 
+2. Run this scenario and play with K3s: <https://killercoda.com/k3s/scenario/intro>
 
-- Run scenario and play with K3s: <https://killercoda.com/k3s/scenario/intro>
-
----
 
 ## Reflection Questions
 
+---
 
 1. What questions do you still have about this week?
 
 2. How can you apply this now in your current role in IT? If you’re not in IT, how 
    can you look to put something like this into your resume or portfolio?
-
----
 
