@@ -6,6 +6,7 @@
 </div>
 
 Welcome to Unit 7.
+
 This unit is all about understanding security and package management on Linux systems.  
 Securing systems is not just the job of security engineers. It falls on system
 administrators and system engineers to ensure all security best practices are
