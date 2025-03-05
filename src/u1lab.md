@@ -1,8 +1,16 @@
-# PART 1 - Linux File Operations
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Unit 1 Lab - Linux File Operations</h1>
+    </p>
+</div>
 
 ## Module 1: Creating Empty Files
 
+---
+
 ### Exercise 1.1: Basic File Creation
+
 ```bash
 # Create working directory
 mkdir ~/lab_essentials
@@ -17,6 +25,7 @@ ls -l testfile1
 ```
 
 ### Exercise 1.2: Multiple File Creation
+
 ```bash
 # Create multiple files using BASH brace expansion
 touch testfile{2..10}
@@ -27,6 +36,7 @@ ls -l | grep testfile
 ```
 
 ### Exercise 1.3: Dynamic File Names
+
 ```bash
 # Create files using system information
 touch file."$(hostname)"
@@ -44,7 +54,10 @@ date +%C  # Century
 
 ## Module 2: Creating Files with Content
 
+---
+
 ### Exercise 2.1: Using Redirects
+
 ```bash
 # Create file with content
 echo "grapes 5" > fruits.txt
@@ -64,6 +77,7 @@ cat fruits.txt
 ```
 
 ### Exercise 2.2: Using vim
+
 ```bash
 # Install vim if needed
 sudo dnf install -y vim
@@ -71,7 +85,9 @@ sudo dnf install -y vim
 # Create and edit new file
 vim somefile.txt
 ```
+
 Add these lines (press 'i' to enter insert mode):
+
 ```
 grapes 5
 apples 7
@@ -80,11 +96,15 @@ bananas 2
 pears 6
 pineapples 9
 ```
+
 Save and exit (ESC then :wq)
 
 ## Module 3: File Operations
 
+---
+
 ### Exercise 3.1: Copying Files
+
 ```bash
 # Create backup copy
 cp somefile.txt backupfile.txt
@@ -95,6 +115,7 @@ cat backupfile.txt
 ```
 
 ### Exercise 3.2: Moving/Renaming Files
+
 ```bash
 # Rename file
 mv somefile.txt fruits.txt
@@ -106,7 +127,10 @@ cat fruits.txt
 
 ## Module 4: Search and Sort
 
+---
+
 ### Exercise 4.1: Filtering Content
+
 ```bash
 # View full file
 cat fruits.txt
@@ -123,6 +147,7 @@ cat fruits.txt | grep -i "^apple"
 ```
 
 ### Exercise 4.2: Sorting Content
+
 ```bash
 # Sort alphabetically
 sort fruits.txt
@@ -138,11 +163,15 @@ sort -k 2 fruits.txt > sort_by_price.txt
 cat sort_by_alphabetical.txt
 cat sort_by_price.txt
 ```
+
 # PART 2 - Linux Redirection Fundamentals
 
 ## Module 1: Basic Input/Output Redirection
 
+---
+
 ### Exercise 1.1: File Output Redirection
+
 ```bash
 # Create working directory
 mkdir ~/redirection_lab
@@ -163,6 +192,7 @@ cat fruits.txt
 ```
 
 ### Exercise 1.2: Using the Pipe Operator
+
 ```bash
 # Basic pipe usage
 cat fruits.txt | grep apple
@@ -177,6 +207,7 @@ cat fruits.txt | grep apple | sort | nl
 ## Module 2: Using tee Command
 
 ### Exercise 2.1: Basic tee Usage
+
 ```bash
 # Display and save output simultaneously
 date | tee datefile
@@ -188,6 +219,7 @@ cat datefile
 ```
 
 ### Exercise 2.2: Multiple Outputs
+
 ```bash
 # Create test data
 echo "test data" | tee file1.txt file2.txt
@@ -197,7 +229,10 @@ cat file2.txt
 
 ## Module 3: Error Redirection
 
+---
+
 ### Exercise 3.1: Redirecting Errors
+
 ```bash
 # Generate an error
 ls nonexistent_file
@@ -209,6 +244,7 @@ ls nonexistent_file 2> /dev/null
 ```
 
 ### Exercise 3.2: Collecting Error Logs
+
 ```bash
 # Redirect errors while keeping normal output
 ls existing_file nonexistent_file >> output.log 2>> errors.log
@@ -222,7 +258,10 @@ cat errors.log
 
 ## Module 4: Practical Examples
 
+---
+
 ### Exercise 4.1: Process Information
+
 ```bash
 # Install required package if needed
 sudo dnf install -y bzip2
@@ -232,6 +271,7 @@ time dd if=/dev/urandom bs=1024k count=1 | bzip2 -9 >> /dev/null
 ```
 
 ### Exercise 4.2: Simple Input Script
+
 ```bash
 # Create a test script
 cat > testscript.sh << 'EOF'
@@ -253,7 +293,10 @@ echo -e "yes\nno" | ./testscript.sh
 
 ## Module 1: Understanding Linux Permissions
 
+---
+
 ### Exercise 1.1: Viewing Permissions
+
 ```bash
 # Create working directory
 mkdir ~/permissions_lab
@@ -269,6 +312,7 @@ ls -ld testdir
 ```
 
 ### Exercise 1.2: Understanding Permission Format
+
 ```bash
 # Permission string breakdown:
 # -rwxrwxrwx
@@ -296,7 +340,10 @@ ls -ld testdir
 
 ## Module 2: Reading Permissions
 
+---
+
 ### Exercise 2.1: Examining System Files
+
 ```bash
 # View home directory permissions
 ls -ld /home
@@ -312,6 +359,7 @@ ls -ld /tmp
 ```
 
 ### Exercise 2.2: Permission Analysis
+
 ```bash
 # Create files with different permissions
 touch file1
@@ -329,7 +377,10 @@ ls -l file2
 
 ## Module 3: Modifying Permissions
 
+---
+
 ### Exercise 3.1: Using chmod with Letters
+
 ```bash
 # Create test file
 touch permissions_test
@@ -349,6 +400,7 @@ ls -l permissions_test
 ```
 
 ### Exercise 3.2: Using chmod with Numbers
+
 ```bash
 # Understanding numeric permissions:
 # 4 = read (r)
@@ -364,7 +416,10 @@ chmod 777 file4    # rwxrwxrwx
 
 ## Module 4: File Ownership
 
+---
+
 ### Exercise 4.1: Viewing Ownership
+
 ```bash
 # View file ownership
 ls -l testfile.txt
@@ -377,6 +432,7 @@ ls -l testfile.txt
 ```
 
 ### Exercise 4.2: Changing Ownership
+
 ```bash
 # Note: These commands require sudo
 # Change user ownership
@@ -392,7 +448,11 @@ sudo chown user1:group1 testfile.txt
 # PART 1: File Operations Challenge Script
 
 ## Challenge Exercise
+
+---
+
 Create a BASH script that:
+
 1. Creates three files with different names based on current date
 2. Adds different fruit entries to each file
 3. Combines all files into a single file
@@ -465,55 +525,67 @@ echo -e "\nScript completed. Results saved in expensive_fruits.txt"
 
 ---
 
-
 Let me explain each part of the script and how it relates to what we learned from Part 1:
 
 1. File Creation:
+
 ```bash
 HOUR_FILE="fruits_$(date +%H).txt"
 echo "apples 7" > "$HOUR_FILE"
 echo "grapes 4" >> "$HOUR_FILE"
 ```
+
 - Uses `date` command with formatting as learned in Exercise 1.3
 - Demonstrates both overwrite `>` and append `>>` from Exercise 2.1
 - Uses dynamic file naming like we learned in Exercise 1.3
 
 2. Listing Files:
+
 ```bash
 ls -l fruits_*.txt
 ```
+
 - Uses file listing with wildcard as shown in Exercise 1.2
 - Shows file attributes as practiced throughout Module 1
 
 3. Combining Files:
+
 ```bash
 cat fruits_*.txt > all_fruits.txt
 ```
+
 - Uses `cat` for file viewing as learned in Module 2
 - Demonstrates output redirection from Exercise 2.1
 
 4. Sorting:
+
 ```bash
 sort -k 2 -n all_fruits.txt > sorted_fruits.txt
 ```
+
 - Uses `sort` with column specification as learned in Exercise 4.2
 - Demonstrates saving sorted output to new file
 
 5. Filtering:
+
 ```bash
 grep " [6-9]" sorted_fruits.txt > expensive_fruits.txt
 ```
+
 - Uses `grep` for pattern matching as learned in Exercise 4.1
 - Shows practical application of filtering and redirection
 
 6. File Cleanup:
+
 ```bash
 rm fruits_*.txt
 ```
+
 - Demonstrates file removal with wildcards
 - Shows practical file management
 
 The script brings together all major concepts from Part 1:
+
 - File creation and manipulation
 - Using system information in filenames
 - Input/output redirection
@@ -524,7 +596,10 @@ The script brings together all major concepts from Part 1:
 
 ## Challenge Exercise
 
+---
+
 Create a script that:
+
 1. Creates several files with different permissions
 2. Displays their initial permissions
 3. Modifies permissions using both symbolic and numeric notation
@@ -608,50 +683,61 @@ echo "Error Log: $ERROR_LOG"
 Let me explain the key redirection concepts demonstrated in this script from Part 2:
 
 1. Basic Output Redirection:
+
 ```bash
 > "$OUTPUT_LOG"              # Clear file using overwrite
 echo "Hello, $username!" > "user_greeting.txt"  # Redirect output to file
 ```
+
 - Shows use of `>` for overwriting files
 - Demonstrates creating new files with content
 
 2. Error Redirection:
+
 ```bash
 ls nonexistent_file 2>> "$ERROR_LOG"  # Redirect errors to error log
 ```
+
 - Uses `2>>` to append stderr to error log
 - Shows practical error handling
 
 3. Using tee for Dual Output:
+
 ```bash
 log_message() {
     echo "[$timestamp] $1" | tee -a "$OUTPUT_LOG"
 }
 ```
+
 - Demonstrates `tee` for simultaneous console and file output
 - Uses `-a` flag for append mode
 
 4. Input Redirection:
+
 ```bash
 read -r username || {
     echo "Error reading username" 2>> "$ERROR_LOG"
     exit 1
 }
 ```
+
 - Shows handling of input with error checking
 - Demonstrates error redirection in case of failure
 
 5. Compound Redirections:
+
 ```bash
 {
     echo "=== Operation Summary ==="
     # Multiple commands here
 } | tee -a "$OUTPUT_LOG"
 ```
+
 - Uses command grouping with redirections
 - Shows how to handle multiple lines of output
 
 The script demonstrates all key concepts from Part 2:
+
 - Input/output redirection
 - Error handling and logging
 - Using tee for dual output
@@ -661,7 +747,11 @@ The script demonstrates all key concepts from Part 2:
 # PART 3: Permissions Challenge Script
 
 ## Challenge Exercise
+
+---
+
 Create a script that:
+
 1. Creates several files with different permissions
 2. Displays their initial permissions
 3. Modifies permissions using both symbolic and numeric notation
@@ -737,15 +827,15 @@ echo "Attempting ownership changes..."
 if [ "$(id -u)" -eq 0 ]; then
     # Only run these if script is run with sudo
     echo "Changing ownership (requires sudo)..."
-    
+
     # Change user ownership
     chown "$SUDO_USER" regular_file.txt
     show_permissions "regular_file.txt"
-    
+
     # Change group ownership
     chown :"$SUDO_USER" private_file.txt
     show_permissions "private_file.txt"
-    
+
     # Change both user and group
     chown "$SUDO_USER":"$SUDO_USER" script.sh
     show_permissions "script.sh"
@@ -783,17 +873,20 @@ fi
 Let me explain each major component of this script and its relevance to permissions from Part 3:
 
 1. Permission Display Function:
+
 ```bash
 show_permissions() {
     local perms=$(ls -l "$file" | awk '{print $1, $3, $4}')
     echo "Permissions: $perms"
 }
 ```
+
 - Uses `ls -l` to show detailed file information
 - Extracts permissions, user, and group information
 - Provides consistent formatting for display
 
 2. File Creation with Different Purposes:
+
 ```bash
 # Regular file (default permissions)
 touch regular_file.txt
@@ -802,51 +895,61 @@ touch script.sh
 # Private file (restricted access)
 touch private_file.txt
 ```
+
 - Demonstrates different file types
 - Shows default permission assignments
 - Creates files for different use cases
 
 3. Symbolic Permission Changes:
+
 ```bash
 chmod u+x script.sh      # Add user execute
 chmod o-r regular_file.txt   # Remove other read
 ```
+
 - `u+x`: Add execute for user
 - `o-r`: Remove read for others
 - Shows symbolic notation usage
 
 4. Numeric Permission Changes:
+
 ```bash
 chmod 600 private_file.txt   # rw-------
 chmod 755 shared_dir        # rwxr-xr-x
 ```
+
 - `600`: User read/write only
 - `755`: Common directory permissions
 - Demonstrates numeric notation
 
 5. Ownership Changes (with sudo):
+
 ```bash
 if [ "$(id -u)" -eq 0 ]; then
     chown "$SUDO_USER" regular_file.txt
     chown :"$SUDO_USER" private_file.txt
 ```
+
 - Checks for root privileges
 - Changes user ownership
 - Changes group ownership
 - Shows both separate and combined changes
 
 6. Educational Elements:
+
 ```bash
 echo "Permission Reference:"
 echo "4 = read (r)"
 echo "2 = write (w)"
 echo "1 = execute (x)"
 ```
+
 - Includes permission references
 - Shows common combinations
 - Provides practical examples
 
 Key Learning Points:
+
 1. Permission Notation:
    - Symbolic (u+x, o-r)
    - Numeric (644, 755)

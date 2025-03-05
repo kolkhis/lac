@@ -5,10 +5,6 @@
     </p>
 </div>
 
----
-
-## Intro
-
 The Unit 6 lab covers the administration of Firewall Daemon, a powerful dynamically managed firewall with support for network/firewall “zones”.
 
 This lab will take you through the basics of:
@@ -17,25 +13,19 @@ This lab will take you through the basics of:
 - Configuring Zones
 - Changing Modes
 
----
-
 ### Resources / Important Links
 
 - [Firewalld Official Documentation](https://firewalld.org/documentation/)
 - [RedHat Firewalld Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld_firewall-packet-filters)
-
----
 
 ## Required Materials
 
 - Rocky 9.3 – ProLUG Lab
 - root or sudo command access
 
+## Pre-Lab Warm-Up
+
 ---
-
-## Begin
-
-### Pre-Lab Warm-Up
 
 Exercises (Warmup to quickly run through your system and practice commands)
 
@@ -64,9 +54,9 @@ We just put the aliases back.
 17. `ls`
     - Think about some of those commands and when you might use them. Try to change command #15 to remove all of those files (rm -rf file$i)
 
----
+## Lab 🧪
 
-### Lab🧪
+---
 
 This lab is designed to help you get familiar with the basics of the systems you will be working on.
 

@@ -1,7 +1,7 @@
 <div class="flex-container">
-        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
     <p>
-        <h1>Contributing to the ProLUG Linux Sysadmin Course Book</h1>
+        <h1>Contributing and Local Development</h1>
     </p>
 </div>
 
@@ -136,5 +136,10 @@ ssh {TARGET_IP} "cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html && syste
 ```
 
 An example of the workflow after making changes:
+
+```bash
+scp src/development.md 172.16.15.8:/root/lac/src/
+ssh 172.16.15.8 "cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html && systemctl restart httpd"
+```
 
 <img src="./assets/images/workflow.png"></img>

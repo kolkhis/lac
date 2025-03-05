@@ -1,15 +1,9 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Linux Fundamentals and Systems Editing Tools</h1>
+        <h1>Unit 1 Worksheet - Linux Fundamentals and Systems Editing Tools</h1>
     </p>
 </div>
-
-## Unit 1 Worksheet
-
----
-
-## Introduction
 
 Welcome to Unit 1 of the Professional Linux Users Group (ProLUG) Systems Administration Course.
 With this worksheet students will explore the foundations of Linux and its many constituent parts.

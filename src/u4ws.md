@@ -1,15 +1,9 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Operating Running Systems and Handling Incidents</h1>
+        <h1>Unit 4 Worksheet - Operating Running Systems and Handling Incidents</h1>
     </p>
 </div>
-
-## Unit 4 Worksheet
-
----
-
-## Introduction
 
 Welcome to Unit 4, in this unit the course will discuss operating running
 systems and handling incidents. The unit will delve into gathering and
@@ -18,9 +12,9 @@ and implementing an incident response cycle for triage events.
 
 ### Resources / Important Links
 
-- Operations Bridge: <https://cio-wiki.org/wiki/Operations_Bridge>
-- Security Incident Cheatsheet: <https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf?msc=Cheat+Sheet+Blog>
-- Battle Drills: <https://en.wikipedia.org/wiki/Battle_drill>
+- [Operations Bridge](https://cio-wiki.org/wiki/Operations_Bridge)
+- [Security Incident Cheatsheet](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf?msc=Cheat+Sheet+Blog)
+- [Battle Drills](https://en.wikipedia.org/wiki/Battle_drill)
 
 ### Unit 4 Recording
 

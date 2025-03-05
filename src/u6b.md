@@ -1,26 +1,39 @@
-# Terminal Multiplexors
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Unit 6 Bonus - Terminal Multiplexors</h1>
+    </p>
+</div>
 
 Enhance productivity by enabling the management of multiple sessions and windows from a single remote session.
 
 ## 🔑 Key Features of Terminal Multiplexors
 
+---
+
 ### Create Multiple Windows/Panes 🪟
-   Split your terminal into panes (or windows) so you can run different commands or tasks simultaneously.
+
+Split your terminal into panes (or windows) so you can run different commands or tasks simultaneously.
 
 ### Detach and Reattach Sessions 🪝
-   You can detach from a session (e.g., when you log out of a remote server), and later reattach to it exactly as you left it.
+
+You can detach from a session (e.g., when you log out of a remote server), and later reattach to it exactly as you left it.
 
 ### Persistence of Long-Running Tasks ⏰
-   If your network connection drops, the tasks keep running on the server, and you can reattach to them later.
+
+If your network connection drops, the tasks keep running on the server, and you can reattach to them later.
 
 ### Collaborate 🤝
-   Some terminal multiplexers allow multiple users to connect to the same session, enabling collaborative work on a single system.
-   
+
+Some terminal multiplexers allow multiple users to connect to the same session, enabling collaborative work on a single system.
+
 ## Popular Terminal Multiplexors
+
+---
 
 ### 🧩 Tmux
 
-- Is widely used by developers and system administrators for its flexible configuration and vibrant community support.  
+- Is widely used by developers and system administrators for its flexible configuration and vibrant community support.
 - Its popularity also stems from its straightforward scripting capabilities, making it highly useful for automation.
 
 #### Tmux Resources
