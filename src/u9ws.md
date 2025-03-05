@@ -33,7 +33,7 @@ pipelines.
     style="width: 100%; height: 100%; border: none;
     aspect-ratio: 16/9; border-radius: 1rem; background:black"
     src="https://www.youtube.com/embed/_lo50mgERJY?si=diwjdV3x4pZfO7F_"
-    title="Unit 4: Linux System Administrator Course"
+    title="Unit 9: Containerization with Podman on Linux"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -67,7 +67,7 @@ It’s a slow day in the NOC and you have heard that a new system of container d
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 1](Placeholder)
+- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1304889654306144519)
 
 #### Discussion Post #2
 
@@ -108,7 +108,7 @@ tcp     LISTEN   0        4096                    *:8080                   *:*  
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](Placeholder)
+- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1304889728281084017)
 
 
 ## Definitions
