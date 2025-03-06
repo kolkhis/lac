@@ -52,7 +52,7 @@ Can you find 3 reasons, from the internet, AI, or your peers?
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 1](Placeholder)
+- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1299794505427587122)
 
 #### Discussion Post #2
 
@@ -78,7 +78,7 @@ This is an urgent task and your manager is hovering.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](Placeholder)
+- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1299794568731951116)
 
 #### Discussion Post #3
 <div class="warning">
@@ -103,7 +103,7 @@ This is a thought exercise, so it’s not a “right or wrong” answer it’s f
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 3](Placeholder)
+- [Link to Discussion Post 3](https://discord.com/channels/611027490848374811/1299794638340755567)
 
 
 ## Definitions
@@ -136,6 +136,5 @@ Semantic Version:
 
 1. What questions do you still have about this week?
 
-2. How much better has your note taken gotten since you started?
-   What do you still need to work on? Have you started using a different tool?
-   Have you taken more notes?
+2.	How does security as a system administrator differ from what you expected?
+
