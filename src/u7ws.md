@@ -1,16 +1,19 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
     <p>
-        <h1>Unit 7 Worksheet - Package Management</h1>
+        <h1>Unit 7 Worksheet - Security and Package Management</h1>
     </p>
 </div>
 
 
 Welcome to Unit 7.
-This unit is all about understanding how to manage packages on Linux systems.  
+This unit is all about understanding security and package management on Linux systems.  
+Securing systems is not just the job of security engineers. It falls on system
+administrators and system engineers to ensure all security best practices are
+enforced on their systems to meet certain standards.  
 Whether it is compatibility or security, ensuring all the correct packages are on the 
 system *and* ensuring the package versions match the needs of the users is a crucial
-skill for any aspiring systems administrator.  
+skill for any sysadmin.  
 
 
 ### Resources / Important Links
@@ -42,13 +45,8 @@ foundation of knowledge.
 
 #### Discussion Post #1
 
-Read this article: <https://cio-wiki.org/wiki/Operations_Bridge>
-
-1. What terms and concepts are new to you?
-
-2. Which pro seems the most important to you? Why?
-
-3. Which con seems the most costly, or difficult to overcome to you? Why?
+Why is software versioning so important to software security?  
+Can you find 3 reasons, from the internet, AI, or your peers? 
 
 <div class="warning">
 Submit your input by following the link below:
@@ -59,15 +57,22 @@ Submit your input by following the link below:
 #### Discussion Post #2
 
 <blockquote>
-
-Your team has no documentation around how to check out a server during an incident.
-Write out a procedure of what you think an operations person should be doing on the
-system they suspect is not working properly.
-
+You are new to a Linux team.  
+A ticket has come in from an application team and has already been escalated to your 
+manager.  
+They want software installed on one of their servers but you cannot find any 
+documentation. Your security team is out to lunch and not responding.  
+You remember from some early documentation that you read that all the software in the 
+internal repos you currently have are approved for deployment on servers.  
+You want to also verify by checking other servers that this software exists.  
+This is an urgent task and your manager is hovering.
 </blockquote>
 
-This may help, to get you started <https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf?msc=Cheat+Sheet+Blog>
-You may use AI for this, but let us know if you do.
+1. How can you check all the repos on your system to see which are active?
+
+2. How would you check another server to see if the software was installed there?
+
+3. If you find the software, how might you figure out when it was installed? (Time/Date)
 
 <div class="warning">
 Submit your input by following the link below:
@@ -75,37 +80,55 @@ Submit your input by following the link below:
 
 - [Link to Discussion Post 2](Placeholder)
 
+#### Discussion Post #3
+<div class="warning">
+Complete this after completing the Unit 7 lab.
+</div>
+
+<blockquote>
+Looking at the concept of group install from DNF or Yum.  
+Why do you think an administrator may never want to use that in a running system?
+Why might an engineer want to or not want to use that?
+This is a thought exercise, so it’s not a “right or wrong” answer it’s for you to think about.
+</blockquote>
+
+1.	What is the concept of software bloat, and how do you think it relates?
+
+2.	What is the concept of a security baseline, and how do you think it relates?
+
+3.	How do you think something like this affects performance baselines?
+
+
+<div class="warning">
+Submit your input by following the link below:
+</div>
+
+- [Link to Discussion Post 3](Placeholder)
+
+
 ## Definitions
 
 ---
 
-Detection:
+Yum:
 
-Response:
+DNF:
 
-Mitigation:
+Repo:
 
-Reporting:
+GPG Key:
 
-Recovery:
+Software dependency:
 
-Remediation:
+Software version:
 
-Lessons Learned:
-
-After action review:
-
-Operations Bridge:
+Semantic Version:
 
 ## Digging Deeper
 
 ---
 
-1. Read about battle drills here <https://en.wikipedia.org/wiki/Battle_drill>
-
-2. Why might it be important to practice incident handling before an incident occurs?
-
-3. Why might it be important to understand your tools before an incident occurs?
+1.  What is semantic versioning? <https://semver.org/>
 
 ## Reflection Questions
 
