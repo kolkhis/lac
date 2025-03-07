@@ -5,13 +5,13 @@
     </p>
 </div>
 
-
+ 
 Welcome to Unit 7.
 This unit is all about understanding security and package management on Linux systems.  
 Securing systems is not just the job of security engineers. It falls on system
 administrators and system engineers to ensure all security best practices are
 enforced on their systems to meet certain standards.  
-Whether it is compatibility or security, ensuring all the correct packages are on the 
+Whether it is software compatibility or security, ensuring all the correct packages are on the
 system *and* ensuring the package versions match the needs of the users is a crucial
 skill for any sysadmin.  
 
@@ -45,8 +45,10 @@ foundation of knowledge.
 
 #### Discussion Post #1
 
-Why is software versioning so important to software security?  
-Can you find 3 reasons, from the internet, AI, or your peers? 
+Why is software versioning so important to software security?
+
+Can you find 3 reasons, from the internet, AI, or your peers?
+
 
 <div class="warning">
 Submit your input by following the link below:
@@ -58,14 +60,14 @@ Submit your input by following the link below:
 
 <blockquote>
 You are new to a Linux team.  
-A ticket has come in from an application team and has already been escalated to your 
+A ticket has come in from an application team and has already been escalated to your
 manager.  
-They want software installed on one of their servers but you cannot find any 
+They want software installed on one of their servers but you cannot find any
 documentation. Your security team is out to lunch and not responding.  
-You remember from some early documentation that you read that all the software in the 
+You remember from some early documentation that you read that all the software in the
 internal repos you currently have are approved for deployment on servers.  
 You want to also verify by checking other servers that this software exists.  
-This is an urgent task and your manager is hovering.
+This is an urgent task and your manager is hovering.  
 </blockquote>
 
 1. How can you check all the repos on your system to see which are active?
@@ -82,7 +84,7 @@ Submit your input by following the link below:
 
 #### Discussion Post #3
 <div class="warning">
-Complete this after completing the Unit 7 lab.
+Complete this only after completing the Unit 7 lab.
 </div>
 
 <blockquote>
@@ -104,7 +106,6 @@ Submit your input by following the link below:
 </div>
 
 - [Link to Discussion Post 3](https://discord.com/channels/611027490848374811/1299794638340755567)
-
 
 ## Definitions
 
