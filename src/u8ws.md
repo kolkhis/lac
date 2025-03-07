@@ -18,7 +18,7 @@ an executable file.
 ### Resources / Important Links
 - [TLDP Bash Beginner's Guide](https://tldp.org/LDP/Bash-Beginners-Guide/html/chap_01.html)
 - [devhints.io - Bash Scripting Cheatsheet](https://devhints.io/bash)
-- [Bash Hacker's Guide](https://web.archive.org/web/20230406205817/https://wiki.bash-hackers.org/)
+- [Bash Hacker's Wiki](https://web.archive.org/web/20230406205817/https://wiki.bash-hackers.org/)
 
 ### Unit 8 Recording
 
