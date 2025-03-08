@@ -43,9 +43,9 @@ foundation of knowledge.
 
 #### Discussion Post #1
 
-Why is software versioning so important to software security?
+1. Why is software versioning so important to software security?
 
-Can you find 3 reasons, from the internet, AI, or your peers?
+2. Can you find 3 reasons, from the internet, AI, or your peers?
 
 <div class="warning">
 Submit your input by following the link below:
