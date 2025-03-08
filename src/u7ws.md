@@ -5,20 +5,18 @@
     </p>
 </div>
 
- 
 Welcome to Unit 7.
 This unit is all about understanding security and package management on Linux systems.  
 Securing systems is not just the job of security engineers. It falls on system
 administrators and system engineers to ensure all security best practices are
 enforced on their systems to meet certain standards.  
 Whether it is software compatibility or security, ensuring all the correct packages are on the
-system *and* ensuring the package versions match the needs of the users is a crucial
-skill for any sysadmin.  
-
+system _and_ ensuring the package versions match the needs of the users is a crucial
+skill for any sysadmin.
 
 ### Resources / Important Links
-- [Semantic Versioning](https://semver.org/)
 
+- [Semantic Versioning](https://semver.org/)
 
 ### Unit 7 Recording
 
@@ -48,7 +46,6 @@ foundation of knowledge.
 Why is software versioning so important to software security?
 
 Can you find 3 reasons, from the internet, AI, or your peers?
-
 
 <div class="warning">
 Submit your input by following the link below:
@@ -83,6 +80,7 @@ Submit your input by following the link below:
 - [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1299794568731951116)
 
 #### Discussion Post #3
+
 <div class="warning">
 Complete this only after completing the Unit 7 lab.
 </div>
@@ -94,12 +92,11 @@ Why might an engineer want to or not want to use that?
 This is a thought exercise, so it’s not a “right or wrong” answer it’s for you to think about.
 </blockquote>
 
-1.	What is the concept of software bloat, and how do you think it relates?
+1. What is the concept of software bloat, and how do you think it relates?
 
-2.	What is the concept of a security baseline, and how do you think it relates?
+2. What is the concept of a security baseline, and how do you think it relates?
 
-3.	How do you think something like this affects performance baselines?
-
+3. How do you think something like this affects performance baselines?
 
 <div class="warning">
 Submit your input by following the link below:
@@ -137,5 +134,4 @@ Semantic Version:
 
 1. What questions do you still have about this week?
 
-2.	How does security as a system administrator differ from what you expected?
-
+2. How does security as a system administrator differ from what you expected?
