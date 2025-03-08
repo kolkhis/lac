@@ -5,6 +5,8 @@
     </p>
 </div>
 
+- [Linux Sysadmin Course - YouTube Playlist](https://www.youtube.com/watch?v=eHB8WKWz2eQ&list=PLyuZ_vuAWmprPIqsG11yoUG49Z5dE5TDu)
+
 - [What is Vim?](https://github.com/vim/vim)
 - [The Linux Foundation](https://www.linux.org/pages/download/)
 - [Linux CLI Cheatsheets](https://www.digitalocean.com/community/tutorials/linux-commands)
