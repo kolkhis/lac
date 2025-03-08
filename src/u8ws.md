@@ -5,7 +5,6 @@
     </p>
 </div>
 
- 
 Welcome to Unit 8.
 This unit is all about Bash -- the shell that we use on Linux.  
 Understanding Bash is crucial to anyone who administers Linux systems.  
@@ -53,13 +52,13 @@ Your team has just been deleting the logs every few days, but one of the 3rd shi
 How might you implement a simple fix to stop gap the problem before all the engineering resources come back next week?
 </blockquote>
 
-1.  What resources helped you answer this?
+1. What resources helped you answer this?
 
-2.  Why can’t you just make a design fix and add space in /var/log on all these systems?
+2. Why can’t you just make a design fix and add space in /var/log on all these systems?
 
-3.  Why can’t you just make a design change and logrotate more often so this doesn’t happen?
+3. Why can’t you just make a design change and logrotate more often so this doesn’t happen?
 
-4.  For 2,3 if you are ok with that, explain your answer. (This isn’t a trick, maybe there is a valid reason.)
+4. For 2,3 if you are ok with that, explain your answer. (This isn’t a trick, maybe there is a valid reason.)
 
 <div class="warning">
 Submit your input by following the link below:
