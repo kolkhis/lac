@@ -13,8 +13,8 @@ If you've ever used the command line on a Linux system before, you've already wr
 Bash code! Scripting is simply the act of taking those commands and putting them into
 an executable file.
 
-
 ### Resources / Important Links
+
 - [TLDP Bash Beginner's Guide](https://tldp.org/LDP/Bash-Beginners-Guide/html/chap_01.html)
 - [devhints.io - Bash Scripting Cheatsheet](https://devhints.io/bash)
 - [Bash Hacker's Wiki](https://web.archive.org/web/20230406205817/https://wiki.bash-hackers.org/)
@@ -108,15 +108,15 @@ Single/Dual/Multiple alternative logic:
 
 ---
 
-1. Read: 
-  - <https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html>
-  - <https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_02.html>
-  - <https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_03.html>
+1. Read:
+
+- <https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html>
+- <https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_02.html>
+- <https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_03.html>
 
 What did you learn about capabilities of bash that can help you in your scripting?
 
 2.  If you want to dig more into truth tables and logic, this is a good start: <https://en.wikipedia.org/wiki/Truth_table>
-
 
 ## Reflection Questions
 
@@ -124,8 +124,7 @@ What did you learn about capabilities of bash that can help you in your scriptin
 
 1. What questions do you still have about this week?
 
-2. Just knowing a lot about scripting doesn’t help much against actually doing it in 
+2. Just knowing a lot about scripting doesn’t help much against actually doing it in
    a practical sense.
-   What things are you doing currently at work or in a lab that you can apply some of 
+   What things are you doing currently at work or in a lab that you can apply some of
    this logic to?
-
