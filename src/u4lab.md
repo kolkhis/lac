@@ -1,39 +1,27 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Operating Running Systems and Handling Incidents</h1>
+        <h1>Unit 4 Lab - Operating Running Systems and Handling Incidents</h1>
     </p>
 </div>
-
-## Unit 4 Lab
-
----
-
-## Intro
 
 Unit 4 is all about analyzing systems that are running to detect and mitigate potential problems.  
 We dive into how to use logging tools like `sar`, `dmesg`, and `journald`, monitoring system resource usage in real-time, and how to work with running services/processes.  
 We also talk about the incident response lifecycle -- the methods in which incidents are handled.
-
----
 
 ### Resources / Important Links
 
 - [Cron Wiki page](https://en.wikipedia.org/wiki/Cron)
 - [tldp.org's cron guide](http://www.tldp.org/LDP/lame/LAME/linux-admin-made-easy/using-cron.html) for more information.
 
----
-
-## Required Materials
+### Required Materials
 
 - Rocky 9.3 – ProLUG Lab
 - root or sudo command access
 
+## Pre-Lab Warm-Up
+
 ---
-
-## Begin
-
-### Pre-Lab Warm-Up
 
 1. `cd ~`
 2. `ls`
@@ -98,9 +86,9 @@ We also talk about the incident response lifecycle -- the methods in which incid
    # If it's not, install it so you can use vimtutor later (if you need help with vi commands)
    ```
 
----
+## Lab 🧪
 
-### Lab🧪
+---
 
 1. Gathering system information release and kernel information
 
@@ -136,8 +124,6 @@ We also talk about the incident response lifecycle -- the methods in which incid
    - What are we assuming about the disks for this to work?
    - How many disks are there on this system?
    - How do you know if it's a partition or a disk?
-
----
 
 ```bash
 pvs # What system are we running if we have physical volumes?
@@ -318,8 +304,6 @@ You could do something like this:
   more /tmp/<filename>
   ```
 
----
-
 ### Exploring Cron
 
 Your system is running the cron daemon. You can check with:
@@ -392,11 +376,10 @@ We could also have done some other things:
   ```
 
 - The first minute of every 4th hour:
+
   ```bash
   1 */4 * * *
   ```
-
----
 
 - NOTE: If you're adding system-wide cron jobs (`/etc/crontab`), you can also specify
   the user to run the command as.
@@ -405,8 +388,6 @@ We could also have done some other things:
   ```
 
 There's a lot there to explore, I recommend looking into [the Cron wiki](https://en.wikipedia.org/wiki/Cron) or [tldp.org's cron guide](http://www.tldp.org/LDP/lame/LAME/linux-admin-made-easy/using-cron.html) for more information.
-
----
 
 That's all for this week's lab.
 There are a lot of uses for all of these tools above.

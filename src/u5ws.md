@@ -1,13 +1,9 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Unit 5 Worksheet</h1>
+        <h1>Unit 5 Worksheet - Security and Systems Administration</h1>
     </p>
 </div>
-
-## Intro
-
----
 
 Unit 5 covers basic Linux and systems security concepts.
 
@@ -17,13 +13,11 @@ Our role is an integral part of the security pipeline.
 
 ### Resources / Important Links
 
----
-
 - [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
 - [attack.mitre.org](https://attack.mitre.org/)
 - [Attack Vectors](https://www.cobalt.io/blog/defending-against-23-common-attack-vectors)
 
-### Video (Embdedded YT Video)
+### Unit 5 Recording
 
 <iframe
     style="width: 100%; height: 100%; border: none;
@@ -37,8 +31,6 @@ Our role is an integral part of the security pipeline.
 </iframe>
 
 ### Instructions
-
----
 
 A major aspect of this course is to intake, comprehend, and discuss the assigned topics. Take the time
 to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction

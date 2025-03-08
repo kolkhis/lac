@@ -1,15 +1,9 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Systems Reliability and High Availability in Enterprise Linux </h1>
+        <h1>Unit 3 Worksheet - Systems Reliability and High Availability in Enterprise Linux </h1>
     </p>
 </div>
-
-## Unit 3 Worksheet
-
----
-
-## Introduction
 
 Understanding system reliability and high availability is crucial for modern enterprise Linux environments. This unit explores the fundamental concepts of system uptime, failure modes, and incident response, with a practical focus on implementing HA solutions using industry-standard tools and practices.
 

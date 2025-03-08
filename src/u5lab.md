@@ -5,8 +5,6 @@
     </p>
 </div>
 
-## Intro
-
 The Unit 5 lab covers user and group management on Linux systems.
 
 This lab will take you through the basics of:
@@ -15,22 +13,16 @@ This lab will take you through the basics of:
 - Key files related to users and group management (the shadow password suite)
 - How permissions work
 
----
-
 ### Resources / Important Links
 
 - [RedHat: User and Group Management](https://www.redhat.com/en/blog/linux-user-group-management)
 - [Rocky Linux User Admin Guide](https://docs.rockylinux.org/books/admin_guide/06-users/)
 - [Killercoda lab by FishermanGuyBro](https://killercoda.com/fishermanguybro)
 
----
-
 ## Required Materials
 
 - Rocky 9.3 – ProLUG Lab
 - root or sudo command access
-
----
 
 ## Begin
 
@@ -72,9 +64,9 @@ We just put the aliases back.
 17. `alias ls='ls --color=auto'`
     - Test with `alias` to see them added and also use `ll` and `ls` to see them work properly.
 
----
+## Lab🧪
 
-### Lab🧪
+---
 
 This lab is designed to help you get familiar with the basics of the systems you will be working on.
 
@@ -350,8 +342,6 @@ work
    You can play with these permissions a bit, but there's a lot of information online to help you
    understand permissions better if you need more resources.
 
----
-
 #### Working with permissions:
 
 Permissions have to do with who can or cannot access (read), edit (write), or execute (xecute)files.
@@ -389,5 +379,3 @@ The first character lets you know if the file is a directory, file, or link. In 
 
 Go find some other interesting files or directories and see what you see there.  
 Can you identify their characteristics and permissions?
-
----

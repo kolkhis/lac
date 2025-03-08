@@ -1,30 +1,47 @@
-# Unit 2
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Unit 2</h1>
+    </p>
+</div>
 
 ## Overview
 
+---
+
 ### What is the skill/tech/concept we are dealing with?
-This unit centers on  a focus on security and troubleshooting.
+
+This unit centers on a focus on security and troubleshooting.
+
 - The use of **SELinux** for implementing mandatory access controls, managing file permissions with **ACLs (Access Control Lists)**,
 - Understanding operational methodologies for incident triage.
 
 ## Learning Objectives
+
+---
+
 1. **Understand and Configure SELinux:**
+
    - Grasp the core concepts of SELinux, including security contexts, labels, and its role in enforcing mandatory access control.
    - Learn how to configure and troubleshoot SELinux settings to ensure system security and compliance.
 
 2. **Master Access Control Lists (ACLs):**
+
    - Recognize the limitations of traditional Unix permissions and how ACLs provide granular control over file and directory access.
    - Develop skills in applying and managing ACLs in a complex Linux environment.
 
 3. **Develop Effective Troubleshooting Methodologies:**
+
    - Acquire techniques to diagnose and resolve system access issues, particularly those arising from SELinux policies and ACL misconfigurations.
    - Apply structured troubleshooting strategies to ensure minimal downtime and maintain high availability.
 
 4. **Integrate Theoretical Knowledge with Practical Application:**
+
    - Engage with interactive exercises, discussion prompts, and real-world scenarios to reinforce learning.
    - Utilize external resources, such as technical documentation and instructional videos, to supplement hands-on practice.
 
 5. **Enhance Collaborative Problem-Solving Skills:**
+
    - Participate in peer discussions and reflective exercises to compare different approaches to system administration challenges.
    - Learn to articulate and document troubleshooting processes and system configurations for continuous improvement.
 
@@ -36,8 +53,12 @@ These objectives aim to ensure that learners not only acquire specific technical
 
 ## Relevance & Context
 
+---
+
 ### Why is it important to Linux Administrators/Engineers?
+
 For Linux administrators and engineers, mastering SELinux and ACLs is essential because these tools add critical layers of security and control over system resources. By understanding how to use security contexts and labels, professionals can:
+
 - **Enhance System Security:** Implementing SELinux helps mitigate vulnerabilities by enforcing strict access controls.
 
 - **Troubleshoot Access Issues:** Knowledge of ACLs and SELinux enables the identification and resolution of permission-related issues, which are common in complex, multi-user environments.
@@ -46,8 +67,12 @@ For Linux administrators and engineers, mastering SELinux and ACLs is essential 
 
 ## Prerequisites
 
+---
+
 ### Briefly mention concepts or skills the reader should already understand before starting the chapter.
+
 Before engaging with this unit, readers should have a foundational understanding of:
+
 - **Basic Linux Commands and File System Structure:** Familiarity with navigating Linux directories, managing files, and using the terminal.
 
 - **Traditional Unix Permissions:** A solid grasp of the standard user/group/other permission model.
@@ -57,6 +82,8 @@ Before engaging with this unit, readers should have a foundational understanding
 - **Basic Troubleshooting Techniques:** Experience with diagnosing and resolving common system issues will be beneficial when applying the methodologies discussed in the unit.
 
 ## Key terms and Definitions
+
+---
 
 1. **SELinux (Security-Enhanced Linux)**
 
@@ -72,8 +99,8 @@ Before engaging with this unit, readers should have a foundational understanding
 
 7. **Standard Streams (stdin, stdout, stderr)**
 
-8. **High Availability (HA)** 
+8. **High Availability (HA)**
 
 9. **Service Level Objectives (SLOs)**
-   
+
 10. **Troubleshooting Methodologies**
