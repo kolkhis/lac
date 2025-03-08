@@ -30,7 +30,6 @@ pipelines.
     allowfullscreen>
 </iframe>
 
-
 ## Instructions
 
 ---
@@ -44,6 +43,7 @@ foundation of knowledge.
 #### Discussion Post #1
 
 It’s a slow day in the NOC and you have heard that a new system of container deployments are being used by your developers. Do some reading about containers, docker, and podman.
+
 1.  What resources helped you answer this?
 
 2.  What did you learn about that you didn’t know before?
@@ -74,7 +74,8 @@ docker.io/library/python  3.13.0-alpine3.19  9edd75ff93ac  3 weeks ago  47.5 MB
 [developer1@devserver read]$ podman run -dt -p 8080:80/tcp docker.io/library/httpd
 ```
 
-You decide to check out the server 
+You decide to check out the server
+
 ```plaintext
 [developer1@devserver read] ss -ntulp
 Netid   State    Recv-Q   Send-Q      Local Address:Port        Peer Address:Port         Process
@@ -87,11 +88,12 @@ tcp     LISTEN   0        4096                    *:8080                   *:*  
 
 </blockquote>
 
-1. What do you think the problem might be?  
-    - How will you test this?
+1. What do you think the problem might be?
+
+   - How will you test this?
 
 2. The developer tells you that he’s pulling a local image. Do you find this to be
-   true, or is something else happening in their `run` command?  
+   true, or is something else happening in their `run` command?
 
 <div class="warning">
 Submit your input by following the link below:
@@ -103,21 +105,21 @@ Submit your input by following the link below:
 
 ---
 
-Container:  
+Container:
 
-Docker:  
+Docker:
 
-Podman:  
+Podman:
 
-CI/CD:  
+CI/CD:
 
-Dev/Prod Environments (Development/Production Environments):  
+Dev/Prod Environments (Development/Production Environments):
 
-Dockerfile:  
+Dockerfile:
 
-Docker/Podman images:  
+Docker/Podman images:
 
-Repository:  
+Repository:
 
 ## Digging Deeper
 
@@ -125,12 +127,12 @@ Repository:
 
 1. Find a blog on deployment of some service or application in a container that interests you.  
    See if you can get the deployment working in the lab.
-    - What worked well?
-    - What did you have to troubleshoot?
-    - What documentation can you make to be able to do this faster next time?
+
+   - What worked well?
+   - What did you have to troubleshoot?
+   - What documentation can you make to be able to do this faster next time?
 
 2. Run this scenario and play with K3s: <https://killercoda.com/k3s/scenario/intro>
-
 
 ## Reflection Questions
 
@@ -138,6 +140,5 @@ Repository:
 
 1. What questions do you still have about this week?
 
-2. How can you apply this now in your current role in IT? If you’re not in IT, how 
+2. How can you apply this now in your current role in IT? If you’re not in IT, how
    can you look to put something like this into your resume or portfolio?
-
