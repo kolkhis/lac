@@ -35,8 +35,22 @@ laboris nisi ut aliquip ex ea commodo consequat.
 
 (This will be transposed from the lab provided by Scott Champine)
 
+Step 1:
+Step 2:
+
+Code block:
+
+etc..
+
 ## Lab 🧪
 
 ---
 
 (This will be transposed from the lab provided by Scott Champine)
+
+Step 1:
+Step 2:
+
+Code block:
+
+etc..
