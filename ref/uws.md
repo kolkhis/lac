@@ -41,13 +41,23 @@ laboris nisi ut aliquip ex ea commodo consequat.
 
 (This will be transposed from the lab provided by Scott Champine)
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat.
+
 #### Discussion Post 1
 
 (This will be transposed from the lab provided by Scott Champine)
 
+1. Question
+2. Question
+
 #### Discussion Post 2
 
 (This will be transposed from the lab provided by Scott Champine)
+
+1. Question
+2. Question
 
 ## Definitions
 
@@ -55,8 +65,16 @@ laboris nisi ut aliquip ex ea commodo consequat.
 
 (This will be transposed from the lab provided by Scott Champine)
 
+Term 1:
+Term 2:
+
+etc..
+
 ## Digging Deeper
 
 ---
 
 (This will be transposed from the lab provided by Scott Champine)
+
+1. Question
+2. Question
