@@ -21,7 +21,9 @@ laboris nisi ut aliquip ex ea commodo consequat.
 ### Resources / Important Links
 
 [Link Template](example.org)
+
 [Link Template](example.org)
+
 [Link Template](example.org)
 
 ### Required Materials
@@ -36,6 +38,7 @@ laboris nisi ut aliquip ex ea commodo consequat.
 (This will be transposed from the lab provided by Scott Champine)
 
 Step 1:
+
 Step 2:
 
 Code block:
@@ -49,6 +52,7 @@ etc..
 (This will be transposed from the lab provided by Scott Champine)
 
 Step 1:
+
 Step 2:
 
 Code block:

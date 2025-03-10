@@ -9,7 +9,7 @@ Welcome to the ProLUG Enterprise Linux System Administration Course Book.
 
 ## This Book
 
-Contains all materials pertaining to the course including links to external resources. It has been put together with care by a number of ProLUG group members referencing original instructional materials produce by Scott Champine (Het Tanis). The content is version controlled with Git and stored - [Link to Repository](https://https://github.com/ProfessionalLinuxUsersGroup/lac/)
+Contains all materials pertaining to the course including links to external resources. It has been put together with care by a number of ProLUG group members referencing original instructional materials produce by Scott Champine (Het Tanis). The content is version controlled with Git and stored - [Link to Repository](https://github.com/ProfessionalLinuxUsersGroup/lac/)
 Furthermore, the book has been built with mdbook for ease of navigation. Be sure to try the search functionality.
 
 ## This Course
