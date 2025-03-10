@@ -21,7 +21,9 @@ laboris nisi ut aliquip ex ea commodo consequat.
 ### Resources / Important Links
 
 [Link Template](example.org)
+
 [Link Template](example.org)
+
 [Link Template](example.org)
 
 ### Unit # Recording
@@ -66,6 +68,7 @@ laboris nisi ut aliquip ex ea commodo consequat.
 (This will be transposed from the lab provided by Scott Champine)
 
 Term 1:
+
 Term 2:
 
 etc..

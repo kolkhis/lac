@@ -44,8 +44,13 @@ and templates within the project managed issues board.
 
 To start contributing:
 
-- Read the [contributing.md](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/contributing.md) markdown
 - Understand the repository objectives
+- Read the [contributing.md](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/contributing.md) markdown
+- Look over the [template pages wiki](https://github.com/ProfessionalLinuxUsersGroup/lac/wiki), or directly here:
+  - Pages: [intro](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/intro.md),
+    [bonus](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/ub.md),
+    [lab](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/ulab.md),
+    [worksheet](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/uws.md)
 - Request to be assigned a task within the repo [Issues](https://github.com/ProfessionalLinuxUsersGroup/lac/issues) tab
 - Fork this repository and create a development branch for eventual pull requests
 - Strictly adhere to contemporary GitHub contribution decorum to facilitate the version control process
