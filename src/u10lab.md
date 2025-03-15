@@ -4,6 +4,7 @@
         <h1>Unit 10: Lab</h1>
     </p>
 </div>
+
 ## **Introduction**
 
 This lab focuses on **installing, configuring, and deploying applications using Kubernetes (K3s)**.  
