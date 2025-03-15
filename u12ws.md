@@ -63,7 +63,7 @@ He doesn’t want to lose his budget, but he has to prove that the system utiliz
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 1]()
+- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1312461083457355796)
 
 #### Discussion Post #2
 
@@ -81,6 +81,12 @@ They expect these agents to run their work starting at 0400 every morning.
 
 3. Is there anything else you might want to point out to these architects about these  
    agents they are installing?
+
+<div class="warning">
+Submit your input by following the link below:
+</div>
+
+- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1312461394704072774)
 
 ### Unit 12 Discussion Post 3
 
@@ -100,7 +106,7 @@ storage system and the new storage system.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](PLACEHOLDER)
+- [Link to Discussion Post 3](https://discord.com/channels/611027490848374811/1312461516817301594)
 
 ## Definitions
 
@@ -129,16 +135,18 @@ Analytics:
 ---
 
 1. Analyzing data may open up a new field of interest to you. Go through some of the  
-   free lessons on Kaggle, here: https://www.kaggle.com/learn  
-    - What did you learn?  
-    - How will you apply these lessons to data and monitoring you have already  
-    collected as a system administrator?
+   free lessons on Kaggle, here: https://www.kaggle.com/learn
+
+   - What did you learn?
+   - How will you apply these lessons to data and monitoring you have already  
+     collected as a system administrator?
 
 2. Find a blog or article that discusses the 4 types of data analytics.
+
    - What did you learn about past operations?
    - What did you learn about predictive operations?
 
-3. Download Spyder IDE (Open source).  
+3. Download Spyder IDE (Open source).
    - Find a blog post or otherwise try to evaluate some data.
    - Perform some Linear regression. My block of code (but this requires some  
      additional libraries to be added. I can help with that if you need it.)
@@ -167,5 +175,4 @@ Analytics:
 
 2. How can you apply this now in your current role in IT?  
    If you’re not in IT, how can you look to put something like this into your resume or
-   portfolio?  
-
+   portfolio?
