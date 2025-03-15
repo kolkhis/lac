@@ -34,10 +34,10 @@ you learn offers no better teach. Again welcome, and good luck in your studies.
 
 ---
 
-A major aspect of this course is to intake, comprehend, and discuss the assigned topics. Take the time
-to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction
-with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of
-knowledge.
+A major aspect of this course is to intake, comprehend, and discuss the assigned
+topics. Take the time to fully absorb each topic and contribute to the discussion
+thread by sharing your thoughts. Interaction with peers is also expected; the goal is
+to compare and contrast ideas to build a solid foundation of knowledge.
 
 #### Discussion Post #1
 
