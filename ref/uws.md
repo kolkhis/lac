@@ -38,7 +38,8 @@ discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.
+Fill out this worksheet as you watch the unit video.  
+Discussion posts can be completed afterwards, answers to be posted in Discord.
 
 #### Discussion Post #1
 
@@ -67,7 +68,7 @@ PLACEHOLDER - Scenarios go inside blockquotes.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 3](PLACEHOLDER)
+- [Link to Discussion Post 2](PLACEHOLDER)
 
 ## Definitions
 
@@ -95,7 +96,8 @@ PLACEHOLDER:
 
 ---
 
+<!-- The first reflection question is always the same. -->
 1. What questions do you still have about this week?
 
-2. PLACEHOLDER: Second question from the worksheet
+2. PLACEHOLDER: Second question from the worksheet.  
 
