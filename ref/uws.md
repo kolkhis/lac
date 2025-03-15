@@ -15,13 +15,13 @@ PLACEHOLDER - Unit Introduction. A few sentences/single paragraph describing wha
 - [PLACEHOLDER](PLACEHOLDER) - Resources will go in unordered lists
 - [PLACEHOLDER](PLACEHOLDER)
 
-### Unit 7 Recording
+### Unit N Recording
 
 <iframe
     style="width: 100%; height: 100%; border: none;
     aspect-ratio: 16/9; border-radius: 1rem; background:black"
     src="PLACEHOLDER: Unit Embed Link"
-    title="Unit 7: Package Management on Linux - System Administrator Course"
+    title="PLACEHOLDER: Unit recording title"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -38,7 +38,7 @@ discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
 
-Fill out this worksheet as you watch the video
+Fill out this worksheet as you watch the unit video.
 
 #### Discussion Post #1
 
