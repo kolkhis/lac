@@ -42,6 +42,11 @@ topics. Take the time to fully absorb each topic and contribute to the discussio
 thread by sharing your thoughts. Interaction with peers is also expected; the goal is
 to compare and contrast ideas to build a solid foundation of knowledge.
 
+Fill out this worksheet as you watch the unit video.  
+Discussion posts can be completed afterwards, answers to be posted in Discord.
+You must both answer the discussion questions and respond to another student's
+answers. This is only required if you want the certification.
+
 #### Discussion Post #1
 
 Using a 0-10 system, rate yourself on how well you think you know each topic in the table below. (You do not have to post this rating).
