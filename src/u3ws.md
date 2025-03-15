@@ -5,7 +5,10 @@
     </p>
 </div>
 
-Understanding system reliability and high availability is crucial for modern enterprise Linux environments. This unit explores the fundamental concepts of system uptime, failure modes, and incident response, with a practical focus on implementing HA solutions using industry-standard tools and practices.
+Understanding system reliability and high availability is crucial for modern 
+enterprise Linux environments. This unit explores the fundamental concepts of system 
+uptime, failure modes, and incident response, with a practical focus on implementing 
+HA solutions using industry-standard tools and practices.
 
 ### Resources / Important Links
 
@@ -30,7 +33,15 @@ Understanding system reliability and high availability is crucial for modern ent
 
 ---
 
-A major aspect of this course is to intake, comprehend, and discuss the assigned topics. Take the time to fully absorb each topic and contribute to the discussion thread by sharing your thoughts. Interaction with peers is also expected; the goal is to compare and contrast ideas to build a solid foundation of knowledge.
+A major aspect of this course is to intake, comprehend, and discuss the assigned 
+topics. Take the time to fully absorb each topic and contribute to the discussion 
+thread by sharing your thoughts. Interaction with peers is also expected; the goal is 
+to compare and contrast ideas to build a solid foundation of knowledge.
+
+Fill out this worksheet as you watch the unit video.  
+Discussion posts can be completed afterwards, answers to be posted in Discord.
+You must both answer the discussion questions and respond to another student's
+answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
