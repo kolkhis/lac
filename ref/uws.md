@@ -6,7 +6,7 @@
 </div>
 
 (However, these are not hard fast templates, as long as the style is maintained
-there is a degree of freedom.)
+there is a degree of freedom. We are using `prettier` for formatting.)
 
 PLACEHOLDER - Unit Introduction. A few sentences/single paragraph describing what the topic of the unit is and why it is beneficial.
 
@@ -91,9 +91,8 @@ PLACEHOLDER:
 
 ---
 
-1.  PLACEHOLDER - Questions will be in ordered lists.
-
-- Related sub-questions will be in nested unordered lists.
+1. PLACEHOLDER - Questions will be in ordered lists.
+   - Related sub-questions will be in nested unordered lists.
 
 ## Reflection Questions
 
