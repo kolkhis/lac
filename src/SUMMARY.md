@@ -39,6 +39,7 @@
 - [Unit 10](./u10intro.md)
   - [Work Sheet](./u10ws.md)
   - [Lab](./u10lab.md)
+  - [Lab](./u10b.md)
 - [Unit 11](./u11intro.md)
   - [Work Sheet](./u11ws.md)
   - [Lab](./u11lab.md)
