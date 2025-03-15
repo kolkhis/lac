@@ -31,7 +31,9 @@ PLACEHOLDER - Unit Introduction. A few sentences/single paragraph describing wha
 ## Instructions
 
 ---
+
 <!-- The instructions are the same for all worksheets. -->
+
 A major aspect of this course is to intake, comprehend, and discuss the assigned
 topics. Take the time to fully absorb each topic and contribute to the
 discussion thread by sharing your thoughts. Interaction with peers is also
@@ -40,6 +42,8 @@ foundation of knowledge.
 
 Fill out this worksheet as you watch the unit video.  
 Discussion posts can be completed afterwards, answers to be posted in Discord.
+You must both answer the discussion questions and respond to another student's
+answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -63,7 +67,6 @@ PLACEHOLDER - Scenarios go inside blockquotes.
 
 2. PLACEHOLDER - Questions will be in ordered lists.
 
-
 <div class="warning">
 Submit your input by following the link below:
 </div>
@@ -84,20 +87,20 @@ PLACEHOLDER:
 
 PLACEHOLDER:
 
-
 ## Digging Deeper
 
 ---
 
-1.  PLACEHOLDER - Questions will be in ordered lists. 
-  - Related sub-questions will be in nested unordered lists.  
+1.  PLACEHOLDER - Questions will be in ordered lists.
+
+- Related sub-questions will be in nested unordered lists.
 
 ## Reflection Questions
 
 ---
 
 <!-- The first reflection question is always the same. -->
+
 1. What questions do you still have about this week?
 
-2. PLACEHOLDER: Second question from the worksheet.  
-
+2. PLACEHOLDER: Second question from the worksheet.
