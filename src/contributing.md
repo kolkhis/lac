@@ -191,21 +191,30 @@ git switch -c unit1-worksheet
 
 Make changes to the `u1ws.md`.
 
-## Understand a few Best Practices
+## Consider a few Useful Practices
 
 ---
+
+The practices presented below are not required to contribute to the ProLUG
+course books but can streamline contributing to any project and are considered
+to some as best practice or incredibly useful when engaging in version control
+with Git.
 
 ### Git Rebasing
 
 <div class="warning">
-  <strong>FIRST AND FOREMOST, ONLY REBASE IN LOCAL REPOSITORIES, NEVER REBASE
+  <strong>FIRST AND FOREMOST, ONLY REBASE IN LOCAL REPOSITORIES. NEVER REBASE
   A PUBLIC BRANCH OR REPOSITORY UNLESS YOU FULLY UNDERSTAND THE CONSEQUENCES.
   YOU HAVE BEEN WARNED.</strong>
 </div>
 
 Proper implementation of rebasing can leave a clean, and easily readable
-commit history for all concerned parties. The Git documentation provides a
-succinct explanation of its utility and how it **could potentially ruin a project**.
+commit history for all concerned parties. Rebasing can also facilitate the
+management of branches and working directories in a notably active project.
+
+The Git documentation provides a succinct explanation of its utility but
+also how it **could potentially ruin a project** and erase the work of other
+contributors.
 
 Rebasing also plays a role in facilitating any commit reverts that may need
 to be made in the future. More on that will follow.
