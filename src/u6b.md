@@ -5,6 +5,8 @@
     </p>
 </div>
 
+> **NOTE:** This is an **optional** bonus section. You **do not** need to read it, but if you're interested in digging deeper, this is for you.
+
 Enhance productivity by enabling the management of multiple sessions and windows from a single remote session.
 
 ## 🔑 Key Features of Terminal Multiplexors

@@ -5,10 +5,10 @@
     </p>
 </div>
 
-Welcome to Unit 8.
-This unit is all about Bash -- the shell that we use on Linux.  
-Understanding Bash is crucial to anyone who administers Linux systems.  
-Bash scripting gives us the ability to automate tasks and create a simple solution for complex tasks.  
+This unit is all about Bash -- the shell that we use on Linux.
+Understanding Bash is crucial to anyone who administers Linux systems.
+
+Bash scripting gives us the ability to automate tasks and create a simple solution for complex tasks.
 If you've ever used the command line on a Linux system before, you've already written
 Bash code! Scripting is simply the act of taking those commands and putting them into
 an executable file.
@@ -42,19 +42,26 @@ discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
+Scenario:
+
 <blockquote>
-It’s a 2 week holiday in your country and most of the engineers and architects who designed the system are out of town.  
-You’ve noticed a pattern of logs filling up on a set of web servers from increased traffic.  
-Your research shows, and then you verify, that the logs are being sent off real time to Splunk.  
-Your team has just been deleting the logs every few days, but one of the 3rd shift engineers didn’t read the notes and your team suffered downtime.  
+
+It’s a 2 week holiday in your country and most of the engineers and architects who designed the system are out of town.
+
+You’ve noticed a pattern of logs filling up on a set of web servers from increased traffic.
+Your research shows, and then you verify, that the logs are being sent off real time to Splunk.
+Your team has just been deleting the logs every few days, but one of the 3rd shift engineers didn’t
+read the notes and your team suffered downtime.
+
 How might you implement a simple fix to stop gap the problem before all the engineering resources come back next week?
+
 </blockquote>
 
 1. What resources helped you answer this?
@@ -65,22 +72,21 @@ How might you implement a simple fix to stop gap the problem before all the engi
 
 4. For 2,3 if you are ok with that, explain your answer. (This isn’t a trick, maybe there is a valid reason.)
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1]()
-
 #### Discussion Post #2
 
+Scenario:
+
 <blockquote>
-You are the only Linux Administrator at a small healthcare company.  
-The engineer/admin before you left you a lot of scripts to untangle.  
-This is one of our many tasks as administrators, so you set out to accomplish it.  
-You start to notice that he only ever uses nested `if` statements in bash.  
-You also notice that every loop is a conditional `while true`, and then he breaks the loop after a decision test each loop.  
-You know his stuff works, but you think it could be more easily written for supportability, for you and future admins.  
+
+You are the only Linux Administrator at a small healthcare company.
+The engineer/admin before you left you a lot of scripts to untangle.
+This is one of our many tasks as administrators, so you set out to accomplish it.
+You start to notice that he only ever uses nested `if` statements in bash.
+
+You also notice that every loop is a conditional `while true`, and then he breaks the loop after a decision test each loop.
+You know his stuff works, but you think it could be more easily written for supportability, for you and future admins.
 You decide to write up some notes by reading some google, AI, and talking to your peers.
+
 </blockquote>
 
 1. Compare the use of nested if versus case statement in bash.
@@ -91,7 +97,7 @@ You decide to write up some notes by reading some google, AI, and talking to you
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2]()
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 

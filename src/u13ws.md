@@ -5,14 +5,14 @@
     </p>
 </div>
 
-Welcome to Unit 13.  
-This unit covers basic security concepts on Linux systems.  
+This unit covers basic security concepts on Linux systems.
+
 We'll go over what security standards are, tools used to implement security
 standards, and other systems employed to secure Linux systems.
 
 ### Resources / Important Links
 
-- [Killercoda Lab - Server Startup Process](https://killercoda.com/het-tanis/course/Linux-Labs/107-server-startup-process) - Resources will go in unordered lists
+- [Killercoda Lab - Server Startup Process](https://killercoda.com/het-tanis/course/Linux-Labs/107-server-startup-process)
 - [Killercoda Lab - Updating a Golden Image](https://killercoda.com/het-tanis/course/Linux-Labs/203-updating-golden-image)
 
 ### Unit 13 Recording
@@ -20,8 +20,8 @@ standards, and other systems employed to secure Linux systems.
 <iframe
     style="width: 100%; height: 100%; border: none;
     aspect-ratio: 16/9; border-radius: 1rem; background:black"
-    src="PLACEHOLDER: Unit Embed Link"
-    title="PLACEHOLDER: Unit recording title"
+    src="https://www.youtube.com/embed/ESsUM0Gz8Jk"
+    title="Unit 13 Recording - ProLUG Linux Systems Administration Course - Free in Discord"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -33,23 +33,26 @@ standards, and other systems employed to secure Linux systems.
 ---
 
 A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
+topics. Take the time to fully absorb each topic and contribute to the discussion
+thread by sharing your thoughts. Interaction with peers is also expected; the goal is
+to compare and contrast ideas to build a solid foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
+Scenario:
+
 <blockquote>
+
 Your security team comes to you with a discrepancy between
 the production security baseline and something that is running on one of your servers in
 production. There are 5 servers in a web cluster and only one of them is showing this
 behavior. They want you to account for why something is different.
+
 </blockquote>
 
 1. How are you going to validate that the difference between the systems?
@@ -58,18 +61,16 @@ behavior. They want you to account for why something is different.
 
 3. What could be done to prevent this problem in the future?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1317563396069003264)
-
 #### Discussion Post #2
 
+Scenario:
+
 <blockquote>
+
 Your team has been giving you more and more engineering responsibilities.  
-You are being asked to build out the next set of servers to integrate into the 
+You are being asked to build out the next set of servers to integrate into the
 development environment. Your team is going from RHEL 8 to Rocky 9.4.
+
 </blockquote>
 
 1. How might you start to plan out your migration?
@@ -82,7 +83,7 @@ development environment. Your team is going from RHEL 8 to Rocky 9.4.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1317563541989097493)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1317563541989097493)
 
 ## Definitions
 
@@ -119,6 +120,7 @@ HIPS:
 ---
 
 1. Run through this lab: <https://killercoda.com/het-tanis/course/Linux-Labs/107-server-startup-process>
+
    - How does this help you better understand the discussion 13-2 question?
 
 2. Run through this lab: <https://killercoda.com/het-tanis/course/Linux-Labs/203-updating-golden-image>

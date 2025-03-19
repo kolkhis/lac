@@ -5,16 +5,16 @@
     </p>
 </div>
 
-Welcome to Unit 12.  
 This unit is all about data -- learning how to baseline and benchmark systems.  
 Being able to establish a baseline for systems is essential as a sysadmin for knowing
-when your system is acting strangely, among other things.  
+when your system is acting strangely, among other things.
+
 Benchmarking and baselining go together. Without a baseline, you'll have no point of
 reference when running a benchmark.
 
 ### Resources / Important Links
 
-- [Kaggle - Python and Data Science Learning](https://www.kaggle.com/learn) - Resources will go in unordered lists
+- [Kaggle - Python and Data Science Learning](https://www.kaggle.com/learn)
 
 ### Unit 12 Recording
 
@@ -34,22 +34,26 @@ reference when running a benchmark.
 ---
 
 A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
+topics. Take the time to fully absorb each topic and contribute to the discussion
+thread by sharing your thoughts. Interaction with peers is also expected; the goal is
+to compare and contrast ideas to build a solid foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
+Scenario:
+
 <blockquote>
-Your manager has come to you with another emergency.  
-He has a meeting next week to discuss capacity planning and usage of the system with IT upper management.  
-He doesn’t want to lose his budget, but he has to prove that the system utilization warrants spending more.  
+
+Your manager has come to you with another emergency.
+
+He has a meeting next week to discuss capacity planning and usage of the system with IT upper management.
+He doesn’t want to lose his budget, but he has to prove that the system utilization warrants spending more.
+
 </blockquote>
 
 1. What information can you show your manager from your systems?
@@ -59,19 +63,18 @@ He doesn’t want to lose his budget, but he has to prove that the system utiliz
 
 3. What would your report look like to your manager?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1312461083457355796)
-
 #### Discussion Post #2
 
+Scenario:
+
 <blockquote>
-You are in a capacity planning meeting with a few of the architects.  
-They have decided to add 2 more agents to your Linus sytems, Bacula Agent and an Avamar Agent.  
-They expect these agents to run their work starting at 0400 every morning.  
+
+You are in a capacity planning meeting with a few of the architects.
+They have decided to add 2 more agents to your Linus sytems, Bacula Agent and an Avamar Agent.
+They expect these agents to run their work starting at 0400 every morning.
+
 </blockquote>
+
 ![7 day view](https://github.com/user-attachments/assets/d3a4bdaf-43ad-4317-b7b3-232395765b25)
 ![24 hour view](https://github.com/user-attachments/assets/a3b0fbcb-6ac6-402c-8e3f-4c0a39ca858b)
 
@@ -79,22 +82,19 @@ They expect these agents to run their work starting at 0400 every morning.
 
 2. Do you think there is a good reason not to use these agents at this timeframe?
 
-3. Is there anything else you might want to point out to these architects about these  
-   agents they are installing?
+3. Is there anything else you might want to point out to these architects about these agents they are installing?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
+#### Discussion Post #3
 
-- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1312461394704072774)
-
-### Unit 12 Discussion Post 3
+Scenario:
 
 <blockquote>
-Your team has recently tested at proof of concept of a new  
-storage system. The vendor has published the blazing fast speeds that are capable of being  
-run through this storage system. You have a set of systems connected to both the old  
-storage system and the new storage system.  
+
+Your team has recently tested at proof of concept of a new
+storage system. The vendor has published the blazing fast speeds that are capable of being
+run through this storage system. You have a set of systems connected to both the old
+storage system and the new storage system.
+
 </blockquote>
 
 1. Write up a test procedure of how you may test these two systems.
@@ -106,7 +106,7 @@ storage system and the new storage system.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 3](https://discord.com/channels/611027490848374811/1312461516817301594)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1312461394704072774)
 
 ## Definitions
 

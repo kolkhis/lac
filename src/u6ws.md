@@ -5,19 +5,13 @@
     </p>
 </div>
 
-Welcome to Unit 6 of the Professional Linux Users Group (ProLUG) Systems Administration Course.
-With this worksheet students will explore the foundations of Linux and its many constituent parts.
-
-Specifically, this unit and worksheet aim to cover concepts of Firewalls, Activating, Configuring
+This unit and worksheet aim to cover concepts of Firewalls, Activating, Configuring
 and Inspecting common Dynamic Firewalls UFW and Firewalld. We will compare and contrast Uncomplicated
 Fire Wall and Firewall Daemon to see strengths and weaknesses of both solution.
 
-Furthermore, you will independently research and develop a high level overview of Next-Generation
+Furthermore, students will independently research and develop a high level overview of Next-Generation
 Firewalls, understanding the difference between our aforementioned standard solution and these highly
 dynamic systems.
-
-Students are strongly encouraged to learn from these units and apply what they learn. Applying what
-you learn offers no better teach. Again welcome, and good luck in your studies.
 
 ### Resources / Important Links
 
@@ -35,24 +29,30 @@ you learn offers no better teach. Again welcome, and good luck in your studies.
 ---
 
 A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
+topics. Take the time to fully absorb each topic and contribute to the
+discussion thread by sharing your thoughts. Interaction with peers is also
+expected; the goal is to compare and contrast ideas to build a solid
+foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
-**Scenario**  
+Scenario:
+
+<blockquote>
+
 A ticket has come in from an application team. Some of the servers your team built for them last week
 have not been reporting up to enterprise monitoring and they need it to be able to troubleshoot a current
 issue, but they have no data. You jump on the new servers and find that your engineer built everything
 correctly and the agents for node_exporter, ceph_exporter and logstash exporter that your teams use. But,
 they also have adhered to the new company standard of firewalld must be running. No one has documented the
 ports that need to be open, so you’re stuck between the new standards and fixing this problem on live systems.
+
+</blockquote>
 
 Next, answer these questions here:
 
@@ -62,20 +62,19 @@ Next, answer these questions here:
 
 3. What are you going to do to fix this on your firewall?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](Placeholder)
-
 #### Discussion Post #2
 
-**Scenario**  
+Scenario:
+
+<blockquote>
+
 A manager heard you were the one that saved the new application by fixing the firewall. They get your manager
 to approach you with a request to review some documentation from a vendor that is pushing them hard to run a
 WAF in front of their web application. You are “the firewall” guy now, and they’re asking you to give them a
 review of the differences between the firewalls you set up (which they think should be enough to protect them)
 and what a WAF is doing.
+
+</blockquote>
 
 1. What do you know about the differences now?
 
@@ -87,7 +86,7 @@ and what a WAF is doing.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](Placeholder)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 

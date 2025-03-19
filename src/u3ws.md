@@ -5,9 +5,9 @@
     </p>
 </div>
 
-Understanding system reliability and high availability is crucial for modern 
-enterprise Linux environments. This unit explores the fundamental concepts of system 
-uptime, failure modes, and incident response, with a practical focus on implementing 
+Understanding system reliability and high availability is crucial for modern
+enterprise Linux environments. This unit explores the fundamental concepts of system
+uptime, failure modes, and incident response, with a practical focus on implementing
 HA solutions using industry-standard tools and practices.
 
 ### Resources / Important Links
@@ -33,12 +33,12 @@ HA solutions using industry-standard tools and practices.
 
 ---
 
-A major aspect of this course is to intake, comprehend, and discuss the assigned 
-topics. Take the time to fully absorb each topic and contribute to the discussion 
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is 
+A major aspect of this course is to intake, comprehend, and discuss the assigned
+topics. Take the time to fully absorb each topic and contribute to the discussion
+thread by sharing your thoughts. Interaction with peers is also expected; the goal is
 to compare and contrast ideas to build a solid foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
@@ -52,12 +52,6 @@ Read the section called "Operation Security" in this same chapter: [Building Sec
 1. What important concepts do you learn about how we behave during an
    operational response to an incident?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](Placeholder)
-
 #### Discussion Post #2
 
 Ask Google, find a blog, or ask an AI about high availability. (Here's one if you need it: [AWS Real-Time Communication Whitepaper](https://docs.aws.amazon.com/pdfs/whitepapers/latest/real-time-communication-on-aws/real-time-communication-on-aws.pdf#high-availability-and-scalability-on-aws)
@@ -69,7 +63,7 @@ Ask Google, find a blog, or ask an AI about high availability. (Here's one if yo
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](Placeholder)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 

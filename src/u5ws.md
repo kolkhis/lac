@@ -35,30 +35,25 @@ Our role is an integral part of the security pipeline.
 ---
 
 A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
+topics. Take the time to fully absorb each topic and contribute to the
+discussion thread by sharing your thoughts. Interaction with peers is also
+expected; the goal is to compare and contrast ideas to build a solid
+foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
-Review the page: https://attack.mitre.org/
+Review the page: <https://attack.mitre.org/>
 
 1. What terms and concepts are new to you?
 
 2. Why, as a system administrator and not directly in security, do you think it’s so important to understand how your systems can be attacked? Isn’t it someone else’s problem to think about that?
 
 3. What impact to the organization is data exfiltration? Even if you’re not a data owner or data custodian, why is it so important to understand the data on your systems?
-
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-[Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1294638981576790067)
 
 #### Discussion Post #2
 
@@ -72,20 +67,27 @@ Find a blog or article on the web that discusses the user environment in Linux. 
 Submit your input by following the link below:
 </div>
 
-[Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1292189890716368928)
+[Link to Discussion Posts](https://discord.com/channels/611027490848374811/1292189890716368928)
 
 ## Definitions
 
 ---
 
-- Footprinting:
-- Scanning:
-- Enumeration:
-- System Hacking:
-- Escalation of Privilege:
-- Rule of least privilege:
-- Covering Tracks:
-- Planting Backdoors:
+Footprinting:
+
+Scanning:
+
+Enumeration:
+
+System Hacking:
+
+Escalation of Privilege:
+
+Rule of least privilege:
+
+Covering Tracks:
+
+Planting Backdoors:
 
 ## Digging Deeper
 

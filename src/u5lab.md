@@ -15,6 +15,7 @@ This lab will take you through the basics of:
 
 ### Resources / Important Links
 
+- [Killercoda Labs](https://killercoda.com/learn)
 - [RedHat: User and Group Management](https://www.redhat.com/en/blog/linux-user-group-management)
 - [Rocky Linux User Admin Guide](https://docs.rockylinux.org/books/admin_guide/06-users/)
 - [Killercoda lab by FishermanGuyBro](https://killercoda.com/fishermanguybro)
@@ -24,9 +25,9 @@ This lab will take you through the basics of:
 - Rocky 9.3 – ProLUG Lab
 - root or sudo command access
 
-## Begin
+## Pre-Lab Warm-Up
 
-### Pre-Lab Warm-Up
+---
 
 Exercises (Warmup to quickly run through your system and practice commands)
 
@@ -64,7 +65,7 @@ We just put the aliases back.
 17. `alias ls='ls --color=auto'`
     - Test with `alias` to see them added and also use `ll` and `ls` to see them work properly.
 
-## Lab🧪
+## Lab 🧪
 
 ---
 
@@ -114,8 +115,9 @@ how they secure the system. The four files are `/etc/passwd`, `/etc/group`, `/et
    | -------- | -------- | ------------- | -------------- | ---------------------- | ------------------------------------------ | --------------- |
    | `puppet` | `x`      | `994`         | `991`          | `Puppet server daemon` | `/opt/puppetlabs/server/data/puppetserver` | `/sbin/nologin` |
 
-   - `cat` or `more` the file to verify these are values you see.
-   - Are there always 7 fields?
+`cat` or `more` the file to verify these are values you see.
+
+Are there always 7 fields?
 
 3. Anatomy of the `/etc/group` file
    `/etc/group` is broken down like this, a `:` (colon) delimited file:
@@ -133,7 +135,7 @@ how they secure the system. The four files are `/etc/passwd`, `/etc/group`, `/et
    We cannot allow these to be read by just anyone because then they could brute force
    and try to figure out our passwords.
 
-### Creating and modifying local users:
+#### Creating and modifying local users:
 
 We should take a second to note that the systems you're using are tied into our active directory with
 Kerberos. You will not be seeing your account in `/etc/passwd`, as that authentication is occurring
@@ -351,14 +353,15 @@ Permissions look like this:
 ls –l
 ```
 
-| Permission    | Number of hard links | UID Owner | Group Owner    | Size in bytes | Creation Month | Creation Day | Creation Time (H:M) | Name of File |
-| ------------- | -------------------- | --------- | -------------- | ------------- | -------------- | ------------ | ------------------- | ------------ |
-| `-rw-r--r--.` | `1`                  | `scott`   | `domain_users` | `58`          | `Jun`          | `22`         | `08:52`             | `datefile`   |
+|  Permission   | # of Links | UID Owner |  Group Owner   | Size (b) | Creation Month | Creation Day | Creation Time | Name of File |
+| :-----------: | :--------: | :-------: | :------------: | :------: | :------------: | :----------: | :-----------: | :----------: |
+| `-rw-r--r--.` |    `1`     |  `scott`  | `domain_users` |   `58`   |     `Jun`      |     `22`     |    `08:52`    |  `datefile`  |
 
 The primary permissions commands we're going to use are going to be `chmod` (access) and `chown` (ownership).
 
-A quick rundown of how permissions break out.
-I will explain this on the call.
+A quick rundown of how permissions break out:
+
+<img src='./assets/images/permissions.png'></img>
 
 Let's examine some permissions and see if we can't figure out what permissions are allowed:
 
@@ -369,13 +372,18 @@ drwx------. 5 scott domain_users 4096 Jun 22 09:11 /home/scott/
 
 The first character lets you know if the file is a directory, file, or link. In this case we are looking at my home directory.
 
-- `rwx`: For UID (me).
-  - What permissions do I have?
-- `---`: For group.
-  - Who are they?
-  - What can my group do?
-- `---`: For everyone else.
-  - What can everyone else do?
+`rwx`: For UID (me).
+
+- What permissions do I have?
+
+`---`: For group.
+
+- Who are they?
+- What can my group do?
+
+`---`: For everyone else.
+
+- What can everyone else do?
 
 Go find some other interesting files or directories and see what you see there.  
 Can you identify their characteristics and permissions?

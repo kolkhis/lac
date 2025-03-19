@@ -1,14 +1,17 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
     <p>
-        <h1>Unit 9: Containerization with Podman on Linux</h1>
+        <h1>Unit 9</h1>
     </p>
 </div>
+
+## Overview
+
+---
 
 In this unit, we dive into the modern world of containerization, focusing on **Podman**—an open-source, daemon-less container engine. As Linux administrators, understanding containerization is crucial for supporting developers, managing production systems, and deploying services efficiently.
 
 We’ll explore what containers are, how to manage them, and how to build container images.
-
 
 ## Relevance & Context
 
@@ -17,6 +20,8 @@ Containerization is a critical part of modern IT, powering development pipelines
 This unit focuses on **Podman**, a secure, rootless, and daemon-less alternative to Docker, widely used in enterprise environments like Red Hat and Rocky Linux. Whether you work in a NOC, DevOps, or traditional SysAdmin role, understanding containerization is essential to being an effective part of any IT team.
 
 ## Learning Objectives
+
+---
 
 By the end of this unit, you will be able to:
 
@@ -27,6 +32,8 @@ By the end of this unit, you will be able to:
 
 ## Prerequisites
 
+---
+
 Before starting Unit 9, you should have:
 
 - Basic understanding of Linux command line and shell operations
@@ -35,21 +42,20 @@ Before starting Unit 9, you should have:
 - Completed previous units on system administration fundamentals (file permissions, processes, networking)
 - Optional but recommended: Initial exposure to virtualization or application deployment concepts
 
-## Topics Covered
+## Key Terms and Definitions
 
-- What are Containers? Overview and definitions
-- Introduction to Docker/Podman 
-- Managing Podman containers:
-  - Running, stopping, and inspecting containers
-  - Working with Podman images
-  - Networking and port mapping
-  - Analyzing container logs and processes
-- Building container images using Dockerfiles
-- Common troubleshooting scenarios
+---
 
-## Next Steps
+**Containers**
 
-- **Start with the Worksheet**: Reflect on container use cases and challenges
-- **Complete the Lab**: Gain hands-on skills with Podman
-- **Engage in Discussions**: Share insights and troubleshoot scenarios
-- **Explore "Digging Deeper"**: Take on a deployment challenge to expand your skills
+**Virtual Machines**
+
+**Podman**
+
+**Images**
+
+**Dockerfiles**
+
+**Virtualization**
+
+**Daemon-less**

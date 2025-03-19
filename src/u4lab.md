@@ -11,6 +11,7 @@ We also talk about the incident response lifecycle -- the methods in which incid
 
 ### Resources / Important Links
 
+- [Killercoda Labs](https://killercoda.com/learn)
 - [Cron Wiki page](https://en.wikipedia.org/wiki/Cron)
 - [tldp.org's cron guide](http://www.tldp.org/LDP/lame/LAME/linux-admin-made-easy/using-cron.html) for more information.
 
@@ -43,7 +44,7 @@ We also talk about the incident response lifecycle -- the methods in which incid
     - Use `q` to exit.
     - Inside top, use `h` to find commands you can use to toggle system info.
 
-### Pre-Lab - Disk Speed tests
+#### Pre-Lab - Disk Speed tests:
 
 1. Real quick check for a package that is useful.
 
@@ -304,7 +305,7 @@ You could do something like this:
   more /tmp/<filename>
   ```
 
-### Exploring Cron
+#### Exploring Cron:
 
 Your system is running the cron daemon. You can check with:
 

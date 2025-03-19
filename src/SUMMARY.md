@@ -22,6 +22,7 @@
 - [Unit 6](./u6intro.md)
   - [Work Sheet](./u6ws.md)
   - [Lab](./u6lab.md)
+  - [Bonus](./u6b.md)
 - [Unit 7](./u7intro.md)
   - [Work Sheet](./u7ws.md)
   - [Lab](./u7lab.md)

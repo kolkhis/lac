@@ -5,11 +5,25 @@
     </p>
 </div>
 
-## Module 1: System Preparation and Basic Disk Operations
+Linux LVM (Linux Volume Manager) is a system that allows for flexible
+management of disk storage. This lab will focus on concepts and skills
+to manage system partitions and disks.
+
+### Resources / Important Links
+
+- [Killercoda Labs](https://killercoda.com/learn)
+- [Ubuntu Documentation on LVM](https://documentation.ubuntu.com/server/explanation/storage/about-lvm/index.html)
+
+### Required Materials
+
+- Rocky 9.3 – ProLUG Lab
+- root or sudo command access
+
+## Lab 🧪
 
 ---
 
-### Exercise 1.1: Environment Verification
+#### Environment Verification:
 
 Command line tools for disk wiping and/or partitioning in Linux:
 
@@ -33,7 +47,7 @@ vgs
 lvs
 ```
 
-### Exercise 1.2: Disk Preparation
+#### Disk Preparation:
 
 ```bash
 # Check disk status
@@ -50,11 +64,7 @@ EOF
 # Repeat for other disks if necessary
 ```
 
-## Module 2: LVM Basics
-
----
-
-### Exercise 2.1: Creating Physical Volumes
+#### Creating Physical Volumes:
 
 ```bash
 # Create individual PV
@@ -74,7 +84,7 @@ for disk in b c d; do
 done
 ```
 
-### Exercise 2.2: Volume Group Management
+#### Volume Group Management:
 
 ```bash
 # Create a basic VG with one PV
@@ -91,11 +101,7 @@ vgextend testvg1 /dev/xvdc
 vgs
 ```
 
-## Module 3: Logical Volumes and File Systems
-
----
-
-### Exercise 3.1: Basic LV Creation
+#### Basic LV Creation:
 
 ```bash
 # Create small LV
@@ -121,11 +127,7 @@ mount /dev/testvg1/lvtest1 /mnt/lvtest1
 df -h /mnt/lvtest1
 ```
 
-## Module 4: LVM Operations and Management
-
----
-
-### Exercise 4.1: LV Expansion
+#### LV Expansion:
 
 ```bash
 # Expand LV
@@ -138,7 +140,7 @@ resize2fs /dev/testvg1/lvtest1
 df -h /mnt/lvtest1
 ```
 
-### Exercise 4.2: Persistent Mounting
+#### Persistent Mounting:
 
 ```bash
 # Add to fstab
@@ -152,12 +154,6 @@ mount -a
 df -h /mnt/lvtest1
 ```
 
-## Practice Challenge
-
----
-
-### Complete LVM Implementation
-
 #### Create a production-like setup:
 
 1. Create PVs using all available disks
@@ -169,13 +165,7 @@ df -h /mnt/lvtest1
 5. Mount with persistence
 6. Verify all components
 
-# PART 2: LVM with RAID
-
-## Module 1: Understanding LVM RAID
-
----
-
-### Exercise 1.1: LVM RAID Concepts
+#### LVM RAID Concepts:
 
 ```bash
 # View available RAID types
@@ -185,7 +175,7 @@ man lvmraid
 dmsetup targets | grep raid
 ```
 
-### Exercise 1.2: System Preparation
+#### System Preparation:
 
 ```bash
 # Remove existing LVM configurations
@@ -204,11 +194,7 @@ vgs
 lvs
 ```
 
-## Module 2: Basic RAID Configuration
-
----
-
-### Exercise 2.1: Creating RAID-Ready Physical Volumes
+#### Creating RAID-Ready Physical Volumes:
 
 ```bash
 # Create PVs individually to understand the process
@@ -221,7 +207,7 @@ pvs
 pvdisplay
 ```
 
-### Exercise 2.2: Volume Group for RAID
+#### Volume Group for RAID:
 
 ```bash
 # Create VG with all PVs
@@ -232,11 +218,7 @@ vgs
 vgdisplay VolGroupRAID
 ```
 
-## Module 3: RAID 5 Implementation
-
----
-
-### Exercise 3.1: Creating RAID 5 Logical Volume
+#### Creating RAID 5 Logical Volume:
 
 ```bash
 # Create RAID 5 LV using percentage of space
@@ -247,7 +229,7 @@ lvs -a -o +devices
 lvdisplay VolGroupRAID/lv_raid5
 ```
 
-### Exercise 3.2: File System Operations
+#### File System Operations:
 
 ```bash
 # Create XFS filesystem
@@ -265,11 +247,7 @@ mount -a
 df -h /space
 ```
 
-## Module 4: RAID Monitoring and Management
-
----
-
-### Exercise 4.1: RAID Status Monitoring
+#### RAID Status Monitoring:
 
 ```bash
 # View RAID status
@@ -286,7 +264,7 @@ while true; do
 done
 ```
 
-### Exercise 4.2: Performance Testing
+#### Performance Testing:
 
 ```bash
 # Write speed test
@@ -299,13 +277,7 @@ dd if=/space/test_file of=/dev/null bs=1M
 rm -f /space/test_file
 ```
 
-## Practice Challenge
-
----
-
-## Complete RAID 5 Implementation
-
-### Build a production-ready RAID 5 setup:
+#### Build a production-ready RAID 5 setup:
 
 1. Create appropriate PVs
 2. Create a VG named 'prodraid'
@@ -315,13 +287,7 @@ rm -f /space/test_file
 6. Implement basic monitoring
 7. Document configuration
 
-# PART 3: MDADM RAID
-
-## Module 1: MDADM Foundations
-
----
-
-### Exercise 1.1: Environment Setup
+#### Environment Setup:
 
 ```bash
 # Install mdadm package
@@ -334,7 +300,7 @@ mdadm --version
 cat /proc/mdstat
 ```
 
-### Exercise 2.2: System Preparation
+#### System Preparation:
 
 ```bash
 # Remove any existing configurations
@@ -351,11 +317,7 @@ mdadm --stop /dev/md0 2>/dev/null
 mdadm --zero-superblock /dev/xvd{b,c,d} 2>/dev/null
 ```
 
-## Module 2: Basic RAID Operations
-
----
-
-### Exercise 2.1: Creating a RAID 5 Array
+#### Creating a RAID 5 Array:
 
 ```bash
 # Create RAID 5 array
@@ -368,7 +330,7 @@ watch cat /proc/mdstat
 mdadm --detail /dev/md0
 ```
 
-### Exercise 2.2: RAID Array Management
+#### RAID Array Management:
 
 ```bash
 # View array status
@@ -381,11 +343,7 @@ mdadm --detail /dev/md0
 mdadm --examine /dev/xvd{b,c,d}
 ```
 
-## Module 3: LVM Integration
-
----
-
-### Exercise 3.1: LVM on RAID
+#### LVM on RAID:
 
 ```bash
 # Create PV on RAID array
@@ -403,7 +361,7 @@ vgs
 lvs
 ```
 
-### Exercise 3.2: File System Setup
+#### File System Setup:
 
 ```bash
 # Create XFS filesystem
@@ -421,11 +379,7 @@ mount -a
 df -h /space
 ```
 
-## Module 4: RAID Persistence and Monitoring
-
----
-
-### Exercise 4.1: Making RAID Persistent
+#### Making RAID Persistent:
 
 ```bash
 # Save RAID configuration
@@ -438,7 +392,7 @@ cat /etc/mdadm.conf
 mdadm --assemble --scan
 ```
 
-### Exercise 4.2: Performance Testing
+#### Performance Testing:
 
 ```bash
 # Write performance test
@@ -451,11 +405,7 @@ dd if=/space/test_file of=/dev/null bs=1M
 rm -f /space/test_file
 ```
 
-## Module 5: RAID Management Skills
-
----
-
-### Exercise 5.1: RAID Monitoring
+#### RAID Monitoring:
 
 ```bash
 # Check RAID status
@@ -468,7 +418,7 @@ watch -n 1 cat /proc/mdstat
 journalctl | grep md0
 ```
 
-### Exercise 5.2: RAID Array Maintenance
+#### RAID Array Maintenance:
 
 ```bash
 # Check array health
@@ -478,11 +428,7 @@ echo check > /sys/block/md0/md/sync_action
 mdadm --detail /dev/md0
 ```
 
-## Exercise 6.1: Production Setup
-
----
-
-### Build a complete RAID 5 with LVM setup:
+#### Build a complete RAID 5 with LVM setup:
 
 1. Create RAID 5 array with mdadm
 2. Configure RAID persistence

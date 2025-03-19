@@ -5,6 +5,8 @@
     </p>
 </div>
 
+> **NOTE:** This is an **optional** bonus section. You **do not** need to read it, but if you're interested in digging deeper, this is for you.
+
 When storage issues arise, troubleshooting step by step ensures a quick resolution. This guide flows logically, covering the most common issues you might face, from slow performance to filesystem corruption.
 
 ## 🔍 Step 1: Is Storage Performance Slow?
