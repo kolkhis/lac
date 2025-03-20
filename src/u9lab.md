@@ -28,7 +28,7 @@ We shall cover few basics:
 - Rocky 9.3 – ProLUG Lab
 - root or sudo command access
 
-##Pre-Lab Warmup
+## Pre-Lab Warmup
 
 ---
 

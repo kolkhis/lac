@@ -25,7 +25,9 @@ There are many status checks one must do as a System Administrator. Without the 
 - Rocky 9.3 – ProLUG Lab
 - root or sudo command access
 
-### Pre-Lab Warm-Up
+## Pre-Lab Warm-Up
+
+---
 
 ```bash
 vi /etc/passwd
@@ -100,6 +102,8 @@ strace ./firstprogram
 ```
 
 ## Lab 🧪
+
+---
 
 Log into your Rocky server and become root.
 
