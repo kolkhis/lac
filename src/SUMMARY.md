@@ -57,6 +57,6 @@
   - [Lab](./u16lab.md)
 - [Contributing](./contributing.md)
   - [Local Testing](./development.md)
+- [Outro](./outro.md)
 - [Contributors](./contributors.md)
 - [Resources](./resources.md)
-- [Outro](./outro.md)
