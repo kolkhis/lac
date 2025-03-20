@@ -18,19 +18,19 @@ We shall cover few basics:
 
 ### Resources / Important Links
 
+- [Killercoda Labs](https://killercoda.com/learn)
 - [https://podman.io/docs](https://podman.io/docs)
-
 - [https://docs.docker.com/build/concepts/dockerfile/](https://docs.docker.com/build/concepts/dockerfile/)
-
 - [https://docs.podman.io/en/latest/markdown/podman-exec.1.html](https://docs.podman.io/en/latest/markdown/podman-exec.1.html)
 
 ### Required Materials
 
-Rocky 9 or equivalent
+- Rocky 9.3 – ProLUG Lab
+- root or sudo command access
 
-Root or sudo command access
+##Pre-Lab Warmup
 
-### EXERCISES (Warmup and quick review)
+---
 
 1. `which podman`
 
@@ -46,6 +46,10 @@ Root or sudo command access
 5. `podman ps`  
    What do you learn from those two commands?  
    Why might it be important to know on a system?
+
+## Lab 🧪
+
+---
 
 ### Building and running containers
 

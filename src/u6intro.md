@@ -9,8 +9,6 @@
 
 ---
 
-### Concepts
-
 This unit focuses on Nohup environments and firewalls.
 
 - We will cover Nohup tools and how to properly use Nohup environments.
@@ -46,20 +44,20 @@ This unit focuses on Nohup environments and firewalls.
 
 ---
 
-1. **Firewall**
+**Firewall**
 
-2. **Zone**
+**Zone**
 
-3. **Service**
+**Service**
 
-4. **DMZ (Demilitarized Zone)**
+**DMZ (Demilitarized Zone)**
 
-5. **Proxy**
+**Proxy**
 
-6. **Stateful Packet Filtering**
+**Stateful Packet Filtering**
 
-7. **Stateless Packet Filtering**
+**Stateless Packet Filtering**
 
-8. **WAF (Web Application Firewall)**
+**WAF (Web Application Firewall)**
 
-9. **NGFW (Next-Generation Firewall)**:
+**NGFW (Next-Generation Firewall)**:

@@ -5,10 +5,11 @@
     </p>
 </div>
 
-Welcome to Unit 4, in this unit the course will discuss operating running
-systems and handling incidents. The unit will delve into gathering and
-understanding system information such as hardware and network statistics,
-and implementing an incident response cycle for triage events.
+This unit will discuss operating running systems and handling incidents.
+
+The unit will delve into gathering and understanding system information
+such as hardware and network statistics, and implementing an incident
+response cycle for triage events.
 
 ### Resources / Important Links
 
@@ -39,7 +40,7 @@ discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
@@ -54,13 +55,9 @@ Read this article: <https://cio-wiki.org/wiki/Operations_Bridge>
 
 3. Which con seems the most costly, or difficult to overcome to you? Why?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](Placeholder)
-
 #### Discussion Post #2
+
+Scenario:
 
 <blockquote>
 
@@ -77,7 +74,7 @@ You may use AI for this, but let us know if you do.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](Placeholder)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 

@@ -5,10 +5,7 @@
     </p>
 </div>
 
-Welcome to Unit 1 of the Professional Linux Users Group (ProLUG) Systems Administration Course.
-With this worksheet students will explore the foundations of Linux and its many constituent parts.
-
-Specifically, this unit and worksheet aim to cover concepts such as the command line interface (CLI),
+This unit and worksheet aim to cover concepts such as the command line interface (CLI),
 commands and syntax, command line tools, Vim (visual editor improved), the Linux Kernel, and much more.
 
 Students are strongly encouraged to learn from these units and apply what they learn. Applying what you
@@ -42,7 +39,7 @@ topics. Take the time to fully absorb each topic and contribute to the discussio
 thread by sharing your thoughts. Interaction with peers is also expected; the goal is
 to compare and contrast ideas to build a solid foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
@@ -75,12 +72,6 @@ Next, answer these questions here:
 
 2. What type of career path are you shooting for?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](Placeholder)
-
 #### Discussion Post #2
 
 1. Post a job that you are interested in from a local job website. (link or image)
@@ -95,7 +86,7 @@ Submit your input by following the link below:
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](Placeholder)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 

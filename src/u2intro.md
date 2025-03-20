@@ -9,8 +9,6 @@
 
 ---
 
-### What is the skill/tech/concept we are dealing with?
-
 This unit centers on a focus on security and troubleshooting.
 
 - The use of **SELinux** for implementing mandatory access controls, managing file permissions with **ACLs (Access Control Lists)**,
@@ -55,8 +53,6 @@ These objectives aim to ensure that learners not only acquire specific technical
 
 ---
 
-### Why is it important to Linux Administrators/Engineers?
-
 For Linux administrators and engineers, mastering SELinux and ACLs is essential because these tools add critical layers of security and control over system resources. By understanding how to use security contexts and labels, professionals can:
 
 - **Enhance System Security:** Implementing SELinux helps mitigate vulnerabilities by enforcing strict access controls.
@@ -68,8 +64,6 @@ For Linux administrators and engineers, mastering SELinux and ACLs is essential 
 ## Prerequisites
 
 ---
-
-### Briefly mention concepts or skills the reader should already understand before starting the chapter.
 
 Before engaging with this unit, readers should have a foundational understanding of:
 
@@ -85,22 +79,22 @@ Before engaging with this unit, readers should have a foundational understanding
 
 ---
 
-1. **SELinux (Security-Enhanced Linux)**
+**SELinux (Security-Enhanced Linux)**
 
-2. **Access Control Lists (ACLs)**
+**Access Control Lists (ACLs)**
 
-3. **Security Contexts**
+**Security Contexts**
 
-4. **Mandatory Access Control (MAC)**
+**Mandatory Access Control (MAC)**
 
-5. **Discretionary Access Control (DAC)**
+**Discretionary Access Control (DAC)**
 
-6. **Uptime**
+**Uptime**
 
-7. **Standard Streams (stdin, stdout, stderr)**
+**Standard Streams (stdin, stdout, stderr)**
 
-8. **High Availability (HA)**
+**High Availability (HA)**
 
-9. **Service Level Objectives (SLOs)**
+**Service Level Objectives (SLOs)**
 
-10. **Troubleshooting Methodologies**
+**Troubleshooting Methodologies**

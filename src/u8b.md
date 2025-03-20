@@ -5,7 +5,7 @@
     </p>
 </div>
 
-> **NOTE:** This is an **optional** bonus section. You **do not** need to read it, but if you're interested in digging deeper into Bash, this is for you.
+> **NOTE:** This is an **optional** bonus section. You **do not** need to read it, but if you're interested in digging deeper, this is for you.
 
 ## Bash: The Essential Skill for Any Linux Administrator
 

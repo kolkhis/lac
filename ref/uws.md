@@ -13,6 +13,7 @@ PLACEHOLDER - Unit Introduction. A few sentences/single paragraph describing wha
 ### Resources / Important Links
 
 - [PLACEHOLDER](PLACEHOLDER) - Resources will go in unordered lists
+
 - [PLACEHOLDER](PLACEHOLDER)
 
 ### Unit N Recording
@@ -51,16 +52,12 @@ answers. This is only required if you want the certification.
 
 2. PLACEHOLDER - Questions will be in ordered lists.
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](PLACEHOLDER - Link to the discord thread)
-
 #### Discussion Post #2
 
 <blockquote>
-PLACEHOLDER - Scenarios go inside blockquotes.
+
+PLACEHOLDER - Scenarios go inside block quotes.
+
 </blockquote>
 
 1. PLACEHOLDER - Questions will be in ordered lists.
@@ -71,7 +68,7 @@ PLACEHOLDER - Scenarios go inside blockquotes.
 Submit your input by following the link below:
 </div>
 
-- [Link to Discussion Post 2](PLACEHOLDER)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 
