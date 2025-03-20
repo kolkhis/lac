@@ -33,6 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # test push
       # Install rust with GitHub's 'setup-rs' action (most recent stable version)
       - name: Install Rust
         uses: actions-rs/toolchain@v1
