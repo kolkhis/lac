@@ -68,11 +68,10 @@ It's also helpful in troubleshooting when a package isn't working as expected.
 
 ---
 
-## Exploring the Audit Tools
+## Auditing a File in a Package
 
 Let's say you suspect something has been changed or tampered with.
-
-### Show all files from a package
+Let's get all files from a package.  
 
 - Run `rpm -ql` to list the files that were installed with a package:
 
