@@ -18,8 +18,6 @@ We'll explore how to detect unexpected changes using built-in tools, dig into pa
 metadata, and get a taste of real-world security practices like intrusion detection
 and system baselining through package auditing.
 
----
-
 In modern enterprise environments, packages may be tampered with, misconfigured, or out-of-date.
 
 A responsible sysadmin needs tools and methods to answer questions like:
@@ -66,9 +64,10 @@ Each character in the output has its own meaning:
 This is a great way to verify the integrity of installed packages.
 It's also helpful in troubleshooting when a package isn't working as expected.
 
----
 
 ## Auditing a File in a Package
+
+---
 
 Let's say you suspect something has been changed or tampered with.
 Let's get all files from a package.  
@@ -113,11 +112,11 @@ Let's get all files from a package.
   sha256sum /usr/sbin/sshd
   ```
 
-If the hashes differ, the file has been modified.
-
----
+If the hashes are different, the file has been modified.
 
 ## Bonus Challenge 💡
+
+---
 
 1. Run this one-liner to verify all installed packages:
    ```bash
@@ -159,13 +158,16 @@ Then you can reinstall the package or extract the original file from the `.rpm` 
 
 ### Reflection Questions
 
+---
+
 - What happens if you manually modify a file, then verify with `rpm -V`?
 - Can you identify if changes were made outside of DNF/RPM?
 - What types of files are typically most important to verify?
 
----
 
 ### Example of Real-World Security Tools
+
+---
 
 Large enterprises often use tools like AIDE (Advanced Intrusion Detection Environment) or Tripwire to baseline their systems and detect changes over time.
 
