@@ -31,7 +31,6 @@ A responsible sysadmin needs tools and methods to answer questions like:
 
 Let's get into it.
 
-
 ## Verifying Package Integrity
 
 ---
@@ -56,7 +55,7 @@ If you don't see any output, that's a good thing.
 `rpm -V` only reports files that have been altered in some way from what the package database expects.
 If there is no output, it means all files match the expected checksums, sizes, permissions, etc..
 
-If this command **does** have output, interpreting the output is important.
+If this command **does** have output, being able to interpret the output is important.
 Each character in the output has its own meaning:
 
 - `S` - Size differs.
@@ -64,8 +63,8 @@ Each character in the output has its own meaning:
 - `5` - MD5 checksum mismatch.
 - `T` - Modification time differs.
 
-This is a great way to verify the integrity of installed packages. It's also helpful
-in troubleshooting when a package isn't working as expected.
+This is a great way to verify the integrity of installed packages.
+It's also helpful in troubleshooting when a package isn't working as expected.
 
 ---
 
@@ -159,7 +158,7 @@ If the hashes differ, the file has been modified.
 
 Then you can reinstall the package or extract the original file from the `.rpm` file.
 
-### Reflect
+### Reflection Questions
 
 - What happens if you manually modify a file, then verify with `rpm -V`?
 - Can you identify if changes were made outside of DNF/RPM?
@@ -176,8 +175,13 @@ To set up AIDE on your system (as root):
 
 ```bash
 dnf install aide -y
+
 aide --init
+
+# Copy the default database to use as your database
 cp /var/lib/aide/aide.db.new.gz /var/lib/aide/aide.db.gz
+
+# Then, to run a check with aide (this will take a few minutes):
 aide --check
 ```
 
