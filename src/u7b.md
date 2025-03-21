@@ -190,9 +190,9 @@ AIDE compares the current state of the system to a known baseline.
 
 This is foundational to change management, compliance, and intrusion detection.
 
----
-
 ## Resources
+
+---
 
 - [RPM Man Page](https://man7.org/linux/man-pages/man8/rpm.8.html)
 - [AIDE Documentation](https://aide.github.io/)
