@@ -101,7 +101,9 @@ This is a thought exercise, so it’s not a “right or wrong” answer it’s f
 3. How do you think something like this affects performance baselines?
 
 <div class="warning">
-Submit your input by following the link below:
+Submit your input by following the link below.
+
+- The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1299794638340755567)

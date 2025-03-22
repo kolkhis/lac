@@ -87,7 +87,9 @@ You may use any online resources to help you answer this. This is not a trick
 and it is not a “one answer solution”. This is for you to think through.
 
 <div class="warning">
-Submit your input by following the link below:
+Submit your input by following the link below.
+
+- The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)

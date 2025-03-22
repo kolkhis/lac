@@ -94,7 +94,9 @@ You decide to write up some notes by reading some google, AI, and talking to you
 2. Compare the use of conditional and counting loops. Under what circumstances would you use one or the other?
 
 <div class="warning">
-Submit your input by following the link below:
+Submit your input by following the link below.
+
+- The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
