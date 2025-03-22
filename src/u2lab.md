@@ -73,7 +73,7 @@ It is recommended that you type these commands and do not copy and paste them. W
 
 ```bash
 hostname
-cat /etc/\*release
+cat /etc/*release
 # What do you recognize about this output? What version of RHEL (CENTOS) are we on?
 
 uname
@@ -198,7 +198,7 @@ ps –ef | wc –l
 free –m
 free –m | egrep “Mem|Swap”
 free –m| egrep “Mem|Swap” | awk ‘{print $1, $2, $3}’
-free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 / $2) \* 100"%"}'
+free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 / $2) * 100"%"}'
 
 # Taking this apart a bit:
 # You’re just using free and searching for the lines that are for memory and swap
@@ -219,7 +219,7 @@ while true; do free -m; sleep 3; done
 while true; do date; uptime; free -m; echo “ “; sleep 10; done
 # Since we can wrap anything inside of our while statements, let’s try adding
 # something from earlier:
-while true; do free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 / $2) \* 100"%"}'; sleep 3; done
+while true; do free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 / $2) * 100"%"}'; sleep 3; done
 ```
 
 ```bash
