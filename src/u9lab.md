@@ -192,7 +192,7 @@ podman ps
 
 ```bash
 podman exec -it festive_pascal sh
-cat /etc/\*release
+cat /etc/*release
 exit
 ```
 

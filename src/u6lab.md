@@ -111,7 +111,7 @@ systemctl start firewalld
 systemctl enable firewalld
 ```
 
-\*verify with systemctl status firewalld again from **step 1**
+Verify with systemctl status firewalld again from **step 1**
 
 #### Check which zones exist:
 
