@@ -44,8 +44,6 @@ Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
 
-## Discussion Questions
-
 #### Discussion Post #1
 
 Read: [Kubernetes Overview](https://kubernetes.io/docs/concepts/overview/)
@@ -112,47 +110,29 @@ The discussion posts are done in Discord threads. Click the 'Threads' icon on th
 
 ---
 
-Define the following Kubernetes terms:
+Kubernetes/K8s:
 
-- Kubernetes/K8s:
+K3s:
 
-- K3s:
+Control Plane:
 
-- Control Plane:
+Node:
 
-- Node:
+Pod:
 
-- Pod:
+Deployment:
 
-- Deployment:
+Service:
 
-- Service:
+ETCD:
 
-- ETCD:
+Kubelet:
 
-- Kubelet:
+Kube-proxy:
 
-- Kube-proxy:
+Scheduler:
 
-- Scheduler:
-
-- API Server:
-
-### Lab and Assignment
-
-Unit 10 Lab k3s
-
-Continue working on your project from the Project Guide
-
-Topics:
-
-1.  System Stability
-2.  System Performance
-3.  System Security
-4.  System monitoring
-5.  Kubernetes
-6.  Programming/Automation
-    You will research, design, deploy, and document a system that improves your administration of Linux systems in some way.
+API Server:
 
 ## Digging Deeper
 
@@ -171,6 +151,5 @@ Topics:
 
 1. What questions do you still have about Kubernetes?
 
-2. How can you apply this knowledge in your current IT role?
-
-3. If you’re not in IT, how could this experience contribute to your resume or portfolio?
+2. How can you apply this knowledge in your current IT role? If you’re not in IT, how
+   could this experience contribute to your resume or portfolio?
