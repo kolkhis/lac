@@ -100,7 +100,7 @@ tcp     LISTEN   0        4096                    *:8080                   *:*  
 <div class="warning">
 Submit your input by following the link below.
 
-- The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1304889728281084017)

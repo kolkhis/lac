@@ -73,7 +73,7 @@ You may use AI for this, but let us know if you do.
 <div class="warning">
 Submit your input by following the link below.
 
-- The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)

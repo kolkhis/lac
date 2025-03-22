@@ -66,7 +66,7 @@ Find a blog or article on the web that discusses the user environment in Linux. 
 <div class="warning">
 Submit your input by following the link below.
 
-- The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
 [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1292189890716368928)
