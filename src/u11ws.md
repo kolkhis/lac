@@ -5,8 +5,6 @@
     </p>
 </div>
 
-(However, these are not hard fast templates, as long as the style is maintained
-there is a degree of freedom. We are using `prettier` for formatting.)
 
 Linux Telemetry is one of the most critical parts of monitoring your system. With good data gathering, 
 you can benchmark and baseline current systems. You can predict future capacity and mitigate risk in 
