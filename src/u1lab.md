@@ -310,7 +310,7 @@ ls fruity.txt 2> /dev/null
 # But, sometimes you do care how well your script runs against 100 servers,
 # or you’re testing and want to see those errors. You can redirect that to a file, just as easy
 
-ls fruity.txt >> error.log
+ls fruity.txt 2> error.log
 cat error.log
 # You’ll see the error. If you want it see it a few times do the error line to see it happen.
 ```
