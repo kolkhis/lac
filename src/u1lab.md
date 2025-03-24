@@ -298,7 +298,7 @@ Do a quick man on tee to see what the –a does. Try it without that value. Can 
 Sometimes we don’t care when something errs out. We just want to see that it’s working or not. If you’re wanting to filter out errors (2) in the standarderr, you can do this
 
 ```bash
-ls fruit.txt
+ls fruits.txt
 # You should see normal output
 
 ls fruity.txt
