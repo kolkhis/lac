@@ -1,5 +1,5 @@
 <div class="flex-container">
-        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
     <p>
         <h1>Unit 1 Worksheet - Linux Fundamentals and Systems Editing Tools</h1>
     </p>
@@ -86,6 +86,7 @@ Next, answer these questions here:
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)

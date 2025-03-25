@@ -11,14 +11,17 @@ Welcome to the ProLUG Enterprise Linux System Administration Course Book.
 
 Contains all materials pertaining to the course including links to external resources.
 It has been put together with care by a number of ProLUG group members referencing original
-instructional materials produce by Scott Champine (Het Tanis). The content is version
-controlled with Git and stored - [ProLUG Linux Administration Course (LAC) Repository](https://github.com/ProfessionalLinuxUsersGroup/lac/)
+instructional materials produce by Scott Champine (Het Tanis).
+
+The content is version controlled with Git and stored here: <https://github.com/ProfessionalLinuxUsersGroup/lac/>
 
 Furthermore, the book has been built with mdbook for ease of navigation. Be sure to try the search functionality.
 
 ## This Course
 
-Addresses how the Linux systems work for administration level tasks inside a corporate environment. This course will explore everything from the administration of a Linux server and fundamental command line tasks to advanced topics such as patching and web administration.
+Addresses how the Linux systems work for administration level tasks inside a corporate environment.
+This course will explore everything from the administration of a Linux server and fundamental command
+line tasks to advanced topics such as patching and web administration.
 
 ## Major Instructional Areas
 
@@ -34,16 +37,16 @@ Addresses how the Linux systems work for administration level tasks inside a cor
 
 ## Course objectives
 
-- Explain the server build process and hardware system components.
-- Analyze system security and implement basic hardening of system.
-- Construct command line syntax to explore the system and gather resource information.
+- Explain the server build process and hardware system components
+- Analyze system security and implement basic hardening of system
+- Construct command line syntax to explore the system and gather resource information
 - Construct scripting structures of assigning variables, conditional tests, and recording output to
-  generate scripts that do basic system tasks.
-- Analyze and troubleshoot the Apache Web Server
-- Analyze and troubleshoot the NFS/Samba File Shares.
-- Analyze Docker and Kubernetes components and workflows.
-- Describe and troubleshoot network services.
-- Write and perform Ansible tasks to automate deployments to servers.
+  generate scripts that do basic system tasks
+- Analyze and troubleshoot an Apache Web Server
+- Analyze and troubleshoot NFS/Samba File Shares
+- Analyze Docker and Kubernetes components and workflows
+- Describe and troubleshoot network services
+- Write and perform Ansible tasks to automate tasks
 
 ## Instructional Methods
 
@@ -55,25 +58,29 @@ effectively applied in professional contexts.
 
 ## External resources
 
-### Course Calendar
+#### Course Calendar
 
-[Link to Discord Course Calendar](https://discord.gg/brkZ5tQ8?event=1334344976527790101)
+<https://discord.com/events/611027490848374811/1353330418669326407>
 
-### Written Discussions
+#### Written Discussions
 
-Are assigned as 'Discussion Posts' within each unit. Discussions generally take place within the Discord Server under #ProLUG Projects. More specifically, each unit will contain links to particular discussion posts within #ProLUG Projects.
+Are assigned as 'Discussion Posts' within each unit. Discussions generally take place
+within the Discord Server under #prolug-projects. More specifically, each unit will
+contain links to particular discussion posts within #prolug-projects.
 
-## Completing the course
+#### Completing the course
 
-In order to complete this course, one must attend lectures, participate in group discussions and complete provided labs. Additionally, students are to propose and complete a capstone project involving skills learned from the course.
+In order to complete this course students must participate in group discussions and
+complete provided labs. Additionally, students are to propose and complete a final
+project involving skills learned from the course.
 
-## Recommended extras
+#### Recommended extras
 
-[Link to Killercoda](https://killercoda.com/)
+- Killercoda: <https://killercoda.com/>
 
-## Required Resources
+## Recommended Resources
 
-### Option #1 (Killercoda Machine)
+#### Option #1 (Killercoda Machine)
 
 Cloud Lab server running Ubuntu on Killercoda.
 Minimal resources can accomplish our tasks
@@ -83,19 +90,19 @@ Minimal resources can accomplish our tasks
 - 30 GB Hard Drive
 - Network Interface (IP already setup)
 
-### Option #2 (Home Lab)
+#### Option #2 (Home Lab)
 
 Local VM server running: RHEL, Fedora, Rocky
 Minimal resources
 
 - 1 CPU
 - 2GB RAM
-- 3 3-5GB Hard Drives
+- 3 x 3GB hard drives (for raid and disk labs)
 - Network Interface (Bridged)
 
-### Option #3 (ProLUG Remote Lab)
+#### Option #3 (ProLUG Remote Lab)
 
-ProLUG Lab access to Rocky 9.3 instance.
+ProLUG Lab access to Rocky 9.4+ instance.
 Minimal resources can accomplish our tasks
 
 - 1 CPU
@@ -106,4 +113,7 @@ Minimal resources can accomplish our tasks
 
 ## Suggested Learning Approach
 
-In this course, you will be studying individually and within a group of your peers, primarily in a lab environment. As you work on the course deliverables, you are encouraged to share ideas with your peers and instructor, work collaboratively on projects and team assignments, raise critical questions, and provide constructive feedback.
+In this course, you will be studying individually and within a group of your peers,
+primarily in a lab environment. As you work on the course deliverables, you are
+encouraged to share ideas with your peers and instructor, work collaboratively on
+projects and team assignments, raise critical questions, and provide constructive feedback.
