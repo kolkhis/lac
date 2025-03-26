@@ -174,3 +174,5 @@ Topics:
 2. How can you apply this knowledge in your current IT role?
 
 3. If you’re not in IT, how could this experience contribute to your resume or portfolio?
+## Downloads
+#### - <a href="./assets/downloads/u10/u10_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

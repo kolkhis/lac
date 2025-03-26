@@ -202,3 +202,10 @@ There are a lot of ways to use these tools. There are a lot of ways you will sup
 At the end of the day you're a Linux System Administrator, you're expected to understand
 everything that goes on in your system. To this end, we want to know the build process and
 run processes so we can help the engineers we support keep working in a Linux environment.
+## Downloads
+
+#### - <a href="./assets/downloads/u9/u9_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
+
+
+#### - <a href="./assets/downloads/u9/u9_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+

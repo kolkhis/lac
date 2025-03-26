@@ -4,3 +4,7 @@
         <h1>Under Construction</h1>
     </p>
 </div>
+## Downloads
+
+#### - <a href="./assets/downloads/u14/u14_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+

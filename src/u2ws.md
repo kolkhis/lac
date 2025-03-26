@@ -132,3 +132,6 @@ SELinux operating modes:
 1. What questions do you still have about this week?
 
 2. How are you going to use what you’ve learned in your current role?
+## Downloads
+#### - <a href="./assets/downloads/u2/u2_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
+#### - <a href="./assets/downloads/u2/u2_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>

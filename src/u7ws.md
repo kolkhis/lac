@@ -139,3 +139,6 @@ Semantic Version:
 1. What questions do you still have about this week?
 
 2. How does security as a system administrator differ from what you expected?
+## Downloads
+#### - <a href="./assets/downloads/u7/u7_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
+#### - <a href="./assets/downloads/u7/u7_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>

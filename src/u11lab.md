@@ -61,3 +61,7 @@ consider your audience and how to best show them what they need to see.
 
 
 
+## Downloads
+
+#### - <a href="./assets/downloads/u11/u11_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+

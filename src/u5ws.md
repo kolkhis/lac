@@ -110,3 +110,6 @@ Planting Backdoors:
 
 1. What questions do you still have about this week?
 2. How are you going to use what you’ve learned in your current role?
+## Downloads
+#### - <a href="./assets/downloads/u5/u5_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
+#### - <a href="./assets/downloads/u5/u5_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
