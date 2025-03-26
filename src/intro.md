@@ -60,7 +60,7 @@ effectively applied in professional contexts.
 
 #### Course Calendar
 
-<https://discord.com/events/611027490848374811/1353330418669326407>
+<https://discord.com/events/611027490848374811/1353205038243381359>
 
 #### Written Discussions
 
