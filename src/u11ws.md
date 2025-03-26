@@ -146,3 +146,6 @@ well. [https://www.youtube.com/watch?v=54VgGHr99Qg](https://www.youtube.com/watc
 2. How can you apply this now in your current role in IT? If you’re not in IT, how can you
 look to put something like this into your resume or portfolio?
 
+ 
+## Downloads
+#### - <a href="./assets/downloads/u11/u11_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

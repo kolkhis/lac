@@ -387,3 +387,8 @@ The first character lets you know if the file is a directory, file, or link. In 
 
 Go find some other interesting files or directories and see what you see there.  
 Can you identify their characteristics and permissions?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u5/u5_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+#### - <a href="./assets/downloads/u5/u5_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
+#### - <a href="./assets/downloads/u5/u5_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>

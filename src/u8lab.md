@@ -435,3 +435,7 @@ to see what is happening with your system when it interprets this script.
 There are a lot of ways to use these tools. There are a lot of things you can do and include with scripts. This is just meant to teach you the basics and give you some confidence that you can go out there and figure out the rest. You can develop things that solve your own problems or automate your own tasks.
 
 There’s a lot of interesting things going on in that page that you’ll see. It’s outside the scope of this lab, but you can start to see what libraries your program is using and where memory is mapped to. People will use a simple bash shell execution and exit inside a simple c program like this to figure out where those are mapped in memory on a system to work to escalate privileges.
+ 
+## Downloads
+#### - <a href="./assets/downloads/u8/u8_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
+#### - <a href="./assets/downloads/u8/u8_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>

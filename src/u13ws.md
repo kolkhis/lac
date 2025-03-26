@@ -137,3 +137,6 @@ HIPS:
 2. How can you apply this now in your current role in IT?
    If you’re not in IT, how can you look to put something like this into your resume or
    portfolio?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u13/u13_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

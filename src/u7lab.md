@@ -364,3 +364,8 @@ If you install this you’re going to have developer tools installed on the serv
 but they won’t be configured. How would you figure out what tools and versions were
 just installed? How might you report this for your own documentation and to a
 security team that keeps your security baselines?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u7/u7_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+#### - <a href="./assets/downloads/u7/u7_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
+#### - <a href="./assets/downloads/u7/u7_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>

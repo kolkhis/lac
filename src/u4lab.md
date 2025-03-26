@@ -395,3 +395,8 @@ There are a lot of uses for all of these tools above.
 Most of what I've shown here, I'd liken to showing you around a tool box.  
 Nothing here is terribly useful in itself, the value comes from knowing the tool exists and then being able to properly apply it to the problem at hand.  
 I hope you enjoyed this lab.
+ 
+## Downloads
+#### - <a href="./assets/downloads/u4/u4_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+#### - <a href="./assets/downloads/u4/u4_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
+#### - <a href="./assets/downloads/u4/u4_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>

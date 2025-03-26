@@ -165,3 +165,5 @@ Now that you understand the fundamentals, here’s what to do next:
   - Learn from others, contribute, and improve your Linux skillset.
 
 🚀 **Happy scripting!**
+ 
+## Downloads

@@ -141,3 +141,7 @@ What did you learn about capabilities of bash that can help you in your scriptin
    a practical sense.
    What things are you doing currently at work or in a lab that you can apply some of
    this logic to?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u8/u8_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
+#### - <a href="./assets/downloads/u8/u8_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
