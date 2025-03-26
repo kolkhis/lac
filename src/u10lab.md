@@ -230,3 +230,6 @@ At the end of this lab, you should: ✅ Have a fully operational K3s Kubernetes 
 ✅ Understand security best practices for Kubernetes deployments.
 
 📌 Next Steps: Continue testing deployments, set up monitoring tools like Prometheus or Grafana, and explore Ingress Controllers to manage external access.
+ 
+## Downloads
+#### - <a href="./assets/downloads/u10/u10_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

@@ -119,3 +119,7 @@ Operations Bridge:
 2. How much better has your note taken gotten since you started?
    What do you still need to work on? Have you started using a different tool?
    Have you taken more notes?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u4/u4_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
+#### - <a href="./assets/downloads/u4/u4_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

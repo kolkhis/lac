@@ -232,3 +232,5 @@ By end of each day, you should be able to:
 5. Practice with real system files (copies)
 
 Remember: Focus on accuracy first, then build speed.
+ 
+## Downloads

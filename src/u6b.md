@@ -67,3 +67,5 @@ Zellij, first released in 2020 and written in Rust, is a newcomer to the termina
 #### Zellij Resources 🔗
 
 - [Zellij Site](https://zellij.dev/)
+ 
+## Downloads
