@@ -60,4 +60,5 @@
 - [Contributing](./contributing.md)
   - [Local Testing](./development.md)
 - [Contributors](./contributors.md)
+- [Downloads](./downloads.md)
 - [Resources](./resources.md)
