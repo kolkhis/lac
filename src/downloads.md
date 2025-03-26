@@ -104,110 +104,40 @@
 
 ## Unit 10
 
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
-
 #### - <a href="./assets/downloads/u10/u10_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
 #### - <a href="./assets/downloads/u10/u10_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Worksheet
 
 ## Unit 11
 
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a> - Worksheet
-
 #### - <a href="./assets/downloads/u11/u11_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
 #### - <a href="./assets/downloads/u11/u11_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Worksheet
 
 ## Unit 12
 
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a> - Worksheet
-
 #### - <a href="./assets/downloads/u12/u12_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
 #### - <a href="./assets/downloads/u12/u12_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Worksheet
 
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
-
 ## Unit 13
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a> - Worksheet
 
 #### - <a href="./assets/downloads/u13/u13_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
 #### - <a href="./assets/downloads/u13/u13_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Worksheet
 
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
-
 ## Unit 14
 
 #### - <a href="./assets/downloads/u14/u14_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a> - Worksheet
-
 #### - <a href="./assets/downloads/u14/u14_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
 ## Unit 15
 
 #### - <a href="./assets/downloads/u15/u15_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a> - Worksheet
-
 #### - <a href="./assets/downloads/u15/u15_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Worksheet
 
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
-
 ## Unit 16
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a> - Worksheet
-
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a> - Lab
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
 
 #### - <a href="./assets/downloads/u16/u16_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a> - Lab
