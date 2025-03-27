@@ -62,7 +62,8 @@ This unit emphasizes **security vs. accessibility**, change management, and shar
 **Security Posture**
 
 **Acceptable Risk**
-  - NIST 800-53
+
+- **NIST 800-53**
 
 **STIG**
 

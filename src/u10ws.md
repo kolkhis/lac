@@ -104,6 +104,7 @@ Write a basic cluster health check procedure for new NOC personnel.
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
@@ -174,6 +175,7 @@ Topics:
 2. How can you apply this knowledge in your current IT role?
 
 3. If you’re not in IT, how could this experience contribute to your resume or portfolio?
- 
+
 ## Downloads
+
 #### - <a href="./assets/downloads/u10/u10_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
