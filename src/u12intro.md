@@ -49,15 +49,23 @@ This unit prepares you to be the voice of data in meetings with architects and m
 ---
 
 **Baseline** 
+
 **Benchmark** 
+
 **High Watermark** 
+
 **Scope** 
+
 **Methodology** 
+
 **Testing** 
+
 **Control** 
+
 **Experiment** 
+
 **Analytics** 
-- **Descriptive** 
-- **Diagnostic** 
-- **Predictive** 
-- **Prescriptive** 
+  - **Descriptive** 
+  - **Diagnostic** 
+  - **Predictive** 
+  - **Prescriptive** 

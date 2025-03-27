@@ -51,18 +51,35 @@ This unit bridges **engineering troubleshooting** and **administrative troublesh
 ---
 
 **Incident**  
+
 **Problem**  
+
 **FMEA**  
+
 **Six Sigma**  
+
 **TQM**  
+
 **Post Mortem**  
+
 **Scientific Method**  
+
 **Iterative**  
+
 **Discrete data**  
+  - Ordinal
+  - Nominal (binary - attribute)
+
 **Continuous data**  
+
 **Risk Priority Number (RPN)**  
+
 **5 Whys**  
+
 **Fishbone Diagram (Ishikawa)**  
+
 **Fault Tree Analysis (FTA)**  
+
 **PDCA**  
+
 **SIPOC**
