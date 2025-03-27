@@ -19,7 +19,8 @@ and information systems.
 ### Required Materials
 
 - Putty or other connection tool
-- Rocky 9.3 – ProLUG Lab
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
 - root or sudo command access
 
 ## Pre-Lab Warm-Up
@@ -232,7 +233,9 @@ for i in `seq 1 20`; do echo "I am counting i and am on $i times through the loo
 ```
 
 Can you tell me what is the difference or significance of the $ in the command above? What does that denote to the system?
- 
+
 ## Downloads
+
 #### - <a href="./assets/downloads/u2/u2_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
+
 #### - <a href="./assets/downloads/u2/u2_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>

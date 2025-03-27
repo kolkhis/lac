@@ -22,7 +22,8 @@ By the end of this lab, you will have:
 
 ### Required Materials
 
-- Rocky 9.3 – ProLUG Lab
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
 - root or sudo command access
 
 ## Pre-Lab: Quick Warmup and System Checks
@@ -230,6 +231,7 @@ At the end of this lab, you should: ✅ Have a fully operational K3s Kubernetes 
 ✅ Understand security best practices for Kubernetes deployments.
 
 📌 Next Steps: Continue testing deployments, set up monitoring tools like Prometheus or Grafana, and explore Ingress Controllers to manage external access.
- 
+
 ## Downloads
+
 #### - <a href="./assets/downloads/u10/u10_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

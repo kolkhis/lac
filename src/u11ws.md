@@ -5,15 +5,12 @@
     </p>
 </div>
 
-
-Linux Telemetry is one of the most critical parts of monitoring your system. With good data gathering, 
-you can benchmark and baseline current systems. You can predict future capacity and mitigate risk in 
-a system. Key Performance Indicators (KPIs) can be established and tracked throughout the lifecycle 
+Linux Telemetry is one of the most critical parts of monitoring your system. With good data gathering,
+you can benchmark and baseline current systems. You can predict future capacity and mitigate risk in
+a system. Key Performance Indicators (KPIs) can be established and tracked throughout the lifecycle
 of the system.
 
 ### Resources / Important Links
-
----
 
 - [How to easily monitor your Linux server | Grafana Labs](https://grafana.com/solutions/linux-node/monitor/)
 - [30 Linux System Monitoring Tools Every SysAdmin Should Know](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
@@ -21,12 +18,10 @@ of the system.
 
 ### Unit 11 Recording
 
----
-
 <iframe
     style="width: 100%; height: 100%; border: none;
     aspect-ratio: 16/9; border-radius: 1rem; background:black"
-    src="https://www.youtube.com/live/6VOHFYkptOw?si=yXcGL_gE9ckoA9ty"
+    src="https://www.youtube.com/embed/6VOHFYkptOw"
     title="Unit 11 Recording - ProLUG Linux Systems Administration Course - Free in Discord"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -38,50 +33,44 @@ of the system.
 
 ---
 
-<!-- The instructions are the same for all worksheets. -->
-
 A major aspect of this course is to intake, comprehend, and discuss the assigned
 topics. Take the time to fully absorb each topic and contribute to the
 discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
 
-Fill out this worksheet as you watch the unit video.  
+Fill out this worksheet as you watch the unit video.
 Discussion posts can be completed afterwards, answers to be posted in Discord.
 You must both answer the discussion questions and respond to another student's
 answers. This is only required if you want the certification.
 
 #### Discussion Post #1
----
 
 <blockquote>
-Unit 11 Discussion Post 1: You’ve heard the term “loose coupling” thrown around the
+
+You’ve heard the term “loose coupling” thrown around the
 office about a new monitoring solution coming down the pike. You find a good resource and
-read the section on “Prefer Loose Coupling” https://sre.google/workbook/monitoring/
+read the section on “Prefer Loose Coupling” <https://sre.google/workbook/monitoring/>.
+
 </blockquote>
 
 1. What does “loose coupling” mean, if you had to summarize to your junior team
-members?
+   members?
 
 2. What is the advantage given for why you might want to implement this type of
-tooling in your monitoring? Do you agree? Why or why not?
+   tooling in your monitoring? Do you agree? Why or why not?
 
 3. They mention “exposing metrics” what does it mean to expose metrics? What
-happens to metrics that are exposed but never collected?
-
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](PLACEHOLDER) 
+   happens to metrics that are exposed but never collected?
 
 #### Discussion Post #2
----
 
-<blockquote> 
+<blockquote>
+
 Your HPC team is asking for more information about how CPU0
 is behaving on a set of servers. Your team has node exporter writing data out to Prometheus
-(Use this to simulate https://promlabs.com/promql-cheat-sheet/).
+(Use this to simulate <https://promlabs.com/promql-cheat-sheet/>).
+
 </blockquote>
 
 1. Can you see the usage of CPU0 and what is the query?
@@ -89,13 +78,16 @@ is behaving on a set of servers. Your team has node exporter writing data out to
 2. Can you see the usage of CPU0 for just the last 5 minutes and what is the query?
 
 3. You know that CPU0 is excluded from Slurm, can you exclude that and only pull the
-user and system for the remaining CPUs and what is that query?
+   user and system for the remaining CPUs and what is that query?
 
 <div class="warning">
-Submit your input by following the link below:
+Submit your input by following the link below.
+
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
-- [Link to Discussion Post 2](PLACEHOLDER)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 
@@ -125,27 +117,25 @@ Heads up Display
 
 ---
 
-1. Read the rest of the chapter [https://sre.google/workbook/monitoring/](https://sre.google/workbook/monitoring/) 
-and note anything else of interest when it comes to monitoring and dashboarding.
+1. Read the rest of the chapter <https://sre.google/workbook/monitoring/>
+   and note anything else of interest when it comes to monitoring and dashboarding.
 
 2. Look up the “ProLUG Prometheus Certified Associate Prep 2024” in Resources ->
-Presentations in our ProLUG Discord. Study that for a deep dive into Prometheus.
+   Presentations in our ProLUG Discord. Study that for a deep dive into Prometheus.
 
 3. Complete the project section of “Monitoring Deep Dive Project Guide” from the
-prolug-projects section of the Discord. We have a Youtube video on that project as
-well. [https://www.youtube.com/watch?v=54VgGHr99Qg](https://www.youtube.com/watch?v=54VgGHr99Qg)
+   prolug-projects section of the Discord. We have a Youtube video on that project as
+   well. <https://www.youtube.com/watch?v=54VgGHr99Qg>
 
 ## Reflection Questions
 
 ---
 
-<!-- The first reflection question is always the same. -->
-
 1. What questions do you still have about this week?
 
 2. How can you apply this now in your current role in IT? If you’re not in IT, how can you
-look to put something like this into your resume or portfolio?
+   look to put something like this into your resume or portfolio?
 
- 
 ## Downloads
+
 #### - <a href="./assets/downloads/u11/u11_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

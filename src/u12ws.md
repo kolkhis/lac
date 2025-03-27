@@ -106,6 +106,7 @@ storage system and the new storage system.
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1312461394704072774)
@@ -178,6 +179,7 @@ Analytics:
 2. How can you apply this now in your current role in IT?  
    If you’re not in IT, how can you look to put something like this into your resume or
    portfolio?
- 
+
 ## Downloads
+
 #### - <a href="./assets/downloads/u12/u12_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

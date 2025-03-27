@@ -83,6 +83,7 @@ development environment. Your team is going from RHEL 8 to Rocky 9.4.
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1317563541989097493)
@@ -137,6 +138,7 @@ HIPS:
 2. How can you apply this now in your current role in IT?
    If you’re not in IT, how can you look to put something like this into your resume or
    portfolio?
- 
+
 ## Downloads
+
 #### - <a href="./assets/downloads/u13/u13_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

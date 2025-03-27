@@ -21,7 +21,8 @@ This lab will take you through the basics of:
 
 ## Required Materials
 
-- Rocky 9.3 – ProLUG Lab
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
 - root or sudo command access
 
 ## Pre-Lab Warm-Up
@@ -499,8 +500,11 @@ We can be even more granular with our ports and services. We can block or allow 
 So now take this and set up some firewalls on the interfaces of your system.
 Change the default ports and services assigned to your different zones (at least 3 zones)
 Read the `man firewall-cmd` command or `firewall-cmd –help` to see if there are any other userful things you should know.
- 
+
 ## Downloads
+
 #### - <a href="./assets/downloads/u6/u6_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
+
 #### - <a href="./assets/downloads/u6/u6_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
+
 #### - <a href="./assets/downloads/u6/u6_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
