@@ -4,12 +4,13 @@
         <h1>Linux Systems Administration Course</h1>
     </p>
 </div>
+
 ## Final Project Outline
 
 ---
 
-Students aiming to complete the Security Engineering course are expected to devise
-and complete a capstone project, to be turned in at the end of the course.
+Students aiming to complete the Linux Systems Administration course are expected to 
+devise and complete a capstone project, to be turned in at the end of the course.
 
 The instructions, expectations, and deliverables for the project are listed on this
 page.
@@ -43,7 +44,7 @@ page.
    - Basically prove you built it.
 6. Finalize documentation
    - Redline the documentation
-7. Prepare to Present (https://www.overleaf.com/ is a great alternative to Powerpoint)
+7. Prepare to Present ([overleaf.com](https://www.overleaf.com/) is a great alternative to Powerpoint)
 
    - Setup a 15-20 slide deck on what you did
      1. Project purpose
