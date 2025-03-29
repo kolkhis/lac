@@ -33,6 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Dynamically generate resources.md file
+        run: ./scripts/generate_resources.sh
+
       # Install rust with GitHub's 'setup-rs' action (most recent stable version)
       - name: Install Rust
         uses: actions-rs/toolchain@v1
