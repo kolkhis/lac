@@ -29,7 +29,6 @@ pull-links() {
 
         IFS=$'\n' read -r -d '' -a RESOURCES < <(
             grep -i -E '\<https://' "$FILE" |
-                # grep -v -E '(img)? ?src=|discord\.(gg|com)|user-attachments|.*\.png'
                 grep -v -E '(img)? ?src=|discord\.(gg|com)|user-attachments'
         )
 
@@ -37,7 +36,6 @@ pull-links() {
             local RESOURCE
             local MARKDOWN_LINK=
             [[ $FILE =~ .*u([0-9]+).*\.md ]] && UNIT="${BASH_REMATCH[1]}"
-            [[ -n $UNIT ]] && printf "\033[32mUNIT NUMBER: %s\n \033[0m" "${UNIT}"
 
             # extract the link from the line
             MARKDOWN_LINK="$(printf "%s" "$RESOURCE" | sed -E -e 's/.*(\[.*\]\(.*\)).*/\1/')" 
@@ -61,11 +59,6 @@ pull-links() {
                 printf "Found GH link in unit %s: %s\n" "$UNIT" "$MARKDOWN_LINK"
             fi
 
-            if grep -i "${MARKDOWN_LINK}" "${RESOURCES_FILE}"; then
-                debug "Duplicate found"
-                DUPLICATES+=1
-            fi
-
             # Fix duplicate problem
             # Using grep to check for duplicates created a race condition
             # - Add associative array containing links already added
@@ -76,6 +69,8 @@ pull-links() {
                 [[ -n $UNIT ]] && sed -i "/^## Unit $UNIT$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 [[ -z $UNIT && -n "$MARKDOWN_LINK" ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 ADDED_LINKS["$LINK_HASH"]=1
+            else
+                debug "Duplicate link found, skipping."
             fi
 
         done
@@ -113,12 +108,3 @@ format-resources() {
 
 format-resources
 pull-links
-
-: ' Example CI/CD integration 
-      - name: Generate resources.md dynamically
-        run: ./scripts/generate_resources.sh
-
-      - name: Check for uncommitted changes
-        run: |
-          git diff --exit-code || (echo "::error::resources.md is outdated. Run the script and commit it." && exit 1)
-'
