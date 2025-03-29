@@ -66,7 +66,7 @@ pull-links() {
             #   - use md5sum hashes
             LINK_HASH=$(printf "%s" "${MARKDOWN_LINK,,}" | md5sum | cut -d ' ' -f1)
             if [[ -z "${ADDED_LINKS["$LINK_HASH"]}" ]]; then
-                [[ -n $UNIT ]] && sed -i "/^## Unit $UNIT$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
+                [[ -n $UNIT && -n "$MARKDOWN_LINK" ]] && sed -i "/^## Unit $UNIT$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 [[ -z $UNIT && -n "$MARKDOWN_LINK" ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 ADDED_LINKS["$LINK_HASH"]=1
             else
