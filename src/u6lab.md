@@ -15,12 +15,14 @@ This lab will take you through the basics of:
 
 ### Resources / Important Links
 
+- [Killercoda Labs](https://killercoda.com/learn)
 - [Firewalld Official Documentation](https://firewalld.org/documentation/)
 - [RedHat Firewalld Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld_firewall-packet-filters)
 
 ## Required Materials
 
-- Rocky 9.3 – ProLUG Lab
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
 - root or sudo command access
 
 ## Pre-Lab Warm-Up
@@ -66,7 +68,7 @@ you to put it together in a more complex fashion.
 It is recommended that you type these commands and do not copy and paste them.
 Browsers sometimes like to format characters in a way that doesn't always play nice with Linux.
 
-#### Check Firewall Status and settings
+#### Check Firewall Status and settings:
 
 A very important thing to note before starting this lab. You’re connected into that server on ssh via port 22. If you do anything to lockout **port 22** in this lab, you will be blocked from that connection and we’ll have to reset it.
 
@@ -98,162 +100,164 @@ A very important thing to note before starting this lab. You’re connected into
 
    **Hint:** Some lines were ellipsized, use -l to show in full.
 
-2. If necessary start the firewalld daemon
-   ```bash
-   systemctl start firewalld
-   ```
-3. Set the firewalld daemon to be persistent through reboots
+#### If necessary start the firewalld daemon:
 
-   ```bash
-   systemctl enable firewalld
-   ```
+```bash
+systemctl start firewalld
+```
 
-   \*verify with systemctl status firewalld again from **step 1**
+#### Set the firewalld daemon to be persistent through reboots:
 
-4. Check which zones exist
+```bash
+systemctl enable firewalld
+```
 
-   ```bash
-   firewall-cmd --get-zones
-   ```
+Verify with systemctl status firewalld again from **step 1**
 
-5. Checking the values within each zone
+#### Check which zones exist:
 
-   ```bash
-   firewall-cmd --list-all --zone=public
-   ```
+```bash
+firewall-cmd --get-zones
+```
 
-   **General Output**
+#### Checking the values within each zone:
 
-   ```bash
-   public (default, active)
+```bash
+firewall-cmd --list-all --zone=public
+```
+
+**General Output**
+
+```bash
+public (default, active)
+interfaces: wlp4s0
+sources:
+services: dhcpv6-client ssh
+ports:
+masquerade: no
+forward-ports:
+icmp-blocks:
+rich rules:
+```
+
+#### Checking the active and default zones:
+
+```bash
+firewall-cmd --get-default
+```
+
+Example Output:
+
+```bash
+public
+```
+
+Next Command
+
+```bash
+firewall-cmd --get-active
+```
+
+Example Output:
+
+```bash
+public
+interfaces: wlp4s0
+```
+
+**Note:** this also shows which interface the zone is applied to. Multiple interfaces and zones can be applied
+
+So now you know how to see the values in your firewall. Use steps 4 and 5 to check all the values of the different zones to see how they differ.
+
+#### Set the firewall active and default zones:
+
+We know the zones from above, set your firewall to the different active or default zones. Default zones are the ones that will come up when the firewall is restarted.
+
+**Note:** It may be useful to perform an `ifconfig -a` and note your interfaces for the next part
+
+```bash
+ifconfig -a | grep -i flags
+```
+
+Example Output:
+
+```bash
+[root@rocky ~]# ifconfig -a | grep -i flags
+docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+ens32: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+```
+
+1.  Changing the default zones (This is permanent over a reboot, other commands require --permanent switch)
+
+```bash
+firewall-cmd --set-default-zone=work
+```
+
+Example Output:
+
+```bash
+success
+```
+
+Next Command:
+
+```bash
+firewall-cmd --get-active-zones
+```
+
+Example Output:
+
+```bash
+work
+    interfaces: wlp4s0
+```
+
+Attempt to set it back to the original public zone and verify.
+Set it to one other zone, verify, then set it back to public.
+
+Changing interfaces and assigning different zones (use another interface from your earlier `ifconfig -a`
+
+```bash
+firewall-cmd --change-interface=virbr0 --zone dmz
+```
+
+Example Output:
+
+```bash
+success
+```
+
+Next Command:
+
+```bash
+firewall-cmd --add-source 192.168.11.0/24 --zone=public
+```
+
+Example Output:
+
+```bash
+success
+```
+
+Next Command:
+
+```bash
+firewall-cmd --get-active-zones
+```
+
+Example Output:
+
+```bash
+dmz
+   interfaces: virbr0
+work
    interfaces: wlp4s0
-   sources:
-   services: dhcpv6-client ssh
-   ports:
-   masquerade: no
-   forward-ports:
-   icmp-blocks:
-   rich rules:
-   ```
+public
+   sources: 192.168.200.0/24
+```
 
-6. Checking the active and default zones
-
-   ```bash
-   firewall-cmd --get-default
-   ```
-
-   Example Output:
-
-   ```bash
-   public
-   ```
-
-   Next Command
-
-   ```bash
-   firewall-cmd --get-active
-   ```
-
-   Example Output:
-
-   ```bash
-   public
-   interfaces: wlp4s0
-   ```
-
-   **Note:** this also shows which interface the zone is applied to. Multiple interfaces and zones can be applied
-
-   So now you know how to see the values in your firewall. Use steps 4 and 5 to check all the values of the different zones to see how they differ.
-
-   #### Set the firewall active and default zones
-
-   We know the zones from above, set your firewall to the different active or default zones. Default zones are the ones that will come up when the firewall is restarted.
-
-   **Note:** It may be useful to perform an `ifconfig -a` and note your interfaces for the next part
-
-   ```bash
-   ifconfig -a | grep -i flags
-   ```
-
-   Example Output:
-
-   ```bash
-   [root@rocky ~]# ifconfig -a | grep -i flags
-   docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-   ens32: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-   lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
-   ```
-
-   1. Changing the default zones (This is permanent over a reboot, other commands require --permanent switch)
-
-   ```bash
-   firewall-cmd --set-default-zone=work
-   ```
-
-   Example Output:
-
-   ```bash
-   success
-   ```
-
-   Next Command:
-
-   ```bash
-   firewall-cmd --get-active-zones
-   ```
-
-   Example Output:
-
-   ```bash
-   work
-       interfaces: wlp4s0
-   ```
-
-   Attempt to set it back to the original public zone and verify.
-   Set it to one other zone, verify, then set it back to public.
-
-7. Changing interfaces and assigning different zones (use another interface from your earlier `ifconfig -a`
-
-   ```bash
-   firewall-cmd --change-interface=virbr0 --zone dmz
-   ```
-
-   Example Output:
-
-   ```bash
-   success
-   ```
-
-   Next Command:
-
-   ```bash
-   firewall-cmd --add-source 192.168.11.0/24 --zone=public
-   ```
-
-   Example Output:
-
-   ```bash
-   success
-   ```
-
-   Next Command:
-
-   ```bash
-   firewall-cmd --get-active-zones
-   ```
-
-   Example Output:
-
-   ```bash
-   dmz
-      interfaces: virbr0
-   work
-      interfaces: wlp4s0
-   public
-      sources: 192.168.200.0/24
-   ```
-
-#### Working with ports and services
+#### Working with ports and services:
 
 We can be even more granular with our ports and services. We can block or allow services by port number, or we can assign port numbers to a service name and then block or allow those service names.
 
@@ -496,3 +500,11 @@ We can be even more granular with our ports and services. We can block or allow 
 So now take this and set up some firewalls on the interfaces of your system.
 Change the default ports and services assigned to your different zones (at least 3 zones)
 Read the `man firewall-cmd` command or `firewall-cmd –help` to see if there are any other userful things you should know.
+
+## Downloads
+
+#### - <a href="./assets/downloads/u6/u6_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
+
+#### - <a href="./assets/downloads/u6/u6_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
+
+#### - <a href="./assets/downloads/u6/u6_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

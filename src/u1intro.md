@@ -9,8 +9,6 @@
 
 ---
 
-### What is the skill/tech/concept we are dealing with?
-
 This unit introduces the foundational skills needed for effective Linux system administration with an emphasis on Red Hat Enterprise Linux (RHEL). It covers:
 
 - **Command-Line Proficiency:** Mastery of the shell environment is essential for routine tasks such as navigating the file system, managing processes, and automating scripts.
@@ -51,8 +49,6 @@ These objectives are designed to ensure that learners not only acquire technical
 
 ---
 
-### Why is it important to Linux Administrators/Engineers?
-
 The skills taught in this unit are indispensable for several reasons:
 
 - **Efficient System Management:**  
@@ -70,8 +66,6 @@ The skills taught in this unit are indispensable for several reasons:
 ## Prerequisites
 
 ---
-
-### Briefly mention concepts or skills the reader should already understand before starting the chapter.
 
 The unit assumes a basic level of computer literacy, meaning the learner is comfortable with fundamental computer operations. However, before achieving that level, one must have **digital literacy**. This involves:
 

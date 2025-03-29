@@ -24,12 +24,13 @@ version control environment.
   - [Commit and Push your Changes](#commit-and-push-your-changes)
   - [Comment your Changes](#comment-your-changes)
   - [Create a Pull Request](#create-a-pull-request)
+- [Supporting Material](#supporting-material)
 
 ## How to be a Successful Contributor
 
 ---
 
-To be an effective contributor, understanding [Git](https://git-scm.com/), whether
+To be an effective contributor understanding [Git](https://git-scm.com/), whether
 through the command line or an external tool, will be an important part of contributing.
 To this effect it is important that any individual who contributes to this project have
 a working understanding of committing, merging, and other fundamental Git workflows.
@@ -190,21 +191,30 @@ git switch -c unit1-worksheet
 
 Make changes to the `u1ws.md`.
 
-## Understand a few Best Practices
+## Consider a few Useful Practices
 
 ---
+
+The practices presented below are not required to contribute to the ProLUG
+course books but can streamline contributing to any project and are considered
+to some as best practice or incredibly useful when engaging in version control
+with Git.
 
 ### Git Rebasing
 
 <div class="warning">
-  <strong>FIRST AND FOREMOST, ONLY REBASE IN LOCAL REPOSITORIES, NEVER REBASE
+  <strong>FIRST AND FOREMOST, ONLY REBASE IN LOCAL REPOSITORIES. NEVER REBASE
   A PUBLIC BRANCH OR REPOSITORY UNLESS YOU FULLY UNDERSTAND THE CONSEQUENCES.
   YOU HAVE BEEN WARNED.</strong>
 </div>
 
 Proper implementation of rebasing can leave a clean, and easily readable
-commit history for all concerned parties. The Git documentation provides a
-succinct explanation of its utility and how it **could potentially ruin a project**.
+commit history for all concerned parties. Rebasing can also facilitate the
+management of branches and working directories in a notably active project.
+
+The Git documentation provides a succinct explanation of its utility but
+also how it **could potentially ruin a project** and erase the work of other
+contributors.
 
 Rebasing also plays a role in facilitating any commit reverts that may need
 to be made in the future. More on that will follow.
@@ -287,6 +297,12 @@ Select your branch `unit1-worksheet`, and create a description and mention an is
 ---
 
 Below are links to the necessary materials to build out the course templates:
+
+- Look over the [template pages wiki](https://github.com/ProfessionalLinuxUsersGroup/lac/wiki), or directly here:
+  - Pages: [intro](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/intro.md),
+    [bonus](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/ub.md),
+    [lab](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/ulab.md),
+    [worksheet](https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/ref/uws.md)
 
 Ancillary unit videos provided by Scott:
 

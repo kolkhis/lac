@@ -3,4 +3,12 @@ authors = []
 language = "en"
 multilingual = false
 src = "src"
-title = "lac"
+title = "Linux Administration Course"
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+no-section-label = true
+git-repository-url = "https://github.com/ProfessionalLinuxUsersGroup/lac"
+edit-url-template = "https://github.com/ProfessionalLinuxUsersGroup/lac/edit/main/{path}"
+git-repository-icon = "fa-github"

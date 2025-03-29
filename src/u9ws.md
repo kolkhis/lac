@@ -5,10 +5,11 @@
     </p>
 </div>
 
-Welcome to Unit 9.  
-This unit is all about containerization using Docker/Podman.  
+This unit is all about containerization using Docker/Podman.
+
 We'll cover what a container is, how to utilize and administer containers as Linux
-sysadmins, and how to both download and build new container images.  
+sysadmins, and how to both download and build new container images.
+
 We also touch on different types of environments (dev/prod) and the concept of CI/CD
 pipelines.
 
@@ -40,6 +41,11 @@ discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
 
+Fill out this worksheet as you watch the unit video.
+Discussion posts can be completed afterwards, answers to be posted in Discord.
+You must both answer the discussion questions and respond to another student's
+answers. This is only required if you want the certification.
+
 #### Discussion Post #1
 
 It’s a slow day in the NOC and you have heard that a new system of container deployments are being used by your developers. Do some reading about containers, docker, and podman.
@@ -52,13 +58,9 @@ It’s a slow day in the NOC and you have heard that a new system of container d
 
 4.  What seems to be some obstacles to container deployment?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1304889654306144519)
-
 #### Discussion Post #2
+
+Scenario:
 
 <blockquote>
 
@@ -96,10 +98,12 @@ tcp     LISTEN   0        4096                    *:8080                   *:*  
    true, or is something else happening in their `run` command?
 
 <div class="warning">
-Submit your input by following the link below:
+Submit your input by following the link below.
+
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
-- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1304889728281084017)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1304889728281084017)
 
 ## Definitions
 
@@ -142,3 +146,7 @@ Repository:
 
 2. How can you apply this now in your current role in IT? If you’re not in IT, how
    can you look to put something like this into your resume or portfolio?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u9/u9_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+#### - <a href="./assets/downloads/u9/u9_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>

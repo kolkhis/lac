@@ -7,7 +7,7 @@
 
 ## Overview
 
-### What is the skill/tech/concept we are dealing with?
+---
 
 The unit focuses on understanding and implementing techniques to ensure systems remain operational with minimal downtime.
 
@@ -16,6 +16,8 @@ The unit focuses on understanding and implementing techniques to ensure systems 
 - Leveraging performance indicators (KPIs, SLIs) and setting clear operational targets (SLOs, SLAs) to guide troubleshooting and recovery efforts.
 
 ## Learning Objectives
+
+---
 
 1. **Understand Fundamental Concepts of System Reliability and High Availability:**
 
@@ -51,7 +53,7 @@ These learning objectives are designed to ensure that participants not only gras
 
 ## Relevance & Context
 
-### Why is it important to Linux Administrators/Engineers?
+---
 
 - **Ensuring Mission-Critical Uptime:**
   Minimizing downtime is critical, and high availability strategies help ensure continuous service—even in the face of hardware or software failures.
@@ -67,7 +69,7 @@ These learning objectives are designed to ensure that participants not only gras
 
 ## Prerequisites
 
-### Briefly mention concepts or skills the reader should already understand before starting the chapter.
+---
 
 Before engaging with this unit, readers should have a foundational understanding of:
 
@@ -81,31 +83,33 @@ Before engaging with this unit, readers should have a foundational understanding
 
 ## Key terms and Definitions
 
-1. **Resilience Engineering**
+---
 
-2. **Fault Tolerance**
+**Resilience Engineering**
 
-3. **Proactive Monitoring**
+**Fault Tolerance**
 
-4. **Observability**
+**Proactive Monitoring**
 
-5. **Incident Response**
+**Observability**
 
-6. **Root Cause Analysis (RCA)**
+**Incident Response**
 
-7. **Disaster Recovery (DR)**
+**Root Cause Analysis (RCA)**
 
-8. **Error Budgeting**
+**Disaster Recovery (DR)**
 
-9. **Capacity Planning**
+**Error Budgeting**
 
-10. **Load Balancing**
-11. **Service Continuity**
+**Capacity Planning**
 
-12. **Infrastructure as Code (IaC)**
+**Load Balancing**
+**Service Continuity**
 
-13. **Configuration Management**
+**Infrastructure as Code (IaC)**
 
-14. **Preventive Maintenance**
+**Configuration Management**
 
-15. **DevOps Culture**
+**Preventive Maintenance**
+
+**DevOps Culture**

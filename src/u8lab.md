@@ -4,22 +4,15 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Operating Running Systems and Handling Incidents</h1>
+        <h1>Unit 8 Lab - Operating Running Systems and Handling Incidents</h1>
     </p>
 </div>
 
-# Scripting System Checks
-
----
-
-## Intro
-
 There are many status checks one must do as a System Administrator. Without the use of scripted automation, there would not be enough time in the day to look under every rock. Having a collection of scripts that generate reports or conduct repetitive tasks will save your time and sanity.
-
----
 
 ### Resources / Important Links
 
+- [Killercoda Labs](https://killercoda.com/learn)
 - [Wikipedia Page for Compilers](https://en.wikipedia.org/wiki/Compiler)
 - [Wikipedia Page for the C Programming Lang](<https://en.wikipedia.org/wiki/C_(programming_language)>)
 - [Wikipedia Page for Truth Table](https://en.wikipedia.org/wiki/Truth_table)
@@ -27,18 +20,15 @@ There are many status checks one must do as a System Administrator. Without the 
 - [Unit #1 Bonus (VIM) Page](https://professionallinuxusersgroup.github.io/lac/u1b.html)
 - [Unit #8 Bonus (Bash Scripting) Page](https://professionallinuxusersgroup.github.io/lac/u8b.html)
 
----
-
 ## Required Materials
 
-- Rocky 9.3 – ProLUG Lab
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
 - root or sudo command access
 
+## Pre-Lab Warm-Up
+
 ---
-
-## Begin
-
-### Pre-Lab Warm-Up
 
 ```bash
 vi /etc/passwd
@@ -112,7 +102,9 @@ strace ./a.out
 strace ./firstprogram
 ```
 
-# Lab 🧪
+## Lab 🧪
+
+---
 
 Log into your Rocky server and become root.
 
@@ -221,11 +213,7 @@ I commonly say that **“All engineering is the test for truth.”** This is not
 
 Testing for what something `is` is much easier than testing for what something `is not`, as logically, there are infinite possibilities for what something could `not` be.
 
----
-
 Continue exploring these concepts by practicing input handling, storing values in variables, and testing conditions to build efficient scripts.
-
----
 
 ### 2.5 Exercise
 
@@ -449,3 +437,8 @@ There are a lot of ways to use these tools. There are a lot of things you can do
 
 There’s a lot of interesting things going on in that page that you’ll see. It’s outside the scope of this lab, but you can start to see what libraries your program is using and where memory is mapped to. People will use a simple bash shell execution and exit inside a simple c program like this to figure out where those are mapped in memory on a system to work to escalate privileges.
 
+## Downloads
+
+#### - <a href="./assets/downloads/u8/u8_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
+
+#### - <a href="./assets/downloads/u8/u8_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>

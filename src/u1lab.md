@@ -5,959 +5,414 @@
     </p>
 </div>
 
-## Module 1: Creating Empty Files
+Every bit and piece of Linux is a file. Everything. A core competency for any
+administrator will be manipulating and working with files.
+
+This lab will focus on introducing and developing these skills when working with Linux
+and information systems.
+
+### Resources / Important Links
+
+- [Killercoda Labs](https://killercoda.com/learn)
+- [Top 50+ Linux CLI Commands](https://www.digitalocean.com/community/tutorials/linux-commands)
+
+### Required Materials
+
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
+- root or sudo command access
+
+## Pre-Lab Warm-Up
 
 ---
 
-### Exercise 1.1: Basic File Creation
+EXERCISES (Warmup to quickly run through your system and familiarize yourself)
 
 ```bash
-# Create working directory
-mkdir ~/lab_essentials
-cd ~/lab_essentials
-
-# Create single empty file
+mkdir lab_essentials
+cd lab_essentials
+ls
 touch testfile1
-ls -l testfile1
-
-# Observe the file size in bytes
-ls -l testfile1
-```
-
-### Exercise 1.2: Multiple File Creation
-
-```bash
-# Create multiple files using BASH brace expansion
+ls
 touch testfile{2..10}
-ls -l testfile*
+ls
 
-# Compare the sizes of all created files
-ls -l | grep testfile
+# What does this do differently?
+# Can you figure out what the size of those files are in bytes? What command did you use?
+
+touch file.`hostname`
+touch file.`hostname`.`date +%F`
+touch file.`hostname`.`date +%F`.`date +%s`
+ls
+
+# What do each of these values mean? `man date` to figure those values out.
+
+# Try to set the following values in the file
+
+# year, just two digits
+# today's day of the month
+# Just the century
+
+date +%y
+date +%e
+date +%C
 ```
 
-### Exercise 1.3: Dynamic File Names
-
-```bash
-# Create files using system information
-touch file."$(hostname)"
-touch file."$(hostname)"."$(date +%F)"
-touch file."$(hostname)"."$(date +%F)"."$(date +%s)"
-
-# List and examine the created files
-ls -l file.*
-
-# Practice with date command formats
-date +%y  # Two-digit year
-date +%e  # Day of month
-date +%C  # Century
-```
-
-## Module 2: Creating Files with Content
+## Lab 🧪
 
 ---
 
-### Exercise 2.1: Using Redirects
+This lab is designed to help you get familiar with the basics of the systems you will be working on. Some of you will find that you know the basic material but the techniques here allow you to put it together in a more complex fashion.
+
+It is recommended that you type these commands and do not copy and paste them. Word sometimes likes to format characters and they don’t always play nice with Linux.
+
+#### Working with files:
 
 ```bash
-# Create file with content
-echo "grapes 5" > fruits.txt
-cat fruits.txt
+# Creating empty files with touch
+touch fruits.txt
 
-# Observe what happens with new content
-echo "apples 3" > fruits.txt
-cat fruits.txt
+ls –l fruits.txt
+# You will see that fruits.txt exists and is a 0 length (bytes) file
 
-# Clear file content
-echo "" > fruits.txt
+-rw-r--r--. 1 root root 0 Jun 22 07:59 fruits.txt
+# Take a look at those values and see if you can figure out what they mean.
+# man touch and see if it has any other useful features you might use. If
+# you’ve ever used tiered storage think about access times and how to keep data
+# hot/warm/cold. If you haven’t just look around for a bit.
 
-# Add content using append
-echo "grapes 5" >> fruits.txt
-echo "apples 3" >> fruits.txt
-cat fruits.txt
+rm –rf fruits.txt
+
+ls –l fruits.txt
+# You will see that fruits.txt is gone.
 ```
 
-### Exercise 2.2: Using vim
+#### Creating files just by stuffing data in them:
 
 ```bash
-# Install vim if needed
-sudo dnf install -y vim
+echo “grapes 5” > fruits.txt
+cat fruits.txt
+echo “apples 3” > fruits.txt
+cat fruits.txt
 
-# Create and edit new file
-vim somefile.txt
+echo “ “ > fruits.txt
+
+echo “grapes 5” >> fruits.txt
+cat fruits.txt
+echo “apples 3” >> fruits.txt
+cat fruits.txt
 ```
 
-Add these lines (press 'i' to enter insert mode):
+What is the difference between these two? Appending a file >> adds to the file
+whereas > just overwrites the file each write. Log files almost always are written
+with >>, we never > over those types of files.
 
-```
+#### Creating file with vi or vim:
+
+```bash
+# It is highly recommended the user read vimtutor. To get vimtutor follow
+# these steps:
+sudo –i
+yum –y install vim
+vimtutor
+
+# There are about 36 short labs to show a user how to get around inside of vi.
+# There are also cheat sheets around to help.
+
+vi somefile.txt
+# type “i” to enter insert mode
+
+# Enter the following lines
 grapes 5
 apples 7
 oranges 3
 bananas 2
 pears 6
 pineapples 9
+
+# hit the “esc” key at the top left of your keyboard
+# Type “:wq”
+# Hit enter
+
+cat somefile.txt
 ```
 
-Save and exit (ESC then :wq)
-
-## Module 3: File Operations
-
----
-
-### Exercise 3.1: Copying Files
+#### Copying and moving files:
 
 ```bash
-# Create backup copy
 cp somefile.txt backupfile.txt
-ls -l *file.txt
-
-# Verify file contents
+ls
 cat backupfile.txt
-```
-
-### Exercise 3.2: Moving/Renaming Files
-
-```bash
-# Rename file
 mv somefile.txt fruits.txt
-ls -l *.txt
-
-# Verify file contents
+ls
 cat fruits.txt
 ```
 
-## Module 4: Search and Sort
+Look at what happened in each of these scenarios. Can you explain the
+difference between cp and mv? Read the manuals for cp and mv to see if
+there’s anything that may be useful to you. For most of us –r is tremendously
+useful option for moving directories.
 
----
-
-### Exercise 4.1: Filtering Content
+#### Searching/filtering through files:
 
 ```bash
-# View full file
-cat fruits.txt
+# So maybe we only want to see certain values from a file, we can filter
+# with a tool called grep
 
-# Search for specific content using BASH pipes
+cat fruits.txt
 cat fruits.txt | grep apple
 cat fruits.txt | grep APPLE
 
-# Case-insensitive search
-cat fruits.txt | grep -i apple
+# read the manual for grep and see if you can cause it to ignore case.
 
-# Search for lines beginning with 'apple'
-cat fruits.txt | grep -i "^apple"
+# See if you can figure out how to both ignore case and only find the
+# word apple at the beginning of the line.
+
+# If you can’t, here’s the the answer. Try it:
+cat fruits.txt | grep –i "^apple"
 ```
 
-### Exercise 4.2: Sorting Content
+Can you figure out why that worked? What do you think the ^ does?
+Anchoring is a common term for this. See if you can find what anchors
+to the end of a string.
+
+#### Sorting files with sort:
 
 ```bash
-# Sort alphabetically
+# Let’s sort our file fruits.txt and look at what happens to the output
+# and the original file
+
 sort fruits.txt
+cat fruits.txt
 
-# Sort by the second column (numbers)
-sort -k 2 fruits.txt
+# Did the sort output come out different than the cat output? Did sorting
+# your file do anything to your original data? So let’s sort our data again
+# and figure out what this command does differently
 
-# Save sorted outputs
+sort –k 2 fruits.txt
+
+# You can of course man sort to figure it out, but –k refers to the “key” and
+# can be useful for sorting by a specific column
+
+# But, if we cat fruits.txt we see we didn’t save anything we did. What if we
+# wanted to save these outputs into a file. Could you do it? If you couldn’t,
+# here’s an answer:
+
 sort fruits.txt > sort_by_alphabetical.txt
-sort -k 2 fruits.txt > sort_by_price.txt
+sort –k 2 fruits.txt > sort_by_price.txt
 
-# Verify sorted files
-cat sort_by_alphabetical.txt
-cat sort_by_price.txt
+# Cat both of those files out and verify their output
 ```
 
-# PART 2 - Linux Redirection Fundamentals
-
-## Module 1: Basic Input/Output Redirection
-
----
-
-### Exercise 1.1: File Output Redirection
+#### Advanced sort practice:
 
 ```bash
-# Create working directory
-mkdir ~/redirection_lab
-cd ~/redirection_lab
+# Consider the command
+ps –aux
 
-# Overwriting output (>)
-echo "grapes 5" > fruits.txt
-cat fruits.txt
+# But that’s too long to probably see everything, so let’s use a command
+# to filter just the top few lines
+ps –aux | head
 
-# Appending output (>>)
-echo "apples 3" >> fruits.txt
-cat fruits.txt
+# So now you can see the actual fields (keys) across the top that we could sort by
 
-# Understanding the difference
-echo "oranges 4" > fruits.txt     # Overwrites entire file
-echo "bananas 2" >> fruits.txt    # Adds to existing content
-cat fruits.txt
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+
+# So let’s say we wanted to sort by %MEM
+ps –aux | sort –k 4 –n –r | head -10
 ```
 
-### Exercise 1.2: Using the Pipe Operator
+Read man to see why that works. Why do you suppose that it needs to be reversed
+to have the highest numbers at the top? What is the difference, if you can see any,
+between using the –n or not using it? You may have to use head -40 to figure that
+out, depending on your processes running.
+
+Read man ps to figure out what other things you can see or sort by from the ps command.
+We will examine that command in detail in another lab.
+
+#### Working with redirection:
+
+The good thing is that you’ve already been redirecting information into files. The > and >> are useful for moving data into files. We have other functionality within redirects that can prove useful for putting data where we want it, or even not seeing the data.
+
+Catching the input of one command and feeding that into the input of another command
+We’ve actually been doing this the entire time. “|” is the pipe operator and causes the output of one command to become the input of the second command.
 
 ```bash
-# Basic pipe usage
 cat fruits.txt | grep apple
+# This cats out the file, all of it, but then only shows the things that
+# pass through the filter of grep. We could continually add to these and make
+# them longer and longer
 
-# Multiple pipes
-cat fruits.txt | grep apple | sort
+cat fruits.txt | grep apple | sort | nl | awk ‘{print $2}’ | sort –r
+pineapples
+apples
+cat fruits.txt | grep apple | sort | nl | awk '{print $3}' | sort -r
+9
+7
+cat fruits.txt | grep apple | sort | nl | awk '{print $1}' | sort -r
+2
+1
 
-# Understanding data flow
+# Take these apart by pulling the end pipe and command off to see what is
+# actually happening:
+
+cat fruits.txt | grep apple | sort | nl | awk '{print $1}' | sort -r
+2
+1
+cat fruits.txt | grep apple | sort | nl | awk '{print $1}'
+1
+2
 cat fruits.txt | grep apple | sort | nl
+1 apples 7
+2 pineapples 9
+cat fruits.txt | grep apple | sort
+apples 7
+pineapples 9
+cat fruits.txt | grep apple
+apples 7
+pineapples 9
 ```
 
-## Module 2: Using tee Command
+See if you can figure out what each of those commands do.
+Read the manual `man command` for any command you don’t recognize.
+Use something you learned to affect the output.
 
-### Exercise 2.1: Basic tee Usage
+#### Throwing the output into a file:
+
+We’ve already used > and >> to throw data into a file but when we redirect like that we are catching it before it comes to the screen. There is another tool that is useful for catching data and also showing it to us, that is tee.
 
 ```bash
-# Display and save output simultaneously
-date | tee datefile
-cat datefile
+date
+# comes to the screen
 
-# Append mode with tee
-date | tee -a datefile
-cat datefile
+date > datefile
+# redirects and creates a file datefile with the value
+
+date | tee –a datefile
+# will come to screen, redirect to the file.
 ```
 
-### Exercise 2.2: Multiple Outputs
+Do a quick man on tee to see what the –a does. Try it without that value. Can you see any other useful options in there for tee?
+
+#### Ignoring pesky errors or tossing out unwanted output:
+
+Sometimes we don’t care when something errs out. We just want to see that it’s working or not. If you’re wanting to filter out errors (2) in the standarderr, you can do this
 
 ```bash
-# Create test data
-echo "test data" | tee file1.txt file2.txt
-cat file1.txt
-cat file2.txt
+ls fruits.txt
+# You should see normal output
+
+ls fruity.txt
+# You should see an error unless you made this file
+
+ls fruity.txt 2> /dev/null
+# You should no longer see the error.
+
+# But, sometimes you do care how well your script runs against 100 servers,
+# or you’re testing and want to see those errors. You can redirect that to a file, just as easy
+
+ls fruity.txt 2> error.log
+cat error.log
+# You’ll see the error. If you want it see it a few times do the error line to see it happen.
 ```
 
-## Module 3: Error Redirection
+In one of our later labs we’re going to look at stressing our systems out. For this, we’ll use a command that basically just causes the system to burn cpu cycles creating random numbers, zipping up the output and then throwing it all away. Here’s a preview of that command so you can play with it.
 
----
-
-### Exercise 3.1: Redirecting Errors
+May have to yum –y install bzip2 for this next one to work.
 
 ```bash
-# Generate an error
-ls nonexistent_file
-ls nonexistent_file 2> errors.log
-cat errors.log
-
-# Suppress error output
-ls nonexistent_file 2> /dev/null
+time dd if=/dev/urandom bs=1024k count=20 | bzip2 -9 >> /dev/null
 ```
 
-### Exercise 3.2: Collecting Error Logs
+Use “crtl + c” to break if you use that and it becomes too long or your system is under too much load. The only numbers you can play with there are the 1024k and the count. Other numbers should be only changed if you use man to read about them first.
+
+This is the “poor man’s” answer file. Something we used to do when we needed to answer some values into a script or installer. This is still very accurate and still works, but might be a bit advanced with a lot of advanced topics in here. Try it if you’d like but don’t worry if you don’t get this on the first lab.
 
 ```bash
-# Redirect errors while keeping normal output
-ls existing_file nonexistent_file >> output.log 2>> errors.log
+vi testscript.sh
+hit “i” to enter insert mode
+add the following lines:
 
-# View both logs
-echo "=== Output Log ==="
-cat output.log
-echo "=== Error Log ==="
-cat errors.log
-```
-
-## Module 4: Practical Examples
-
----
-
-### Exercise 4.1: Process Information
-
-```bash
-# Install required package if needed
-sudo dnf install -y bzip2
-
-# Basic command with redirection
-time dd if=/dev/urandom bs=1024k count=1 | bzip2 -9 >> /dev/null
-```
-
-### Exercise 4.2: Simple Input Script
-
-```bash
-# Create a test script
-cat > testscript.sh << 'EOF'
 #!/bin/bash
+
 read value
 echo "The first value is $value"
 read value
 echo "The second value is $value"
-EOF
+read value
+echo "The third value is $value"
+read value
+echo "The fourth value is $value"
 
-# Make it executable
+# hit “esc” key
+type in :wq
+# hit enter
+
 chmod 755 testscript.sh
 
-# Test with input redirection
-echo -e "yes\nno" | ./testscript.sh
+# Now type in this (don’t type in the > those will just be there in your shell):
+
+[xgqa6cha@N01APL4244 ~]$ echo "yes
+
+> no
+> 10
+> why" | ./testscript.sh
+> yes
+> no
+> 10
+> why
 ```
 
-# PART 3 - Linux Permissions Fundamentals
+What happened here is that we read the input from command line and gave it, in order to the script to read and then output. This is something we do if we know an installer wants certain values throughout it, but we don’t want to sit there and type them in, or we’re doing it across 100 servers quickly, or all kinds of reasons. It’s just a quick and dirty input “hack” that counts as a redirect.
 
-## Module 1: Understanding Linux Permissions
+#### Working with permissions:
 
----
+Permissions have to do with who can or cannot access (read), edit (write), or execute (xecute)files.
 
-### Exercise 1.1: Viewing Permissions
+Permissions look like this.
 
 ```bash
-# Create working directory
-mkdir ~/permissions_lab
-cd ~/permissions_lab
-
-# Create test files
-touch testfile.txt
-mkdir testdir
-
-# View permissions
-ls -l testfile.txt
-ls -ld testdir
+ls –l
 ```
 
-### Exercise 1.2: Understanding Permission Format
+| Permission  | # of Links | UID Owner | Group Owner | Size (b) | Creation Month | Creation Day | Creation Time | File Name |
+| :---------: | :--------: | :-------: | :---------: | :------: | :------------: | :----------: | :-----------: | :-------: |
+| -rw-r--r--. |     1      |   Root    |    root     |    58    |      Jun       |      22      |     08:52     | datefile  |
+
+The primary permissions commands we’re going to use are going to be chmod (access) and chown (ownership).
+
+A quick rundown of how permissions break out:
+
+<img src='./assets/images/permissions.png'></img>
+
+Let’s examine some permissions and see if we can’t figure out what permissions are allowed.
 
 ```bash
-# Permission string breakdown:
-# -rwxrwxrwx
-# |_________|
-# |---|---|---|
-# | 1 | 2 | 3 |
-#
-# Position indicators:
-# First character: File type
-# - : Regular file
-# d : Directory
-# l : Symbolic link
-#
-# Sections 1,2,3:
-# 1: Owner permissions
-# 2: Group permissions
-# 3: Others permissions
-#
-# Permission indicators:
-# r : Read permission
-# w : Write permission
-# x : Execute permission
-# - : No permission
+ls -ld /root/
+# drwx------. 5 root root 4096 Jun 22 09:11 /root/
 ```
 
-## Module 2: Reading Permissions
+The first character lets you know if the file is a directory, file, or link. In this case we are looking at my home directory.
 
----
+`rwx`: For UID (me).
 
-### Exercise 2.1: Examining System Files
+- What permissions do I have?
 
-```bash
-# View home directory permissions
-ls -ld /home
-ls -ld $HOME
+`---`: For group.
 
-# View root directory permissions
-ls -ld /root
+- Who are they?
+- What can my group do?
 
-# Compare different file types
-ls -l /bin/bash
-ls -l /etc/passwd
-ls -ld /tmp
-```
+`---`: For everyone else.
 
-### Exercise 2.2: Permission Analysis
+- What can everyone else do?
 
-```bash
-# Create files with different permissions
-touch file1
-chmod 644 file1
-ls -l file1
+Go find some other interesting files or directories and see what you see there. Can you identify their characteristics and permissions?
 
-touch file2
-chmod 755 file2
-ls -l file2
+## Downloads
 
-# Analyze the differences:
-# 644 = rw-r--r--
-# 755 = rwxr-xr-x
-```
+#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
 
-## Module 3: Modifying Permissions
+#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
----
-
-### Exercise 3.1: Using chmod with Letters
-
-```bash
-# Create test file
-touch permissions_test
-ls -l permissions_test
-
-# Add execute permission for user
-chmod u+x permissions_test
-ls -l permissions_test
-
-# Remove read permission for others
-chmod o-r permissions_test
-ls -l permissions_test
-
-# Add write permission for group
-chmod g+w permissions_test
-ls -l permissions_test
-```
-
-### Exercise 3.2: Using chmod with Numbers
-
-```bash
-# Understanding numeric permissions:
-# 4 = read (r)
-# 2 = write (w)
-# 1 = execute (x)
-#
-# Common permission combinations:
-chmod 644 file1    # rw-r--r--
-chmod 755 file2    # rwxr-xr-x
-chmod 600 file3    # rw-------
-chmod 777 file4    # rwxrwxrwx
-```
-
-## Module 4: File Ownership
-
----
-
-### Exercise 4.1: Viewing Ownership
-
-```bash
-# View file ownership
-ls -l testfile.txt
-
-# Understanding ownership format:
-# -rw-r--r-- 1 user group size date filename
-#              |    |
-#              |    +-- Group owner
-#              +------- User owner
-```
-
-### Exercise 4.2: Changing Ownership
-
-```bash
-# Note: These commands require sudo
-# Change user ownership
-sudo chown user1 testfile.txt
-
-# Change group ownership
-sudo chown :group1 testfile.txt
-
-# Change both user and group
-sudo chown user1:group1 testfile.txt
-```
-
-# PART 1: File Operations Challenge Script
-
-## Challenge Exercise
-
----
-
-Create a BASH script that:
-
-1. Creates three files with different names based on current date
-2. Adds different fruit entries to each file
-3. Combines all files into a single file
-4. Sorts the combined file by price
-5. Shows only fruits that cost more than 5
-
-```bash
-#!/bin/bash
-
-# Script Name: fruit_processor.sh
-# Purpose: Demonstrate file operations, sorting, and filtering based on Part 1 concepts
-# Usage: ./fruit_processor.sh
-
-# Create three files with different names based on current date components
-echo "Creating data files..."
-
-# File 1: Using hour
-HOUR_FILE="fruits_$(date +%H).txt"
-echo "apples 7" > "$HOUR_FILE"
-echo "grapes 4" >> "$HOUR_FILE"
-echo "bananas 3" >> "$HOUR_FILE"
-
-# File 2: Using minute
-MINUTE_FILE="fruits_$(date +%M).txt"
-echo "mangoes 6" > "$MINUTE_FILE"
-echo "peaches 8" >> "$MINUTE_FILE"
-echo "plums 2" >> "$MINUTE_FILE"
-
-# File 3: Using second
-SECOND_FILE="fruits_$(date +%S).txt"
-echo "oranges 5" > "$SECOND_FILE"
-echo "kiwis 9" >> "$SECOND_FILE"
-echo "cherry 4" >> "$SECOND_FILE"
-
-# Display created files
-echo -e "\nCreated files:"
-ls -l fruits_*.txt
-
-# Combine all files into one
-echo -e "\nCombining files..."
-cat fruits_*.txt > all_fruits.txt
-
-# Display combined content
-echo -e "\nCombined content:"
-cat all_fruits.txt
-
-# Sort by price (second column)
-echo -e "\nSorting by price..."
-sort -k 2 -n all_fruits.txt > sorted_fruits.txt
-
-# Display sorted content
-echo -e "\nSorted content:"
-cat sorted_fruits.txt
-
-# Filter fruits costing more than 5
-echo -e "\nFiltering expensive fruits (cost > 5)..."
-grep " [6-9]" sorted_fruits.txt > expensive_fruits.txt
-
-# Display final results
-echo -e "\nExpensive fruits:"
-cat expensive_fruits.txt
-
-# Clean up intermediate files
-rm fruits_*.txt
-rm sorted_fruits.txt
-
-echo -e "\nScript completed. Results saved in expensive_fruits.txt"
-
-```
-
----
-
-Let me explain each part of the script and how it relates to what we learned from Part 1:
-
-1. File Creation:
-
-```bash
-HOUR_FILE="fruits_$(date +%H).txt"
-echo "apples 7" > "$HOUR_FILE"
-echo "grapes 4" >> "$HOUR_FILE"
-```
-
-- Uses `date` command with formatting as learned in Exercise 1.3
-- Demonstrates both overwrite `>` and append `>>` from Exercise 2.1
-- Uses dynamic file naming like we learned in Exercise 1.3
-
-2. Listing Files:
-
-```bash
-ls -l fruits_*.txt
-```
-
-- Uses file listing with wildcard as shown in Exercise 1.2
-- Shows file attributes as practiced throughout Module 1
-
-3. Combining Files:
-
-```bash
-cat fruits_*.txt > all_fruits.txt
-```
-
-- Uses `cat` for file viewing as learned in Module 2
-- Demonstrates output redirection from Exercise 2.1
-
-4. Sorting:
-
-```bash
-sort -k 2 -n all_fruits.txt > sorted_fruits.txt
-```
-
-- Uses `sort` with column specification as learned in Exercise 4.2
-- Demonstrates saving sorted output to new file
-
-5. Filtering:
-
-```bash
-grep " [6-9]" sorted_fruits.txt > expensive_fruits.txt
-```
-
-- Uses `grep` for pattern matching as learned in Exercise 4.1
-- Shows practical application of filtering and redirection
-
-6. File Cleanup:
-
-```bash
-rm fruits_*.txt
-```
-
-- Demonstrates file removal with wildcards
-- Shows practical file management
-
-The script brings together all major concepts from Part 1:
-
-- File creation and manipulation
-- Using system information in filenames
-- Input/output redirection
-- File content filtering and sorting
-- Basic file operations
-
-# PART 2: Redirection Challenge Script
-
-## Challenge Exercise
-
----
-
-Create a script that:
-
-1. Creates several files with different permissions
-2. Displays their initial permissions
-3. Modifies permissions using both symbolic and numeric notation
-4. Shows the permission changes
-5. Demonstrates proper ownership changes (if sudo access available)
-
-```bash
-#!/bin/bash
-
-# Script Name: redirection_demo.sh
-# Purpose: Demonstrate input/output redirection concepts from Part 2
-
-# Create log directory
-LOG_DIR="./logs"
-mkdir -p "$LOG_DIR"
-
-# Define log files using descriptive names
-OUTPUT_LOG="${LOG_DIR}/operations.log"
-ERROR_LOG="${LOG_DIR}/errors.log"
-
-# Function to log messages with timestamp
-log_message() {
-    # Get current timestamp
-    timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-    # Echo message to both console and log file using tee
-    echo "[$timestamp] $1" | tee -a "$OUTPUT_LOG"
-}
-
-# Clear previous logs
-> "$OUTPUT_LOG"
-> "$ERROR_LOG"
-
-# Display welcome message
-log_message "Starting redirection demonstration"
-
-# Prompt for user input with error handling
-echo "Please enter your name: " | tee -a "$OUTPUT_LOG"
-read -r username || {
-    echo "Error reading username" 2>> "$ERROR_LOG"
-    exit 1
-}
-
-# Log the received input
-log_message "Received input from user: $username"
-
-# Create a test file with user's name
-echo "Hello, $username!" > "user_greeting.txt" 2>> "$ERROR_LOG"
-log_message "Created greeting file"
-
-# Demonstrate searching within created file
-echo "Searching for username in greeting file..." | tee -a "$OUTPUT_LOG"
-if grep -q "$username" "user_greeting.txt" 2>> "$ERROR_LOG"; then
-    log_message "Found username in greeting file"
-else
-    echo "Warning: Username not found in file" 2>> "$ERROR_LOG"
-fi
-
-# Demonstrate error redirection with non-existent file
-echo "Testing error redirection..." | tee -a "$OUTPUT_LOG"
-ls nonexistent_file 2>> "$ERROR_LOG"
-log_message "Previous command error was captured in error log"
-
-# Create a summary using multiple redirections
-{
-    echo "=== Operation Summary ==="
-    echo "User: $username"
-    echo "Files created:"
-    ls -l "$LOG_DIR" "user_greeting.txt" 2>> "$ERROR_LOG"
-    echo "======================="
-} | tee -a "$OUTPUT_LOG"
-
-# Display final status
-log_message "Script completed successfully"
-echo -e "\nLogs are available at:"
-echo "Output Log: $OUTPUT_LOG"
-echo "Error Log: $ERROR_LOG"
-```
-
----
-
-Let me explain the key redirection concepts demonstrated in this script from Part 2:
-
-1. Basic Output Redirection:
-
-```bash
-> "$OUTPUT_LOG"              # Clear file using overwrite
-echo "Hello, $username!" > "user_greeting.txt"  # Redirect output to file
-```
-
-- Shows use of `>` for overwriting files
-- Demonstrates creating new files with content
-
-2. Error Redirection:
-
-```bash
-ls nonexistent_file 2>> "$ERROR_LOG"  # Redirect errors to error log
-```
-
-- Uses `2>>` to append stderr to error log
-- Shows practical error handling
-
-3. Using tee for Dual Output:
-
-```bash
-log_message() {
-    echo "[$timestamp] $1" | tee -a "$OUTPUT_LOG"
-}
-```
-
-- Demonstrates `tee` for simultaneous console and file output
-- Uses `-a` flag for append mode
-
-4. Input Redirection:
-
-```bash
-read -r username || {
-    echo "Error reading username" 2>> "$ERROR_LOG"
-    exit 1
-}
-```
-
-- Shows handling of input with error checking
-- Demonstrates error redirection in case of failure
-
-5. Compound Redirections:
-
-```bash
-{
-    echo "=== Operation Summary ==="
-    # Multiple commands here
-} | tee -a "$OUTPUT_LOG"
-```
-
-- Uses command grouping with redirections
-- Shows how to handle multiple lines of output
-
-The script demonstrates all key concepts from Part 2:
-
-- Input/output redirection
-- Error handling and logging
-- Using tee for dual output
-- Append vs overwrite modes
-- Practical logging implementation
-
-# PART 3: Permissions Challenge Script
-
-## Challenge Exercise
-
----
-
-Create a script that:
-
-1. Creates several files with different permissions
-2. Displays their initial permissions
-3. Modifies permissions using both symbolic and numeric notation
-4. Shows the permission changes
-5. Demonstrates proper ownership changes (if sudo access available)
-
-```bash
-#!/bin/bash
-
-# Script Name: permissions_demo.sh
-# Purpose: Demonstrate file permissions and ownership concepts from Part 3
-
-# Function to display file permissions
-show_permissions() {
-    local file="$1"
-    local perms=$(ls -l "$file" | awk '{print $1, $3, $4}')
-    echo "File: $file"
-    echo "Permissions: $perms"
-    echo "-------------------"
-}
-
-# Create a working directory
-echo "Creating working directory..."
-WORK_DIR="./permissions_test_$(date +%s)"
-mkdir -p "$WORK_DIR"
-cd "$WORK_DIR" || exit 1
-
-# Create test files with different initial permissions
-echo "Creating test files..."
-
-# File 1: Regular text file (default permissions)
-touch regular_file.txt
-echo "This is a regular file" > regular_file.txt
-show_permissions "regular_file.txt"
-
-# File 2: Script file (needs execute permission)
-echo "Creating script file..."
-cat > script.sh << 'EOF'
-#!/bin/bash
-echo "This script works!"
-EOF
-show_permissions "script.sh"
-
-# File 3: Private file (restricted permissions)
-touch private_file.txt
-echo "This is private data" > private_file.txt
-show_permissions "private_file.txt"
-
-echo "Modifying permissions using symbolic notation..."
-
-# Add execute permission to script using symbolic notation
-chmod u+x script.sh
-show_permissions "script.sh"
-
-# Remove read permission for others using symbolic notation
-chmod o-r regular_file.txt
-show_permissions "regular_file.txt"
-
-echo "Modifying permissions using numeric notation..."
-
-# Set private file to user read/write only (600)
-chmod 600 private_file.txt
-show_permissions "private_file.txt"
-
-# Create a directory with specific permissions
-echo "Creating directory with specific permissions..."
-mkdir shared_dir
-chmod 755 shared_dir
-show_permissions "shared_dir"
-
-# Demonstrate ownership changes (if running with sudo)
-echo "Attempting ownership changes..."
-if [ "$(id -u)" -eq 0 ]; then
-    # Only run these if script is run with sudo
-    echo "Changing ownership (requires sudo)..."
-
-    # Change user ownership
-    chown "$SUDO_USER" regular_file.txt
-    show_permissions "regular_file.txt"
-
-    # Change group ownership
-    chown :"$SUDO_USER" private_file.txt
-    show_permissions "private_file.txt"
-
-    # Change both user and group
-    chown "$SUDO_USER":"$SUDO_USER" script.sh
-    show_permissions "script.sh"
-else
-    echo "Note: Ownership changes require sudo privileges"
-    echo "Run script with sudo to demonstrate ownership changes"
-fi
-
-# Summary of permission bits
-echo -e "\nPermission Reference:"
-echo "4 = read (r)"
-echo "2 = write (w)"
-echo "1 = execute (x)"
-echo ""
-echo "Common permission combinations:"
-echo "644 (rw-r--r--) = Regular file"
-echo "755 (rwxr-xr-x) = Executable or directory"
-echo "600 (rw-------) = Private file"
-
-# Display final directory contents
-echo -e "\nFinal directory contents and permissions:"
-ls -la
-
-# Cleanup option
-read -rp "Do you want to clean up the test directory? (y/n): " cleanup
-if [[ $cleanup =~ ^[Yy]$ ]]; then
-    cd ..
-    rm -rf "$WORK_DIR"
-    echo "Cleanup completed."
-fi
-```
-
----
-
-Let me explain each major component of this script and its relevance to permissions from Part 3:
-
-1. Permission Display Function:
-
-```bash
-show_permissions() {
-    local perms=$(ls -l "$file" | awk '{print $1, $3, $4}')
-    echo "Permissions: $perms"
-}
-```
-
-- Uses `ls -l` to show detailed file information
-- Extracts permissions, user, and group information
-- Provides consistent formatting for display
-
-2. File Creation with Different Purposes:
-
-```bash
-# Regular file (default permissions)
-touch regular_file.txt
-# Script file (needs execute)
-touch script.sh
-# Private file (restricted access)
-touch private_file.txt
-```
-
-- Demonstrates different file types
-- Shows default permission assignments
-- Creates files for different use cases
-
-3. Symbolic Permission Changes:
-
-```bash
-chmod u+x script.sh      # Add user execute
-chmod o-r regular_file.txt   # Remove other read
-```
-
-- `u+x`: Add execute for user
-- `o-r`: Remove read for others
-- Shows symbolic notation usage
-
-4. Numeric Permission Changes:
-
-```bash
-chmod 600 private_file.txt   # rw-------
-chmod 755 shared_dir        # rwxr-xr-x
-```
-
-- `600`: User read/write only
-- `755`: Common directory permissions
-- Demonstrates numeric notation
-
-5. Ownership Changes (with sudo):
-
-```bash
-if [ "$(id -u)" -eq 0 ]; then
-    chown "$SUDO_USER" regular_file.txt
-    chown :"$SUDO_USER" private_file.txt
-```
-
-- Checks for root privileges
-- Changes user ownership
-- Changes group ownership
-- Shows both separate and combined changes
-
-6. Educational Elements:
-
-```bash
-echo "Permission Reference:"
-echo "4 = read (r)"
-echo "2 = write (w)"
-echo "1 = execute (x)"
-```
-
-- Includes permission references
-- Shows common combinations
-- Provides practical examples
-
-Key Learning Points:
-
-1. Permission Notation:
-   - Symbolic (u+x, o-r)
-   - Numeric (644, 755)
-2. File Types:
-   - Regular files
-   - Executable scripts
-   - Directories
-3. Ownership:
-   - User ownership
-   - Group ownership
-   - Permission requirements
+#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

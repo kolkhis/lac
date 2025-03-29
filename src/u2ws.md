@@ -18,6 +18,11 @@ In this unit, we cover:
 - Key networking concepts such as IP addresses, routing, and DNS are introduced,
   along with tools for troubleshooting network issues
 
+### Resources / Important Links
+
+- [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+- [Security Enhanced Linux](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_selinux/getting-started-with-selinux_using-selinux#getting-started-with-selinux_using-selinux)
+
 ### Unit 2 Recording
 
 <iframe
@@ -30,17 +35,21 @@ In this unit, we cover:
     allowfullscreen>
 </iframe>
 
-### Instructions
+## Instructions
 
 ---
 
-A major aspect of this course is to intake, comprehend, and discuss the
-assigned topics. Take the time to fully absorb each topic and contribute
-to the discussion thread by sharing your thoughts. Interaction with peers
-is also expected; the goal is to compare and contrast ideas to build a
-solid foundation of knowledge.
+A major aspect of this course is to intake, comprehend, and discuss the assigned
+topics. Take the time to fully absorb each topic and contribute to the discussion
+thread by sharing your thoughts. Interaction with peers is also expected; the goal is
+to compare and contrast ideas to build a solid foundation of knowledge.
 
-#### Unit 2 Discussion Post 1
+Fill out this worksheet as you watch the unit video.
+Discussion posts can be completed afterwards, answers to be posted in Discord.
+You must both answer the discussion questions and respond to another student's
+answers. This is only required if you want the certification.
+
+#### Unit 2 Discussion Post #1
 
 Think about how week 1 went for you.
 
@@ -50,13 +59,7 @@ Think about how week 1 went for you.
 
 3. How well did you take notes during the lecture? Do you need to improve this?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](Placeholder)
-
-#### Unit 2 Discussion Post 2
+#### Unit 2 Discussion Post #2
 
 Read a blog, check a search engine, or ask an AI about SELinux.  
 What is the significance of contexts? What are the significance of labels?
@@ -84,10 +87,12 @@ You may use any online resources to help you answer this. This is not a trick
 and it is not a “one answer solution”. This is for you to think through.
 
 <div class="warning">
-Submit your input by following the link below:
+Submit your input by following the link below.
+
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
-- [Link to Discussion Post 1](Placeholder)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 
@@ -127,3 +132,7 @@ SELinux operating modes:
 1. What questions do you still have about this week?
 
 2. How are you going to use what you’ve learned in your current role?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u2/u2_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
+#### - <a href="./assets/downloads/u2/u2_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

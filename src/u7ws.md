@@ -5,12 +5,12 @@
     </p>
 </div>
 
-Welcome to Unit 7.
+This unit is all about understanding security and package management on Linux systems.
 
-This unit is all about understanding security and package management on Linux systems.  
 Securing systems is not just the job of security engineers. It falls on system
 administrators and system engineers to ensure all security best practices are
-enforced on their systems to meet certain standards.  
+enforced on their systems to meet certain standards.
+
 Whether it is software compatibility or security, ensuring all the correct packages are on the
 system _and_ ensuring the package versions match the needs of the users is a crucial
 skill for any sysadmin.
@@ -18,6 +18,8 @@ skill for any sysadmin.
 ### Resources / Important Links
 
 - [Semantic Versioning](https://semver.org/)
+- [Rocky Documentation](https://docs.rockylinux.org/)
+- [Rocky DNF Guidance](https://docs.rockylinux.org/guides/package_management/dnf_package_manager/)
 
 ### Unit 7 Recording
 
@@ -42,30 +44,35 @@ discussion thread by sharing your thoughts. Interaction with peers is also
 expected; the goal is to compare and contrast ideas to build a solid
 foundation of knowledge.
 
+Fill out this worksheet as you watch the unit video.
+Discussion posts can be completed afterwards, answers to be posted in Discord.
+You must both answer the discussion questions and respond to another student's
+answers. This is only required if you want the certification.
+
 #### Discussion Post #1
 
 1. Why is software versioning so important to software security?
 
 2. Can you find 3 reasons, from the internet, AI, or your peers?
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1299794505427587122)
-
 #### Discussion Post #2
 
+Scenario:
+
 <blockquote>
-You are new to a Linux team.  
-A ticket has come in from an application team and has already been escalated to your
-manager.  
+
+You are new to a Linux team. A ticket has come in from an application team and has
+already been escalated to your manager.
+
 They want software installed on one of their servers but you cannot find any
-documentation. Your security team is out to lunch and not responding.  
+documentation. Your security team is out to lunch and not responding.
+
 You remember from some early documentation that you read that all the software in the
-internal repos you currently have are approved for deployment on servers.  
-You want to also verify by checking other servers that this software exists.  
-This is an urgent task and your manager is hovering.  
+internal repos you currently have are approved for deployment on servers.
+You want to also verify by checking other servers that this software exists.
+
+This is an urgent task and your manager is hovering.
+
 </blockquote>
 
 1. How can you check all the repos on your system to see which are active?
@@ -74,23 +81,17 @@ This is an urgent task and your manager is hovering.
 
 3. If you find the software, how might you figure out when it was installed? (Time/Date)
 
-<div class="warning">
-Submit your input by following the link below:
-</div>
-
-- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1299794568731951116)
-
 #### Discussion Post #3
 
-<div class="warning">
-Complete this only after completing the Unit 7 lab.
-</div>
+Scenario:
 
 <blockquote>
-Looking at the concept of group install from DNF or Yum.  
+
+Looking at the concept of group install from DNF or Yum.
 Why do you think an administrator may never want to use that in a running system?
 Why might an engineer want to or not want to use that?
 This is a thought exercise, so it’s not a “right or wrong” answer it’s for you to think about.
+
 </blockquote>
 
 1. What is the concept of software bloat, and how do you think it relates?
@@ -100,10 +101,12 @@ This is a thought exercise, so it’s not a “right or wrong” answer it’s f
 3. How do you think something like this affects performance baselines?
 
 <div class="warning">
-Submit your input by following the link below:
+Submit your input by following the link below.
+
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 </div>
 
-- [Link to Discussion Post 3](https://discord.com/channels/611027490848374811/1299794638340755567)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1299794638340755567)
 
 ## Definitions
 
@@ -136,3 +139,7 @@ Semantic Version:
 1. What questions do you still have about this week?
 
 2. How does security as a system administrator differ from what you expected?
+ 
+## Downloads
+#### - <a href="./assets/downloads/u7/u7_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
+#### - <a href="./assets/downloads/u7/u7_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

@@ -21,12 +21,16 @@ The ProLUG Linux Administration Course (LAC) utilizes [mdBook](https://github.co
 (markdown Book), a friendly and popular markdown utility that quickly exports
 files and web structures for documentation or general website use cases.
 
-Utilizing mdBook, this course then deploys the exported web structure to a
+Utilizing mdBook this course then deploys the exported web structure to a
 [Git Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) and runner that then produces an easily navigable website.
 
 Below is the current workflow that deploys the Git Page for the course:
 
-<img src="./assets/images/flow.png"></img>
+<div style="text-align: center;">
+
+<img src="./assets/images/workflow.png"></img>
+
+</div>
 
 To achieve this workflow locally the following environment and dependencies are
 required:
@@ -39,7 +43,7 @@ required:
     <dd>- gcc</dd>
     <dd>- rust</dd>
     <dd>- cargo</dd>
-    <dt>3. And a clone of the ProLUG LAC repository</dt>
+    <dt>3. And a clone of a ProLUG repository</dt>
 </dl>
 
 ## Building, Deploying, and Developing Locally
@@ -78,12 +82,12 @@ Export and execute this script to your machine/container.
 Dependencies can total over ~500MB compressed and 2GB unpackaged or more.
 
 Debian containers/machines will require building many of these packages from
-source as Debian has a far slower package version adoption rate for stability
-thus not recommended for deploying mdBook.
+source or adding additional repositories as Debian has a far slower package
+version adoption rate for stability, thus is not recommended for deploying mdBook.
 
 </div>
 
-These scripts will take up to 10 minutes to download the necessary dependencies
+These scripts will take up to 5-7 minutes to download the necessary dependencies
 and compile mdBook depending on the machine/container's capabilities.
 
 Tested with Rocky 9 and Ubuntu 24.04 Containers.
@@ -92,12 +96,14 @@ APT frontends:
 
 ```bash
 #!/bin/bash
-apt update
-apt install apache2 git gcc rustc-1.80 cargo-1.80
+apt-get update
+apt-get -y install apache2 git gcc rustc-1.80 cargo-1.80
 cargo-1.80 install --locked mdbook
 systemctl enable apache2 && systemctl start apache2
 cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
-cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html
+echo 'PATH=$PATH:~/.cargo/bin/' | tee -a ~/.profile
+export PATH=$PATH:~/.cargo/bin/ && echo $PATH
+cd ~/lac && mdbook build -d /var/www/html
 systemctl restart apache2
 ```
 
@@ -107,10 +113,12 @@ DNF frontends:
 #!/bin/bash
 dnf update
 dnf install -y httpd git gcc rust cargo
-/usr/bin/cargo install --locked mdbook
+cargo install --locked mdbook
 systemctl enable httpd && systemctl start httpd
 cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
-cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html
+echo 'PATH=$PATH:~/.cargo/bin/' | tee -a ~/.bash_profile
+export PATH=$PATH:~/.cargo/bin/ && echo $PATH
+cd ~/lac && mdbook build -d /var/www/html
 systemctl restart httpd
 ```
 
@@ -118,7 +126,7 @@ systemctl restart httpd
 
 ```bash
 cd {working lac directory} #for example: /root/lac or ~/lac
-~/.cargo/bin/mdbook build -d /var/www/html
+mdbook build -d /var/www/html
 systemctl restart {httpd or apache}
 ```
 
@@ -129,6 +137,9 @@ from any files that were changed, and then finally restart the web server.
 From there you should be able to see any changes you have made are reflected.
 
 #### Or send commands over to a networked container or machine:
+
+**Note:** To minimize complexity and given the nature of commands over SSH,
+these commands will need to utilize absolute paths.
 
 ```bash
 scp {working directory}/{targeted document} {TARGET_IP}:/root/lac/src/{targeted document}
@@ -142,4 +153,4 @@ scp src/development.md 172.16.15.8:/root/lac/src/
 ssh 172.16.15.8 "cd ~/lac && ~/.cargo/bin/mdbook build -d /var/www/html && systemctl restart httpd"
 ```
 
-<img src="./assets/images/workflow.png"></img>
+<img src="./assets/images/flow.png"></img>

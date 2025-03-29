@@ -9,8 +9,6 @@
 
 ---
 
-### What is the concept we are dealing with?
-
 This unit focuses on managing user's environments and scanning and enumerating Systems.
 
 - Become familiar with networking scanning tools

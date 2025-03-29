@@ -5,338 +5,237 @@
     </p>
 </div>
 
-## Exercise 1: Directory Navigation
+The ability to navigate directories, manipulate files, and work with the command line
+will be a critical skill set system administrators must have to be successful.
+
+This lab will focus on introducing and developing these skills when working with Linux
+and information systems.
+
+### Resources / Important Links
+
+- [Killercoda Labs](https://killercoda.com/learn)
+- [Top 50+ Linux CLI Commands](https://www.digitalocean.com/community/tutorials/linux-commands)
+
+### Required Materials
+
+- Putty or other connection tool
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
+- root or sudo command access
+
+## Pre-Lab Warm-Up
 
 ---
 
+EXERCISES (Warmup to quickly run through your system and familiarize yourself)
+
 ```bash
-# Move to your home directory
 cd ~
-
-# Verify your location
 ls
-
-# Create initial directory
 mkdir evaluation
-
-# Attempt to create nested directories (this will fail)
 mkdir evaluation/test/round6
+# This fails, can you find out why?
 
-# Create nested directories properly
 mkdir -p evaluation/test/round6
+# This works, think about why?
 
-# Navigate to evaluation directory
 cd evaluation
-
-# Print working directory
 pwd
-# Expected output: /home/yourusername/evaluation
-```
+# What is the path you are in?
 
-## Exercise 2: File Creation and Basic Listing
-
----
-
-```bash
-# Create first test file
 touch testfile1
-
-# Verify file creation
 ls
+# What did this do?
 
-# Create multiple files using brace expansion
 touch testfile{2..10}
-
-# List files to see the difference
 ls
+# What did this do differently than earlier?
+# touch .hfile .hfile2 .hfile3
 
-# Create hidden files
-touch .hfile .hfile2 .hfile3
-
-# Standard listing (hidden files won't show)
 ls
+# Can you see your newest files? Why or why not? (man ls)
+# What was the command to let you see those hidden files?
 
-# List all files including hidden
-ls -a
-
-# Long listing format with hidden files
-ls -la
+l
+s –l
+# What do you know about this long listing? Think about 10 things this can show you.
+# Did it show you all the files or are some missing?
 ```
 
-### Practical Challenges
-
-1. **Basic Operations:**
-
-   ```bash
-   # Task: Recreate this sequence
-   cd ~
-   mkdir practice
-   cd practice
-   touch file1
-   ls -l file1
-   ```
-
-2. **Directory Creation:**
-
-   ```bash
-   # Task: Create this structure in one command
-   # ~/lab/
-   #   └── test/
-   #       └── files/
-
-   # Hint: Use mkdir -p
-   ```
-
-3. **File Manipulation:**
-   ```bash
-   # Task: In your lab directory
-   # 1. Create 5 numbered files
-   # 2. Create 3 hidden files
-   # 3. List only the hidden files
-   ```
-
-### Understanding the Output
-
-1. When using `ls -l`, understand each column:
-
-   - Permissions (first column)
-   - Number of links
-   - Owner
-   - Group
-   - File size
-   - Last modified date/time
-   - Filename
-
-2. Hidden files:
-
-   - Start with a dot (.)
-   - Not shown in regular ls
-   - Shown with ls -a
-
-3. Common mistakes to avoid:
-   - Not checking your current directory before operations
-   - Forgetting to use -p for nested directories
-   - Not verifying file creation with ls
-
-# PART 2 - System Information Gathering
-
-## Exercise 1: Basic System Information
+## Lab 🧪
 
 ---
 
+This lab is designed to help you get familiar with the basics of the systems you will be working on. Some of you will find that you know the basic material but the techniques here allow you to put it together in a more complex fashion.
+
+It is recommended that you type these commands and do not copy and paste them. Word sometimes likes to format characters and they don’t always play nice with Linux.
+
+#### Gathering system information:
+
 ```bash
-# Get hostname information
 hostname
-hostnamectl
+cat /etc/*release
+# What do you recognize about this output? What version of RHEL (CENTOS) are we on?
 
-# Check RHEL version
-cat /etc/redhat-release
-
-# Kernel information
 uname
 uname -a
-uname -r
+uname –r
 
-# Practice:
-# 1. What kernel version are you running?
-# 2. What is the full hostname of your system?
-# 3. Which version of RHEL 9 is installed?
+# man uname to see what those options mean if you don’t recognize the values
 ```
 
-## Exercise 2: Memory Information
-
----
+#### Check the amount of RAM:
 
 ```bash
-# View memory information
 cat /proc/meminfo
-
-# Check memory usage in different formats
 free
-free -m    # Megabytes
-free -h    # Human readable
+free –m
 
-# Practice Tasks:
-# 1. How much total RAM does your system have?
-# 2. How much memory is currently free?
-# 3. How much memory is in the buffer/cache?
+# What do each of these commands show you? How are they useful?
 ```
 
-## Exercise 3: Processor Information
-
----
+#### Check the number of processors and processor info:
 
 ```bash
-# View CPU details
 cat /proc/cpuinfo
+# What type of processors do you have? How many are there? (counting starts at 0)
 
-# Count number of processors
-cat /proc/cpuinfo | grep processor | wc -l
-
-# Practice Tasks:
-# 1. How many CPU cores does your system have?
-# 2. What model of processor do you have?
-# 3. What is the CPU speed?
+cat /proc/cpuinfo | grep proc | wc –l
+# Does this command accurately count the processors?
 ```
 
-## Exercise 4: Storage Information
-
----
+#### Check Storage usage and mounted filesystems:
 
 ```bash
-# Check disk space
 df
-df -h    # Human readable format
+# But df is barely readable, so find the option that makes it more readable `man df`
 
-# Check specific filesystems
-df -h | grep -i var
-df -h | grep -i sd
+df -h
+df -h | grep –i var
+# What does this show, or search for? Can you invert this search? (hint `man grep`
+# look for invert or google “inverting grep’s output”)
 
-# View mounted filesystems
+df –h | grep –i sd
+# This one is a little harder, what does this one show? Not just the line, what are
+# we checking for? (hint if you need it, google “what is /dev/sda in linux”)
+
 mount
-mount | grep -i home
+# Mount by itself gives a huge amount of information. But, let’s say someone is asking
+# you to verify that the mount is there for /home on a system. Can you check that
+# quickly with one command?
 
-# Check your home directory filesystem
-cd ~
-pwd
-df -h .
+mount | grep –i home
+#This works, but there is a slight note to add here. Just because something isn’t
+# individually mounted doesn’t mean it doesn’t exist. It just means it’s not part of
+# it’s own mounted filesystem.
 
-# Practice Tasks:
-# 1. How much free space is on your root filesystem?
-# 2. Which filesystem contains your home directory?
-# 3. List all mounted ext4 filesystems
+mount | grep –i /home/xgqa6cha
+# will produce no output
+
+df –h /home/xgqa6cha
+# will show you that my home filesystem falls under /home.
+
+cd ~; pwd; df -h .
+# This command moves you to your home directory, prints out that directory,
+# and then shows you what partition your home directory is on.
+
+du –sh .
+# will show you space usage of just your directory
+
+try `du –h .` as well to see how that ouput differs
+# read `man du` to learn more about your options.
 ```
 
-## Practical Challenges
-
----
-
-1. **System Overview Report**
-
-   ```bash
-   # Create a simple report showing:
-   # - RHEL version
-   # - Kernel version
-   # - Hostname
-   # - Total RAM
-   # - Number of CPUs
-   ```
-
-2. **Storage Analysis**
-
-   ```bash
-   # For each mounted filesystem:
-   # - Show total size
-   # - Show used space
-   # - Show available space
-   # - Show mount point
-   ```
-
-3. **Memory Status Check**
-   ```bash
-   # Display:
-   # - Total RAM in GB
-   # - Used RAM percentage
-   # - Free RAM percentage
-   # - Buffer/cache usage
-   ```
-
-# PART 3 - System Monitoring
-
-## Exercise 1: System Uptime and Load
-
----
+#### Check the system uptime:
 
 ```bash
-# Check system uptime and load averages
 uptime
 
-# Understanding the output:
-# 14:23:15              -> Current time
-# up 23 days, 2:47      -> System uptime
-# 3 users               -> Number of logged in users
-# load average: 0.52, 0.58, 0.59  -> 1, 5, 15 minute load averages
-
-# Practice Tasks:
-# 1. How long has your system been running?
-# 2. What are your current load averages?
-# 3. How many users are logged in?
+man uptime
+# Read the man for uptime and figure out what those 3 numbers represent.
+# Referencing this server, do you think it is under high load? Why or why not?
 ```
 
-## Exercise 2: Load Average Analysis
-
----
+#### Check who has recently logged into the server and who is currently in:
 
 ```bash
-# Monitor load over time
-uptime
-sleep 60
-uptime
+last
+# Last is a command that outputs backwards. (Top of the output is most recent).
+# So it is less than useful without using the more command.
 
-# Compare the differences:
-# - Has the load increased or decreased?
-# - Which average changed the most? (1, 5, or 15 minute)
+last | more
+# Were you the last person to log in? Who else has logged in today?
 
-# Practice Task:
-# Check load average every minute for 5 minutes
-# Record the changes and explain what they mean
+w
+who
+whoami
+# how many other users are on this system? What does the pts/0 mean on google?
 ```
 
-## Exercise 3: Understanding Load Numbers
-
----
+#### Check who you are and what is going on in your environment:
 
 ```bash
-# On a single CPU system:
-# Load of 1.0 = 100% CPU usage
-# Load of 0.5 = 50% CPU usage
-# Load of 2.0 = System is overloaded, processes are waiting
+printenv
+# This scrolls by way too fast, how would you search for your home?
 
-# Check your CPU count
-nproc
-
-# Practice:
-# 1. Calculate what constitutes a "high load" for your system
-# 2. Monitor your system's load for signs of being:
-#    - Underutilized (load << CPU count)
-#    - Properly loaded (load ≈ CPU count)
-#    - Overloaded (load >> CPU count)
+printenv | grep –i home
+whoami
+id
+echo $SHELL
 ```
 
-## Practical Challenges
-
----
-
-1. **Basic Load Monitoring**
+#### Check running processes and services:
 
 ```bash
-# Create a simple monitoring loop
-while true; do
-    uptime
-    sleep 60
-done
-
-# Run this and observe:
-# - How stable is the load?
-# - What patterns do you notice?
-# (Use Ctrl+C to stop)
+ps –aux | more
+ps –ef | more
+ps –ef | wc –l
 ```
 
-2. **System Load Analysis**
+#### Check memory usage and what is using the memory:
 
 ```bash
-# Create a monitoring record:
-# 1. Check load every 5 minutes for 30 minutes
-# 2. Record the values
-# 3. Calculate average load
-# 4. Compare with CPU count
+# Run each of these individually for understanding before we look at part b.
+free –m
+free –m | egrep “Mem|Swap”
+free –m| egrep “Mem|Swap” | awk ‘{print $1, $2, $3}’
+free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 / $2) * 100"%"}'
+
+# Taking this apart a bit:
+# You’re just using free and searching for the lines that are for memory and swap
+# You then print out the values $1 = Mem or Swap
+# You then take $3 used divided by $2 total and multiply by 100 to get the percentage
 ```
 
-3. **Load Pattern Recognition**
+Have you ever written a basic check script or touched on conditional statements or loops? (Use ctrl + c to break out of these):
 
 ```bash
-# Monitor and record load during:
-# - System idle time
-# - Running a basic command (ls -R /)
-# - Compare the differences
+while true; do free -m; sleep 3; done
+
+# Watch this output for a few and then break with ctrl + c
+# Try to edit this to wait for 5 seconds
+# Try to add a check for uptime and date each loop with a blank line between
+# each and 10 second wait:
+
+while true; do date; uptime; free -m; echo “ “; sleep 10; done
+# Since we can wrap anything inside of our while statements, let’s try adding
+# something from earlier:
+while true; do free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 / $2) * 100"%"}'; sleep 3; done
 ```
+
+```bash
+seq 1 10
+# What did this do?
+# Can you man seq to modify that to count from 2 to 20 by 2’s?
+# Let’s make a counting for loop from that sequence
+
+for i in `seq 1 20`; do echo "I am counting i and am on $i times through the loop"; done
+```
+
+Can you tell me what is the difference or significance of the $ in the command above? What does that denote to the system?
+
+## Downloads
+
+#### - <a href="./assets/downloads/u2/u2_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
+
+#### - <a href="./assets/downloads/u2/u2_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>

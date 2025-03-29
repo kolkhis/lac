@@ -18,19 +18,20 @@ We shall cover few basics:
 
 ### Resources / Important Links
 
+- [Killercoda Labs](https://killercoda.com/learn)
 - [https://podman.io/docs](https://podman.io/docs)
-
 - [https://docs.docker.com/build/concepts/dockerfile/](https://docs.docker.com/build/concepts/dockerfile/)
-
 - [https://docs.podman.io/en/latest/markdown/podman-exec.1.html](https://docs.podman.io/en/latest/markdown/podman-exec.1.html)
 
 ### Required Materials
 
-Rocky 9 or equivalent
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
+- root or sudo command access
 
-Root or sudo command access
+## Pre-Lab Warmup
 
-### EXERCISES (Warmup and quick review)
+---
 
 1. `which podman`
 
@@ -46,6 +47,10 @@ Root or sudo command access
 5. `podman ps`  
    What do you learn from those two commands?  
    Why might it be important to know on a system?
+
+## Lab 🧪
+
+---
 
 ### Building and running containers
 
@@ -188,7 +193,7 @@ podman ps
 
 ```bash
 podman exec -it festive_pascal sh
-cat /etc/\*release
+cat /etc/*release
 exit
 ```
 
@@ -198,3 +203,9 @@ There are a lot of ways to use these tools. There are a lot of ways you will sup
 At the end of the day you're a Linux System Administrator, you're expected to understand
 everything that goes on in your system. To this end, we want to know the build process and
 run processes so we can help the engineers we support keep working in a Linux environment.
+
+## Downloads
+
+#### - <a href="./assets/downloads/u9/u9_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+
+#### - <a href="./assets/downloads/u9/u9_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
