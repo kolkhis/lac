@@ -363,5 +363,6 @@ Put command you're using for load here:
 - How would you adjust your test plan to capture additional performance metrics?
 
 ## Downloads
+#### - <a href="./assets/downloads/u12/u12_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
 #### - <a href="./assets/downloads/u12/u12_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

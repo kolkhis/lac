@@ -6,4 +6,5 @@
 </div>
  
 ## Downloads
+#### - <a href="./assets/downloads/u15/u15_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
 #### - <a href="./assets/downloads/u15/u15_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

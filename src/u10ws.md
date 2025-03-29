@@ -177,5 +177,6 @@ Topics:
 3. If you’re not in IT, how could this experience contribute to your resume or portfolio?
 
 ## Downloads
+#### - <a href="./assets/downloads/u10/u10_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
 #### - <a href="./assets/downloads/u10/u10_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

@@ -54,5 +54,6 @@ time with the systems, know what is important and what is an indicator of proble
 consider your audience and how to best show them what they need to see.
 
 ## Downloads
+#### - <a href="./assets/downloads/u11/u11_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
 #### - <a href="./assets/downloads/u11/u11_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
