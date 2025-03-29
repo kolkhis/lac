@@ -7,7 +7,7 @@ name: Deploy mdBook site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["main", "test-automate-resources-file-generation"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,6 +32,9 @@ jobs:
       MDBOOK_VERSION: 0.4.36
     steps:
       - uses: actions/checkout@v4
+
+      - name: Dynamically generate resources.md file
+        run: ./scripts/generate_resources.sh
 
       # Install rust with GitHub's 'setup-rs' action (most recent stable version)
       - name: Install Rust
