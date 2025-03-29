@@ -181,5 +181,6 @@ Analytics:
    portfolio?
 
 ## Downloads
+#### - <a href="./assets/downloads/u12/u12_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
 #### - <a href="./assets/downloads/u12/u12_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
