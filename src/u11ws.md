@@ -137,5 +137,6 @@ Heads up Display
    look to put something like this into your resume or portfolio?
 
 ## Downloads
+#### - <a href="./assets/downloads/u11/u11_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
 #### - <a href="./assets/downloads/u11/u11_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

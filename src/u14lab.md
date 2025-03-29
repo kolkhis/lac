@@ -128,4 +128,5 @@ Then reflect:
 - Can you execute some of these? Why or why not?
  
 ## Downloads
+#### - <a href="./assets/downloads/u14/u14_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
 #### - <a href="./assets/downloads/u14/u14_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

@@ -205,6 +205,7 @@ everything that goes on in your system. To this end, we want to know the build p
 run processes so we can help the engineers we support keep working in a Linux environment.
 
 ## Downloads
+#### - <a href="./assets/downloads/u9/u9_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
 #### - <a href="./assets/downloads/u9/u9_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
 

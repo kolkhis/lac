@@ -148,5 +148,6 @@ Repository:
    can you look to put something like this into your resume or portfolio?
  
 ## Downloads
+#### - <a href="./assets/downloads/u9/u9_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
 #### - <a href="./assets/downloads/u9/u9_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
 #### - <a href="./assets/downloads/u9/u9_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>

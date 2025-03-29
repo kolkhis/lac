@@ -131,6 +131,8 @@ WinRM (Windows Remote Management):
 3. If you’re not in IT, how can you look to put something like this into your resume or portfolio?
 
 ## Downloads
+#### - <a href="./assets/downloads/u14/u14_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+#### - <a href="./assets/downloads/u14/u14_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
 
 Each unit comes with a `.pdf` version of the worksheet and accompanying `.docx`, `.txt`, and `.md`
 answer template documents. Students will need to turn in a worksheet, in any format, to finish the
