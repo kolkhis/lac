@@ -9,7 +9,7 @@
 
 Enhance productivity by enabling the management of multiple sessions and windows from a single remote session.
 
-## 🔑 Key Features of Terminal Multiplexors
+## Key Features of Terminal Multiplexors
 
 ---
 
@@ -21,11 +21,11 @@ Split your terminal into panes (or windows) so you can run different commands or
 
 You can detach from a session (e.g., when you log out of a remote server), and later reattach to it exactly as you left it.
 
-### Persistence of Long-Running Tasks ⏰
+### Persistence of Long-Running Tasks
 
 If your network connection drops, the tasks keep running on the server, and you can reattach to them later.
 
-### Collaborate 🤝
+### Collaborate
 
 Some terminal multiplexers allow multiple users to connect to the same session, enabling collaborative work on a single system.
 
@@ -33,7 +33,7 @@ Some terminal multiplexers allow multiple users to connect to the same session, 
 
 ---
 
-### 🧩 Tmux
+### Tmux
 
 - Is widely used by developers and system administrators for its flexible configuration and vibrant community support.
 - Its popularity also stems from its straightforward scripting capabilities, making it highly useful for automation.
@@ -45,7 +45,7 @@ Tmux, a terminal multiplexer written in C, emerged around 2007, noted for its cu
 - [Tmux Wiki](https://github.com/tmux/tmux/wiki)
 - [Tmux Cheatsheet](https://tmuxcheatsheet.com/)
 
-### 🐃 GNU Screen
+### GNU Screen
 
 GNU Screen, created by Oliver Laumann in 1987 and written in C, became one of the first mainstream terminal multiplexers, remaining a staple in many Linux distributions. Praised for its stability and included by default in numerous systems, it can still be considered less intuitive in configuration compared to newer options like tmux.
 
@@ -57,14 +57,14 @@ GNU Screen, created by Oliver Laumann in 1987 and written in C, became one of th
 - [GNU Screen Site](https://www.gnu.org/software/screen/)
 - [GNU Screen Manual](https://www.gnu.org/software/screen/manual/screen.html)
 
-### 🦀 Zellij
+### Zellij
 
 Zellij, first released in 2020 and written in Rust, is a newcomer to the terminal multiplexer space that focuses on an intuitive UI and easy collaboration. While its modern approach and built-in layout management offer clear advantages over older tools, its relatively small community and limited ecosystem may pose challenges for widespread adoption.
 
 - Although not yet included in the default repositories of all distributions, Zellij is rapidly gaining visibility because of its modern design and user-friendly layout management.
 - Its growing ecosystem of plugins and emphasis on collaboration make it an attractive choice for developers seeking a more advanced terminal multiplexer.
 
-#### Zellij Resources 🔗
+#### Zellij Resources
 
 - [Zellij Site](https://zellij.dev/)
  
