@@ -4,7 +4,7 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Unit 8 Lab - Operating Running Systems and Handling Incidents</h1>
+        <h1>Unit 8 Lab - Scripting</h1>
     </p>
 </div>
 

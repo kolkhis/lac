@@ -1,7 +1,7 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
     <p>
-        <h1>Unit 8 Bonus - Bash Scripting  </h1>
+        <h1>Unit 8 Bonus - Scripting  </h1>
     </p>
 </div>
 
