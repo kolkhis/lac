@@ -64,10 +64,10 @@ jobs:
           key: mdbook-${{ runner.os }}-${{ env.MDBOOK_VERSION }}
           restore-keys: mdbook-${{ runner.os }}-
 
-      # Install mdbook if it's not cached
+      # Install correct version of mdbook if it's not cached
       - name: Install mdBook
         if: steps.cache-mdbook.outputs.cache-hit != 'true'
-        run: cargo install --version ${MDBOOK_VERSION} mdbook
+        run: cargo install --version ${MDBOOK_VERSION} mdbook --force
 
       - name: Setup Pages
         id: pages
