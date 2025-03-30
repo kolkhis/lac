@@ -5,7 +5,6 @@
     </p>
 </div>
 
-## Unit Index
 
 1.  Linux File Operations
 2.  Essential Tools
