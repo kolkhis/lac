@@ -12,3 +12,4 @@ no-section-label = true
 git-repository-url = "https://github.com/ProfessionalLinuxUsersGroup/lac"
 edit-url-template = "https://github.com/ProfessionalLinuxUsersGroup/lac/edit/main/{path}"
 git-repository-icon = "fa-github"
+additional-css = ["theme/css/variables.css"]
