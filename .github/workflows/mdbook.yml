@@ -29,7 +29,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MDBOOK_VERSION: 0.4.36
+      MDBOOK_VERSION: 0.4.45
     steps:
       - uses: actions/checkout@v4
 
@@ -40,8 +40,8 @@ jobs:
       - name: Install Rust
         uses: actions-rs/toolchain@v1
         with:
-          toolchain: stable  # Or specify a version
-          override: true     # ensure this version is used globally in the workflow
+          toolchain: stable # Or specify a version
+          override: true # ensure this version is used globally in the workflow
           components: cargo
 
       # Cache rust crates (mdbook dependencies) so reinstalls don't take long
