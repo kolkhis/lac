@@ -5,19 +5,27 @@
     </p>
 </div>
 
-This unit is all about Bash -- the shell that we use on Linux.
-Understanding Bash is crucial to anyone who administers Linux systems.
+## Instructions
 
-Bash scripting gives us the ability to automate tasks and create a simple solution for complex tasks.
-If you've ever used the command line on a Linux system before, you've already written
-Bash code! Scripting is simply the act of taking those commands and putting them into
-an executable file.
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [TLDP Bash Beginner's Guide](https://tldp.org/LDP/Bash-Beginners-Guide/html/chap_01.html)
 - [devhints.io - Bash Scripting Cheatsheet](https://devhints.io/bash)
 - [Bash Hacker's Wiki](https://web.archive.org/web/20230406205817/https://wiki.bash-hackers.org/)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u8/u8_worksheet.txt" target="_blank" download>📥 u8_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u8/u8_worksheet.docx" target="_blank" download>📥 u8_worksheet(`.docx`)</a>
 
 ### Unit 8 Recording
 
@@ -31,21 +39,6 @@ an executable file.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -97,6 +90,7 @@ You decide to write up some notes by reading some google, AI, and talking to you
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
@@ -141,7 +135,3 @@ What did you learn about capabilities of bash that can help you in your scriptin
    a practical sense.
    What things are you doing currently at work or in a lab that you can apply some of
    this logic to?
- 
-## Downloads
-#### - <a href="./assets/downloads/u8/u8_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
-#### - <a href="./assets/downloads/u8/u8_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

@@ -5,10 +5,6 @@
     </p>
 </div>
 
-The Unit 7 Lab has students exploring and practicing the lessons they learned
-from the unit recording and worksheet. This lab explores managing packages through the Red Hat
-Enterprise Linux (RHEL) package manager front end [DNF (Dandified YUM)](<https://en.wikipedia.org/wiki/DNF_(software)>).
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -21,6 +17,13 @@ Enterprise Linux (RHEL) package manager front end [DNF (Dandified YUM)](<https:/
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u7/u7_lab.pdf" target="_blank" download>📥 u7_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u7/u7_lab.docx" target="_blank" download>📥 u7_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -365,11 +368,3 @@ If you install this you’re going to have developer tools installed on the serv
 but they won’t be configured. How would you figure out what tools and versions were
 just installed? How might you report this for your own documentation and to a
 security team that keeps your security baselines?
-
-## Downloads
-
-#### - <a href="./assets/downloads/u7/u7_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
-
-#### - <a href="./assets/downloads/u7/u7_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u7/u7_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>

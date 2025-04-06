@@ -5,9 +5,12 @@
     </p>
 </div>
 
-This unit discusses Kubernetes & K3s, where students explore container orchestration, deploying
-applications, and troubleshooting Kubernetes clusters. Use this worksheet to track your progress,
-document findings, and engage in discussions.
+## Instructions
+
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
@@ -16,6 +19,15 @@ document findings, and engage in discussions.
 - [Kubernetes Security Best Practices](https://kubernetes.io/docs/concepts/security/)
 - [Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
 - [Interactive Kubernetes Labs](https://killercoda.com/)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u10/u10_worksheet.txt" target="_blank" download>📥 u10_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u10/u10_worksheet.docx" target="_blank" download>📥 u10_worksheet(`.docx`)</a>
 
 ### Unit 10 Recording
 
@@ -29,22 +41,6 @@ document findings, and engage in discussions.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
-
-## Discussion Questions
 
 #### Discussion Post #1
 
@@ -175,8 +171,3 @@ Topics:
 2. How can you apply this knowledge in your current IT role?
 
 3. If you’re not in IT, how could this experience contribute to your resume or portfolio?
-
-## Downloads
-#### - <a href="./assets/downloads/u10/u10_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u10/u10_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

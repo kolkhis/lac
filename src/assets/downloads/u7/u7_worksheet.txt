@@ -2,6 +2,7 @@ ProLUG 101
 Unit 7 Worksheet
 Instructions
 Fill out this sheet as you progress through the lab and discussions. Hold onto all of your work to send to me at the end of the course.
+
 Discussion Questions:
 Unit 7 Discussion Post 1: Why is software versioning so important to software security? Can you find 3 reasons, from the internet, AI, or your peers? 
 Unit 7 Discussion Post 2: You are new to a Linux team. A ticket has come in from an application team and has already been escalated to your manager. They want software installed on one of their servers but you cannot find any documentation and your security team is out to lunch and not responding. You remember from some early documentation that you read that all the software in the internal repos you currently have are approved for deployment on servers. You want to also verify by checking other servers that this software exists. This is an urgent ask and your manager is hovering.

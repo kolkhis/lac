@@ -5,15 +5,26 @@
     </p>
 </div>
 
-This unit covers basic security concepts on Linux systems.
+## Instructions
 
-We'll go over what security standards are, tools used to implement security
-standards, and other systems employed to secure Linux systems.
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [Killercoda Lab - Server Startup Process](https://killercoda.com/het-tanis/course/Linux-Labs/107-server-startup-process)
 - [Killercoda Lab - Updating a Golden Image](https://killercoda.com/het-tanis/course/Linux-Labs/203-updating-golden-image)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u13/u13_worksheet.txt" target="_blank" download>📥 u13_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u13/u13_worksheet.docx" target="_blank" download>📥 u13_worksheet(`.docx`)</a>
 
 ### Unit 13 Recording
 
@@ -27,20 +38,6 @@ standards, and other systems employed to secure Linux systems.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -138,8 +135,3 @@ HIPS:
 2. How can you apply this now in your current role in IT?
    If you’re not in IT, how can you look to put something like this into your resume or
    portfolio?
-
-## Downloads
-#### - <a href="./assets/downloads/u13/u13_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u13/u13_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

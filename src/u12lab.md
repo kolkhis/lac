@@ -5,13 +5,6 @@
     </p>
 </div>
 
-### Introduction
-
-This lab focuses on establishing system baselines, performing load and stress testing,
-and developing a structured test plan to evaluate system performance.  
-You will use standard Linux utilities to gather data, simulate system load, and
-compare baseline performance against stressed conditions.
-
 ### Resources / Important Links
 
 - [SAR Documentation](https://man7.org/linux/man-pages/man1/sar.1.html)
@@ -21,8 +14,16 @@ compare baseline performance against stressed conditions.
 
 ### Required Materials
 
-- Rocky Linux 9.4+ / ProLUG Lab access
-- Root or sudo command access
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
+- root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u12/u12_lab.pdf" target="_blank" download>📥 u12_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u12/u12_lab.docx" target="_blank" download>📥 u12_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -34,8 +35,6 @@ compare baseline performance against stressed conditions.
    mkdir lab_baseline
    cd lab_baseline
    ```
-
----
 
 2. Verify if `iostat` is available
 
@@ -59,8 +58,6 @@ compare baseline performance against stressed conditions.
    rpm -qa | grep -i sysstat
    ```
 
----
-
 3. Verify if `stress` is available
 
    ```bash
@@ -80,8 +77,6 @@ compare baseline performance against stressed conditions.
    rpm -qa | grep -i stress
    rpm -qi stress  # Read the package description
    ```
-
----
 
 4. Verify if `iperf3` is available
 
@@ -116,8 +111,6 @@ an improvement. You must know where you are at to be able to properly plan where
 are going. A poor baseline assessment, because of inflated numbers or inaccurate
 testing, does a disservice to the rest of your project. You must accurately draw the
 first line and understand your system's performance.
-
----
 
 #### Using SAR (CPU and memory statistics)
 
@@ -154,8 +147,6 @@ sar 2 10
 sar -r 2 10
 ```
 
----
-
 #### Using IOSTAT (CPU and device statistics)
 
 `iostat` will give you either processing or device statistics for your system.
@@ -177,8 +168,6 @@ iostat -c 1
 iostat -c 1 5
 ```
 
----
-
 #### Using iperf3 (network speed testing)
 
 In the ProLUG lab, `red1` is the iperf3 server, so we can bounce connections off it (`192.168.200.101`).
@@ -190,8 +179,6 @@ time iperf3 -c 192.168.200.101 -n 1G -P 128
 # UDP connection with 128 connections
 time iperf3 -c 192.168.200.101 -u -n 1G -P 128
 ```
-
----
 
 #### Using STRESS to generate load
 
@@ -210,8 +197,6 @@ stress --cpu 8 --io 4 --vm 2 --vm-bytes 128M -d 1 --timeout 10s
 
 Read the usage output and try to figure out what each option does.
 
----
-
 ### Developing a Test Plan
 
 The company has decided we are going to add a new agent to all machines.
@@ -219,8 +204,6 @@ Management has given this directive to you because of PCI compliance standards w
 no regard for what it may do to the system. You want to validate if there are any
 problems and be able to express your concerns as an engineer, if there are actual
 issues. No one cares what you think, they care what you can show, or prove.
-
----
 
 #### Determine the right question to ask:
 
@@ -293,8 +276,6 @@ your chance to test and record these things.
 | Disk write – large files         |          |
 | Processor benchmark              |          |
 
----
-
 **You may baseline more than once, more data is rarely bad.**
 
 Make 3 different assumptions for how load may look on your system with the agent and design your
@@ -352,8 +333,6 @@ Put command you're using for load here:
 | Disk write – large files         |          |
 | Processor benchmark              |          |
 
----
-
 **Continue copying and pasting tables as needed.**
 
 ## Reflection Questions (optional)
@@ -361,8 +340,3 @@ Put command you're using for load here:
 - How did the system perform under load compared to your baseline?
 - What would you report to your management team regarding the new agent’s impact?
 - How would you adjust your test plan to capture additional performance metrics?
-
-## Downloads
-#### - <a href="./assets/downloads/u12/u12_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u12/u12_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

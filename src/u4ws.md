@@ -5,17 +5,27 @@
     </p>
 </div>
 
-This unit will discuss operating running systems and handling incidents.
+## Instructions
 
-The unit will delve into gathering and understanding system information
-such as hardware and network statistics, and implementing an incident
-response cycle for triage events.
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [Operations Bridge](https://cio-wiki.org/wiki/Operations_Bridge)
 - [Security Incident Cheatsheet](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf?msc=Cheat+Sheet+Blog)
 - [Battle Drills](https://en.wikipedia.org/wiki/Battle_drill)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u4/u4_worksheet.txt" target="_blank" download>📥 u4_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u4/u4_worksheet.docx" target="_blank" download>📥 u4_worksheet(`.docx`)</a>
 
 ### Unit 4 Recording
 
@@ -29,21 +39,6 @@ response cycle for triage events.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -74,6 +69,7 @@ You may use AI for this, but let us know if you do.
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
@@ -119,7 +115,3 @@ Operations Bridge:
 2. How much better has your note taken gotten since you started?
    What do you still need to work on? Have you started using a different tool?
    Have you taken more notes?
- 
-## Downloads
-#### - <a href="./assets/downloads/u4/u4_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
-#### - <a href="./assets/downloads/u4/u4_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

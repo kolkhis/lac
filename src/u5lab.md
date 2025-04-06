@@ -5,14 +5,6 @@
     </p>
 </div>
 
-The Unit 5 lab covers user and group management on Linux systems.
-
-This lab will take you through the basics of:
-
-- Managing users and groups
-- Key files related to users and group management (the shadow password suite)
-- How permissions work
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -20,11 +12,18 @@ This lab will take you through the basics of:
 - [Rocky Linux User Admin Guide](https://docs.rockylinux.org/books/admin_guide/06-users/)
 - [Killercoda lab by FishermanGuyBro](https://killercoda.com/fishermanguybro)
 
-## Required Materials
+### Required Materials
 
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u5/u5_lab.pdf" target="_blank" download>📥 u5_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u5/u5_lab.docx" target="_blank" download>📥 u5_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -388,11 +387,3 @@ The first character lets you know if the file is a directory, file, or link. In 
 
 Go find some other interesting files or directories and see what you see there.  
 Can you identify their characteristics and permissions?
-
-## Downloads
-
-#### - <a href="./assets/downloads/u5/u5_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
-
-#### - <a href="./assets/downloads/u5/u5_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u5/u5_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>

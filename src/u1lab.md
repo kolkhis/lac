@@ -5,12 +5,6 @@
     </p>
 </div>
 
-Every bit and piece of Linux is a file. Everything. A core competency for any
-administrator will be manipulating and working with files.
-
-This lab will focus on introducing and developing these skills when working with Linux
-and information systems.
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -21,6 +15,13 @@ and information systems.
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 u1_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 u1_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -408,11 +409,3 @@ The first character lets you know if the file is a directory, file, or link. In 
 - What can everyone else do?
 
 Go find some other interesting files or directories and see what you see there. Can you identify their characteristics and permissions?
-
-## Downloads
-
-#### - <a href="./assets/downloads/u1/u1_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
-
-#### - <a href="./assets/downloads/u1/u1_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u1/u1_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

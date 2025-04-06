@@ -5,21 +5,27 @@
     </p>
 </div>
 
-This unit is all about understanding security and package management on Linux systems.
+## Instructions
 
-Securing systems is not just the job of security engineers. It falls on system
-administrators and system engineers to ensure all security best practices are
-enforced on their systems to meet certain standards.
+---
 
-Whether it is software compatibility or security, ensuring all the correct packages are on the
-system _and_ ensuring the package versions match the needs of the users is a crucial
-skill for any sysadmin.
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [Semantic Versioning](https://semver.org/)
 - [Rocky Documentation](https://docs.rockylinux.org/)
 - [Rocky DNF Guidance](https://docs.rockylinux.org/guides/package_management/dnf_package_manager/)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u7/u7_worksheet.txt" target="_blank" download>📥 u7_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u7/u7_worksheet.docx" target="_blank" download>📥 u7_worksheet(`.docx`)</a>
 
 ### Unit 7 Recording
 
@@ -33,21 +39,6 @@ skill for any sysadmin.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -104,6 +95,7 @@ This is a thought exercise, so it’s not a “right or wrong” answer it’s f
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1299794638340755567)
@@ -139,7 +131,3 @@ Semantic Version:
 1. What questions do you still have about this week?
 
 2. How does security as a system administrator differ from what you expected?
- 
-## Downloads
-#### - <a href="./assets/downloads/u7/u7_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
-#### - <a href="./assets/downloads/u7/u7_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

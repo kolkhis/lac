@@ -28,11 +28,11 @@ Below is the current workflow that deploys the Git Page for the course:
 
 <div style="text-align: center;">
 
-<img src="./assets/images/workflow.png"></img>
+<img src="./assets/images/workflow.png" style="border-radius:2%"></img>
 
 </div>
 
-To achieve this workflow locally the following environment and dependencies are
+To achieve this deployment locally the following environment and dependencies are
 required:
 
 <dl>

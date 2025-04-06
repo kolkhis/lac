@@ -5,12 +5,6 @@
     </p>
 </div>
 
-The ability to navigate directories, manipulate files, and work with the command line
-will be a critical skill set system administrators must have to be successful.
-
-This lab will focus on introducing and developing these skills when working with Linux
-and information systems.
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -22,6 +16,13 @@ and information systems.
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u2/u2_lab.pdf" target="_blank" download>📥 u2_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u2/u2_lab.docx" target="_blank" download>📥 u2_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -233,9 +234,3 @@ for i in `seq 1 20`; do echo "I am counting i and am on $i times through the loo
 ```
 
 Can you tell me what is the difference or significance of the $ in the command above? What does that denote to the system?
-
-## Downloads
-
-#### - <a href="./assets/downloads/u2/u2_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
-
-#### - <a href="./assets/downloads/u2/u2_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>

@@ -1,7 +1,8 @@
 # Summary
 
-- [Intro](./intro.md)
 - [About ProLUG](./prolug.md)
+- [Table of Contents](./unitindex.md)
+- [Course Syallabus](./syllabus.md)
 - [Final Project Outline](./project.md)
 - [Unit 1](./u1intro.md)
   - [Work Sheet](./u1ws.md)

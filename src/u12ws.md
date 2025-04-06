@@ -5,16 +5,25 @@
     </p>
 </div>
 
-This unit is all about data -- learning how to baseline and benchmark systems.  
-Being able to establish a baseline for systems is essential as a sysadmin for knowing
-when your system is acting strangely, among other things.
+## Instructions
 
-Benchmarking and baselining go together. Without a baseline, you'll have no point of
-reference when running a benchmark.
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [Kaggle - Python and Data Science Learning](https://www.kaggle.com/learn)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u12/u12_worksheet.txt" target="_blank" download>📥 u12_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u12/u12_worksheet.docx" target="_blank" download>📥 u12_worksheet(`.docx`)</a>
 
 ### Unit 12 Recording
 
@@ -28,20 +37,6 @@ reference when running a benchmark.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -179,8 +174,3 @@ Analytics:
 2. How can you apply this now in your current role in IT?  
    If you’re not in IT, how can you look to put something like this into your resume or
    portfolio?
-
-## Downloads
-#### - <a href="./assets/downloads/u12/u12_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u12/u12_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

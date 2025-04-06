@@ -5,23 +5,26 @@
     </p>
 </div>
 
-Unit 2 is all about essential tools. Working with files, redirecting output,
-and managing permissions are all fundamental skills that any Linux sysadmin will need.
+## Instructions
 
-In this unit, we cover:
+---
 
-- How to use ACLs to manage file permissions, and introduces SELinux as an
-  additional layer of security that adds labels and contexts to files and processes.
-- The importance of note-taking for systems administrators and engineers
-- Difference between troubleshooting in systems administration versus systems engineering.
-- Security and the importance of availability as a primary goal for systems administrators.
-- Key networking concepts such as IP addresses, routing, and DNS are introduced,
-  along with tools for troubleshooting network issues
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 - [Security Enhanced Linux](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_selinux/getting-started-with-selinux_using-selinux#getting-started-with-selinux_using-selinux)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u2/u2_worksheet.txt" target="_blank" download>📥 u2_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u2/u2_worksheet.docx" target="_blank" download>📥 u2_worksheet(`.docx`)</a>
 
 ### Unit 2 Recording
 
@@ -34,20 +37,6 @@ In this unit, we cover:
     referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Unit 2 Discussion Post #1
 
@@ -90,9 +79,23 @@ and it is not a “one answer solution”. This is for you to think through.
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
+
+### Start thinking about your project ideas (more to come in future weeks):
+
+Topics:
+
+1. System Stability
+2. System Performance
+3. System Security
+4. System monitoring
+5. Kubernetes
+6. Programming/Automation
+
+You will research, design, deploy, and document a system that improves your administration of Linux systems in some way.
 
 ## Definitions
 
@@ -132,7 +135,3 @@ SELinux operating modes:
 1. What questions do you still have about this week?
 
 2. How are you going to use what you’ve learned in your current role?
- 
-## Downloads
-#### - <a href="./assets/downloads/u2/u2_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
-#### - <a href="./assets/downloads/u2/u2_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

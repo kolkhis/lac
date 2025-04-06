@@ -6,7 +6,18 @@
 </div>
 
 ## Under Construction
- 
-## Downloads
-#### - <a href="./assets/downloads/u15/u15_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-#### - <a href="./assets/downloads/u15/u15_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
+
+### Resources / Important Links
+
+### Required Materials
+
+- Rocky 9.4+ – ProLUG Lab
+  - Or comparable Linux box
+- root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u15/u15_lab.pdf" target="_blank" download>📥 u15_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u15/u15_lab.docx" target="_blank" download>📥 u15_lab(`.docx`)</a>

@@ -5,16 +5,27 @@
     </p>
 </div>
 
-Linux Telemetry is one of the most critical parts of monitoring your system. With good data gathering,
-you can benchmark and baseline current systems. You can predict future capacity and mitigate risk in
-a system. Key Performance Indicators (KPIs) can be established and tracked throughout the lifecycle
-of the system.
+## Instructions
+
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [How to easily monitor your Linux server | Grafana Labs](https://grafana.com/solutions/linux-node/monitor/)
 - [30 Linux System Monitoring Tools Every SysAdmin Should Know](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
 - [Monitoring Linux Using SNMP - Nagios](https://www.nagios.com/solutions/linux-monitoring/)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u11/u11_worksheet.txt" target="_blank" download>📥 u11_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u11/u11_worksheet.docx" target="_blank" download>📥 u11_worksheet(`.docx`)</a>
 
 ### Unit 11 Recording
 
@@ -28,21 +39,6 @@ of the system.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -135,8 +131,3 @@ Heads up Display
 
 2. How can you apply this now in your current role in IT? If you’re not in IT, how can you
    look to put something like this into your resume or portfolio?
-
-## Downloads
-#### - <a href="./assets/downloads/u11/u11_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u11/u11_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

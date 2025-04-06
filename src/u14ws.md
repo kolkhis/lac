@@ -5,13 +5,27 @@
     </p>
 </div>
 
-This worksheet will reinforce key concepts from **Ansible Automation** through guided exercises and discussion.
+## Instructions
+
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [Official Ansible Documentation](https://docs.ansible.com/)
 - [Ansible GitHub Repository](https://github.com/ansible/ansible)
 - [YAML Syntax Guide](https://yaml.org/)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u14/u14_worksheet.txt" target="_blank" download>📥 u14_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u14/u14_worksheet.docx" target="_blank" download>📥 u14_worksheet(`.docx`)</a>
 
 ### Unit 14 Recording
 
@@ -25,22 +39,6 @@ This worksheet will reinforce key concepts from **Ansible Automation** through g
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
-Complete the following exercises using the knowledge gained in this unit.
 
 #### Discussion Post 1
 
@@ -129,21 +127,3 @@ WinRM (Windows Remote Management):
 2. How can you apply this now in your current role in IT?
 
 3. If you’re not in IT, how can you look to put something like this into your resume or portfolio?
-
-## Downloads
-#### - <a href="./assets/downloads/u14/u14_worksheet.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
-#### - <a href="./assets/downloads/u14/u14_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-Each unit comes with a `.pdf` version of the worksheet and accompanying `.docx`, `.txt`, and `.md`
-answer template documents. Students will need to turn in a worksheet, in any format, to finish the
-course and qualify for the ProLUG certification.
-
-#### - <a href="./assets/downloads/u14/u14_worksheet.pdf" target="_blank" download>📥 Worksheet 14 Download (`.pdf`)</a>
-
-Students will only turn in the worksheet document of their choice; either a .docx, .txt, or .md file.
-
-#### - <a href="./assets/downloads/u14/u1_worksheet.docx" target="_blank" download>📥 Worksheet Answer Template Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u14/u1_worksheet.txt" target="_blank" download>📥 Worksheet Answer Template Download (`.txt`)</a>
-
-#### - <a href="./assets/downloads/u14/u14_worksheet.md" target="_blank" download>📥 Worksheet Answer Template Download (`.md`)</a>

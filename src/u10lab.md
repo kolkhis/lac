@@ -5,13 +5,6 @@
     </p>
 </div>
 
-This lab focuses on installing, configuring, and deploying applications using Kubernetes (K3s).  
-By the end of this lab, you will have:
-
-- A working K3s Kubernetes cluster.
-- Deployed and exposed a simple web application.
-- Troubleshooted common Kubernetes deployment issues.
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -25,6 +18,13 @@ By the end of this lab, you will have:
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u10/u10_lab.pdf" target="_blank" download>📥 u10_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u10/u10_lab.docx" target="_blank" download>📥 u10_lab(`.docx`)</a>
 
 ## Pre-Lab: Quick Warmup and System Checks
 
@@ -225,14 +225,11 @@ journalctl -xeu k3s
 
 ---
 
-At the end of this lab, you should: ✅ Have a fully operational K3s Kubernetes cluster.  
+At the end of this lab, you should:
+
+✅ Have a fully operational K3s Kubernetes cluster.  
 ✅ Be able to deploy and expose containerized applications.  
 ✅ Know how to troubleshoot common Kubernetes errors.  
 ✅ Understand security best practices for Kubernetes deployments.
 
 📌 Next Steps: Continue testing deployments, set up monitoring tools like Prometheus or Grafana, and explore Ingress Controllers to manage external access.
-
-## Downloads
-#### - <a href="./assets/downloads/u10/u10_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u10/u10_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
