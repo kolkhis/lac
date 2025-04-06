@@ -5,17 +5,27 @@
     </p>
 </div>
 
-This unit and worksheet aim to cover concepts such as the command line interface (CLI),
-commands and syntax, command line tools, Vim (visual editor improved), the Linux Kernel, and much more.
+## Instructions
 
-Students are strongly encouraged to learn from these units and apply what they learn. Applying what you
-learn offers no better teacher. Again welcome, and good luck in your studies.
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [What is Vim?](https://github.com/vim/vim)
 - [The Linux Foundation](https://www.linux.org/pages/download/)
 - [Linux CLI Cheatsheets](https://www.digitalocean.com/community/tutorials/linux-commands)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 u1_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 u1_worksheet(`.docx`)</a>
 
 ### Unit 1 Recording
 
@@ -29,20 +39,6 @@ learn offers no better teacher. Again welcome, and good luck in your studies.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -91,6 +87,19 @@ The discussion posts are done in Discord threads. Click the 'Threads' icon on th
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
+### Start thinking about your project ideas (more to come in future weeks):
+
+Topics:
+
+1. System Stability
+2. System Performance
+3. System Security
+4. System monitoring
+5. Kubernetes
+6. Programming/Automation
+
+You will research, design, deploy, and document a system that improves your administration of Linux systems in some way.
+
 ## Definitions
 
 ---
@@ -124,7 +133,3 @@ Text Editor:
 1. What questions do you still have about this week?
 
 2. How are you going to use what you’ve learned in your current role?
- 
-## Downloads
-#### - <a href="./assets/downloads/u1/u1_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
-#### - <a href="./assets/downloads/u1/u1_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

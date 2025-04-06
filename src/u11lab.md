@@ -5,18 +5,6 @@
     </p>
 </div>
 
-Telemetry is one of the most critical parts of monitoring your system. Metrics, logs, and traces
-are often called the three pillars or the golden triangle of observability. Observability deals
-with trying to understand specific system and it can be a way to stay ahead of incoming problems.
-
-In dynamic environments it can give us insight to assess and manage our systems more effectively
-because without hard data (Key Performance Indicators) it is all just guessing and cannot be tracked
-through time.
-
-In this Unit 11 Lab we shall use an excellent resources on killercoda.com, online free labs and learn
-how to install tools and use them to collect and observe main types of Linux telemetry,
-each having its own value and purpose.
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -26,6 +14,13 @@ each having its own value and purpose.
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u11/u11_lab.pdf" target="_blank" download>📥 u11_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u11/u11_lab.docx" target="_blank" download>📥 u11_lab(`.docx`)</a>
 
 ### Setup monitoring with Grafana
 
@@ -52,8 +47,3 @@ In the end monitoring is more an art than engineering. Sure, we can design all t
 the things, but there’s no equation on what is the one right answer for any of this. You have to spend
 time with the systems, know what is important and what is an indicator of problems. Then, you have to
 consider your audience and how to best show them what they need to see.
-
-## Downloads
-#### - <a href="./assets/downloads/u11/u11_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u11/u11_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>

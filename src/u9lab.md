@@ -5,17 +5,6 @@
     </p>
 </div>
 
-Unit 9 LAB covers free and Open-Source "next generation" containerization solution Podman.
-
-Enhanced security, a daemon-less architecture, and better support for running containers as non-root users some Admins will choose this solution over Docker and easily integrate it into your Enterprise or HomeLab environment.
-
-We shall cover few basics:
-
-- Inspect if and when it was installed (comes pre-installed with RedHat)
-- How to build and run Podman containers
-- How to build an application with Podman
-- Follow deployment flow (logs, processes, etc..)
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -28,6 +17,13 @@ We shall cover few basics:
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u9/u9_lab.pdf" target="_blank" download>📥 u9_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u9/u9_lab.docx" target="_blank" download>📥 u9_lab(`.docx`)</a>
 
 ## Pre-Lab Warmup
 
@@ -203,10 +199,3 @@ There are a lot of ways to use these tools. There are a lot of ways you will sup
 At the end of the day you're a Linux System Administrator, you're expected to understand
 everything that goes on in your system. To this end, we want to know the build process and
 run processes so we can help the engineers we support keep working in a Linux environment.
-
-## Downloads
-#### - <a href="./assets/downloads/u9/u9_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>
-
-#### - <a href="./assets/downloads/u9/u9_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
-
-#### - <a href="./assets/downloads/u9/u9_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>

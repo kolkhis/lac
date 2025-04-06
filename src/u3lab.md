@@ -5,10 +5,6 @@
     </p>
 </div>
 
-Linux LVM (Linux Volume Manager) is a system that allows for flexible
-management of disk storage. This lab will focus on concepts and skills
-to manage system partitions and disks.
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -19,6 +15,13 @@ to manage system partitions and disks.
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u3/u3_lab.pdf" target="_blank" download>📥 u3_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u3/u3_lab.docx" target="_blank" download>📥 u3_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -479,11 +482,3 @@ You are root/administrator on your machine, and you do not care about the data o
 Can you use the internet/man pages/or other documentation to take this raid down safely and clear those disks?
 
 Can you document your steps so that you or others could come back and do this process again?
-
-## Downloads
-
-#### - <a href="./assets/downloads/u3/u3_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
-
-#### - <a href="./assets/downloads/u3/u3_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
-
-#### - <a href="./assets/downloads/u3/u3_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>

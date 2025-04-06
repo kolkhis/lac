@@ -5,17 +5,27 @@
     </p>
 </div>
 
-Unit 5 covers basic Linux and systems security concepts.
+## Instructions
 
-As a system administrator, it's important to know about systems security and best
-practices so we can make sure everything is meeting certain standards.
-Our role is an integral part of the security pipeline.
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
 - [attack.mitre.org](https://attack.mitre.org/)
 - [Attack Vectors](https://www.cobalt.io/blog/defending-against-23-common-attack-vectors)
+
+#### Downloads
+
+The worksheet has been provided below. The document(s) can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u5/u5_worksheet.txt" target="_blank" download>📥 u5_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u5/u5_worksheet.docx" target="_blank" download>📥 u5_worksheet(`.docx`)</a>
 
 ### Unit 5 Recording
 
@@ -29,21 +39,6 @@ Our role is an integral part of the security pipeline.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the
-discussion thread by sharing your thoughts. Interaction with peers is also
-expected; the goal is to compare and contrast ideas to build a solid
-foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -67,6 +62,7 @@ Find a blog or article on the web that discusses the user environment in Linux. 
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1292189890716368928)
@@ -110,7 +106,3 @@ Planting Backdoors:
 
 1. What questions do you still have about this week?
 2. How are you going to use what you’ve learned in your current role?
- 
-## Downloads
-#### - <a href="./assets/downloads/u5/u5_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
-#### - <a href="./assets/downloads/u5/u5_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

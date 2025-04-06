@@ -5,10 +5,6 @@
     </p>
 </div>
 
-Unit 4 is all about analyzing systems that are running to detect and mitigate potential problems.  
-We dive into how to use logging tools like `sar`, `dmesg`, and `journald`, monitoring system resource usage in real-time, and how to work with running services/processes.  
-We also talk about the incident response lifecycle -- the methods in which incidents are handled.
-
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -20,6 +16,13 @@ We also talk about the incident response lifecycle -- the methods in which incid
 - Rocky 9.4+ – ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
+
+#### Downloads
+
+The lab has been provided for convenience below:
+
+- <a href="./assets/downloads/u4/u4_lab.pdf" target="_blank" download>📥 u4_lab(`.pdf`)</a>
+- <a href="./assets/downloads/u4/u4_lab.docx" target="_blank" download>📥 u4_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -396,11 +399,3 @@ There are a lot of uses for all of these tools above.
 Most of what I've shown here, I'd liken to showing you around a tool box.  
 Nothing here is terribly useful in itself, the value comes from knowing the tool exists and then being able to properly apply it to the problem at hand.  
 I hope you enjoyed this lab.
-
-## Downloads
-
-#### - <a href="./assets/downloads/u4/u4_lab.pdf" target="_blank" download>📥 Download (`.pdf`)</a>
-
-#### - <a href="./assets/downloads/u4/u4_lab.txt" target="_blank" download>📥 Download (`.txt`)</a>
-
-#### - <a href="./assets/downloads/u4/u4_lab.docx" target="_blank" download>📥 Download (`.docx`)</a>

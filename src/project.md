@@ -5,17 +5,13 @@
     </p>
 </div>
 
----
-
-Students aiming to complete the Linux Systems Administration course are expected to 
+Students aiming to complete the Linux Systems Administration course are expected to
 devise and complete a capstone project, to be turned in at the end of the course.
 
 The instructions, expectations, and deliverables for the project are listed on this
 page.
 
 ## Instructions
-
----
 
 1. Select a topic to research about a project that you are going to build.
 
@@ -55,8 +51,6 @@ page.
    - Let me (Scott) know and we’ll get you a slot in the last few weeks.
 
 ## Deliverables
-
----
 
 1. Build Documentation for your project that works in either the ProLUG labs, or in
    the Killercoda environment.

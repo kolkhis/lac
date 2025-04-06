@@ -5,16 +5,27 @@
     </p>
 </div>
 
-Understanding system reliability and high availability is crucial for modern
-enterprise Linux environments. This unit explores the fundamental concepts of system
-uptime, failure modes, and incident response, with a practical focus on implementing
-HA solutions using industry-standard tools and practices.
+## Instructions
+
+---
+
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
 ### Resources / Important Links
 
 - [Google SRE Book - Implementing SLOs](https://sre.google/workbook/implementing-slos/)
 - [AWS High Availability Architecture Guide](https://docs.aws.amazon.com/pdfs/whitepapers/latest/real-time-communication-on-aws/real-time-communication-on-aws.pdf)
 - [Red Hat High Availability Cluster Configuration](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_high_availability_clusters/index)
+
+#### Downloads
+
+The worksheet has been provided below. The document can be transposed to
+the desired format so long as the content is preserved. For example, the `.txt`
+could be transposed to a `.md` file.
+
+- <a href="./assets/downloads/u3/u3_worksheet.txt" target="_blank" download>📥 u3_worksheet(`.txt`)</a>
+- <a href="./assets/downloads/u3/u3_worksheet.docx" target="_blank" download>📥 u3_worksheet(`.docx`)</a>
 
 ### Unit 3 Recording
 
@@ -28,20 +39,6 @@ HA solutions using industry-standard tools and practices.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
-
-## Instructions
-
----
-
-A major aspect of this course is to intake, comprehend, and discuss the assigned
-topics. Take the time to fully absorb each topic and contribute to the discussion
-thread by sharing your thoughts. Interaction with peers is also expected; the goal is
-to compare and contrast ideas to build a solid foundation of knowledge.
-
-Fill out this worksheet as you watch the unit video.
-Discussion posts can be completed afterwards, answers to be posted in Discord.
-You must both answer the discussion questions and respond to another student's
-answers. This is only required if you want the certification.
 
 #### Discussion Post #1
 
@@ -63,6 +60,7 @@ Ask Google, find a blog, or ask an AI about high availability. (Here's one if yo
 Submit your input by following the link below.
 
 The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+
 </div>
 
 - [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
@@ -111,7 +109,3 @@ Mean Time Between Failures (MTBF):
 1. What questions do you still have about this week?
 
 2. How are you going to use what you've learned in your current role?
- 
-## Downloads
-#### - <a href="./assets/downloads/u3/u3_worksheet.txt" target="_blank" download>📥 Download (`.txt`)</a>
-#### - <a href="./assets/downloads/u3/u3_worksheet.docx" target="_blank" download>📥 Download (`.docx`)</a>

@@ -1,5 +1,7 @@
 # The Professional Linux Users Group (ProLUG) Systems Administration Course Book
 
+Current deployment: <https://professionallinuxusersgroup.github.io/lac/>
+
 ## Goals
 
 The overarching goal of this project is to provide a free, open source Systems Administration course
