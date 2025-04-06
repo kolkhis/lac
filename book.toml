@@ -10,5 +10,5 @@ default-theme = "navy"
 preferred-dark-theme = "navy"
 no-section-label = true
 git-repository-url = "https://github.com/ProfessionalLinuxUsersGroup/lac"
-edit-url-template = "https://github.com/ProfessionalLinuxUsersGroup/lac/edit/main/{path}"
+edit-url-template = "https://github.com/ProfessionalLinuxUsersGroup/lac/issues"
 git-repository-icon = "fa-github"
