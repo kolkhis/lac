@@ -73,7 +73,7 @@ It is recommended that you type these commands and do not copy and paste them. W
 # Creating empty files with touch
 touch fruits.txt
 
-ls –l fruits.txt
+ls -l fruits.txt
 # You will see that fruits.txt exists and is a 0 length (bytes) file
 
 -rw-r--r--. 1 root root 0 Jun 22 07:59 fruits.txt
@@ -82,9 +82,9 @@ ls –l fruits.txt
 # you’ve ever used tiered storage think about access times and how to keep data
 # hot/warm/cold. If you haven’t just look around for a bit.
 
-rm –rf fruits.txt
+rm -rf fruits.txt
 
-ls –l fruits.txt
+ls -l fruits.txt
 # You will see that fruits.txt is gone.
 ```
 
@@ -113,8 +113,8 @@ with >>, we never > over those types of files.
 ```bash
 # It is highly recommended the user read vimtutor. To get vimtutor follow
 # these steps:
-sudo –i
-yum –y install vim
+sudo -i
+yum -y install vim
 vimtutor
 
 # There are about 36 short labs to show a user how to get around inside of vi.
@@ -170,7 +170,7 @@ cat fruits.txt | grep APPLE
 # word apple at the beginning of the line.
 
 # If you can’t, here’s the the answer. Try it:
-cat fruits.txt | grep –i "^apple"
+cat fruits.txt | grep -i "^apple"
 ```
 
 Can you figure out why that worked? What do you think the ^ does?
@@ -190,7 +190,7 @@ cat fruits.txt
 # your file do anything to your original data? So let’s sort our data again
 # and figure out what this command does differently
 
-sort –k 2 fruits.txt
+sort -k 2 fruits.txt
 
 # You can of course man sort to figure it out, but –k refers to the “key” and
 # can be useful for sorting by a specific column
@@ -200,7 +200,7 @@ sort –k 2 fruits.txt
 # here’s an answer:
 
 sort fruits.txt > sort_by_alphabetical.txt
-sort –k 2 fruits.txt > sort_by_price.txt
+sort -k 2 fruits.txt > sort_by_price.txt
 
 # Cat both of those files out and verify their output
 ```
@@ -209,18 +209,18 @@ sort –k 2 fruits.txt > sort_by_price.txt
 
 ```bash
 # Consider the command
-ps –aux
+ps -aux
 
 # But that’s too long to probably see everything, so let’s use a command
 # to filter just the top few lines
-ps –aux | head
+ps -aux | head
 
 # So now you can see the actual fields (keys) across the top that we could sort by
 
 USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
 
 # So let’s say we wanted to sort by %MEM
-ps –aux | sort –k 4 –n –r | head -10
+ps -aux | sort -k 4 -n -r | head -10
 ```
 
 Read man to see why that works. Why do you suppose that it needs to be reversed
@@ -289,7 +289,7 @@ date
 date > datefile
 # redirects and creates a file datefile with the value
 
-date | tee –a datefile
+date | tee -a datefile
 # will come to screen, redirect to the file.
 ```
 
@@ -373,7 +373,7 @@ Permissions have to do with who can or cannot access (read), edit (write), or ex
 Permissions look like this.
 
 ```bash
-ls –l
+ls -l
 ```
 
 | Permission  | # of Links | UID Owner | Group Owner | Size (b) | Creation Month | Creation Day | Creation Time | File Name |

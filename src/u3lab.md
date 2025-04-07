@@ -44,7 +44,7 @@ Echo “this is a string of text” >> somefile
 # Repeat 3 times
 cat somefile
 # How many lines are there?
-cheat with `cat somefile | wc –l`
+cheat with `cat somefile | wc -l`
 echo “this is our other test text” >> somefile
 # Repeat 3 times
 cat somefile | nl

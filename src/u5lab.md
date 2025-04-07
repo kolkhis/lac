@@ -41,7 +41,7 @@ Exercises (Warmup to quickly run through your system and practice commands)
 6. `cat /etc/passwd | tail -5 | awk -F : ‘{print $1, $3, $7}'`
    - What did that do and what do each of the `$#` represent?
    - Can you give the 2nd, 5th, and 6th fields?
-7. `cat /etc/passwd | tail -5 | awk –F : ‘{print $NF}'`
+7. `cat /etc/passwd | tail -5 | awk -F : ‘{print $NF}'`
    - What does this `$NF` mean? Why might this be useful to us as administrators?
 8. `alias`
    - Look at the things you have aliased.
@@ -100,7 +100,7 @@ how they secure the system. The four files are `/etc/passwd`, `/etc/group`, `/et
    Check the file permissions:
 
    ```bash
-   ls –l /etc/passwd
+   ls -l /etc/passwd
    ```
 
    Do this for each file to see how their permissions are set.
@@ -156,7 +156,7 @@ work
 
    ```bash
    tail -5 /etc/passwd
-   tail –5 /etc/shadow
+   tail -5 /etc/shadow
    ```
 
    What `UID` and `GID` were each of these given? Do they match up?
@@ -242,7 +242,7 @@ work
    This isn't required, but can save you headache in the future.
 
    ```bash
-   groupadd –g 60001 project
+   groupadd -g 60001 project
    tail -5 /etc/group
    ```
 
@@ -267,8 +267,8 @@ work
    So maybe now we need to move our users into that group.
 
    ```bash
-   usermod –G project user4
-   tail –f /etc/group # Should see user4 in the group
+   usermod -G project user4
+   tail -f /etc/group # Should see user4 in the group
    ```
 
    But, maybe we want to add more users and we want to just put them in there:
@@ -299,10 +299,10 @@ work
 
    ```bash
    mkdir /project
-   ls –ld /project
+   ls -ld /project
    chown root:project /project
    cmod 775 /project
-   ls –ld /project
+   ls -ld /project
    ```
 
    If you do this, you now have a directory `/project` and you've changed the group ownership to `/project`.
@@ -350,7 +350,7 @@ Permissions have to do with who can or cannot access (read), edit (write), or ex
 Permissions look like this:
 
 ```bash
-ls –l
+ls -l
 ```
 
 |  Permission   | # of Links | UID Owner |  Group Owner   | Size (b) | Creation Month | Creation Day | Creation Time | Name of File |

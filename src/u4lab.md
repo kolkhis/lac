@@ -38,11 +38,11 @@ The lab has been provided for convenience below:
 6. `cd unit4`
 7. `ps`
    - Read `man ps`
-8. `ps –ef`
+8. `ps -ef`
    - What does this show differently?
-9. `ps –ef | grep –i root`
+9. `ps -ef | grep -i root`
    - What is the PID of the 4th line?
-10. `ps –ef | grep –i root | wc –l`
+10. `ps -ef | grep -i root | wc -l`
     - What does this show you and why might it be useful?
 11. `top`
     - Use `q` to exit.
@@ -53,7 +53,7 @@ The lab has been provided for convenience below:
 1. Real quick check for a package that is useful.
 
    ```bash
-   rpm –qa | grep –i iostat #should find nothing
+   rpm -qa | grep -i iostat #should find nothing
    ```
 
 2. Let's find what provides iostat by looking in the YUM (we'll explore more in later lab)
@@ -67,7 +67,7 @@ The lab has been provided for convenience below:
 3. Let's check to see if we have it
 
    ```bash
-   rpm –qa | grep –i sysstat
+   rpm -qa | grep -i sysstat
    ```
 
 4. If you don't, lets install it
@@ -78,14 +78,14 @@ The lab has been provided for convenience below:
 
 5. Re-check to verify we have it now
    ```bash
-   rpm –qa | grep –I sysstat
-   rpm –qi sysstat<version>
+   rpm -qa | grep -I sysstat
+   rpm -qi sysstat<version>
    iostat # We'll look at this more in a bit
    ```
    While we're working with packages, make sure that Vim is on your system.  
    This is the same procedure as above.
    ```bash
-   rpm –qa | grep –i vim  # Check if vim is installed
+   rpm -qa | grep -i vim  # Check if vim is installed
    # If it's there, good.
    dnf install vim
    # If it's not, install it so you can use vimtutor later (if you need help with vi commands)
@@ -101,7 +101,7 @@ The lab has been provided for convenience below:
    cat /etc/*release
    uname
    uname -a
-   uname –r
+   uname -r
    ```
 
    Run `man uname` to see what those options mean if you don't recognize the values
@@ -113,7 +113,7 @@ The lab has been provided for convenience below:
    What is your kernel number? Highlight it (copy in putty)
 
    ```bash
-   rpm –qi <kernel from earlier>
+   rpm -qi <kernel from earlier>
    ```
 
    What does this tell you about your kernel?
@@ -144,9 +144,9 @@ pvs # What system are we running if we have physical volumes?
 
 - Check some quick disk statistics
   ```bash
-  iostat –d
-  iostat –d 2   # Wait for a while, then use crtl + c to break. What did this do? Try changing this to a different number.
-  iostat –d 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
+  iostat -d
+  iostat -d 2   # Wait for a while, then use crtl + c to break. What did this do? Try changing this to a different number.
+  iostat -d 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
   ```
 
 3. Check the amount of RAM
@@ -154,7 +154,7 @@ pvs # What system are we running if we have physical volumes?
    ```bash
    cat /proc/meminfo
    free
-   free –m
+   free -m
    ```
 
    - What do each of these commands show you? How are they useful?
@@ -167,15 +167,15 @@ pvs # What system are we running if we have physical volumes?
    Look at the flags. Sometimes when compiling these are important to know. This is how
    you check what execution flags your processor works with.
    ```bash
-   cat /proc/cpuinfo | grep proc | wc –l
+   cat /proc/cpuinfo | grep proc | wc -l
    ```
    - Does this command accurately count the processors?
    - Check some quick processor statistics
 
 ```bash
-iostat –c
-iostat –c 2 # Wait for a while, then use Ctrl+C to break. What did this do? Try changing this to a different number.
-iostat –c 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
+iostat -c
+iostat -c 2 # Wait for a while, then use Ctrl+C to break. What did this do? Try changing this to a different number.
+iostat -c 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
 ```
 
 Does this look familiar to what we did earlier with `iostat`?
@@ -214,9 +214,9 @@ Does this look familiar to what we did earlier with `iostat`?
 7. Check running processes and services
 
    ```bash
-   ps –aux | more
-   ps –ef | more
-   ps –ef | wc –l
+   ps -aux | more
+   ps -ef | more
+   ps -ef | wc -l
    ```
 
    - Try to use what you've learned to see all the processes owned by your user
@@ -229,7 +229,7 @@ Does this look familiar to what we did earlier with `iostat`?
      ```
    - Check memory for the last day
      ```bash
-     sar –r | more
+     sar -r | more
      ```
 
 Sar is a tool that shows the 10 minute weighted average of the system for the last day.
@@ -249,8 +249,8 @@ You may have guessed that sar runs almost exactly like `iostat`.
   sar 2  # Ctrl+C to break
   sar 2 5
   # or
-  sar –r 2
-  sar –r 2 5
+  sar -r 2
+  sar -r 2 5
   ```
 
 - Check sar logs for previous daily usage
@@ -258,8 +258,8 @@ You may have guessed that sar runs almost exactly like `iostat`.
   cd /var/log/sa/
   ls
   # Sar logfiles will look like: sa01 sa02 sa03 sa04 sa05 sar01 sar02 sar03 sar04
-  sar –f sa03 | head
-  sar –r –f sa03 | head #should output just the beginning of 3 July (whatever month you're in).
+  sar -f sa03 | head
+  sar -r -f sa03 | head #should output just the beginning of 3 July (whatever month you're in).
   ```
   Most Sar data is kept for just one month but is very configurable.
   Read `man sar` for more info.
@@ -299,8 +299,8 @@ You could do something like this:
 - Let's verify that file is as long as we expect it to be:
 
   ```bash
-  ls –l /tmp/sar_data*
-  cat /tmp/sar_data_<yourhostname> | wc –l
+  ls -l /tmp/sar_data*
+  cat /tmp/sar_data_<yourhostname> | wc -l
   ```
 
 - Is it what you expected? You can also visually check it a number of ways
@@ -314,7 +314,7 @@ You could do something like this:
 Your system is running the cron daemon. You can check with:
 
 ```bash
-ps –ef | grep –i cron
+ps -ef | grep -i cron
 systemctl status crond
 ```
 
