@@ -57,8 +57,7 @@ ls
 # Can you see your newest files? Why or why not? (man ls)
 # What was the command to let you see those hidden files?
 
-l
-s –l
+ls -l
 # What do you know about this long listing? Think about 10 things this can show you.
 # Did it show you all the files or are some missing?
 ```
@@ -80,7 +79,7 @@ cat /etc/*release
 
 uname
 uname -a
-uname –r
+uname -r
 
 # man uname to see what those options mean if you don’t recognize the values
 ```
@@ -90,7 +89,7 @@ uname –r
 ```bash
 cat /proc/meminfo
 free
-free –m
+free -m
 
 # What do each of these commands show you? How are they useful?
 ```
@@ -101,7 +100,7 @@ free –m
 cat /proc/cpuinfo
 # What type of processors do you have? How many are there? (counting starts at 0)
 
-cat /proc/cpuinfo | grep proc | wc –l
+cat /proc/cpuinfo | grep proc | wc -l
 # Does this command accurately count the processors?
 ```
 
@@ -112,11 +111,11 @@ df
 # But df is barely readable, so find the option that makes it more readable `man df`
 
 df -h
-df -h | grep –i var
+df -h | grep -i var
 # What does this show, or search for? Can you invert this search? (hint `man grep`
 # look for invert or google “inverting grep’s output”)
 
-df –h | grep –i sd
+df -h | grep -i sd
 # This one is a little harder, what does this one show? Not just the line, what are
 # we checking for? (hint if you need it, google “what is /dev/sda in linux”)
 
@@ -125,25 +124,25 @@ mount
 # you to verify that the mount is there for /home on a system. Can you check that
 # quickly with one command?
 
-mount | grep –i home
+mount | grep -i home
 #This works, but there is a slight note to add here. Just because something isn’t
 # individually mounted doesn’t mean it doesn’t exist. It just means it’s not part of
 # it’s own mounted filesystem.
 
-mount | grep –i /home/xgqa6cha
+mount | grep -i /home/xgqa6cha
 # will produce no output
 
-df –h /home/xgqa6cha
+df -h /home/xgqa6cha
 # will show you that my home filesystem falls under /home.
 
 cd ~; pwd; df -h .
 # This command moves you to your home directory, prints out that directory,
 # and then shows you what partition your home directory is on.
 
-du –sh .
+du -sh .
 # will show you space usage of just your directory
 
-try `du –h .` as well to see how that ouput differs
+try `du -h .` as well to see how that ouput differs
 # read `man du` to learn more about your options.
 ```
 
@@ -179,7 +178,7 @@ whoami
 printenv
 # This scrolls by way too fast, how would you search for your home?
 
-printenv | grep –i home
+printenv | grep -i home
 whoami
 id
 echo $SHELL
@@ -188,18 +187,18 @@ echo $SHELL
 #### Check running processes and services:
 
 ```bash
-ps –aux | more
-ps –ef | more
-ps –ef | wc –l
+ps -aux | more
+ps -ef | more
+ps -ef | wc -l
 ```
 
 #### Check memory usage and what is using the memory:
 
 ```bash
 # Run each of these individually for understanding before we look at part b.
-free –m
-free –m | egrep “Mem|Swap”
-free –m| egrep “Mem|Swap” | awk ‘{print $1, $2, $3}’
+free -m
+free -m | egrep “Mem|Swap”
+free -m| egrep “Mem|Swap” | awk ‘{print $1, $2, $3}’
 free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 / $2) * 100"%"}'
 
 # Taking this apart a bit:

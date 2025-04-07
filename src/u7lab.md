@@ -75,7 +75,7 @@ examples.
 
 ```bash
 # Check to see if you have bc tool.
-rpm –q bc
+rpm -q bc
 
 #Install it if you need to
 dnf install bc
@@ -123,7 +123,7 @@ rpm -qi systemd
 rpm -q systemd
 
 # query all packages on the system (is better used with | more or | grep)
-rpm –qa
+rpm -qa
 
 #for example shows all kernels and kernel tools
 rpm -qa | grep -i kernel
@@ -260,7 +260,7 @@ similar environments, so you go to install it on their system for them.
 
 ```bash
 # See if we already have a version.
-rpm –qa mariadb
+rpm -qa mariadb
 
 # See if dnf knows about it
 dnf search mariadb
@@ -295,11 +295,11 @@ dnf remove mariadb
 # hit “N”
 
 # this removes mariadb from your system
-dnf –y remove mariadb
+dnf -y remove mariadb
 
 # But did this remove those dependencies from earlier?
-rpm –q {dependency}
-rpm –qi {dependency}
+rpm -q {dependency}
+rpm -qi {dependency}
 
 # How are you going to remove that if it’s still there?
 # Checking where something came from. What package provides something in your system

@@ -44,7 +44,7 @@ Review how to use vi, if you have a problem getting out or saving your file or u
 
 ```bash
 # Let us locate and inspect the GNU C Compiler Package
-rpm –qa | grep –i gcc
+rpm -qa | grep -i gcc
 dnf whatprovides gcc
 dnf search gcc
 Check out all the options of different compilers
@@ -93,9 +93,9 @@ gcc a.c
 #If there is an error, does it still work?
 
 #Alternatively, and more correctly, use this:
-gcc –o firstprogram a.c
+gcc -o firstprogram a.c
 #Which will create an executable file called first program
-ls –salh
+ls -salh
 #Will show you all your files. Note how big those compiled programs are.
 #Execute your programs
 ./a.out
