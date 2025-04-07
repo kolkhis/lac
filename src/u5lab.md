@@ -14,7 +14,7 @@
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
@@ -212,7 +212,7 @@ work
    Pick an existing user and verify they don't have that command
 
    ```bash
-   su – user1
+   su - user1
    dinosaur # Command not found
    exit
    ```
@@ -224,7 +224,7 @@ work
    mkdir old_dot_files
    mv .* old_dot_files          # Ignore the errors, those are directories
    cp /etc/skel/.* /home/user1  # Ignore the errors, those are directories
-   su – user1
+   su - user1
    dinosaur # Should 'roar' now because the .bashrc file is new from /etc/skel
    ```
 
@@ -311,11 +311,11 @@ work
    Check permissions with users:
 
    ```bash
-   su – user1
+   su - user1
    cd /project
    touch user1
    exit
-   su – user3
+   su - user3
    cd /project
    touch user3
    exit
@@ -331,11 +331,11 @@ work
    Check permissions with users:
 
    ```bash
-   su – user1
+   su - user1
    cd /project
    touch user1.1
    exit
-   su – user3
+   su - user3
    cd /project # Should break right about here
    touch user3
    exit

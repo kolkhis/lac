@@ -16,17 +16,17 @@ Unit 3 Discussion Post 2:
 
 
 Definitions/Terminology
-Five 9’s –
-Single point of failure –
-Key Performance Indicators –
-SLI –
-SLO –
-SLA –
-Active-Standby –
-Active-Active –
-MTTD – 
-MTTR –
-MTBF –
+Five 9’s -
+Single point of failure -
+Key Performance Indicators -
+SLI -
+SLO -
+SLA -
+Active-Standby -
+Active-Active -
+MTTD - 
+MTTR -
+MTBF -
 
 
 Notes During Lecture/Class:

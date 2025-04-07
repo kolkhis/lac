@@ -12,7 +12,7 @@
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
@@ -151,7 +151,7 @@ cat fruits.txt
 
 Look at what happened in each of these scenarios. Can you explain the
 difference between cp and mv? Read the manuals for cp and mv to see if
-there’s anything that may be useful to you. For most of us –r is tremendously
+there’s anything that may be useful to you. For most of us -r is tremendously
 useful option for moving directories.
 
 #### Searching/filtering through files:
@@ -192,7 +192,7 @@ cat fruits.txt
 
 sort -k 2 fruits.txt
 
-# You can of course man sort to figure it out, but –k refers to the “key” and
+# You can of course man sort to figure it out, but -k refers to the “key” and
 # can be useful for sorting by a specific column
 
 # But, if we cat fruits.txt we see we didn’t save anything we did. What if we
@@ -225,7 +225,7 @@ ps -aux | sort -k 4 -n -r | head -10
 
 Read man to see why that works. Why do you suppose that it needs to be reversed
 to have the highest numbers at the top? What is the difference, if you can see any,
-between using the –n or not using it? You may have to use head -40 to figure that
+between using the -n or not using it? You may have to use head -40 to figure that
 out, depending on your processes running.
 
 Read man ps to figure out what other things you can see or sort by from the ps command.
@@ -244,7 +244,7 @@ cat fruits.txt | grep apple
 # pass through the filter of grep. We could continually add to these and make
 # them longer and longer
 
-cat fruits.txt | grep apple | sort | nl | awk ‘{print $2}’ | sort –r
+cat fruits.txt | grep apple | sort | nl | awk ‘{print $2}’ | sort -r
 pineapples
 apples
 cat fruits.txt | grep apple | sort | nl | awk '{print $3}' | sort -r
@@ -293,7 +293,7 @@ date | tee -a datefile
 # will come to screen, redirect to the file.
 ```
 
-Do a quick man on tee to see what the –a does. Try it without that value. Can you see any other useful options in there for tee?
+Do a quick man on tee to see what the -a does. Try it without that value. Can you see any other useful options in there for tee?
 
 #### Ignoring pesky errors or tossing out unwanted output:
 
@@ -319,7 +319,7 @@ cat error.log
 
 In one of our later labs we’re going to look at stressing our systems out. For this, we’ll use a command that basically just causes the system to burn cpu cycles creating random numbers, zipping up the output and then throwing it all away. Here’s a preview of that command so you can play with it.
 
-May have to yum –y install bzip2 for this next one to work.
+May have to yum -y install bzip2 for this next one to work.
 
 ```bash
 time dd if=/dev/urandom bs=1024k count=20 | bzip2 -9 >> /dev/null

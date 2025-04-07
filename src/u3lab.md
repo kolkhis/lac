@@ -12,7 +12,7 @@
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
@@ -58,7 +58,7 @@ If you want to preserve positional lines in file (know how much you’ve cut
 out when you grep something, or generally be able to find it in the unfiltered
 file for context, always | nl | before your grep
 
-#### Pre Lab – Disk Speed tests:
+#### Pre Lab - Disk Speed tests:
 
 When using the ProLUG lab environment, you should always check that there
 are no other users on the system `w` or `who`.
@@ -80,7 +80,7 @@ into or out of your filesystems as you create them. Different types of raid and
 different disk setups will give different speed of read and write. This is a simple
 way to test them. Use these throughout the lab in each mount for fun and understanding.
 
-#### Write tests (saving off write data – rename /tmp/file each time):
+#### Write tests (saving off write data - rename /tmp/file each time):
 
 ```bash
 # Check /dev/xvda for a filesystem
@@ -244,7 +244,7 @@ Writing superblocks and filesystem accounting information: done
 [root@ROCKY1 ~]mount -a
 ```
 
-If this command works, there will be no output. We use the df –h in the next
+If this command works, there will be no output. We use the df -h in the next
 command to verify the new filesystem exists. The use of mount -a and not
 manually mounting the filesystem from the command line is an old administration
 trick I picked up over the years.
@@ -459,7 +459,7 @@ naming =version 2 bsize=4096 ascii-ci=0 ftype=1
 log =internal log bsize=4096 blocks=2560, version=2
 = sectsz=512 sunit=8 blks, lazy-count=1
 realtime =none extsz=4096 blocks=0, rtextents=0
-[root@ROCKY1 ~]mount –a
+[root@ROCKY1 ~]mount -a
 ```
 
 Good place to speed test and save off your data

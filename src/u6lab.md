@@ -13,7 +13,7 @@
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
@@ -498,4 +498,4 @@ We can be even more granular with our ports and services. We can block or allow 
 
 So now take this and set up some firewalls on the interfaces of your system.
 Change the default ports and services assigned to your different zones (at least 3 zones)
-Read the `man firewall-cmd` command or `firewall-cmd –help` to see if there are any other userful things you should know.
+Read the `man firewall-cmd` command or `firewall-cmd -help` to see if there are any other userful things you should know.

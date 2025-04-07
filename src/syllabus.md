@@ -106,22 +106,22 @@ Class will meet over weekend (Brown bag) sessions. 1 time per week, for 16 weeks
 
 | Session |                                 Topic                                 |
 | :-----: | :-------------------------------------------------------------------: |
-|    1    |        Get Linux Lab Access – CLI Primer – vi/vim/nano basics         |
-|    2    |          Essential Tools – Files, Redirects, and Permissions          |
-|    3    |             Storage – Logical Volume Management and RAID              |
+|    1    |        Get Linux Lab Access - CLI Primer - vi/vim/nano basics         |
+|    2    |          Essential Tools - Files, Redirects, and Permissions          |
+|    3    |             Storage - Logical Volume Management and RAID              |
 |    4    |                       Operating Running Systems                       |
 |    5    |                  Security - Manage users and groups                   |
-|    6    |                       Security – Firewalld/UFW                        |
-|    7    |  Security – Patching the system/ Package Management – yum, dnf, rpm   |
-|    8    |                       Scripting – System checks                       |
+|    6    |                       Security - Firewalld/UFW                        |
+|    7    |  Security - Patching the system/ Package Management - yum, dnf, rpm   |
+|    8    |                       Scripting - System checks                       |
 |    9    |                     Docker - K3s Setup and basics                     |
 |   10    |                     K3s advanced w/ microservices                     |
 |   11    |                          Monitoring systems                           |
-|   12    |       Engineering – System baselining/benchmarking and testing        |
+|   12    |       Engineering - System baselining/benchmarking and testing        |
 |   13    |                           System Hardening                            |
 |   14    |                          Ansible Automation                           |
 |   15    |                      Engineering Troubleshooting                      |
-|   16    | Incident Response – Actual incident callout and information gathering |
+|   16    | Incident Response - Actual incident callout and information gathering |
 
 #### Suggested Learning Approach
 

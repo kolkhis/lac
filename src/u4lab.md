@@ -13,7 +13,7 @@
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
@@ -332,8 +332,8 @@ ls -ld /etc/cron*
 ```
 
 These should be self-explanatory in their use.
-If you want to see if the user you are running has a crontab, use the command `crontab –l`.
-If you want to edit (using your default editor, probably `vi`), use `crontab –e`.  
+If you want to see if the user you are running has a crontab, use the command `crontab -l`.
+If you want to edit (using your default editor, probably `vi`), use `crontab -e`.  
 We'll make a quick crontab entry and I'll point you [here](https://en.wikipedia.org/wiki/Cron) if you're interested in learning more.
 
 Crontab format looks like this picture:
@@ -351,14 +351,14 @@ Crontab format looks like this picture:
 
 Let's do these steps.
 
-1. `crontab –e`
-2. Add this line (using vi commands – Revisit `vimtutor` if you need help with them)
+1. `crontab -e`
+2. Add this line (using vi commands - Revisit `vimtutor` if you need help with them)
 
 ```bash
 * * * * * echo 'this is my cronjob running at' `date` | wall
 ```
 
-3. Verify with `crontab –l`.
+3. Verify with `crontab -l`.
 4. Wait to see if it runs and echos out to wall.
 5. `cat /var/spool/cron/root` to see that it is actually stored where I said it was.
 6. This will quickly become very annoying, so I recommend removing that line, or commenting it
