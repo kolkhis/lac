@@ -17,7 +17,7 @@ The content is version controlled with Git and stored here: <https://github.com/
 
 Furthermore, the book has been built with mdbook for ease of navigation. Be sure to try the search functionality.
 
-Course Description:
+**Course Description:**
 
 This course addresses how the Linux systems work for administration level tasks inside a
 corporate environment. This course will explore everything from the administration of a
