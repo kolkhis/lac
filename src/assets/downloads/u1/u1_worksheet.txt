@@ -15,11 +15,11 @@ Unit 1 Discussion Post 2:
 3.	What don't you know how to do in the posting?
 4.	What are you doing to close the gap? What can you do to remedy the difference?
 Definitions/Terminology
-Kernel –
-OS Version – 
-Kernel Args – 
-Modules –
-Mount Points –
+Kernel -
+OS Version - 
+Kernel Args - 
+Modules -
+Mount Points -
 Text Editor - 
 
 Notes During Lecture/Class:

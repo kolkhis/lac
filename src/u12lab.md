@@ -14,7 +14,7 @@
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
@@ -271,9 +271,9 @@ your chance to test and record these things.
 | SAR average load (past week)     |          |
 | IOSTAT test (10 min)             |          |
 | IOSTAT test (2s x 10 samples)    |          |
-| Disk write – small files         |          |
-| Disk write – small files (retry) |          |
-| Disk write – large files         |          |
+| Disk write - small files         |          |
+| Disk write - small files (retry) |          |
+| Disk write - large files         |          |
 | Processor benchmark              |          |
 
 **You may baseline more than once, more data is rarely bad.**
@@ -312,9 +312,9 @@ Put command you're using for load here:
 | SAR average load (during test)   |          |
 | IOSTAT test (10 min)             |          |
 | IOSTAT test (2s x 10 samples)    |          |
-| Disk write – small files         |          |
-| Disk write – small files (retry) |          |
-| Disk write – large files         |          |
+| Disk write - small files         |          |
+| Disk write - small files (retry) |          |
+| Disk write - large files         |          |
 | Processor benchmark              |          |
 
 ---
@@ -328,9 +328,9 @@ Put command you're using for load here:
 | SAR average load (during test)   |          |
 | IOSTAT test (10 min)             |          |
 | IOSTAT test (2s x 10 samples)    |          |
-| Disk write – small files         |          |
-| Disk write – small files (retry) |          |
-| Disk write – large files         |          |
+| Disk write - small files         |          |
+| Disk write - small files (retry) |          |
+| Disk write - large files         |          |
 | Processor benchmark              |          |
 
 **Continue copying and pasting tables as needed.**

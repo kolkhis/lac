@@ -20,7 +20,7 @@
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
@@ -119,9 +119,9 @@ After all that pre-lab discussion, we won’t be using `gcc` today—or compilin
 
 There are plenty of resources available to learn scripting, but the key to improving is daily practice. If you’re serious about getting better, I recommend studying additional concepts over time. However, to get started, you only need to understand three fundamental ideas:
 
-1. **Input and Output** – How to receive input and where to send the output.
-2. **Conditionals** – How to test and evaluate conditions.
-3. **Loops** – How to repeat actions efficiently.
+1. **Input and Output** - How to receive input and where to send the output.
+2. **Conditionals** - How to test and evaluate conditions.
+3. **Loops** - How to repeat actions efficiently.
 
 ### 2.2 Getting Input
 
@@ -374,7 +374,7 @@ Administrators often find themselves looking at data and needing to refresh that
 
 `while true; do date; free -m; uptime; sleep 2; done`
 
-This will run until you break it with `CTRL + C`. This will loop over the date, `free –m`, `uptime`, and `sleep 2` commands until the condition evaluates to false, which it will never do.
+This will run until you break it with `CTRL + C`. This will loop over the date, `free -m`, `uptime`, and `sleep 2` commands until the condition evaluates to false, which it will never do.
 
 Let’s run something where we actually have a counter and see what that output is
 

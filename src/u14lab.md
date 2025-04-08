@@ -8,12 +8,12 @@
 ### Resources / Important Links
 
 - [Ansible Documentation](https://docs.ansible.com/)
-- [Killercoda – Ansible Labs](https://killercoda.com/het-tanis/course/Ansible-Labs)
+- [Killercoda - Ansible Labs](https://killercoda.com/het-tanis/course/Ansible-Labs)
 - [HPC_Deploy Repo](https://github.com/het-tanis/HPC_Deploy.git)
 
 ### Required Materials
 
-- Rocky 9.4+ – ProLUG Lab
+- Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
 
