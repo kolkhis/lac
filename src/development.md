@@ -60,7 +60,7 @@ environments if things go awry.
 <https://github.com/ProfessionalLinuxUsersGroup/lac/blob/main/src/assets/deploy/ansible-playbook.yml>
 
 To use this playbook, your machine(s)/containers must be configured correctly for Ansible.
-If you don't know the requirements to administer and Ansible machine, documentation
+If you don't know the requirements to administer a machine via Ansible documentation
 has been provided below.
 
 <div class = warning>
@@ -79,7 +79,7 @@ Export and execute this script to your machine/container.
 
 <div class=warning>
 
-Dependencies can total over ~500MB compressed and 2GB unpackaged or more.
+Dependencies can total over ~500MB compressed and 1-2GB unpackaged or more.
 
 Debian containers/machines will require building many of these packages from
 source or adding additional repositories as Debian has a far slower package
