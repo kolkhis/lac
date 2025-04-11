@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -47,3 +54,9 @@ In the end monitoring is more an art than engineering. Sure, we can design all t
 the things, but there’s no equation on what is the one right answer for any of this. You have to spend
 time with the systems, know what is important and what is an indicator of problems. Then, you have to
 consider your audience and how to best show them what they need to see.
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>

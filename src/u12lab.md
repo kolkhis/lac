@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [SAR Documentation](https://man7.org/linux/man-pages/man1/sar.1.html)
@@ -340,3 +347,9 @@ Put command you're using for load here:
 - How did the system perform under load compared to your baseline?
 - What would you report to your management team regarding the new agent’s impact?
 - How would you adjust your test plan to capture additional performance metrics?
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>
