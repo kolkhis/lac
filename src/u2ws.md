@@ -42,7 +42,7 @@ could be transposed to a `.md` file.
 
 Think about how week 1 went for you.
 
-1. Did you get everything you needed to done?
+1. Do you understand everything that needs to be done?
 
 2. Do you need to allocate more time to the course, and if so, how do you plan to do it?
 
