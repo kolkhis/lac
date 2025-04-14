@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -482,3 +489,9 @@ You are root/administrator on your machine, and you do not care about the data o
 Can you use the internet/man pages/or other documentation to take this raid down safely and clear those disks?
 
 Can you document your steps so that you or others could come back and do this process again?
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>

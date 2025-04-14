@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -499,3 +506,9 @@ We can be even more granular with our ports and services. We can block or allow 
 So now take this and set up some firewalls on the interfaces of your system.
 Change the default ports and services assigned to your different zones (at least 3 zones)
 Read the `man firewall-cmd` command or `firewall-cmd -help` to see if there are any other userful things you should know.
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>

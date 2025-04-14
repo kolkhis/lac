@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -199,3 +206,9 @@ There are a lot of ways to use these tools. There are a lot of ways you will sup
 At the end of the day you're a Linux System Administrator, you're expected to understand
 everything that goes on in your system. To this end, we want to know the build process and
 run processes so we can help the engineers we support keep working in a Linux environment.
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>

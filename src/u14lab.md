@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [Ansible Documentation](https://docs.ansible.com/)
@@ -121,3 +128,9 @@ Then reflect:
 - What do you see in here?
 - What do you need to learn more about to deploy some of these tools?
 - Can you execute some of these? Why or why not?
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>

@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -399,3 +406,9 @@ There are a lot of uses for all of these tools above.
 Most of what I've shown here, I'd liken to showing you around a tool box.  
 Nothing here is terribly useful in itself, the value comes from knowing the tool exists and then being able to properly apply it to the problem at hand.  
 I hope you enjoyed this lab.
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>

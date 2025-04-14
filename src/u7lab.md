@@ -5,6 +5,13 @@
     </p>
 </div>
 
+<blockquote>
+
+If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
+the machine from the command line so that other students will have the intended environment.
+
+</blockquote>
+
 ### Resources / Important Links
 
 - [Killercoda Labs](https://killercoda.com/learn)
@@ -368,3 +375,9 @@ If you install this you’re going to have developer tools installed on the serv
 but they won’t be configured. How would you figure out what tools and versions were
 just installed? How might you report this for your own documentation and to a
 security team that keeps your security baselines?
+
+<blockquote>
+
+Be sure to `reboot` the lab machine from the command line when you are done.
+
+</blockquote>
