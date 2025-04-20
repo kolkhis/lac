@@ -16,7 +16,7 @@ the machine from the command line so that other students will have the intended 
 
 - [Killercoda Labs](https://killercoda.com/learn)
 - [Cron Wiki page](https://en.wikipedia.org/wiki/Cron)
-- [tldp.org's cron guide](http://www.tldp.org/LDP/lame/LAME/linux-admin-made-easy/using-cron.html) for more information.
+- [tldp.org's cron guide](http://www.tldp.org/LDP/lame/LAME/linux-admin-made-easy/using-cron.html)
 
 ### Required Materials
 
@@ -241,14 +241,13 @@ Does this look familiar to what we did earlier with `iostat`?
 
 Sar is a tool that shows the 10 minute weighted average of the system for the last day.
 
-Sar is tremendously useful for showing long periods of activity and system load.  
-It is exactly the opposite in it's usefulness of spikes or high traffic loads.  
-In a 20 minute period of 100% usage a system may just show to averages times of 50% and 50%, never
-actually giving accurate info.  
-Problems typically need to be proactively tracked by other means, or with scripts, as we will see below.  
-Sar can also be run interactively. Run the command `yum whatprovides sar` and you will
-see that it is the `sysstat` package.  
-You may have guessed that sar runs almost exactly like `iostat`.
+Sar is tremendously useful for showing long periods of activity and system load. It is exactly the opposite
+in it's usefulness of spikes or high traffic loads. In a 20 minute period of 100% usage a system may just
+show to averages times of 50% and 50%, never actually giving accurate info.
+
+Problems typically need to be proactively tracked by other means, or with scripts, as we will see below.
+Sar can also be run interactively. Run the command `yum whatprovides sar` and you will see that it is the
+`sysstat` package. You may have guessed that sar runs almost exactly like `iostat`.
 
 - Try the same commands from earlier, but with their interactive information:
 
@@ -271,8 +270,9 @@ You may have guessed that sar runs almost exactly like `iostat`.
   Most Sar data is kept for just one month but is very configurable.
   Read `man sar` for more info.
 
-Sar logs are not kept in a readable format, they are binary.
-So if you needed to dump all the sar logs from a server, you'd have to output it to a file that is readable.
+Sar logs are not kept in a readable format, they are binary. So if you needed to dump all the sar logs
+from a server, you'd have to output it to a file that is readable.
+
 You could do something like this:
 
 - Gather information and move to the right location
@@ -326,9 +326,8 @@ systemctl status crond
 ```
 
 This is a tool that wakes up between the 1st and 5th second of every minute and checks to see if it has
-any tasks it needs to run.  
-It checks in a few places in the system for these tasks.  
-It can either read from a crontab or it can execute tasks from files found in the following locations.
+any tasks it needs to run. It checks in a few places in the system for these tasks. It can either read from
+a crontab or it can execute tasks from files found in the following locations.
 
 `/var/spool/cron` is one location you can `ls` to check if there are any crontabs on your system.
 
@@ -338,10 +337,11 @@ The other locations are directories found under:
 ls -ld /etc/cron*
 ```
 
-These should be self-explanatory in their use.
-If you want to see if the user you are running has a crontab, use the command `crontab -l`.
-If you want to edit (using your default editor, probably `vi`), use `crontab -e`.  
-We'll make a quick crontab entry and I'll point you [here](https://en.wikipedia.org/wiki/Cron) if you're interested in learning more.
+These should be self-explanatory in their use. If you want to see if the user you are running has a crontab,
+use the command `crontab -l`. If you want to edit (using your default editor, probably `vi`), use `crontab -e`.
+
+We'll make a quick crontab entry and I'll point you [here](https://en.wikipedia.org/wiki/Cron) if you're interested
+in learning more.
 
 Crontab format looks like this picture:
 
@@ -371,8 +371,9 @@ Let's do these steps.
 6. This will quickly become very annoying, so I recommend removing that line, or commenting it
    out (`#`) from that file.
 
-We can change all kinds of things about this to execute at different times.
-The one above, we executed every minute through all hours, of every day, of every month.
+We can change all kinds of things about this to execute at different times. The one above, we executed every
+minute through all hours, of every day, of every month.
+
 We could also have done some other things:
 
 - Every 2 minutes (divisible by any number you need):
@@ -401,10 +402,10 @@ We could also have done some other things:
 
 There's a lot there to explore, I recommend looking into [the Cron wiki](https://en.wikipedia.org/wiki/Cron) or [tldp.org's cron guide](http://www.tldp.org/LDP/lame/LAME/linux-admin-made-easy/using-cron.html) for more information.
 
-That's all for this week's lab.
-There are a lot of uses for all of these tools above.
-Most of what I've shown here, I'd liken to showing you around a tool box.  
-Nothing here is terribly useful in itself, the value comes from knowing the tool exists and then being able to properly apply it to the problem at hand.  
+That's all for this week's lab. There are a lot of uses for all of these tools above. Most of what I've shown
+here, I'd liken to showing you around a tool box. Nothing here is terribly useful in itself, the value comes
+from knowing the tool exists and then being able to properly apply it to the problem at hand.
+
 I hope you enjoyed this lab.
 
 <blockquote>
