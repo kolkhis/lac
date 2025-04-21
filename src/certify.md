@@ -1,0 +1,86 @@
+# Certification Info
+
+Each course run through the Professional Linux Users Group (ProLUG) allows you to earn 
+a certification upon completion.  
+
+Certificates are awarded to those who complete the course within the timeframe that
+it is being run through the ProLUG Discord. 
+* To see when courses are running, join the ProLUG Discord server and check the 
+  Events section.  
+
+If you aim to earn the certification for completing this course, you must follow the
+guidelines set forth in this document.  
+
+There are four main components to earning the certification for ProLUG courses.  
+
+1. Worksheet Completion
+
+2. Discussion Questions
+
+3. Lab completion
+
+4. Final Project
+
+---
+
+
+## Discussion Questions
+
+---
+
+Each unit's worksheet contains multiple discussion questions.  
+Each discussion question has its own thread in the ProLUG Discord server, in the
+`#prolug-projects` channel.  
+
+To qualify for certification:
+- You must post your answer to each discussion question in the correct thread.  
+- You must respond to another student's answer in the same thread.  
+
+The goal of this is not to create busywork, but to spark discussions and see things
+from other points of view.  
+
+
+## Worksheet Completion
+
+---
+
+Each unit has a corresponding worksheet.  
+On this worksheet are discussion questions, terms/definitions, **optional** "digging
+deeper" sections, and reflection questions.  
+
+These worksheets must be filled out and kept until the end of the course.  
+Upon reaching the end, they are to be submitted to the instructor (Scott Champine).  
+
+### Worksheet Submission Format
+
+---
+
+The format in which you submit these worksheets is up to you.   
+Some students prefer to keep them in a GitHub repository, others prefer to just keep 
+them as files on their machines and submit via email.  
+
+
+## Lab Completion
+
+---
+
+Each unit has a lab that is to be completed.  
+
+If you are doing the Linux Security Engineering course, the labs also must be
+submitted upon reaching the end of the course.  
+
+If you are doing the Linux Administration course, these labs do **not** need to be
+turned in at the end of the course, but they should still be completed.  
+
+
+## Final Project
+
+---
+
+This is a requirement for earning a ProLUG course certification.  
+
+The project must meet the standards set forth in the Final Project Outline (or 
+otherwise be approved by the instructor, Scott Champine).  
+
+
+
