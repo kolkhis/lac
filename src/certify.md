@@ -23,6 +23,17 @@ There are four main components to earning the certification for ProLUG courses.
 
 ---
 
+## Worksheet Completion
+
+---
+
+Each unit has a corresponding worksheet.  
+On this worksheet are discussion questions, terms/definitions, **optional** "digging
+deeper" sections, and reflection questions.  
+
+These worksheets must be filled out and kept until the end of the course.  
+Upon reaching the end, they are to be submitted to the instructor (Scott Champine).  
+
 
 ## Discussion Questions
 
@@ -39,17 +50,6 @@ To qualify for certification:
 The goal of this is not to create busywork, but to spark discussions and see things
 from other points of view.  
 
-
-## Worksheet Completion
-
----
-
-Each unit has a corresponding worksheet.  
-On this worksheet are discussion questions, terms/definitions, **optional** "digging
-deeper" sections, and reflection questions.  
-
-These worksheets must be filled out and kept until the end of the course.  
-Upon reaching the end, they are to be submitted to the instructor (Scott Champine).  
 
 ### Worksheet Submission Format
 
