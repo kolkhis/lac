@@ -1,17 +1,23 @@
-# Certification Info
+<div class="flex-container">
+        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
+    <p>
+        <h1>Qualifying for the Certification</h1>
+    </p>
+</div>
 
-Each course run through the Professional Linux Users Group (ProLUG) allows you to earn 
-a certification upon completion.  
+Each course run through the Professional Linux Users Group (ProLUG) allows you to earn
+a certification upon completion.
 
 Certificates are awarded to those who complete the course within the timeframe that
-it is being run through the ProLUG Discord. 
-* To see when courses are running, join the ProLUG Discord server and check the 
-  Events section.  
+it is being run through the ProLUG Discord.
+
+- To see when courses are running, join the ProLUG Discord server and check the
+  Events section.
 
 If you aim to earn the certification for completing this course, you must follow the
-guidelines set forth in this document.  
+guidelines set forth in this document.
 
-There are four main components to earning the certification for ProLUG courses.  
+There are four main components to earning the certification for ProLUG courses.
 
 1. Worksheet Completion
 
@@ -21,19 +27,16 @@ There are four main components to earning the certification for ProLUG courses.
 
 4. Final Project
 
----
-
 ## Worksheet Completion
 
 ---
 
 Each unit has a corresponding worksheet.  
 On this worksheet are discussion questions, terms/definitions, **optional** "digging
-deeper" sections, and reflection questions.  
+deeper" sections, and reflection questions.
 
 These worksheets must be filled out and kept until the end of the course.  
-Upon reaching the end, they are to be submitted to the instructor (Scott Champine).  
-
+Upon reaching the end, they are to be submitted to the instructor (Scott Champine).
 
 ## Discussion Questions
 
@@ -41,46 +44,41 @@ Upon reaching the end, they are to be submitted to the instructor (Scott Champin
 
 Each unit's worksheet contains multiple discussion questions.  
 Each discussion question has its own thread in the ProLUG Discord server, in the
-`#prolug-projects` channel.  
+`#prolug-projects` channel.
 
 To qualify for certification:
-- You must post your answer to each discussion question in the correct thread.  
-- You must respond to another student's answer in the same thread.  
+
+- You must post your answer to each discussion question in the correct thread.
+- You must respond to another student's answer in the same thread.
 
 The goal of this is not to create busywork, but to spark discussions and see things
-from other points of view.  
-
+from other points of view.
 
 ### Worksheet Submission Format
 
 ---
 
-The format in which you submit these worksheets is up to you.   
-Some students prefer to keep them in a GitHub repository, others prefer to just keep 
-them as files on their machines and submit via email.  
+The format in which you submit these worksheets is up to you.
 
+Some students prefer to keep them in a GitHub repository, others prefer to just keep
+them as files on their machines and submit via email.
 
 ## Lab Completion
 
 ---
 
-Each unit has a lab that is to be completed.  
+Each unit has a lab that is to be completed.
 
-If you are doing the Linux Security Engineering course, the labs also must be
-submitted upon reaching the end of the course.  
+The labs, like the worksheets, should be also completed and saved until the end of
+the course.
 
-If you are doing the Linux Administration course, these labs do **not** need to be
-turned in at the end of the course, but they should still be completed.  
-
+These labs should be turned in along with the worksheets in the same format of your choice.
 
 ## Final Project
 
 ---
 
-This is a requirement for earning a ProLUG course certification.  
+This is a requirement for earning a ProLUG course certification.
 
-The project must meet the standards set forth in the Final Project Outline (or 
-otherwise be approved by the instructor, Scott Champine).  
-
-
-
+The project must meet the standards set forth in the Final Project Outline (or
+otherwise be approved by the instructor, Scott Champine).
