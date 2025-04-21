@@ -20,22 +20,26 @@ This unit concentrates on the core tasks involved in **operating running systems
 ---
 
 1. **Monitor and Manage System Resources:**
-   Learn to track CPU, memory, disk, and network usage.  
-   Understand how to troubleshoot performance bottlenecks.
 
-1. **Master Service and Process Control:**  
-   Gain proficiency with systemd for managing services and understanding dependency trees.  
-   Acquire the ability to identify, start, stop, and restart services and processes as needed.
+   - Learn to track CPU, memory, disk, and network usage.
+   - Understand how to troubleshoot performance bottlenecks.
 
-1. **Configure and Interpret System Logs:**  
-   Explore journald and syslog-based logging to collect and store vital system events.  
-   Develop techniques to analyze log files for troubleshooting and security assessments.
+2. **Master Service and Process Control:**
 
-1. **Implement Scheduling and Automation:**  
-   Use `cron`, `at`, and `systemd` timers to automate recurring tasks.  
+   - Gain proficiency with systemd for managing services and understanding dependency trees.
+   - Acquire the ability to identify, start, stop, and restart services and processes as needed.
+
+3. **Configure and Interpret System Logs:**
+
+   - Explore journald and syslog-based logging to collect and store vital system events.
+   - Develop techniques to analyze log files for troubleshooting and security assessments.
+
+4. **Implement Scheduling and Automation:**  
+   Use `cron`, `at`, and `systemd` timers to automate recurring tasks.
    Understand how automated job scheduling improves reliability and reduces manual intervention.
 
-These objectives ensure learners can sustain, troubleshoot, and improve actively running Linux systems within enterprise environments, reducing downtime and increasing system reliability.
+These objectives ensure learners can sustain, troubleshoot, and improve actively running Linux systems
+within enterprise environments, reducing downtime and increasing system reliability.
 
 ## Relevance & Context
 
@@ -43,17 +47,23 @@ These objectives ensure learners can sustain, troubleshoot, and improve actively
 
 Operating running systems is central to any Linux administrator’s responsibilities for several reasons:
 
-- **System Stability and Performance:**  
-  Continuous monitoring and immediate remediation of issues ensure critical services remain available and performant.
+**System Stability and Performance:**
 
-- **Proactive Problem Resolution:**  
-  Effective log management and automation allow administrators to detect anomalies early, schedule essential maintenance, and minimize disruptions.
+- Continuous monitoring and immediate remediation of issues ensure critical services remain available and performant.
 
-- **Security and Compliance:**  
-  Logs are often the first line of evidence in security auditing and breach investigations. Regularly reviewing and correlating logs is crucial to maintaining a secure environment.
+**Proactive Problem Resolution:**
 
-- **Enterprise Uptime and Reliability:**  
-  In production environments, even brief outages can lead to significant operational and financial impacts. Proper management of running systems ensures high availability and robust service delivery.
+- Effective log management and automation allow administrators to detect anomalies early, schedule essential maintenance, and minimize disruptions.
+
+**Security and Compliance:**
+
+- Logs are often the first line of evidence in security auditing and breach investigations.
+- Regularly reviewing and correlating logs is crucial to maintaining a secure environment.
+
+**Enterprise Uptime and Reliability:**
+
+- In production environments, even brief outages can lead to significant operational and financial impacts.
+- Proper management of running systems ensures high availability and robust service delivery.
 
 ## Prerequisites
 
@@ -64,10 +74,10 @@ Before tackling the tasks of operating running systems, learners should possess:
 - **Command-Line Proficiency:**  
    Familiarity with fundamental shell commands, directory structures, and file management is critical to executing system operations efficiently.
 
-- **Basic text editing skills:**
+- **Basic text editing skills:**  
   Ability to utilize `vi`, `vim`, or comparable text editing tool. Understanding of vi, vim, or comparable editing tool shortcuts and commands.
 
-- **Aware of system components:**
+- **Aware of system components:**  
   Familiarity with computer hardware concepts such as computer processors, memory, and storage.
 
 ## Key Terms and Definitions
