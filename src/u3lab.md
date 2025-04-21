@@ -187,18 +187,15 @@ We can do individual pvcreates for each disk `pvcreate /dev/xvdb` but we can als
 loop over them with a simple loop as below. Use your drive letters.
 
 ```bash
-for disk in b c d
-
-> do
-> pvcreate /dev/xvd$disk
-> done
+for disk in b c d; do pvcreate /dev/xvd$disk; done
 
 # Physical volume "/dev/xvdb" successfully created.
 # Creating devices file /etc/lvm/devices/system.devices
 # Physical volume "/dev/xvdc" successfully created.
 # Physical volume "/dev/xvde" successfully created.
 
-#to see what we made
+# To see what we made:
+
 pvs
 
 # PV VG Fmt Attr PSize PFree
@@ -207,6 +204,7 @@ pvs
 # /dev/xvde lvm2 --- 3.00g 3.00g
 
 vgcreate VolGroupTest /dev/xvdb /dev/xvdc /dev/xvde
+
 # Volume group "VolGroupTest" successfully created
 
 vgs
@@ -252,7 +250,8 @@ vi /etc/fstab
 # Add the following line
 # /dev/mapper/VolGroupTest-lv_test /space ext4 defaults 0 0
 
-mount -a
+# reload fstab
+systemctl daemon-reload
 ```
 
 If this command works, there will be no output. We use the df -h in the next
@@ -301,6 +300,7 @@ vgremove VolGroupTest
 
 # Volume group "VolGroupTest" successfully removed
 
+
 for disk in c e f; do pvremove /dev/sd$disk; done
 
 # Labels on physical volume "/dev/sdc" successfully wiped.
@@ -348,6 +348,7 @@ for disk in c e f; do pvcreate /dev/sd$disk; done
 # Physical volume "/dev/sdf" successfully created.
 
 vgcreate VolGroupTest /dev/sdc /dev/sde /dev/sdf
+
 lvcreate -l +100%FREE --type raid5 -n lv_test VolGroupTest
 mkfs.xfs /dev/mapper/VolGroupTest-lv_test
 
