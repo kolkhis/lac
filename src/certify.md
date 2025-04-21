@@ -38,6 +38,15 @@ deeper" sections, and reflection questions.
 These worksheets must be filled out and kept until the end of the course.  
 Upon reaching the end, they are to be submitted to the instructor (Scott Champine).
 
+### Worksheet Submission Format
+
+---
+
+The format in which you submit these worksheets is up to you.
+
+Some students prefer to keep them in a GitHub repository, others prefer to just keep
+them as files on their machines and submit via email.
+
 ## Discussion Questions
 
 ---
@@ -53,15 +62,6 @@ To qualify for certification:
 
 The goal of this is not to create busywork, but to spark discussions and see things
 from other points of view.
-
-### Worksheet Submission Format
-
----
-
-The format in which you submit these worksheets is up to you.
-
-Some students prefer to keep them in a GitHub repository, others prefer to just keep
-them as files on their machines and submit via email.
 
 ## Lab Completion
 
