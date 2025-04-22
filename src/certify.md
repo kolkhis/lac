@@ -5,6 +5,8 @@
     </p>
 </div>
 
+---
+
 Each course run through the Professional Linux Users Group (ProLUG) allows you to earn
 a certification upon completion.
 
@@ -17,13 +19,13 @@ it is being run through the ProLUG Discord.
 If you aim to earn the certification for completing this course, you must follow the
 guidelines set forth in this document.
 
-There are four main components to earning the certification for ProLUG courses.
+There are four main components to earning the certification.
 
 1. Worksheet Completion
 
 2. Discussion Questions
 
-3. Lab completion
+3. Lab Completion
 
 4. Final Project
 
@@ -77,6 +79,8 @@ These labs should be turned in along with the worksheets in the same format of y
 ## Final Project
 
 ---
+
+Each ProLUG course has students complete a capstone project.
 
 This is a requirement for earning a ProLUG course certification.
 
