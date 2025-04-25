@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# 's/–/-/g' 
-declare -a FILES
-read -r -a FILES -d '' < <(find ../src/ -name 'u*' -type f)
-# printf "File: %s\n" "${FILES[@]}"
-sed -i 's/–/-/g' "${FILES[*]}"
-
