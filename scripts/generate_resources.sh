@@ -82,8 +82,16 @@ pull-links() {
     done
 
     TOTAL_LINK_COUNT=$(( COUNT_MD_LINKS + COUNT_UF_LINKS + COUNT_REG_LINKS ))
-    printf "\nREPORT:\n- Markdown Links\t%s\n- Regular Links\t\t%s\n- Unformatted Links\t%s\n\nTotal Links: %s\n" "$COUNT_MD_LINKS" "$COUNT_REG_LINKS" "$COUNT_UF_LINKS" "$TOTAL_LINK_COUNT"
-    printf 'Duplicates: %s\n' "$DUPLICATES"
+    cat <<- EOF
+	REPORT:
+	- Markdown Links        $COUNT_MD_LINKS
+	- Regular Links         $COUNT_REG_LINKS
+	- Unformatted Links     $COUNT_UF_LINKS
+	Total Links: $TOTAL_LINK_COUNT
+	Total links added: ${#ADDED_LINKS[@]}
+	
+	Duplicates: $DUPLICATES
+	EOF
 
 }
 
