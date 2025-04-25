@@ -39,7 +39,7 @@ pull-links() {
             [[ $FILE =~ .*u([0-9]+).*\.md ]] && UNIT="${BASH_REMATCH[1]}"
 
             # extract markdown link from the line
-            MARKDOWN_LINK="$(printf "%s" "$RESOURCE" | perl -pe 's/.*(\[.*\]\(.*?\)).*/\1/')" 
+            MARKDOWN_LINK="$(printf "%s" "$RESOURCE" | perl -pe 's/.*(\[.*?\]\(.*?\)).*/\1/')" 
 
             if [[ $MARKDOWN_LINK =~ .*(<.*>).* ]]; then
                 # Link is formatted as: <http://example.com>
@@ -56,16 +56,18 @@ pull-links() {
             fi
             [[ -z $MARKDOWN_LINK ]] && continue
 
-            if printf "%s" "$MARKDOWN_LINK" | grep -i 'github.com'; then
-                printf "Found GH link in unit %s: %s\n" "$UNIT" "$MARKDOWN_LINK"
-            fi
-
             # Fix duplicate problem
             # Using grep to check for duplicates created a race condition
             # - Add associative array containing links already added
             #   - Bash can't parse markdown links as associative array keys
             #   - use md5sum hashes
-            LINK_HASH=$(printf "%s" "${MARKDOWN_LINK,,}" | sed -E 's/\/([>\)])?$/\1/' | md5sum | cut -d ' ' -f1)
+            LINK_HASH=$(
+                printf "%s" "${MARKDOWN_LINK,,}" |
+                    sed -E 's/\/([>\)])?$/\1/' |
+                    md5sum |
+                    cut -d ' ' -f1
+            )
+
             if [[ -z "${ADDED_LINKS["$LINK_HASH"]}" ]]; then
                 [[ -n $UNIT ]] && sed -i "/^## Unit $UNIT\>/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 [[ -z $UNIT ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
