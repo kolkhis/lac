@@ -24,6 +24,7 @@ pull-links() {
     for FILE in "${FILES[@]}"; do
         local UNIT=
         [[ "$FILE" == *resources.md ]] && continue  
+        [[ "$FILE" == *unitindex.md ]] && continue  
 
         declare -a RESOURCES
 
@@ -54,6 +55,7 @@ pull-links() {
                 # Link is formatted as: [Link](http://example.com)
                 COUNT_MD_LINKS+=1
             fi
+            [[ -z $MARKDOWN_LINK ]] && continue
 
             if printf "%s" "$MARKDOWN_LINK" | grep -i 'github.com'; then
                 printf "Found GH link in unit %s: %s\n" "$UNIT" "$MARKDOWN_LINK"
@@ -64,10 +66,10 @@ pull-links() {
             # - Add associative array containing links already added
             #   - Bash can't parse markdown links as associative array keys
             #   - use md5sum hashes
-            LINK_HASH=$(printf "%s" "${MARKDOWN_LINK,,}" | md5sum | cut -d ' ' -f1)
+            LINK_HASH=$(printf "%s" "${MARKDOWN_LINK,,}" | sed -E 's/\/([>\)])?$/\1/' | md5sum | cut -d ' ' -f1)
             if [[ -z "${ADDED_LINKS["$LINK_HASH"]}" ]]; then
-                [[ -n $UNIT && -n "$MARKDOWN_LINK" ]] && sed -i "/^## Unit $UNIT$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
-                [[ -z $UNIT && -n "$MARKDOWN_LINK" ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
+                [[ -n $UNIT ]] && sed -i "/^## Unit $UNIT\>/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
+                [[ -z $UNIT ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 ADDED_LINKS["$LINK_HASH"]=1
             else
                 debug "Duplicate link found, skipping."
@@ -95,15 +97,13 @@ format-resources() {
 
 	EOF
 
-    for i in {1..16}; do
-        if ! grep -qi -E "^## Unit ${i}$" "$RESOURCES_FILE"; then
-            printf "## Unit %s\n\n" "$i" >> "$RESOURCES_FILE"
-        fi
-    done
+    perl -ne 'print "## Unit $1 - $2"  . "\n\n" if s/^[|]\s*(\d+)\s*[|]\s*[[](.*?)[]].*$/\1 \2/' < src/unitindex.md |
+         tee -a "$RESOURCES_FILE"
 
     if ! grep -qi -E "^## Misc$" "$RESOURCES_FILE"; then
         printf "## Misc\n" >> $RESOURCES_FILE
     fi
+
 }
 
 format-resources
