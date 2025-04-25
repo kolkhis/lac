@@ -38,10 +38,9 @@ pull-links() {
             local MARKDOWN_LINK=
             [[ $FILE =~ .*u([0-9]+).*\.md ]] && UNIT="${BASH_REMATCH[1]}"
 
-            # extract the link from the line
-            MARKDOWN_LINK="$(printf "%s" "$RESOURCE" | sed -E -e 's/.*(\[.*\]\(.*\)).*/\1/')" 
+            # extract markdown link from the line
+            MARKDOWN_LINK="$(printf "%s" "$RESOURCE" | perl -pe 's/.*(\[.*\]\(.*?\)).*/\1/')" 
 
-            debug "$MARKDOWN_LINK"
             if [[ $MARKDOWN_LINK =~ .*(<.*>).* ]]; then
                 # Link is formatted as: <http://example.com>
                 MARKDOWN_LINK="${BASH_REMATCH[1]}"
@@ -73,6 +72,7 @@ pull-links() {
                 ADDED_LINKS["$LINK_HASH"]=1
             else
                 debug "Duplicate link found, skipping."
+                (( DUPLICATES++ ))
             fi
 
         done
@@ -97,8 +97,14 @@ format-resources() {
 
 	EOF
 
-    perl -ne 'print "## Unit $1 - $2"  . "\n\n" if s/^[|]\s*(\d+)\s*[|]\s*[[](.*?)[]].*$/\1 \2/' < src/unitindex.md |
-         tee -a "$RESOURCES_FILE"
+    if [[ -f ./src/unitindex.md ]]; then
+        perl -ne 'print "## Unit $1 - $2\n\n" if s/^[|]\s*(\d+)\s*[|]\s*[[](.*?)[]].*$/\1 \2/' < src/unitindex.md |
+            tee -a "$RESOURCES_FILE"
+    else
+        for i in {1..16}; do
+            printf "## Unit %s\n\n" "$i" >> "$RESOURCES_FILE"
+        done
+    fi
 
     if ! grep -qi -E "^## Misc$" "$RESOURCES_FILE"; then
         printf "## Misc\n" >> $RESOURCES_FILE
