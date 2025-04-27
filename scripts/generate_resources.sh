@@ -8,9 +8,6 @@ declare -A ADDED_LINKS
 declare -a FILES
 IFS=$'\n' read -r -d '' -a FILES < <(find "$SEARCH_DIR" -maxdepth 1 -mindepth 1 -name "$FILE_PATTERN")
 
-# truncate file
-: > "$RESOURCES_FILE"
-
 debug() {
     printf "[ \033[33mDEBUG\033[0m ]: "
     printf "%s\n" "$*"
@@ -73,7 +70,7 @@ pull-links() {
                 [[ -z $UNIT ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 ADDED_LINKS["$LINK_HASH"]=1
             else
-                debug "Duplicate link found, skipping."
+                debug "Duplicate link found, skipping: ${MARKDOWN_LINK}"
                 (( DUPLICATES++ ))
             fi
 
@@ -96,6 +93,8 @@ pull-links() {
 }
 
 format-resources() {
+    # truncate file
+    : > "$RESOURCES_FILE"
     cat <<- EOF >> "$RESOURCES_FILE"
 	<div class="flex-container">
 	        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
@@ -109,7 +108,7 @@ format-resources() {
 
     if [[ -f ./src/unitindex.md ]]; then
         perl -ne 'print "## Unit $1 - $2\n\n" if s/^[|]\s*(\d+)\s*[|]\s*[[](.*?)[]].*$/\1 \2/' < src/unitindex.md |
-            tee -a "$RESOURCES_FILE"
+            tee -a "$RESOURCES_FILE" > /dev/null
     else
         for i in {1..16}; do
             printf "## Unit %s\n\n" "$i" >> "$RESOURCES_FILE"
