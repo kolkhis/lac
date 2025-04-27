@@ -58,7 +58,7 @@ The discussion posts are done in Discord threads. Click the 'Threads' icon on th
 
 </div>
 
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1320140773412438091)
+- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1365776270800977962)
 
 #### Unit 2 Discussion Post #2
 

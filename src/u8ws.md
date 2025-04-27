@@ -93,7 +93,7 @@ The discussion posts are done in Discord threads. Click the 'Threads' icon on th
 
 </div>
 
-- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1365776270800977962)
 
 ## Definitions
 
