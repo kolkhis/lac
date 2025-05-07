@@ -38,16 +38,16 @@ Managing software on a Linux system involves two essential practices: package ma
 The skills taught in this unit are indispensable for several reasons:
 
 - **Efficient System Management:**  
-  The RHEL environment is typically managed via the command line. Proficiency in the CLI, along with an in-depth understanding of the file system, is crucial for daily tasks like system configuration, package management (using tools such as YUM or DNF), and remote troubleshooting.
+The RHEL environment is typically managed via the command line. Proficiency in the CLI, along with an in-depth understanding of the file system, is crucial for daily tasks like system configuration, package management (using tools such as YUM or DNF), and remote troubleshooting.
 
 - **Security and Stability:**  
-  Editing configuration files, managing system services, and monitoring logs are all critical tasks that ensure the secure and stable operation of RHEL systems. A robust understanding of these basics is necessary to mitigate risks and ensure compliance with enterprise security standards.
+Editing configuration files, managing system services, and monitoring logs are all critical tasks that ensure the secure and stable operation of RHEL systems. A robust understanding of these basics is necessary to mitigate risks and ensure compliance with enterprise security standards.
 
 - **Professional Certification & Career Growth:**  
-  For those pursuing certifications like the Red Hat Certified System Administrator (RHCSA) or Red Hat Certified Engineer (RHCE), these foundational skills are not only testable requirements but also a stepping stone for more advanced topics such as automation (using Ansible), container management (with Podman or OpenShift), and performance tuning.
+For those pursuing certifications like the Red Hat Certified System Administrator (RHCSA) or Red Hat Certified Engineer (RHCE), these foundational skills are not only testable requirements but also a stepping stone for more advanced topics such as automation (using Ansible), container management (with Podman or OpenShift), and performance tuning.
 
 - **Operational Excellence:**  
-  In enterprise settings where uptime and rapid incident response are paramount, having a solid grasp of these fundamentals enables administrators to quickly diagnose issues, apply fixes, and optimize system performance—thereby directly impacting business continuity and service quality.
+In enterprise settings where uptime and rapid incident response are paramount, having a solid grasp of these fundamentals enables administrators to quickly diagnose issues, apply fixes, and optimize system performance—thereby directly impacting business continuity and service quality.
 
 ## Prerequisites
 
@@ -59,10 +59,6 @@ The skills taught in this unit are indispensable for several reasons:
 - Basic understanding of editing config files using vi.
 
 ## Key terms and Definitions
-
----
-
-## Definitions
 
 ---
 
