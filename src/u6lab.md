@@ -77,7 +77,7 @@ A very important thing to note before starting this lab. You’re connected into
 1. Check firewall status
 
    ```bash
-   [root@schampine ~]# systemctl status firewalld
+   systemctl status firewalld
    ```
 
    Example Output:
@@ -157,7 +157,7 @@ public
 Next Command
 
 ```bash
-firewall-cmd --get-active
+firewall-cmd --get-active-zones
 ```
 
 Example Output:
@@ -184,7 +184,7 @@ ifconfig -a | grep -i flags
 Example Output:
 
 ```bash
-[root@rocky ~]# ifconfig -a | grep -i flags
+ifconfig -a | grep -i flags
 docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 ens32: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
@@ -426,7 +426,7 @@ We can be even more granular with our ports and services. We can block or allow 
    Listing open ports now
 
    ```bash
-   [root@schampine services]# firewall-cmd --list-ports
+   firewall-cmd --list-ports
    ```
 
    Example Output:
