@@ -358,7 +358,7 @@ for RHEL or CentOS to run that server.
 
 ```bash
 dnf grouplist
-dnf group install “Development Tools”
+dnf group install development
 
 # How many packages are going to update?
 # Is one of them the kernel?
