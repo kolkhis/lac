@@ -8,9 +8,6 @@ declare -A ADDED_LINKS
 declare -a FILES
 IFS=$'\n' read -r -d '' -a FILES < <(find "$SEARCH_DIR" -maxdepth 1 -mindepth 1 -name "$FILE_PATTERN")
 
-# truncate file
-: > "$RESOURCES_FILE"
-
 debug() {
     printf "[ \033[33mDEBUG\033[0m ]: "
     printf "%s\n" "$*"
@@ -24,6 +21,7 @@ pull-links() {
     for FILE in "${FILES[@]}"; do
         local UNIT=
         [[ "$FILE" == *resources.md ]] && continue  
+        [[ "$FILE" == *unitindex.md ]] && continue  
 
         declare -a RESOURCES
 
@@ -37,10 +35,9 @@ pull-links() {
             local MARKDOWN_LINK=
             [[ $FILE =~ .*u([0-9]+).*\.md ]] && UNIT="${BASH_REMATCH[1]}"
 
-            # extract the link from the line
-            MARKDOWN_LINK="$(printf "%s" "$RESOURCE" | sed -E -e 's/.*(\[.*\]\(.*\)).*/\1/')" 
+            # extract markdown link from the line
+            MARKDOWN_LINK="$(printf "%s" "$RESOURCE" | perl -pe 's/.*(\[.*?\]\(.*?\)).*/\1/')" 
 
-            debug "$MARKDOWN_LINK"
             if [[ $MARKDOWN_LINK =~ .*(<.*>).* ]]; then
                 # Link is formatted as: <http://example.com>
                 MARKDOWN_LINK="${BASH_REMATCH[1]}"
@@ -54,23 +51,27 @@ pull-links() {
                 # Link is formatted as: [Link](http://example.com)
                 COUNT_MD_LINKS+=1
             fi
-
-            if printf "%s" "$MARKDOWN_LINK" | grep -i 'github.com'; then
-                printf "Found GH link in unit %s: %s\n" "$UNIT" "$MARKDOWN_LINK"
-            fi
+            [[ -z $MARKDOWN_LINK ]] && continue
 
             # Fix duplicate problem
             # Using grep to check for duplicates created a race condition
             # - Add associative array containing links already added
             #   - Bash can't parse markdown links as associative array keys
             #   - use md5sum hashes
-            LINK_HASH=$(printf "%s" "${MARKDOWN_LINK,,}" | md5sum | cut -d ' ' -f1)
+            LINK_HASH=$(
+                printf "%s" "${MARKDOWN_LINK,,}" |
+                    sed -E 's/\/([>\)])?$/\1/' |
+                    md5sum |
+                    cut -d ' ' -f1
+            )
+
             if [[ -z "${ADDED_LINKS["$LINK_HASH"]}" ]]; then
-                [[ -n $UNIT && -n "$MARKDOWN_LINK" ]] && sed -i "/^## Unit $UNIT$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
-                [[ -z $UNIT && -n "$MARKDOWN_LINK" ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
+                [[ -n $UNIT ]] && sed -i "/^## Unit $UNIT\>/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
+                [[ -z $UNIT ]] && sed -i "/^## Misc$/a- $MARKDOWN_LINK" "$RESOURCES_FILE"
                 ADDED_LINKS["$LINK_HASH"]=1
             else
-                debug "Duplicate link found, skipping."
+                debug "Duplicate link found, skipping: ${MARKDOWN_LINK}"
+                (( DUPLICATES++ ))
             fi
 
         done
@@ -78,12 +79,22 @@ pull-links() {
     done
 
     TOTAL_LINK_COUNT=$(( COUNT_MD_LINKS + COUNT_UF_LINKS + COUNT_REG_LINKS ))
-    printf "\nREPORT:\n- Markdown Links\t%s\n- Regular Links\t\t%s\n- Unformatted Links\t%s\n\nTotal Links: %s\n" "$COUNT_MD_LINKS" "$COUNT_REG_LINKS" "$COUNT_UF_LINKS" "$TOTAL_LINK_COUNT"
-    printf 'Duplicates: %s\n' "$DUPLICATES"
+    cat <<- EOF
+	REPORT:
+	- Markdown Links        $COUNT_MD_LINKS
+	- Regular Links         $COUNT_REG_LINKS
+	- Unformatted Links     $COUNT_UF_LINKS
+	Total Links: $TOTAL_LINK_COUNT
+	Total links added: ${#ADDED_LINKS[@]}
+	
+	Duplicates: $DUPLICATES
+	EOF
 
 }
 
 format-resources() {
+    # truncate file
+    : > "$RESOURCES_FILE"
     cat <<- EOF >> "$RESOURCES_FILE"
 	<div class="flex-container">
 	        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
@@ -95,15 +106,19 @@ format-resources() {
 
 	EOF
 
-    for i in {1..16}; do
-        if ! grep -qi -E "^## Unit ${i}$" "$RESOURCES_FILE"; then
+    if [[ -f ./src/unitindex.md ]]; then
+        perl -ne 'print "## Unit $1 - $2\n\n" if s/^[|]\s*(\d+)\s*[|]\s*[[](.*?)[]].*$/\1 \2/' < src/unitindex.md |
+            tee -a "$RESOURCES_FILE" > /dev/null
+    else
+        for i in {1..16}; do
             printf "## Unit %s\n\n" "$i" >> "$RESOURCES_FILE"
-        fi
-    done
+        done
+    fi
 
     if ! grep -qi -E "^## Misc$" "$RESOURCES_FILE"; then
         printf "## Misc\n" >> $RESOURCES_FILE
     fi
+
 }
 
 format-resources

@@ -52,7 +52,8 @@ Review the page: <https://attack.mitre.org/>
 
 #### Discussion Post #2
 
-Find a blog or article on the web that discusses the user environment in Linux. You may want to search for .bashrc or (dot) environment files in Linux.
+Find a blog or article on the web that discusses the user environment in Linux.
+You may want to search for `.bashrc` or (dot) environment files in Linux.
 
 1. What types of customizations might you setup for your environment? Why?
 
@@ -65,7 +66,7 @@ The discussion posts are done in Discord threads. Click the 'Threads' icon on th
 
 </div>
 
-[Link to Discussion Posts](https://discord.com/channels/611027490848374811/1292189890716368928)
+[Link to Discussion Posts](https://discord.com/channels/611027490848374811/1365776270800977962)
 
 ## Definitions
 
@@ -91,12 +92,19 @@ Planting Backdoors:
 
 ---
 
-1. Read this page: https://owasp.org/www-project-top-ten/
+Map the Internal ProLUG Network (`192.168.200.0/24`):  
+
+1. Map the network from one of the rocky nodes.  
+   Using a template that you build or find from the internet, provide a 1 page summary
+   of what you find in the network.  
+
+2. Read this page: <https://owasp.org/www-project-top-ten/>
 
    - What is the OWASP Top Ten?
    - Why is this important to know as a system administrator?
 
-2. Read this article: https://www.cobalt.io/blog/defending-against-23-common-attack-vectors
+3. Read this article: <https://www.cobalt.io/blog/defending-against-23-common-attack-vectors>
+
    - What is an attack vector?
    - Why might it be a good idea to keep up to date with these?
 

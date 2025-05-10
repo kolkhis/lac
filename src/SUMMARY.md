@@ -2,6 +2,7 @@
 
 - [Course Syallabus](./syllabus.md)
   - [Final Project Outline](./project.md)
+  - [Earning the Certificaiton](./certify.md)
 - [Table of Contents](./unitindex.md)
 - [About ProLUG](./prolug.md)
 - [Unit 1](./u1intro.md)
@@ -49,6 +50,7 @@
 - [Unit 13](./u13intro.md)
   - [Work Sheet](./u13ws.md)
   - [Lab](./u13lab.md)
+  - [Bonus](./u13b.md)
 - [Unit 14](./u14intro.md)
   - [Work Sheet](./u14ws.md)
   - [Lab](./u14lab.md)
