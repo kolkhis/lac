@@ -238,7 +238,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-9
 # Output truncated for brevity’s sake….
 
 # Re-enable the repo and verify the output
-dnf config-manager --enable base
+dnf config-manager --enable baseos
 
 # Should now have the line enabled=1 (or true, turned back on)
 cat /etc/yum.repos.d/rocky.repo
