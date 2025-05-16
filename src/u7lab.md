@@ -83,7 +83,7 @@ rpm -q bc
 #Install it if you need to
 dnf install bc
 
-for i in 'seq 1 5'; do free | grep -i mem | awk '{print $3}'; done
+for i in `seq 1 5`; do free | grep -i mem | awk '{print $3}'; done
 
 # Collect the 5 numbers (what do these numbers represent? Use free to find out)
 echo "(79 + 79 + 80 + 80 + 45) / 5" | bc
