@@ -18,7 +18,8 @@
 1. Complete first section of `vimtutor`
 2. Learn essential commands:
    - `vim filename` - Open/create file
-   - `i` - Enter insert mode
+   - `i` - Enter insert mode (before the cursor)
+   - `a` - Enter insert mode (after the cursor)
    - `Esc` - Return to normal mode
    - `:w` - Save changes
    - `:q` - Quit
@@ -91,6 +92,8 @@
   - `b` - Previous word
   - `0` - Line start
   - `$` - Line end
+  - `^` - First non-blank character of the line
+  - `g_` - Last non-blank character of the line
 
 **Segment 2: Movement Drills**
 
@@ -149,6 +152,9 @@
   - `P` - Paste before
   - `u` - Undo
   - `Ctrl + r` - Redo
+  - `s` - Substitute a character
+  - `r` - Replace a character
+  - `c` - Change character
 
 **Segment 2: Editing Drills**
 
@@ -175,6 +181,8 @@
   - `d0` - Delete to line start
   - `cc` - Change whole line
   - `cw` - Change word
+  - `D` - Delete to line end
+  - `C` - Change to line end
 
 **Segment 2: Practical Application**
 
@@ -199,6 +207,9 @@
   - `ci"` - Change inside quotes
   - `di(` - Delete inside parentheses
   - `yi{` - Yank inside braces
+  - `ca"` - Change a quotes block
+  - `da{` - Delete a `{` `}` block
+  - `ya(` - Yank a `(` `)` block
 
 **Segment 2: Integration Practice**
 
