@@ -354,13 +354,20 @@ But, it’s impractical to count for ourselves sometimes so we let the system do
 What did each of those do? Let’s put them in a loop we can use
 
 Maybe we want to count our 1000 servers and connect to them by name.
+```
 for i in `seq 1000`; do echo "Connecting to server p01awl$i"; done
+```
+
 
 Maybe we need to create a list of all our servers and put it in a list
+```
 for i in `seq 1000`; do echo "p01awl$i" >> serverfile; done
+```
 
 Maybe someone else gave us a list of servers and we need to read from that list to connect and do work.
+```
 for server in `cat serverfile`; do echo "connecting to server $server"; done
+```
 
 So, while those are even just a limited set of cases those are all times when, at the start, we know how many times we’re going to go through the loop. Counting or For loops always have a set number of times they’re going to run. That can change, but when it starts the end number of runs is known.
 
