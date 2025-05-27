@@ -64,8 +64,7 @@ If you don't know the requirements to administer a machine via Ansible documenta
 has been provided below.
 
 <div class = warning>
-This playbook will need to be modified based on which distribution or package management
-tool is configured.
+This playbook attempts to install and initialize dependencies based on APT and DNF package managers only.
 </div>
 
 Getting started with Ansible:  
@@ -98,11 +97,11 @@ APT frontends:
 #!/usr/bin/env bash
 apt-get update
 apt-get -y install apache2 git gcc rustc-1.80 cargo-1.80
-cargo-1.80 install --locked mdbook
-systemctl enable apache2 && systemctl start apache2
+cargo-1.80 install --locked mdbook@0.4.48
+systemctl enable --now apache2
 cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
 echo 'PATH=$PATH:~/.cargo/bin/' | tee -a ~/.profile
-export PATH=$PATH:~/.cargo/bin/ && echo $PATH
+export PATH=$PATH:~/.cargo/bin/ && echo $PATH | grep cargo
 cd ~/lac && mdbook build -d /var/www/html
 systemctl restart apache2
 ```
@@ -114,10 +113,10 @@ DNF frontends:
 dnf update
 dnf install -y httpd git gcc rust cargo
 cargo install --locked mdbook
-systemctl enable httpd && systemctl start httpd
+systemctl enable --now httpd
 cd && git clone https://github.com/ProfessionalLinuxUsersGroup/lac
 echo 'PATH=$PATH:~/.cargo/bin/' | tee -a ~/.bash_profile
-export PATH=$PATH:~/.cargo/bin/ && echo $PATH
+export PATH=$PATH:~/.cargo/bin/ && echo $PATH | grep cargo
 cd ~/lac && mdbook build -d /var/www/html
 systemctl restart httpd
 ```
