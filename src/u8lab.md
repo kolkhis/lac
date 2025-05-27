@@ -340,7 +340,7 @@ if [ $gccCheck -eq "0" -a $superCheck -eq "1" ]; then echo "We can install somep
 
 We can't install someprogram
 
-OR condition
+`OR` condition
 ```
 if [ $gccCheck -eq "0" -o $superCheck -eq "1" ]; then echo "We can install someprogram"; else echo "We can't install someprogram"; fi
 ```
