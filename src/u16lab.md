@@ -44,28 +44,44 @@ A ticket has come in that the web server is not running on the web server.
 To complete this event the following three must be correct.
 Web server must be running.
 
-- HINT: `systemctl status httpd`
+- HINT:
+  ```bash
+  systemctl status httpd
+  ```
 
-- Answer: `systemctl enable --now httpd` or some variation of that must have been run
+<!-- - Answer: -->
+<!--   ```bash -->
+<!--   systemctl enable --now httpd # or some variation of that must have been run -->
+<!--   ``` -->
 
 Web server must respond on port 80.
 
 - HINT: Can you check the open ports?
 
-- Answer: `ss -ntulp` will show port 80.
+<!-- - Answer: -->
+<!--   ```bash -->
+<!--   ss -ntulp  # Will show port 80 -->
+<!--   ``` -->
 
-The server is currently set on 8087 and needs to be fixed
-in `/etc/httpd/conf/http.conf`. The "Listen 8087" line must be changed to "Listen 80" and the
-service restarted `systemctl restart httpd`.
+The server is currently set on `8087` and needs to be fixed in `/etc/httpd/conf/http.conf`.  
+The "Listen 8087" line must be changed to "Listen 80" and the service restarted `systemctl restart httpd`.
 
 Ensure that the server can be reached by external connection attempts on port 80.
 
-- HINT: is the firewall running? `systemctl status firewalld`
+- HINT: Is the firewall running?
+  ```bash
+  systemctl status firewalld
+  ```
 
-- Answer: Easiest is to turn off the firewall `systemctl stop firewalld`.
-  - If they want to open the port, they can do that too.
+<!-- - Answer: Easiest is to turn off the firewall. -->
+<!--   ```bash -->
+<!--   systemctl stop firewalld. -->
+<!--   ``` -->
+<!--   - If they want to open the port, they can do that too. -->
 
-> REBOOT THE LAB MACHINE WHEN FINISHED
+<div class="warning">
+**Reboot the lab machine when finished.**
+</div>
 
 ---
 
@@ -87,30 +103,40 @@ To complete this event the following two must be correct.
 
 - HINT: use your pvs, vgs, lvs tools
 
-- Answer:
-  - First identify all disks: `fdisk -l | grep -i xvd`. Then `pvcreate /dev/xvd<whatever>`.
-  - Then `vgcreate space /dev/xvd<disk1> /dev/xvd<disk2> /dev/xvd<disk3>`.
-  - Then `lvcreate -n space -l +100%FREE space_vg`
+<!-- - Answer: -->
+<!--   - First identify all disks: `fdisk -l | grep -i xvd`. Then `pvcreate /dev/xvd<whatever>`. -->
+<!--   - Then `vgcreate space /dev/xvd<disk1> /dev/xvd<disk2> /dev/xvd<disk3>`. -->
+<!--   - Then `lvcreate -n space -l +100%FREE space_vg` -->
 
 EXT4 or XFS must be installed on the logical volume.
 
 - HINT: use `mkfs` to make a filesystem.
-- Answer: `mkfs.ext4 /dev/mapper/<name of logical volume>`
+
+<!-- - Answer: -->
+<!--   ```bash -->
+<!--   mkfs.ext4 /dev/mapper/<name of logical volume> -->
+<!--   ``` -->
 
 `/space` must be created and mounted off on this filesystem.
 
 - Hint: Make the directory
 
-- Answer: `mkdir /space` `vi /etc/fstab` add an entry like this:
-  ```plaintxt
-  /dev/mapper/<name of logical volume> /space <NFS or XFS> defaults 1 2
-  ```
+<!-- - Answer: -->
+<!--   ```bash -->
+<!--   mkdir /space -->
+<!--   vi /etc/fstab -->
+<!--   ``` -->
+<!--   Add an entry like this: -->
+<!--   ```plaintxt -->
+<!--   /dev/mapper/<name of logical volume> /space <NFS or XFS> defaults 1 2 -->
+<!--   ``` -->
 
-`/etc/fstab` or `systemd` must have an entry for `/space` (do not reboot during the lab, as this will not work.)
+`/etc/fstab` or `systemd` must have an entry for `/space` (do not reboot during the lab, as this will not work).  
+Same way as above.
 
-As above.
-
-> REBOOT THE LAB MACHINE WHEN FINISHED
+<div class="warning">
+**Reboot the lab machine when finished.**
+</div>
 
 ---
 
@@ -127,16 +153,19 @@ Fix the system to be able to update via `dnf`.
 
 - HINT: DNF isn’t updating, so where are the repos that it looks for?
 
-- Answer: `vi /etc/yum.repos.d/rocky.repo` and look for `enabled=0`. This needs to be fixed back to
-
-* If they need a reference, the original is over in `/etc/yum.repos.d/rocky.repo.orig`.
-  The EPEL repo is busted the same way, as it needs to be enabled.
+<!-- - Answer: -->
+<!--   ```bash -->
+<!--   vi /etc/yum.repos.d/rocky.repo -->
+<!--   ``` -->
+<!--   Look for `enabled=0`. This needs to be changed back to `1`. -->
+<!--     * If you need a reference, the original is over in `/etc/yum.repos.d/rocky.repo.orig`. -->
+<!--       The EPEL repo is busted the same way, as it needs to be enabled. -->
 
 Verify that kernel updates are happening.
 
 - HINT: Where can updates be excluded in DNF or Yum?
 
-- Answer: They need to comment out the line in /etc/yum.conf about `"exclude=kernel*"` because
-  this is stopping any kernel updates from happening.
+<!-- - Answer: You need to comment out the line in `/etc/yum.conf` about `"exclude=kernel*"` because -->
+<!--   this is stopping any kernel updates from happening. -->
 
 > Be sure to `reboot` the lab machine from the command line when you are done.
