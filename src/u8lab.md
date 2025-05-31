@@ -286,11 +286,12 @@ Single alternatives either occur or they do not. They only branch from the prima
 
 Evaluate these from earlier and look at the difference.
 
-```
+
+```bash
 if [ $superCheck -eq "0" ]; then echo "super exists"; fi
 ```
 
-```
+```bash
 if [ $gccCheck -eq "0" ]; then echo "gcc exists"; fi
 ```
 
@@ -300,11 +301,11 @@ You’ll note that only one of them caused any output to come to the screen, the
 
 Dual alternatives forces the code to split. A decision must be made. These are logically `if, then, else`. We test for a truth, and then, if that condition does not exist we execute the alternative. If you’re a parent or if you ever had a parent, this is the dreaded `or else`. One of two things is going to happen here, the path splits.
 
-```
+```bash
 if [ $superCheck -eq "0" ]; then echo "super exists"; else echo "super does not exist"; fi #super does not exist
 ```
 
-```
+```bash
 if [ $gccCheck -eq "0" ]; then echo "gcc exists"; else echo "gcc does not exist"; fi #gcc exists
 ```
 
@@ -312,11 +313,13 @@ if [ $gccCheck -eq "0" ]; then echo "gcc exists"; else echo "gcc does not exist"
 
 Multiple alternatives provide a branch for any numbers of ways that a program can go. They can be structured as if, then, `else if` `elif` in bash, `else`. They can also be framed in the case statement, which can select any number of cases (like doors) that can be selected from. There should always be a default `else` value for case statements, that is to say, if one of the many conditions don’t exist there is something that happens anyways (\*) in case statements.
 
-```
+
+```bash
 superCheck=4
 if [ $superCheck -eq "0" ]; then echo "super exists"; elif [ $superCheck -gt "1" ]; then echo "something is really wrong"; else echo "super does not exist"; fi
 ```
-```
+
+```bash
 gccCheck=5
 if [ $gccCheck -eq "0" ]; then echo "gcc exists"; elif [ $gccCheck -gt "1" ]; then echo "something is really wrong"; else echo "gcc does not exist"; fi
 ```
@@ -334,14 +337,14 @@ http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_03.html
 We didn’t get to explore these much earlier, but to test `AND` and `OR` functionality use this.
 
 `AND` condition
-```
+```bash
 if [ $gccCheck -eq "0" -a $superCheck -eq "1" ]; then echo "We can install someprogram"; else echo "We can't install someprogram"; fi
 ```
 
 We can't install someprogram
 
 `OR` condition
-```
+```bash
 if [ $gccCheck -eq "0" -o $superCheck -eq "1" ]; then echo "We can install someprogram"; else echo "We can't install someprogram"; fi
 ```
 We can't install someprogram
@@ -355,17 +358,17 @@ As with everything today, this is simply a primer and there are hundreds to thou
 Counting is iteration.
 
 We can count numbers
-```
+```bash
 for i in 1 2 3 4 5; do echo "the value now is $i"; done
 ```
 
 We can count items
-```
+```bash
 for dessert in pie cake icecream sugar soda; do echo "this is my favorite $dessert"; done
 ```
 
 But, it’s impractical to count for ourselves sometimes so we let the system do it for us.
-```
+```bash
 seq 100 \
 seq 4 100 \
 seq 6 2 100 \
@@ -375,18 +378,18 @@ man seq
 What did each of those do? Let’s put them in a loop we can use
 
 Maybe we want to count our 1000 servers and connect to them by name.
-```
+```bash
 for i in `seq 1000`; do echo "Connecting to server p01awl$i"; done
 ```
 
 
 Maybe we need to create a list of all our servers and put it in a list
-```
+```bash
 for i in `seq 1000`; do echo "p01awl$i" >> serverfile; done
 ```
 
 Maybe someone else gave us a list of servers and we need to read from that list to connect and do work.
-```
+```bash
 for server in `cat serverfile`; do echo "connecting to server $server"; done
 ```
 
@@ -400,21 +403,21 @@ It is important to remember that `CRTL + C` will break you out of loops, as that
 
 Administrators often find themselves looking at data and needing to refresh that data. One of the simplest loops is an infinite loop that always tests the condition of true (which always evaluates to true) and then goes around again. This is especially useful when watching systems for capacity issues during daemon or program startups.
 
-```
+```bash
 while true; do date; free -m; uptime; sleep 2; done
 ```
 
 This will run until you break it with `CTRL + C`. This will loop over the date, `free -m`, `uptime`, and `sleep 2` commands until the condition evaluates to false, which it will never do.
 
 Let’s run something where we actually have a counter and see what that output is
-```
+```bash
 counter=0
 while [[ $counter -lt 100 ]]; do echo "counter is at $counter"; (( counter++ )); done
 ```
 What numbers were counted through?
 
 If you immediately run this again, what happens? Why didn’t anything happen?
-```
+```bash
 #Reset counter to 0
 counter=0
 ```
@@ -424,7 +427,7 @@ Re-run the above loop. Why did it work this time?
 Reset the counter and run it again. Try moving the counter to before the output. Can you make it count from 1 to 100? Can you make it count from 3 to 251? Are there challenges to getting that to work properly?
 
 What if we wanted something to happen for every MB of free RAM on our system? Could we do that?
-```
+```bash
 memFree=`free -m | grep -i mem | awk '{print $2}'`
 counter=0
 while [[ $counter -lt $memFree ]]; do echo "counter is at $counter"; (( counter++ )); done
@@ -433,7 +436,7 @@ while [[ $counter -lt $memFree ]]; do echo "counter is at $counter"; (( counter+
 ## 3.0 - Scripting System Checks
 
 The main thing we haven’t covered is what to actually do with these things we’ve done. We can put them into a file and then execute them sequentially until the file is done executing. To do that we need to know the interpreter (bash is default) and then what we want to do.
-```
+```bash
 touch scriptfile.sh
 chmod 755 scriptfile.sh #let’s just make it executable now and save trouble later
 vi scriptfile.sh
@@ -459,17 +462,17 @@ fi
 ```
 
 Execute this with the following command and you’ll have your first completed script.
-```
+```bash
 ./scriptfile.sh
 ```
 
 run the strace command to see what is happening with your system when it interprets this script.
-```
+```bash
 strace ./scriptfile.sh
 ```
 
 That's a lot of output! Now try adding -c for a summary. Here you can see all the syscalls made by the script and the time is took for each one.
-```
+```bash
 strace -c ./scriptfile.sh
 ```
 
