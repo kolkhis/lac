@@ -5,10 +5,8 @@
     </p>
 </div>
 
-> If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
-> the machine from the command line so that other students will have the intended environment.
 
-## Under Construction
+## No lab for unit 15. Work on your [projects](./project.md).  
 
 ### Resources / Important Links
 
