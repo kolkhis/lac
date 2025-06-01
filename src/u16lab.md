@@ -5,10 +5,11 @@
     </p>
 </div>
 
+The unit 16 lab will be done during the lecture. Students will troubleshoot problems
+on systems in the ProLUG lab environment.
+
 > If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
 > the machine from the command line so that other students will have the intended environment.
-
-### Resources / Important Links
 
 ### Required Materials
 
