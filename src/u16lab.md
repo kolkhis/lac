@@ -80,7 +80,7 @@ Ensure that the server can be reached by external connection attempts on port 80
 <!--   - If they want to open the port, they can do that too. -->
 
 <div class="warning">
-**Reboot the lab machine when finished.**
+<b>Reboot the lab machine when finished.</b>
 </div>
 
 ---
@@ -135,7 +135,7 @@ EXT4 or XFS must be installed on the logical volume.
 Same way as above.
 
 <div class="warning">
-**Reboot the lab machine when finished.**
+<b>Reboot the lab machine when finished.</b>
 </div>
 
 ---
