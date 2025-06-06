@@ -26,10 +26,12 @@
             enabled: true
 
         - name: DNF - Installing mdbook
-          community.general.cargo:
-            name: mdbook
-            locked: true
-            state: present
+          ansible.builtin.command:
+            argv:
+              - /usr/bin/cargo
+              - install
+              - --locked
+              - mdbook@0.4.48
 
     - name: Build ProLUG website LAC for APT systems
       when: ansible_pkg_mgr == "apt"
