@@ -65,7 +65,7 @@ Scenario:
 <blockquote>
 
 You are in a capacity planning meeting with a few of the architects.
-They have decided to add 2 more agents to your Linux systems, Bacula Agent and an Avamar Agent.
+They have decided to add 2 more agents to your Linux systems, a Bacula Agent and an Avamar Agent.
 They expect these agents to run their work starting at 0400 every morning.
 
 </blockquote>
