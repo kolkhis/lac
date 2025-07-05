@@ -12,7 +12,7 @@
 
 - [SAR Documentation](https://man7.org/linux/man-pages/man1/sar.1.html)
 - [iostat Manual](https://man7.org/linux/man-pages/man1/iostat.1.html)
-- [stress GitHub](https://github.com/stress-ng/stress-ng)
+- [stress GitHub](https://github.com/ColinIanKing/stress-ng.git)
 - [iperf3 Documentation](https://iperf.fr/)
 
 ### Required Materials
