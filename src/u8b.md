@@ -96,16 +96,16 @@ Bash conditionals allow scripts to **make decisions**.
 
 | Test                  | Meaning                         | Example                     |
 | --------------------- | ------------------------------- | --------------------------- |
-| `[[ -f FILE ]]`       | File exists                     | `[[ -f /etc/passwd ]]`        |
-| `[[ -d DIR ]]`        | Directory exists                | `[[ -d /home/user ]]`         |
-| `[[ -n STR ]]`        | String is **non-empty**         | `[[ -n "$USER" ]]`            |
-| `[[ -z STR ]]`        | String is **empty**             | `[[ -z "$VAR" ]]`             |
-| `[[ "$A" = "$B" ]]`   | Strings are **equal**           | `[[ "$USER" = "root" ]]`      |
-| `[[ "$A" != "$B" ]]`  | Strings are **not equal**       | `[[ "$USER" != "admin" ]]`    |
-| `[[ NUM1 -eq NUM2 ]]` | Numbers are **equal**           | `[[ 5 -eq 5 ]]`               |
-| `[[ NUM1 -gt NUM2 ]]` | NUM1 is **greater than** NUM2   | `[[ 10 -gt 5 ]]`              |
+| `[[ -f FILE ]]`       | File exists                     | `[[ -f /etc/passwd ]]`      |
+| `[[ -d DIR ]]`        | Directory exists                | `[[ -d /home/user ]]`       |
+| `[[ -n STR ]]`        | String is **non-empty**         | `[[ -n "$USER" ]]`          |
+| `[[ -z STR ]]`        | String is **empty**             | `[[ -z "$VAR" ]]`           |
+| `[[ "$A" = "$B" ]]`   | Strings are **equal**           | `[[ "$USER" = "root" ]]`    |
+| `[[ "$A" != "$B" ]]`  | Strings are **not equal**       | `[[ "$USER" != "admin" ]]`  |
+| `[[ NUM1 -eq NUM2 ]]` | Numbers are **equal**           | `[[ 5 -eq 5 ]]`             |
+| `[[ NUM1 -gt NUM2 ]]` | NUM1 is **greater than** NUM2   | `[[ 10 -gt 5 ]]`            |
 | `[[ "$?" -eq 0 ]]`    | Last command **was successful** | `command && echo "Success"` |
-| `[[ -x FILE ]]`       | File is **executable**          | `[[ -x script.sh ]]`          |
+| `[[ -x FILE ]]`       | File is **executable**          | `[[ -x script.sh ]]`        |
 
 - **Why does this matter?**
 
@@ -148,13 +148,14 @@ Below are 10 **real-world examples** of using bash from the command line.
 
 **Debugging tools** help troubleshoot Bash scripts.
 
-| Command             | Purpose                                             |
-| ------------------- | --------------------------------------------------- |
-| `set -x`            | Print each command **before execution**             |
-| `set -e`            | Exit script **if any command fails**                |
-| `trap '...' ERR`    | Run a custom **error handler** when a command fails |
-| `echo "$VAR"`       | Print variable values **for debugging**             |
-| `bash -x script.sh` | Run script **with debugging enabled**               |
+| Command                | Purpose                                             |
+| ---------------------- | --------------------------------------------------- |
+| `set -x`               | Print each command **before execution**             |
+| `set -e`               | Exit script **if any command fails**                |
+| `trap '...' ERR`       | Run a custom **error handler** when a command fails |
+| `echo "$VAR"`          | Print variable values **for debugging**             |
+| `printf "%s\n" "$VAR"` | Print variable values **for debugging**             |
+| `bash -x script.sh`    | Run script **with debugging enabled**               |
 
 Using `set -x` and `echo` (or `printf`) are some of the most common methods of
 troubleshooting.
