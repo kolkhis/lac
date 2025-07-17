@@ -66,3 +66,4 @@
 - [Contributing](./contributing.md)
   - [Local Testing](./development.md)
 - [Downloads](./downloads.md)
+- [Socratic Linux](./socratic_linux.md)
