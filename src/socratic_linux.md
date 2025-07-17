@@ -1,4 +1,4 @@
-Notes about Socratic Linux
+## Socratic Linux
 
 <details>
 <summary>Can you list the number of CPUs?</summary>
@@ -50,7 +50,7 @@ Notes about Socratic Linux
   - `openssl speed -multi $(nproc)`
 </details>
 
-Memory Topics
+## Memory Topics
 
 <details>
 <summary>Can you tell me how much RAM we have?</summary>
@@ -86,7 +86,7 @@ Memory Topics
   - `stress --vm 4 --timeout 180s`
 </details>
 
-Filesystem Topics
+## Filesystem Topics
 
 <details>
 <summary>Can you show all of the used space of the / (root) partition?</summary>
@@ -278,7 +278,7 @@ Filesystem Topics
   - `nc 127.0.0.1 22`
 </details>
 
-Disk Topics
+## Disk Topics
 
 <details>
 <summary>How do you check how many disks you have?</summary>
@@ -331,7 +331,7 @@ Disk Topics
   - `for i in $(seq 5); do echo "I am reading $i file"; time dd if=bigfile$i of=/dev/null; done`
 </details>
 
-Security Topics
+## Security Topics
 
 <details>
 <summary>What users have logged into the system in the last 24 hours?</summary>
@@ -408,7 +408,7 @@ Security Topics
   - ` vi /etc/security/limits.conf`
 </details>
 
-General System
+## General System
 
 <details>
 <summary>Can you show me how the system was booted by grub?</summary>
@@ -547,7 +547,7 @@ General System
   - `id <username>`
 </details>
 
-Bash Scripting
+## Bash Scripting
 
 <details>
 <summary>Can you touch a file with today's date in the filename?</summary>
