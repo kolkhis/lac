@@ -12,7 +12,7 @@
 
 - [SAR Documentation](https://man7.org/linux/man-pages/man1/sar.1.html)
 - [iostat Manual](https://man7.org/linux/man-pages/man1/iostat.1.html)
-- [stress GitHub](https://github.com/stress-ng/stress-ng)
+- [stress GitHub](https://github.com/ColinIanKing/stress-ng.git)
 - [iperf3 Documentation](https://iperf.fr/)
 
 ### Required Materials
@@ -218,9 +218,9 @@ issues. No one cares what you think, they care what you can show, or prove.
     ```
 
 - Can we say that this system is not under heavy load?
-- What does a system under no load look like permorning tasks in our environment?
+- What does a system under no load look like performing tasks in our environment?
 
-  - Assuming our systems are running not under load, capture SAR and baseline stats.
+  - Assuming our systems are not running under load, capture SAR and baseline stats.
   - Perform some basic tasks and get their completion times.
 
     - Writing/deleting 3000 empty files #modify as needed for your system
