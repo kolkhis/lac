@@ -242,7 +242,7 @@ issues. No one cares what you think, they care what you can show, or prove.
     - Testing processor speed
 
       ```bash
-      time ($(i=0; while (( i < 999999 )); do (( i ++ )); done))
+      time $(i=0; while (( i < 999999 )); do (( i ++ )); done)
       # if this takes your system under 10 seconds, add a 9
       ```
 
