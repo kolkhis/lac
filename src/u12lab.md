@@ -227,10 +227,10 @@ issues. No one cares what you think, they care what you can show, or prove.
 
     ```bash
     # Speed: ~10s
-    time (for i in `seq 1 3000`; do touch testfile$i; done)
+    time for i in `seq 1 3000`; do touch testfile$i; done
 
     # Removing them
-    time (for i in `seq 1 3000`; do rm -rf testfile$i; done)
+    time for i in `seq 1 3000`; do rm -rf testfile$i; done
 
     # Writing large files
     for i in `seq 1 5`; do time dd if=/dev/zero of=/root/lab_baseline/sizetest$i bs=1024k count=1000; done
