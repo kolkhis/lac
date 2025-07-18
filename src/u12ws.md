@@ -85,7 +85,7 @@ Scenario:
 
 <blockquote>
 
-Your team has recently tested at proof of concept of a new storage system. 
+Your team has recently tested a proof of concept of a new storage system. 
 The vendor has published the blazing fast speeds that are capable of being
 run through this storage system. You have a set of systems connected to both the old
 storage system and the new storage system.
