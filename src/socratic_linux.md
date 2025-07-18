@@ -46,7 +46,7 @@
 <summary>Can you spin up the CPU to high load for 3 minutes?</summary>
 
 - `stress -c 4 --timeout 180`
-- `for i in `seq 100`; do dd if=/dev/urandom bs=1024k count=5000 | bzip2 -9 > /dev/null & done`
+- `for i in $(seq 100); do dd if=/dev/urandom bs=1024k count=5000 | bzip2 -9 > /dev/null & done`
 - `openssl speed -multi $(nproc)`
 </details>
 
