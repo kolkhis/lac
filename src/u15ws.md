@@ -51,15 +51,6 @@ Your management is all fired up about implementing some Six Sigma processes arou
 1. Page 56 – What about the “5S” methodology might help us as a team of system administrators? (Think of your virtual or software workspaces)
 2. Page 94 - What are the four layers of process definition? How would you explain them to your junior engineers?
 
-<div class="warning">
-Submit your input by following the link below.
-
-The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
-
-</div>
-
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1365776270800977962)
-
 #### Unit 2 Discussion Post #2
 
 Your team looks at a lot of visual data. You decide to write up an explanation for them to explain what they look at.

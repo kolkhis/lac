@@ -77,13 +77,15 @@ is behaving on a set of servers. Your team has node exporter writing data out to
    user and system for the remaining CPUs and what is that query?
 
 <div class="warning">
+
 Submit your input by following the link below.
 
-The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+The discussion posts are done in Discord Forums.
 
 </div>
 
-- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1365776270800977962)
+- [Link to Discussion Forum](https://discord.com/channels/611027490848374811/1365776270800977962)
+
 
 ## Definitions
 
