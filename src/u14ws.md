@@ -76,13 +76,15 @@ Using ansible module for git, pull down this repo: <https://github.com/het-tanis
 3. How are these playbooks called, and how do roles differ from tasks?
 
 <div class="warning">
+
 Submit your input by following the link below.
 
-The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+The discussion posts are done in Discord Forums.
 
 </div>
 
-- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1365776270800977962)
+- [Link to Discussion Forum](https://discord.com/channels/611027490848374811/1365776270800977962)
+
 
 ## Definitions
 
