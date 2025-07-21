@@ -25,16 +25,12 @@ The lab has been provided for convenience below:
 - <a href="./assets/downloads/u16/u16_lab.txt" target="_blank" download>📥 u16_lab(`.txt`)</a>
 - <a href="./assets/downloads/u16/u16_lab.docx" target="_blank" download>📥 u16_lab(`.docx`)</a>
 
-> Be sure to `reboot` the lab machine from the command line when you are done.
+## LAB
 
 ---
-
-## LAB
 
 You have the answers here, if they ask, you may give them hints. Otherwise, you can help them find the
 right solution any way you want to.
-
----
 
 ### Scenario 1:
 
@@ -83,8 +79,6 @@ Ensure that the server can be reached by external connection attempts on port 80
 <div class="warning">
 <b>Reboot the lab machine when finished.</b>
 </div>
-
----
 
 ### Scenario 2:
 
@@ -138,8 +132,6 @@ Same way as above.
 <div class="warning">
 <b>Reboot the lab machine when finished.</b>
 </div>
-
----
 
 ### Scenario 3:
 
