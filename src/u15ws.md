@@ -1,7 +1,7 @@
 <div class="flex-container">
         <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
     <p>
-        <h1>Unit 15 Worksheet - Process Imporovment</h1>
+        <h1>Unit 15 Worksheet - Engineering Troubleshooting</h1>
     </p>
 </div>
 
@@ -25,57 +25,49 @@ could be transposed to a `.md` file.
 - <a href="./assets/downloads/u15/u15_worksheet.txt" target="_blank" download>📥 u15_worksheet(`.txt`)</a>
 - <a href="./assets/downloads/u15/u15_worksheet.docx" target="_blank" download>📥 u15_worksheet(`.docx`)</a>
 
-### Unit 2 Recording
+### Unit 15 Recording
 
 <iframe
-    src="https://www.youtube.com/embed/miVuSoHTuP4?si=9swKZSbFG0PvVp51"
+    src="https://www.youtube.com/embed/UFEH3w1U_rc"
     style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background:black"
-    title="Unit 2 Recording - ProLUG Linux Systems Administration Course - Free in Discord"
+    title="Unit 15 Recording - ProLUG Linux Systems Administration Course - Free in Discord"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen>
 </iframe>
 
-#### Unit 2 Discussion Post #1
+#### Unit 15 Discussion Post #1
 
 Scenario:
 
 <blockquote>
 
-Your management is all fired up about implementing some Six Sigma processes around the company. You decide to familiarize yourself and get some basic understanding to pass along to your team
-[Six Sigma Intro](https://www.sixsigmacouncil.org/wp-content/uploads/2018/08/Six-Sigma-A-Complete-Step-by-Step-Guide.pdf)
+Your management is all fired up about implementing some Six Sigma processes around the company. You decide to familiarize yourself 
+and get some basic understanding to pass along to your team. [Six Sigma Intro](https://www.sixsigmacouncil.org/wp-content/uploads/2018/08/Six-Sigma-A-Complete-Step-by-Step-Guide.pdf)
 
 </blockquote>
 
 1. Page 56 – What about the “5S” methodology might help us as a team of system administrators? (Think of your virtual or software workspaces)
 2. Page 94 - What are the four layers of process definition? How would you explain them to your junior engineers?
 
-<div class="warning">
-Submit your input by following the link below.
-
-The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
-
-</div>
-
-- [Link to Discussion Post 1](https://discord.com/channels/611027490848374811/1365776270800977962)
-
-#### Unit 2 Discussion Post #2
+#### Unit 15 Discussion Post #2
 
 Your team looks at a lot of visual data. You decide to write up an explanation for them to explain what they look at.
 
 1. What is a high water mark? Why might it be good to know in utilization of systems?
 2. What is an upper and lower control limit in a system output? While this isn’t exactly
-what we’re looking at, why might it be good to explain to your junior engineers
+   what we’re looking at, why might it be good to explain to your junior engineers
 
 <div class="warning">
+
 Submit your input by following the link below.
 
-The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
+The discussion posts are done in Discord Forums.
 
 </div>
 
-- [Link to Discussion Post 2](https://discord.com/channels/611027490848374811/1320140864303140916)
+- [Link to Discussion Forum](https://discord.com/channels/611027490848374811/1365776270800977962)
 
 ## Definitions
 
@@ -122,7 +114,7 @@ SIPOC:
 ---
 
 1. Spend more time in [Six Sigma Intro](https://www.sixsigmacouncil.org/wp-content/uploads/2018/08/Six-Sigma-A-Complete-Step-by-Step-Guide.pdf)
-    a. Page 243 – Starts looking at visual data analysis.
+   a. Page 243 – Starts looking at visual data analysis.
 2. Get your White belt (Free) Six Sigma Certification.
 
 ## Reflection Questions
