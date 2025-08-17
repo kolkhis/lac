@@ -39,36 +39,36 @@ right solution any way you want to.
 
 A ticket has come in that the web server is not running on the web server.
 To complete this event the following three must be correct.
-Web server must be running.
 
-- HINT:
-  ```bash
-  systemctl status httpd
-  ```
+1. Web server must be running.
+
+   - HINT:
+     ```bash
+     systemctl status httpd
+     ```
 
 <!-- - Answer: -->
 <!--   ```bash -->
 <!--   systemctl enable --now httpd # or some variation of that must have been run -->
 <!--   ``` -->
 
-Web server must respond on port 80.
+2. Web server must respond on port 80.
 
-- HINT: Can you check the open ports?
+   - HINT: Can you check the open ports?
 
 <!-- - Answer: -->
 <!--   ```bash -->
 <!--   ss -ntulp  # Will show port 80 -->
 <!--   ``` -->
+<!-- The server is currently set on `8087` and needs to be fixed in `/etc/httpd/conf/http.conf`. -->
+<!-- The "Listen 8087" line must be changed to "Listen 80" and the service restarted `systemctl restart httpd`. -->
 
-The server is currently set on `8087` and needs to be fixed in `/etc/httpd/conf/http.conf`.  
-The "Listen 8087" line must be changed to "Listen 80" and the service restarted `systemctl restart httpd`.
+3. Ensure that the server can be reached by external connection attempts on port 80.
 
-Ensure that the server can be reached by external connection attempts on port 80.
-
-- HINT: Is the firewall running?
-  ```bash
-  systemctl status firewalld
-  ```
+   - HINT: Is the firewall running?
+     ```bash
+     systemctl status firewalld
+     ```
 
 <!-- - Answer: Easiest is to turn off the firewall. -->
 <!--   ```bash -->
@@ -85,36 +85,37 @@ Ensure that the server can be reached by external connection attempts on port 80
 - Connect to `tshoot2@prolug.asuscomm.com`
 - Password:
 
-A ticket has come in that a mount point /space is not working correctly. The team expected a
+A ticket has come in that a mount point, `/space`, is not working correctly. The team expected a
 9GB partition to be built there on the 3 attached disks, but found that it was not a separate
 partition.
+
 Verify that `/space` is not set up correctly.
 
-To complete this event the following two must be correct.
+To complete this event the following four must be correct.
 
-- HINT: They may want to revisit lab 3 of the course for this one. This is a challenge here.
+1. The three disks must be properly set up in LVM.
 
-  - The three disks must be properly set up in LVM.
-
-- HINT: use your pvs, vgs, lvs tools
+   - HINT: use `mkfs` to make a filesystem.
 
 <!-- - Answer: -->
 <!--   - First identify all disks: `fdisk -l | grep -i xvd`. Then `pvcreate /dev/xvd<whatever>`. -->
 <!--   - Then `vgcreate space /dev/xvd<disk1> /dev/xvd<disk2> /dev/xvd<disk3>`. -->
 <!--   - Then `lvcreate -n space -l +100%FREE space_vg` -->
 
-EXT4 or XFS must be installed on the logical volume.
+2. EXT4 or XFS must be installed on the logical volume.
 
-- HINT: use `mkfs` to make a filesystem.
+   - HINT: You may want to revisit lab 3 of the course for this one. This is a challenge here.
+
+   - HINT: Use your `pvs`, `vgs`, `lvs` tools
 
 <!-- - Answer: -->
 <!--   ```bash -->
 <!--   mkfs.ext4 /dev/mapper/<name of logical volume> -->
 <!--   ``` -->
 
-`/space` must be created and mounted off on this filesystem.
+3. `/space` must be created and mounted off on this filesystem.
 
-- Hint: Make the directory
+   - Hint: Make the directory
 
 <!-- - Answer: -->
 <!--   ```bash -->
@@ -126,7 +127,9 @@ EXT4 or XFS must be installed on the logical volume.
 <!--   /dev/mapper/<name of logical volume> /space <NFS or XFS> defaults 1 2 -->
 <!--   ``` -->
 
-`/etc/fstab` or `systemd` must have an entry for `/space` (do not reboot during the lab, as this will not work).  
+4. `/etc/fstab` or `systemd` must have an entry for `/space` (do not reboot during
+   the lab, as this will not work).
+
 Same way as above.
 
 <div class="warning">
