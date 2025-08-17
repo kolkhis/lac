@@ -91,6 +91,8 @@ partition.
 
 Verify that `/space` is not set up correctly.
 
+- HINT: You may want to revisit lab 3 of the course for this one. This is a challenge here.
+
 To complete this event the following four must be correct.
 
 1. The three disks must be properly set up in LVM.
@@ -103,8 +105,6 @@ To complete this event the following four must be correct.
 <!--   - Then `lvcreate -n space -l +100%FREE space_vg` -->
 
 2. EXT4 or XFS must be installed on the logical volume.
-
-   - HINT: You may want to revisit lab 3 of the course for this one. This is a challenge here.
 
    - HINT: Use your `pvs`, `vgs`, `lvs` tools
 
