@@ -30,6 +30,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MDBOOK_VERSION: v0.4.52
+
+      #TODO Implement Token?
+      # GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - uses: actions/checkout@v4
 
