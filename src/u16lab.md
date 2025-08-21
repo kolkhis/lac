@@ -38,6 +38,7 @@ right solution any way you want to.
 - Password:
 
 A ticket has come in that the web server is not running on the web server.
+
 To complete this event the following three must be correct.
 
 1. Web server must be running.
@@ -143,11 +144,12 @@ Same way as above.
 
 Your team is trying to update your servers during a maintenance window. Your junior
 administrator kicks you over a server that they cannot get to update.
+
 To complete this event the following two must be correct.
 
-Fix the system to be able to update via `dnf`.
+1. Fix the system to be able to update via `dnf`.
 
-- HINT: DNF isn’t updating, so where are the repos that it looks for?
+   - HINT: DNF isn’t updating, so where are the repos that it looks for?
 
 <!-- - Answer: -->
 <!--   ```bash -->
@@ -157,9 +159,9 @@ Fix the system to be able to update via `dnf`.
 <!--     * If you need a reference, the original is over in `/etc/yum.repos.d/rocky.repo.orig`. -->
 <!--       The EPEL repo is busted the same way, as it needs to be enabled. -->
 
-Verify that kernel updates are happening.
+2. Verify that kernel updates are happening.
 
-- HINT: Where can updates be excluded in DNF or Yum?
+   - HINT: Where can updates be excluded in DNF or Yum?
 
 <!-- - Answer: You need to comment out the line in `/etc/yum.conf` about `"exclude=kernel*"` because -->
 <!--   this is stopping any kernel updates from happening. -->
