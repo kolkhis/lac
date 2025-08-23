@@ -116,7 +116,7 @@ check-digest(){
         return 0
     fi
 
-    printf "%3s %s\n" "URL:" "${dl_url}" "API_DIGEST:" "${api_digest}" "ZIP:" "${zip}"
+    printf "%3s %s\n" "API_DIGEST:" "${api_digest}" "ZIP:" "${zip}"
     printf "\nFetching binary...\nCalculating ZIP digest...\n\n"
 
     printf "\nZIP_DIGEST: %s\n\n" "${zip_digest}"
@@ -149,6 +149,7 @@ api_fetch() {
 
         dl_url="$(jq -r '.[].browser_download_url' <<<"${json}")"
         zip="$(jq -r '.[].name' <<< "${json}")"
+        printf "%3s %s\n" "URL:" "${dl_url}" 
 
         curl -LO --progress-bar "$dl_url" || {
             printf >&2 "[ERROR]: Failed to download mkBook binary!\n" && return 1
@@ -161,8 +162,6 @@ api_fetch() {
 
 }
 
-# reg_pattern="^v?([[:digit:]]+\.){2}[[:digit:]]+$"
-# reg_pattern='^v?([0-9]+\.){2}[0-9]+$'
 reg_pattern='^v?([0-9]{1,}\.[0-9]{1,}\.[0-9]{1,}$)'
 
 if [[ "$MDBOOK_VERSION" =~ $reg_pattern ]]; then
